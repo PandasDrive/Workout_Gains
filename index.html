@@ -468,10 +468,10 @@
             },
             thenx: {
                 name: "Chris Heria",
-                image: "",
-                imagePosition: "center",
+                image: "images/chris.heria.PNG",
+                imagePosition: "center top 25%",
                 programs: [
-                    { id: "thenxLibrary", subtitle: "Calisthenics Library" }
+                    { id: "thenxLibrary", subtitle: "Calisthenics Library", image: "images/thenx.cali.libarary.png", imagePosition: "center top" }
                 ]
             }
         };
@@ -1291,6 +1291,8 @@
             }
 
             if (program.type === 'library') {
+                currentWeek = 0;
+                currentDay = 0;
                 renderThenxLibrary(program);
                 showPage('page-thenx-library');
                 return;
