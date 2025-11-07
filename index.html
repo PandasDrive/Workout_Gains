@@ -391,7 +391,8 @@
                 image: "images/kris.PNG",
                 programs: [
                     { id: "gethin", subtitle: "Legacy Program" },
-                    { id: "kagedLean", subtitle: "Lean Muscle Trainer" }
+                    { id: "kagedLean", subtitle: "Lean Muscle Trainer" },
+                    { id: "hardcore8", subtitle: "8-Week Hardcore Trainer" }
                 ]
             },
             nippard: {
@@ -1185,6 +1186,31 @@
                 </div>
             `;
 
+            if (Array.isArray(day.notes) && day.notes.length) {
+                const coachCard = document.createElement('div');
+                coachCard.className = 'bg-gray-800 rounded-lg p-4 border border-gray-700 space-y-3';
+                const coachTitle = document.createElement('h2');
+                coachTitle.className = 'text-xl font-bold text-white';
+                coachTitle.textContent = 'Coach Notes';
+                coachCard.appendChild(coachTitle);
+                day.notes.forEach(noteText => {
+                    const paragraph = document.createElement('p');
+                    paragraph.className = 'text-sm text-gray-300 leading-relaxed';
+                    paragraph.textContent = noteText;
+                    coachCard.appendChild(paragraph);
+                });
+                if (day.url) {
+                    const link = document.createElement('a');
+                    link.href = day.url;
+                    link.target = '_blank';
+                    link.rel = 'noopener noreferrer';
+                    link.className = 'inline-flex items-center gap-2 text-sm text-blue-300 hover:text-blue-100';
+                    link.innerHTML = 'View full article &rarr;';
+                    coachCard.appendChild(link);
+                }
+                workoutContent.appendChild(coachCard);
+            }
+
             // 2.5 Training Notes
             const noteCard = document.createElement('div');
             noteCard.className = 'bg-gray-800 rounded-lg p-4 border border-gray-700 space-y-3';
@@ -1237,26 +1263,43 @@
                 exerciseList.className = 'space-y-4';
                 
                 day.exercises.forEach(ex => {
-                    exerciseList.innerHTML += `
-                        <div class="bg-gray-800 rounded-lg p-4 border border-gray-700 shadow-md">
-                            <h3 class="text-2xl font-semibold text-blue-400 mb-2">${ex.name}</h3>
-                            <div class="grid grid-cols-3 gap-2 text-center mb-3">
-                                <div>
-                                    <p class="text-sm text-gray-400">SETS</p>
-                                    <p class="text-2xl font-semibold">${ex.sets}</p>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-gray-400">REPS</p>
-                                    <p class="text-2xl font-semibold">${ex.reps}</p>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-gray-400">REST</p>
-                                    <p class="text-2xl font-semibold">${ex.rest}</p>
-                                </div>
+                    const setsDisplay = (ex.sets !== undefined && ex.sets !== null && ex.sets !== '') ? ex.sets : '--';
+                    const repsDisplay = ex.reps && ex.reps.trim() ? ex.reps.trim() : (ex.info && ex.info.trim() ? ex.info.trim() : '--');
+                    const restDisplay = ex.rest && ex.rest.trim() ? ex.rest.trim() : '--';
+                    const tags = [ex.section, ex.subsection].filter(Boolean);
+                    const tagsMarkup = tags.length
+                        ? `<div class="flex flex-wrap gap-2 mb-2">${tags.map(tag => `<span class="px-2 py-1 rounded-full bg-gray-900 border border-gray-700 text-xs text-gray-300">${tag}</span>`).join('')}</div>`
+                        : '';
+                    const infoLine = ex.info && ex.info.trim() && ex.info.trim() !== repsDisplay
+                        ? `<p class="text-sm text-gray-400">${ex.info}</p>`
+                        : '';
+                    const notesLine = ex.notes
+                        ? `<p class="text-sm text-gray-400 italic mt-2">Note: ${ex.notes}</p>`
+                        : '';
+
+                    const card = document.createElement('div');
+                    card.className = 'bg-gray-800 rounded-lg p-4 border border-gray-700 shadow-md space-y-3';
+                    card.innerHTML = `
+                        ${tagsMarkup}
+                        <h3 class="text-2xl font-semibold text-blue-400">${ex.name}</h3>
+                        <div class="grid grid-cols-3 gap-2 text-center">
+                            <div>
+                                <p class="text-sm text-gray-400">SETS</p>
+                                <p class="text-2xl font-semibold">${setsDisplay}</p>
                             </div>
-                            ${ex.notes ? `<p class="text-sm text-gray-400 italic mt-2">Note: ${ex.notes}</p>` : ''}
+                            <div>
+                                <p class="text-sm text-gray-400">REPS / FORMAT</p>
+                                <p class="text-lg font-semibold">${repsDisplay}</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">REST</p>
+                                <p class="text-lg font-semibold">${restDisplay}</p>
+                            </div>
                         </div>
+                        ${infoLine}
+                        ${notesLine}
                     `;
+                    exerciseList.appendChild(card);
                 });
                 workoutContent.appendChild(exerciseList);
             }
@@ -1392,5 +1435,4 @@
         });
     </script>
 </body>
-</html>
 </html>

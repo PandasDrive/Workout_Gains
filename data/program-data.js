@@ -8193,5 +8193,3242 @@ kagedLean: {
             ]
         }
     ]
+  },
+  hardcore8: {
+    title: "Kris Gethin 8-Week Hardcore",
+    weeks: [
+      {
+        "week": 1,
+        "task": "",
+        "days": [
+          {
+            "day": 1,
+            "title": "Quads, Lower Abs & Calves Workout",
+            "cardio": "Morning Cardio - 20 Minutes; Evening Cardio - 20 Minutes",
+            "notes": [
+              "It's day one and I'm up at around 5:30 a.m., ready to get my breakfast down and head to the gym for my first cardio session of the day. But first, I need to tell you what my weight was this morning...I was sitting at 224.6 lbs. What are you weighing in at? Let's see where we end up in 8 weeks' time. When you're driving to the gym, try and listen to some hard-hitting music or any type of music that gets your head in the right state of mind so you'll be ready to attack the weights with maximum effort. I like to listen to music like Korn on my way to the gym as I imagine taking myself through sets of my upcoming workout with crazy intensity. Let me know what music you guys listen to. I'm always looking for new tracks. Everybody has the same opportunity to start this program, just as we all have our own obstacles to deal with. The real difference lies within your own action, and this depends on how committed you are to your goals. On the first day, you're bound to be motivated, but I need you to carry that on through this whole transformation. Tag me on your socials with #HardcoreTrainer2 and let me know where you are at so I can hold you accountable.",
+              "Today we're crushing quads, lower abs and calves. Let's have it!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-1-hct",
+            "exercises": [
+              {
+                "name": "Hack Squats",
+                "section": "Quads",
+                "subsection": null,
+                "info": "3 Sets x 15 Reps (1.5 rep variation)",
+                "sets": 3,
+                "reps": "15 Reps (1.5 rep variation)",
+                "rest": ""
+              },
+              {
+                "name": "Squat Press",
+                "section": "Quads",
+                "subsection": null,
+                "info": "3 Sets x 15 reps (2-second pause at the bottom)",
+                "sets": 3,
+                "reps": "15 reps (2-second pause at the bottom)",
+                "rest": ""
+              },
+              {
+                "name": "Leg Extensions*",
+                "section": "Quads",
+                "subsection": "Giant Set (2 Rounds Total)",
+                "info": "Triple Drop Set 10/10/10 Reps",
+                "sets": null,
+                "reps": "Triple Drop Set 10/10/10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Walking Forward Lunges",
+                "section": "Quads",
+                "subsection": "Giant Set (2 Rounds Total)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Bodyweight Squats",
+                "section": "Quads",
+                "subsection": "Giant Set (2 Rounds Total)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Walking Forward Lunges",
+                "section": "Quads",
+                "subsection": "Giant Set (2 Rounds Total)",
+                "info": "10 Reps",
+                "sets": null,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Calf Press",
+                "section": "Calves",
+                "subsection": null,
+                "info": "5 Sets x 30 Reps",
+                "sets": 5,
+                "reps": "30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Hanging Leg Raises",
+                "section": "Lower Abs Superset",
+                "subsection": "(3 Sets Total)",
+                "info": "Failure",
+                "sets": null,
+                "reps": "Failure",
+                "rest": ""
+              },
+              {
+                "name": "Lying Leg Raises",
+                "section": "Lower Abs Superset",
+                "subsection": "(3 Sets Total)",
+                "info": "Failure",
+                "sets": null,
+                "reps": "Failure",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "title": "Chest & Shoulders Workout",
+            "cardio": "Morning Cardio - 20 Minutes; Evening Cardio - 20 Minutes",
+            "notes": [
+              "This morning I'm heading to Dr. Jason Watson, of Active Health and Wellness Boise, where I'm going to go through some extensive testing to see where I'm physically at right now. This is important to me because I want to demonstrate to you how going through a transformation can affect all areas of your life for the better.",
+              "Today I had the following readings taken and here are the results:",
+              "These readings have given me a marker to improve upon going into this transformation-especially that body fat reading. Anyway, let's hit our chest and shoulders hard today!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-2-hct",
+            "exercises": [
+              {
+                "name": "Dumbbell Chest Press (DTP Extreme)*",
+                "section": "Chest",
+                "subsection": null,
+                "info": "Triple Drop Set 10/10/10",
+                "sets": null,
+                "reps": "Triple Drop Set 10/10/10",
+                "rest": ""
+              },
+              {
+                "name": "Incline Cable Fly",
+                "section": "Chest",
+                "subsection": "Superset (3 Sets Total)",
+                "info": "12 reps",
+                "sets": null,
+                "reps": "12 reps",
+                "rest": ""
+              },
+              {
+                "name": "Dumbbell Floor Press",
+                "section": "Chest",
+                "subsection": "Superset (3 Sets Total)",
+                "info": "10-12 pause reps",
+                "sets": null,
+                "reps": "10-12 pause reps",
+                "rest": ""
+              },
+              {
+                "name": "Decline Dumbbell Fly",
+                "section": "Chest",
+                "subsection": "Superset (3 Sets Total)",
+                "info": "12 reps",
+                "sets": null,
+                "reps": "12 reps",
+                "rest": ""
+              },
+              {
+                "name": "Pushups",
+                "section": "Chest",
+                "subsection": "Superset (3 Sets Total)",
+                "info": "failure",
+                "sets": null,
+                "reps": "failure",
+                "rest": ""
+              },
+              {
+                "name": "Smith Machine Alternating Military Press",
+                "section": "Shoulders",
+                "subsection": "Superset (3 Sets Total)",
+                "info": "12 reps",
+                "sets": null,
+                "reps": "12 reps",
+                "rest": ""
+              },
+              {
+                "name": "Lying Upright Cable Row",
+                "section": "Shoulders",
+                "subsection": "Superset (3 Sets Total)",
+                "info": "12 reps",
+                "sets": null,
+                "reps": "12 reps",
+                "rest": ""
+              },
+              {
+                "name": "Lying Cable Side Raises",
+                "section": "Shoulders",
+                "subsection": "Superset (3 Sets Total)",
+                "info": "12 reps",
+                "sets": null,
+                "reps": "12 reps",
+                "rest": ""
+              },
+              {
+                "name": "Lying Cable Front Raises",
+                "section": "Shoulders",
+                "subsection": "Superset (3 Sets Total)",
+                "info": "12 reps",
+                "sets": null,
+                "reps": "12 reps",
+                "rest": ""
+              },
+              {
+                "name": "Bent-Over Cable Rear Delt Raises",
+                "section": "Shoulders",
+                "subsection": "Superset (3 Sets Total)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Standing Rope Pulls",
+                "section": "Shoulders",
+                "subsection": "Superset (3 Sets Total)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Arm Workout",
+            "cardio": "Morning Cardio - 20 Minutes; Evening Cardio - 20 Minutes",
+            "notes": [
+              "Already the days are flying by! You will find this happens and you start to see that every day really counts. Today I want to quickly bring up the choice of cardio for this program, which is, of course, low-impact cardio rather than something like high-intensity intervals. While in a calorie deficit, where you're more prone to stress, cortisol, catabolism and lower anabolic hormone production, I don't want to introduce another form of stress.",
+              "Low-impact cardio is a great way of burning my way through the calories without adding too much stress so I can burn body fat and not muscle.",
+              "What low-impact cardio machines do you prefer? Tag me on your socials with #HardcoreTrainer2 and let me know!",
+              "Now let's go and hammer arms!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-3-hct",
+            "exercises": [
+              {
+                "name": "Reverse-Grip Cable Triceps Pushdown",
+                "section": "Triceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "12 reps",
+                "sets": null,
+                "reps": "12 reps",
+                "rest": ""
+              },
+              {
+                "name": "Cable Overhead Triceps Extension",
+                "section": "Triceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "12 reps",
+                "sets": null,
+                "reps": "12 reps",
+                "rest": ""
+              },
+              {
+                "name": "Single-Arm Overhead Rope Extensions",
+                "section": "Triceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Bent-Over Single-Arm Kickbacks",
+                "section": "Triceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Close-Grip Pushups",
+                "section": "Triceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "Failure",
+                "sets": null,
+                "reps": "Failure",
+                "rest": ""
+              },
+              {
+                "name": "Bench Dips",
+                "section": "Triceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "Failure",
+                "sets": null,
+                "reps": "Failure",
+                "rest": ""
+              },
+              {
+                "name": "EZ-Bar Spider Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 Reps",
+                "sets": null,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Narrow-Grip EZ Bar Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 Reps",
+                "sets": null,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Reverse-Grip Dumbbell Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 Reps",
+                "sets": null,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Dumbbell Hammer Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 Reps",
+                "sets": null,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Lying Cable Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "12 Reps",
+                "sets": null,
+                "reps": "12 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Alternating Cable Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10-12 Reps",
+                "sets": null,
+                "reps": "10-12 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "title": "Lower Back, Hamstrings & Upper Abs Workout",
+            "cardio": "Morning Cardio - 20 Minutes",
+            "notes": [
+              "After today's first cardio session, I noticed just how much I was sweating, which is why it's so important to stay hydrated. Drinking enough water is one thing, but making sure you add your HYDRA-CHARGE to it is just as important to get those 5 different electrolytes in there. You will also want to add a little bit of sea salt to your meals to keep your sodium and aldosterone levels happy.",
+              "Right now, it's time to crush lower back, hamstrings and upper abs."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-4-hct",
+            "exercises": [
+              {
+                "name": "Deadlifts",
+                "section": "Lower Back",
+                "subsection": null,
+                "info": "3 Sets x 10 reps",
+                "sets": 3,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Leg Curl",
+                "section": "Hamstrings",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Glute Ham Raises",
+                "section": "Hamstrings",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Cable Stiff-Legged Deadlifts",
+                "section": "Hamstrings",
+                "subsection": "Superset (3 Sets)",
+                "info": "3 Sets x 10 reps",
+                "sets": 3,
+                "reps": "10 reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 5,
+            "title": "Upper Back & Calves Workout",
+            "cardio": "Morning Cardio - 20 Minutes; Evening Cardio - 20 Minutes",
+            "notes": [
+              "Before my workout today, I'll be having my cryotherapy and back alignment done as part of my weekly ritual to stay healthy. You've got to be willing to invest in your well-being out of the gym so that you progress within it. Ever since I adopted these new habits, my recovery has improved a lot.",
+              "What forms of physical therapy do you use regularly? Tag me on your socials with #HardcoreTrainer2 and let me know!",
+              "One thing I'm already noticing in this transformation, which you will as well, is the instant growth in appetite. This is a good thing because it shows that the diet is stimulating my metabolism, as it should, which is why I'm hungry. Embrace it!",
+              "Let's crush back and calves."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-5-hct",
+            "exercises": [
+              {
+                "name": "Lat Pulldowns",
+                "section": "Upper Back",
+                "subsection": null,
+                "info": "3 Sets x 10-12 reps",
+                "sets": 3,
+                "reps": "10-12 reps",
+                "rest": ""
+              },
+              {
+                "name": "Pullups",
+                "section": "Upper Back",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 Reps",
+                "sets": null,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Rope Lat Pulldowns",
+                "section": "Upper Back",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 Reps",
+                "sets": null,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Single-Arm Dumbbell Row",
+                "section": "Upper Back",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps each arm",
+                "sets": null,
+                "reps": "10 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Single-Arm Inverted Row",
+                "section": "Upper Back",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps each arm",
+                "sets": null,
+                "reps": "10 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Dumbbell Pullovers",
+                "section": "Upper Back",
+                "subsection": "Superset (3 Sets)",
+                "info": "15 reps",
+                "sets": null,
+                "reps": "15 reps",
+                "rest": ""
+              },
+              {
+                "name": "Standing Dumbbell Shrugs",
+                "section": "Upper Back",
+                "subsection": "Superset (3 Sets)",
+                "info": "15 reps",
+                "sets": null,
+                "reps": "15 reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Calf Press",
+                "section": "Calves",
+                "subsection": null,
+                "info": "5 x 20 reps",
+                "sets": null,
+                "reps": "5 x 20 reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 6,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "Today is the first active recovery day of the program. I watched KAGED MUSCLE athlete Jesse Norris compete in a local strongman competition which, of course, he won. Jesse is the world's strongest pound-for-pound powerlifter and just an incredible all-around athlete. Besides this, I've taken some time out to relax with friends while remaining in control of my diet, not allowing others around me to influence what I eat. This is something you're going to need to do as well throughout this trainer because there will always be temptation and excuses; don't succumb to them! Don't see weekends as a time where it all stops because your meals, supplements and hydration always need to remain at the forefront of your mind.",
+              "Relaxation is actually a very important part of a healthy lifestyle because it helps lower your cortisol levels, which is your stress hormone. Having chronically elevated cortisol levels can make you more vulnerable to serious illnesses like cancer and heart problems. Cortisol can also catabolize muscle tissue and make losing fat a lot harder, so always make time to relax.",
+              "Tag me on your socials with #HardcoreTrainer2 and let me know what relaxing activities you have planned for today!",
+              "Other than your 2 cardio sessions today, relax."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-6-hct",
+            "exercises": []
+          },
+          {
+            "day": 7,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "A week goes by fast! A point I need to bring up is that anybody can start this program, but very few will actually see it through all the way to the end. You need to make sure that you are equally as committed to this program today as you were on day 1. Time will pass you by quickly and you'll only live to regret any inaction that you justify at the end.",
+              "As it's another active rest day, I got my first cardio session done early, and then headed out to do some wakeboarding with friends in the sun! Don't let this trainer be a reason to become reclusive. You can balance the results you want with being sociable as long as you control your environment. Today I packed all of my meals and my KAGED MUSCLE supplements so that I stay on track while having a great time out on the boat. You need to do the same!",
+              "I'll catch you in the gym tomorrow for the beginning of week 2. Enjoy your day off because you'll need the energy for the leg session I've got planned for you."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-7-hct",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "task": "",
+        "days": [
+          {
+            "day": 1,
+            "title": "Quads, Lower Abs & Calves Workout",
+            "cardio": "",
+            "notes": [],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-8-hct",
+            "exercises": []
+          },
+          {
+            "day": 2,
+            "title": "Chest & Shoulders Workout",
+            "cardio": "Morning Cardio - 25 Minutes; Evening Cardio - 25 Minutes",
+            "notes": [
+              "Today I'm feeling particularly sore after my leg workout yesterday. This is quite normal and you should expect the same. This is just a by product of training with such intensity, which is what you have to do in order to force those results. To help alleviate my tender muscles today, I'm visiting Dr. Watson again for my back realignment and electric pulse treatment. This helps reduce tension within my muscles, which facilitates quicker recovery between workouts.",
+              "Then it's time for another chest and shoulders workout!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-9-hct",
+            "exercises": [
+              {
+                "name": "Hammer Press",
+                "section": "Chest",
+                "subsection": null,
+                "info": "3 Sets x 20, 15, 10/10* Reps",
+                "sets": 3,
+                "reps": "20, 15, 10/10* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Incline Smith Machine Press",
+                "section": "Chest",
+                "subsection": null,
+                "info": "3 sets x 20, 10, 10/10* Reps",
+                "sets": 3,
+                "reps": "20, 10, 10/10* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Cable Fly",
+                "section": "Chest",
+                "subsection": null,
+                "info": "3 Sets x 20, 15, 10/10* Reps",
+                "sets": 3,
+                "reps": "20, 15, 10/10* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Wide-Hands Pushup",
+                "section": "Chest",
+                "subsection": null,
+                "info": "3 Sets x Failure",
+                "sets": 3,
+                "reps": "Failure",
+                "rest": ""
+              },
+              {
+                "name": "Barbell Front Raise & Shoulder Press Combo",
+                "section": "Shoulders",
+                "subsection": null,
+                "info": "3 Sets x 10 Reps",
+                "sets": 3,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Barbell Side Raise",
+                "section": "Shoulders",
+                "subsection": null,
+                "info": "3 x 10/10*",
+                "sets": null,
+                "reps": "3 x 10/10*",
+                "rest": ""
+              },
+              {
+                "name": "Dumbbell Rear Delt Fly",
+                "section": "Shoulders",
+                "subsection": null,
+                "info": "3 Sets x 20* Reps",
+                "sets": 3,
+                "reps": "20* Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Arm Workout",
+            "cardio": "Morning Cardio - 25 Minutes; Evening Cardio - 25 Minutes",
+            "notes": [
+              "This week every workout has included the resistance bands to introduce a completely new form of muscle damage. It will definitely inflict a lot of carnage into your training session, leaving you very sore, so I recommend you stay on top of your supplements.",
+              "Today with our arms workout, we're using resistance bands again, so suck it up and let's get it done!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-10-hct",
+            "exercises": [
+              {
+                "name": "Overhead Tricep Extensions",
+                "section": "Triceps",
+                "subsection": null,
+                "info": "3 Sets x 15* Reps",
+                "sets": 3,
+                "reps": "15* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Rope Extension",
+                "section": "Triceps",
+                "subsection": null,
+                "info": "3 Sets x 10/10/10* Reps",
+                "sets": 3,
+                "reps": "10/10/10* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Dips",
+                "section": "Triceps",
+                "subsection": null,
+                "info": "3 Sets x 10 Reps",
+                "sets": 3,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "EZ-Bar Spider Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10-12 Reps",
+                "sets": null,
+                "reps": "10-12 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Standing Banded Bicep Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10-12 Reps",
+                "sets": null,
+                "reps": "10-12 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Low Cable EZ-Bar Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10-12 Reps*",
+                "sets": null,
+                "reps": "10-12 Reps*",
+                "rest": ""
+              },
+              {
+                "name": "Low Banded Biceps Curl",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "8-10 Reps**",
+                "sets": null,
+                "reps": "8-10 Reps**",
+                "rest": ""
+              },
+              {
+                "name": "Incline Dumbbell Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 Reps",
+                "sets": null,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Banded Biceps Curl",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 Reps*",
+                "sets": null,
+                "reps": "10 Reps*",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "title": "Lower Back, Hamstrings & Upper Abs Workout",
+            "cardio": "Morning Cardio - 25 Minutes; Evening Cardio - 25 Minutes",
+            "notes": [
+              "This week I had somebody let me down. They were supposed to meet me at the gym for a cardio session together and they said their alarm clock didn't go off. We both know that's bulls***. If they had a flight to catch, they would've been up. They just don't value their own health, word, commitment or results enough to make the sacrifices I do. I trust you to buck that trend and follow this religiously.",
+              "It's time for another lower back, hamstrings and upper abs workout already!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-11-hct",
+            "exercises": [
+              {
+                "name": "Deadlifts",
+                "section": "Lower Back",
+                "subsection": null,
+                "info": "3 Sets x 5, 5/5*, 8/8** Reps",
+                "sets": 3,
+                "reps": "5, 5/5*, 8/8** Reps",
+                "rest": ""
+              },
+              {
+                "name": "Rack Deadlifts",
+                "section": "Lower Back",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 Reps",
+                "sets": null,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Banded Good Mornings",
+                "section": "Lower Back",
+                "subsection": "Superset (3 Sets)",
+                "info": "20 Reps",
+                "sets": null,
+                "reps": "20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Lying Hamstring Curl",
+                "section": "Hamstrings",
+                "subsection": null,
+                "info": "3 Sets x 20, 10/10*, 10/10/10** Reps",
+                "sets": 3,
+                "reps": "20, 10/10*, 10/10/10** Reps",
+                "rest": ""
+              },
+              {
+                "name": "Standing Cable Hamstring Curl",
+                "section": "Hamstrings",
+                "subsection": null,
+                "info": "3 Sets x 20,15*,10** reps each leg",
+                "sets": 3,
+                "reps": "20,15*,10** reps each leg",
+                "rest": ""
+              },
+              {
+                "name": "Barbell Straight-Arm Situps",
+                "section": "Upper Abs",
+                "subsection": "Circuit (3 Sets)",
+                "info": "10 Reps",
+                "sets": null,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Barbell Rollouts",
+                "section": "Upper Abs",
+                "subsection": "Circuit (3 Sets)",
+                "info": "10 Reps",
+                "sets": null,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Crunches",
+                "section": "Upper Abs",
+                "subsection": "Circuit (3 Sets)",
+                "info": "10 Reps",
+                "sets": null,
+                "reps": "10 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 5,
+            "title": "Upper Back & Calves Workout",
+            "cardio": "Morning Cardio - 25 Minutes; Evening Cardio - 25 Minutes",
+            "notes": [
+              "This is the last workout of the second week, which means you've got two full rest days ahead of you. This means that you're going to have to give everything you have today, leaving nothing in the tank and letting it all out on the gym floor. You can see just how quickly these transformations pass by. It feels like we just started yesterday!",
+              "Let's finish the week on a high and crush upper back and calves."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-12-hct",
+            "exercises": [
+              {
+                "name": "Pull-ups",
+                "section": "Upper Back",
+                "subsection": null,
+                "info": "3 Sets x 10/10* Reps",
+                "sets": 3,
+                "reps": "10/10* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Hammer Row",
+                "section": "Upper Back",
+                "subsection": null,
+                "info": "3 Sets x 10/10* Reps",
+                "sets": 3,
+                "reps": "10/10* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Supported Smith Machine Row",
+                "section": "Upper Back",
+                "subsection": null,
+                "info": "3 Sets x 10/10* Reps",
+                "sets": 3,
+                "reps": "10/10* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Cable Straight-Arm Pulldown",
+                "section": "Upper Back",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "High-Pulley Cable Row",
+                "section": "Upper Back",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Single-Leg Standing Dumbbell Calf Raise",
+                "section": "Calves",
+                "subsection": null,
+                "info": "5 Sets x 30,25,20,20,20* Reps each leg",
+                "sets": 5,
+                "reps": "30,25,20,20,20* Reps each leg",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 6,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "To celebrate the weekend I went with friends up the beautiful Table Rock Mountain here in Boise to perform my cardio this morning. This was an opportunity for me to get my cardio completed on an amazing hike while also separating myself from technology. In a world which is so heavily consumed with being accessible 24/7, it is easy to lose sight of the things that matter the most, like the time spent with loved ones.",
+              "Later we headed to the store in order to get some ingredients to make some healthy high-protein waffles (the recipe is below). Remember that if you're going to have these on rest days like today, you need to adjust your carbohydrates because you're only having 0.85 g per pound of body weight on non-training days.",
+              "Stir and place in a waffle maker. Serve with calorie-free pancake syrup!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-13-hct",
+            "exercises": []
+          },
+          {
+            "day": 7,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "Eating out while on this transformation is entirely possible; you just have to know how to control your environment. Sticking to salads with something lean like chicken or white fish and grilled potatoes keeps things clean. I often have to make special requests and ask for egg whites only. It can be done, just be particular about what you order and make sure your food isn't cooked in any grease or oil.",
+              "For more active recovery I've decided to do some paddle boarding with some friends. Doing something like this, you'll not only burn extra calories, you'll also give yourself a mental break from the day-to-day stresses of working life. As the weather and company was so good, I hosted a BBQ where I cooked some asparagus, salmon and lean meats for all to enjoy. As always, I'm making sure these all fit my macros, but this just illustrates how this program can also allow for some great tasting food as well as amazing results."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-14-hct",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "task": "",
+        "days": [
+          {
+            "day": 1,
+            "title": "Legs, Calves & Lower Abs Workout",
+            "cardio": "Morning Cardio - 30 Minutes; Evening Cardio - 30 Minutes",
+            "notes": [
+              "The beginning of week 3 is upon us already-can you believe it? This means it is weigh-in day again. I'm down from 222 lbs to 217.8. That's a solid drop in weight and I've also built muscle. I can see in the mirror that my body is evolving before my eyes. So should you.",
+              "When you're weighing-in, always make sure it's on the same scale at the same time, on the same surface so that there's no variable.",
+              "We've also got a very special guest training with us today, CEO of GASP clothing and a very good friend of mine, Michael Johansson.",
+              "It's that time again for legs, calves and lower abs."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-15-hct",
+            "exercises": [
+              {
+                "name": "Leg Extension",
+                "section": "Legs",
+                "subsection": null,
+                "info": "1 set x 25/25* Reps 5 Sets x 10** Reps",
+                "sets": 1,
+                "reps": "25/25* Reps 5 Sets x 10** Reps",
+                "rest": ""
+              },
+              {
+                "name": "Landmine Squat",
+                "section": "Legs",
+                "subsection": "Superset (3 Sets)",
+                "info": "25 Reps",
+                "sets": null,
+                "reps": "25 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Hex Bar Squat",
+                "section": "Legs",
+                "subsection": "Superset (3 Sets)",
+                "info": "25 reps",
+                "sets": null,
+                "reps": "25 reps",
+                "rest": ""
+              },
+              {
+                "name": "Bulgarian Split",
+                "section": "Legs",
+                "subsection": "Superset (3 Sets)",
+                "info": "3 Sets x 20 reps each leg*",
+                "sets": 3,
+                "reps": "20 reps each leg*",
+                "rest": ""
+              },
+              {
+                "name": "Smith Machine Front Squat",
+                "section": "Legs",
+                "subsection": "Superset (3 Sets)",
+                "info": "3 Sets x 20 reps",
+                "sets": 3,
+                "reps": "20 reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Calf Raises",
+                "section": "Calves",
+                "subsection": null,
+                "info": "5 Sets x 30 Reps",
+                "sets": 5,
+                "reps": "30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Captains Chair Leg Raises",
+                "section": "Lower Abs",
+                "subsection": "Circuit (3 Sets)",
+                "info": "20 Reps",
+                "sets": null,
+                "reps": "20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Medicine Ball Pass",
+                "section": "Lower Abs",
+                "subsection": "Circuit (3 Sets)",
+                "info": "Failure",
+                "sets": null,
+                "reps": "Failure",
+                "rest": ""
+              },
+              {
+                "name": "Cross-Body Mountain Climbers",
+                "section": "Lower Abs",
+                "subsection": "Circuit (3 Sets)",
+                "info": "Failure",
+                "sets": null,
+                "reps": "Failure",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "title": "Chest & Shoulders Workout",
+            "cardio": "Morning Cardio - 30 Minutes; Evening Cardio - 30 Minutes",
+            "notes": [
+              "Right about now you should be feeling hungry for these results because you've done this long enough to gain momentum. Be mindful that every workout counts toward your end result, so keep pushing yourself to the limit.",
+              "In today's chest and shoulder workout, there are a lot of unconventional exercises included, which are going to make your muscles work in a way they've never had to before.Tag me in your socials using #HardcoreTrainer2 and let me know if you liked the exercises.",
+              "Let's get to it!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-16-hct",
+            "exercises": [
+              {
+                "name": "Incline Dumbbell Fly & Press Combo",
+                "section": "Chest",
+                "subsection": null,
+                "info": "3 Sets x 20* Reps",
+                "sets": 3,
+                "reps": "20* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Incline Close-grip Dumbbell Press",
+                "section": "Chest",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Incline Dumbbell Press",
+                "section": "Chest",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Rollout Fly",
+                "section": "Chest",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Pushups",
+                "section": "Chest",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Smith Machine Weighted Pushups",
+                "section": "Chest",
+                "subsection": "Superset (3 Sets)",
+                "info": "3 Sets x 20 reps*",
+                "sets": 3,
+                "reps": "20 reps*",
+                "rest": ""
+              },
+              {
+                "name": "Smith Machine Close-Grip Press",
+                "section": "Shoulders",
+                "subsection": null,
+                "info": "3 x 10/10* Reps",
+                "sets": null,
+                "reps": "3 x 10/10* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Squat Press Shoulder Press",
+                "section": "Shoulders",
+                "subsection": null,
+                "info": "3 Sets x 10/10 reps* Reps",
+                "sets": 3,
+                "reps": "10/10 reps* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Single-Arm Landmine Shoulder Press",
+                "section": "Shoulders",
+                "subsection": null,
+                "info": "3 Sets x 20 Reps Each Arm",
+                "sets": 3,
+                "reps": "20 Reps Each Arm",
+                "rest": ""
+              },
+              {
+                "name": "Single-Arm Bent Over Rear Delt",
+                "section": "Shoulders",
+                "subsection": "Superset x 3",
+                "info": "10-12 reps",
+                "sets": null,
+                "reps": "10-12 reps",
+                "rest": ""
+              },
+              {
+                "name": "Leg Extension Single-Arm Rear Delt Raise",
+                "section": "Shoulders",
+                "subsection": "Superset x 3",
+                "info": "10-12 reps",
+                "sets": null,
+                "reps": "10-12 reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Arm Workout",
+            "cardio": "Morning Cardio - 30 Minutes; Evening Cardio - 30 Minutes",
+            "notes": [
+              "This week you've added an extra 10 minutes of cardio per day, totaling an hour. As you get leaner, you will start to feel hungrier, but you've got to suck that up and make this process last. Nothing worth having comes easy. To get the results nobody else can have, you have to do things nobody else will do.",
+              "Are you ready to crush arms again?"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-17-hct",
+            "exercises": [
+              {
+                "name": "Kneeling Cable Overhead Triceps Extension",
+                "section": "Triceps",
+                "subsection": null,
+                "info": "3 Sets x 10/10* Reps",
+                "sets": 3,
+                "reps": "10/10* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Machine Triceps Extension",
+                "section": "Triceps",
+                "subsection": null,
+                "info": "3 Sets x 10/10* Reps",
+                "sets": 3,
+                "reps": "10/10* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Machine Triceps Pressdown",
+                "section": "Triceps",
+                "subsection": null,
+                "info": "3 Sets x 10/10* Reps",
+                "sets": 3,
+                "reps": "10/10* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Standing Cable Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps*",
+                "sets": null,
+                "reps": "10 reps*",
+                "rest": ""
+              },
+              {
+                "name": "Lying Cable Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Lying High Cable Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Standing High Cable Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Reverse-Grip EZ-Bar Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Close-Grip EZ-Bar Curls",
+                "section": "Biceps",
+                "subsection": "Superset (3 Sets)",
+                "info": "10 reps",
+                "sets": null,
+                "reps": "10 reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "title": "Hamstrings, Lower Back & Upper Abs",
+            "cardio": "Morning Cardio - 30 Minutes; Evening Cardio - 30 Minutes",
+            "notes": [
+              "We're already near the end of week 3. Before you know it you'll be halfway through this transformation. This should awaken your mind to the fact that time passes so quickly, which is why you need to remain in control of your daily actions. Every workout has to surpass the last one; leave nothing to chance here. Missing your supplements for a day, or even one meal can knock you back. We've got another lower back, hamstrings and upper abs workout ahead of us today. Usually we hit lower back first, however, the pump which you get from this means that it can negate from your hamstring workout. For this reason, we're starting with hamstrings first today. How are you finding the increase in cardio this week? Let me know by tagging me on your socials using #HardcoreTrainer2."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-18-hct",
+            "exercises": [
+              {
+                "name": "Single-Leg Hamstring Curl",
+                "section": "Hamstrings",
+                "subsection": null,
+                "info": "5 Sets x 12, 10, 8, 8, 6 Reps (Each Leg)",
+                "sets": 5,
+                "reps": "12, 10, 8, 8, 6 Reps (Each Leg)",
+                "rest": ""
+              },
+              {
+                "name": "Dumbbell Stiff-Legged Deadlift",
+                "section": "Hamstrings",
+                "subsection": null,
+                "info": "5 Sets x 10 Reps",
+                "sets": 5,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Weighted Hyperextensions",
+                "section": "Lower Back",
+                "subsection": null,
+                "info": "3 Sets x 10/10* Reps",
+                "sets": 3,
+                "reps": "10/10* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Barbell Good Mornings",
+                "section": "Lower Back",
+                "subsection": null,
+                "info": "3 Sets x 20,18,16* Reps",
+                "sets": 3,
+                "reps": "20,18,16* Reps",
+                "rest": ""
+              },
+              {
+                "name": "Weighted Crunches",
+                "section": "Upper Abs",
+                "subsection": "Circuit (3 Sets)",
+                "info": "20 Reps",
+                "sets": null,
+                "reps": "20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Cross-Body Crunches",
+                "section": "Upper Abs",
+                "subsection": "Circuit (3 Sets)",
+                "info": "20 Reps",
+                "sets": null,
+                "reps": "20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Exercise Ball Rollouts",
+                "section": "Upper Abs",
+                "subsection": "Circuit (3 Sets)",
+                "info": "20 Reps",
+                "sets": null,
+                "reps": "20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Ab Twists",
+                "section": "Upper Abs",
+                "subsection": "Circuit (3 Sets)",
+                "info": "50 Reps",
+                "sets": null,
+                "reps": "50 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 5,
+            "title": "Upper Back & Calves Workout",
+            "cardio": "Morning Cardio - 30 Minutes; Evening Cardio - 30 Minutes",
+            "notes": [
+              "It's here, the end of week 3! Last night I didn't quite get the sleep I should have, but I still have to keep on pushing forward at all costs. On my way to the gym this morning I'm letting my music and PRE-KAGED heighten my mental awareness so I'm ready for this battle.",
+              "As the weekend is upon us, I want to remind you about consistency-it's imperative you never let this slip. There's no point having the best supplements, diet or workout plan without consistency! We're on upper back and calves today, so let's crush this workout and finish this week strong.",
+              "Right now, it's time to crush upper back and calves."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-19-hct",
+            "exercises": [
+              {
+                "name": "Dumbbell Seal Row",
+                "section": "Upper Back",
+                "subsection": null,
+                "info": "3 Sets x 10/10 reps*",
+                "sets": 3,
+                "reps": "10/10 reps*",
+                "rest": ""
+              },
+              {
+                "name": "Incline Straight-Arm Pullover",
+                "section": "Upper Back",
+                "subsection": null,
+                "info": "3 Sets x 12 Reps",
+                "sets": 3,
+                "reps": "12 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Barbell Bentover Row",
+                "section": "Upper Back",
+                "subsection": null,
+                "info": "3 Sets x 10 Reps",
+                "sets": 3,
+                "reps": "10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated EZ-Bar Shrugs",
+                "section": "Upper Back",
+                "subsection": "Superset",
+                "info": "3 Sets x 20 Reps",
+                "sets": 3,
+                "reps": "20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Calf Press",
+                "section": "Upper Back",
+                "subsection": "Superset",
+                "info": "5 Sets x 20 Reps",
+                "sets": 5,
+                "reps": "20 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 6,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "I'm getting outside on my active rest day as always and making the most of it. This time I'm camping at the beautiful Pettit Lake here in Boise. You might think doing things like this is going to be impossible while on a training program like this, but it's not! Like I keep saying, all you have to do is remain in control of your environment, which in this case means packing the necessary cooking equipment and food to prepare. For breakfast I cooked up some potatoes, steak, egg whites and mushrooms, which I thoroughly enjoyed.",
+              "To get more activity into my day, we then hiked up the mountain to Alice Lake where I wore my heart rate monitor to ensure my HR was sitting at 65-70% of my maximal level. While at the top, I enjoyed a ready prepared Ezekiel bread sandwich with steak, peppers and salad. Again, this is here to illustrate to you that this program is all about planning ahead! Whenever you're out and about, don't forget your water and make sure you've added HYDRA-CHARGE."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-20-hct",
+            "exercises": []
+          },
+          {
+            "day": 7,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "On this program, you should now be familiar with your KAGED MUSCLE supplements. Remember no matter where you are, you need to take those with you.",
+              "What are some of your favorite KAGED MUSCLE supplements? Give them a shoutout on your socials using #HardcoreTrainer2 - I may just send you some free product!",
+              "Be mindful that because it is a rest day your carbohydrates should be down to the prescribed 0.78 g per pound of body weight, rather than the standard 0.85 g you're consuming on training days. All these details that might appear small to you are actually highly significant to the end result. I'll catch you in the gym tomorrow for another killer quad session to kick off week 4!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-21-hct",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "task": "",
+        "days": [
+          {
+            "day": 1,
+            "title": "Legs, Calves & Abs Workout",
+            "cardio": "Morning Cardio - 35 Minutes; Evening Cardio - 35 Minutes",
+            "notes": [
+              "It's judgment day again! Last Monday I weighed in at 217.8 lbs, however, this morning I've come in at 215.6 lbs. That's a very pleasing drop this far into the transformation for me. Your nutrition plan will remain the same in terms of the ratios I've set for you at the beginning of this program. Having said that, you will need to make some adjustments. Your weight will have come down which means your portions will also need to decrease, in order to reflect this.",
+              "Now we're officially halfway through this groundbreaking program, it's time to refocus for the second half. You might be feeling more tired as am I, but now is not the time to start feeling sorry for yourself. This is where the results start to come thick and fast, so persevere in the face of sacrifice!",
+              "To mix things up further for week 4, we are going to do everything unilaterally. This means every set purely isolates one side of your body, whether that's your biceps, lat or quad. The principle is to forge a better mind to muscle connection, burn more calories and shock the system.",
+              "We're putting up cardio to 35 minutes per session now, to increase the energy deficit further and to avoid our metabolism becoming complacent. Also, don't forget you still need to get your 150 twists done every day to keep your waist coming in as you dispose yourself of the fat."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-22-hct",
+            "exercises": [
+              {
+                "name": "Single-Leg Extension",
+                "section": "Quads",
+                "subsection": null,
+                "info": "5 Sets x 15, 15, 15, 12, 6 reps each leg",
+                "sets": 5,
+                "reps": "15, 15, 15, 12, 6 reps each leg",
+                "rest": ""
+              },
+              {
+                "name": "Single-Leg Press",
+                "section": "Quads",
+                "subsection": null,
+                "info": "5 Sets x 15, 15, 15, 12, 6 reps each leg",
+                "sets": 5,
+                "reps": "15, 15, 15, 12, 6 reps each leg",
+                "rest": ""
+              },
+              {
+                "name": "Single-Leg Hack Squat",
+                "section": "Quads",
+                "subsection": null,
+                "info": "5 Sets x 10 reps each leg",
+                "sets": 5,
+                "reps": "10 reps each leg",
+                "rest": ""
+              },
+              {
+                "name": "Smith Machine Lunge",
+                "section": "Quads",
+                "subsection": null,
+                "info": "5 Sets x 10 reps each leg",
+                "sets": 5,
+                "reps": "10 reps each leg",
+                "rest": ""
+              },
+              {
+                "name": "Seated Single-Leg Calf Raise",
+                "section": "CALVES",
+                "subsection": null,
+                "info": "5 Sets x 20 reps each leg",
+                "sets": 5,
+                "reps": "20 reps each leg",
+                "rest": ""
+              },
+              {
+                "name": "Alternating Hanging Leg Raises",
+                "section": "LOWER ABS",
+                "subsection": "Circuit (3 Sets)",
+                "info": "10 reps each leg",
+                "sets": null,
+                "reps": "10 reps each leg",
+                "rest": ""
+              },
+              {
+                "name": "Alternating Lying Leg Raises",
+                "section": "LOWER ABS",
+                "subsection": "Circuit (3 Sets)",
+                "info": "10 reps each leg",
+                "sets": null,
+                "reps": "10 reps each leg",
+                "rest": ""
+              },
+              {
+                "name": "Alternating Exercise Ball Knee Tucks",
+                "section": "LOWER ABS",
+                "subsection": "Circuit (3 Sets)",
+                "info": "10 reps each leg",
+                "sets": null,
+                "reps": "10 reps each leg",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "title": "Chest & Shoulders Workout",
+            "cardio": "Morning Cardio - 35 Minutes; Evening Cardio - 35 Minutes",
+            "notes": [
+              "After yesterday's agonizing unilateral leg workout, it's time to hit an early morning chest and shoulders session. My legs are killing today, so it's certainly going to be uncomfortable when I place dumbbells on them today, but that's all part of the evolution. If you're not feeling it, you aren't pushing hard enough!",
+              "As we did yesterday, this workout is exclusively unilateral."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-23-hct",
+            "exercises": [
+              {
+                "name": "Incline One-Arm Dumbbell Press",
+                "section": "CHEST",
+                "subsection": null,
+                "info": "4 Sets x 15, 15, 15, 5 reps each arm",
+                "sets": 4,
+                "reps": "15, 15, 15, 5 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Incline One-Arm Crossover",
+                "section": "CHEST",
+                "subsection": null,
+                "info": "4 Sets x 15, 15, 15, 5 reps each arm",
+                "sets": 4,
+                "reps": "15, 15, 15, 5 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Decline One-Arm Dumbbell Press",
+                "section": "CHEST",
+                "subsection": null,
+                "info": "4 Sets x 15, 15, 15, 5 reps each arm",
+                "sets": 4,
+                "reps": "15, 15, 15, 5 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "One-Arm Cable Crossover",
+                "section": "CHEST",
+                "subsection": null,
+                "info": "4 Sets x 15, 15, 15, 5 reps each arm",
+                "sets": 4,
+                "reps": "15, 15, 15, 5 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Standing One-Arm Shoulder Press",
+                "section": "SHOULDERS",
+                "subsection": null,
+                "info": "4 Sets x 10, 10, 10, 5 reps each arm",
+                "sets": 4,
+                "reps": "10, 10, 10, 5 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "One-Arm Cable Rear Delt Fly",
+                "section": "SHOULDERS",
+                "subsection": null,
+                "info": "4 Sets x 10, 10, 10, 5 reps each arm",
+                "sets": 4,
+                "reps": "10, 10, 10, 5 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "One-Arm Lying Cable Front Raises",
+                "section": "SHOULDERS",
+                "subsection": null,
+                "info": "4 Sets x 10, 10, 10, 5 reps each arm",
+                "sets": 4,
+                "reps": "10, 10, 10, 5 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "One-Arm Cable Side Raises",
+                "section": "SHOULDERS",
+                "subsection": null,
+                "info": "4 Sets x 10, 10, 10, 5 reps each arm",
+                "sets": 4,
+                "reps": "10, 10, 10, 5 reps each arm",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Arm Workout",
+            "cardio": "Morning Cardio - 35 Minutes; Evening Cardio - 35 Minutes",
+            "notes": [
+              "As I head to the gym today, I'm thinking about a topic that might seem a bit unrelated, but it's not. Cancer is something that appears to be affecting more people around me by the day. Around me I'm seeing people fall ill to this deadly illness more frequently and it bothers me deeply. I've had the pleasure of learning from some of the world's most educated scientific brains, such as Dr. Jason Watson. I want to inspire you to think about things you could change in your life to help hedge your and your loved ones' bets against cancer. Reduce sugar intake, filter your water, and avoid reusing plastic bottles. This lifestyle is about being healthy more than it is vanity-never forget that.",
+              "Right, on to today's workout, arms! If you hit this with enough ferocity, then you're going to get this workout done quickly.",
+              "The goal is to get the results and then get your post workout RE-KAGED in!",
+              "Snap a gym selfie and tag me on your socials using #HardcoreTrainer2!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-24-hct",
+            "exercises": [
+              {
+                "name": "Seated Single-Arm Dumbbell Curls",
+                "section": "A RMS",
+                "subsection": "Superset (4 Sets)",
+                "info": "15 reps each arm",
+                "sets": null,
+                "reps": "15 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Lying Single-Arm Overhead Dumbbell Extension",
+                "section": "A RMS",
+                "subsection": "Superset (4 Sets)",
+                "info": "15 reps each arm",
+                "sets": null,
+                "reps": "15 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Incline Single-Arm Overhead Cable Extensions",
+                "section": "A RMS",
+                "subsection": "Superset (3 Sets)",
+                "info": "15 reps each arm",
+                "sets": null,
+                "reps": "15 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Single-Arm Cable Concentration Curls",
+                "section": "A RMS",
+                "subsection": "Superset (3 Sets)",
+                "info": "15 reps each arm",
+                "sets": null,
+                "reps": "15 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Single-Arm Preacher Machine Curls",
+                "section": "A RMS",
+                "subsection": "Superset (3 Sets)",
+                "info": "15 reps each arm",
+                "sets": null,
+                "reps": "15 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Single-Arm Cable Pushdowns",
+                "section": "A RMS",
+                "subsection": "Superset (3 Sets)",
+                "info": "15 reps each arm",
+                "sets": null,
+                "reps": "15 reps each arm",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "title": "Hamstrings, Lower Back & Abs Workout",
+            "cardio": "Morning Cardio - 35 Minutes; Evening Cardio - 35 Minutes",
+            "notes": [
+              "Today while hitting hamstrings, I'm going to be very careful about avoiding unwanted crossover within the quads, because they are still hurting from Monday! This is an educational process that will help you discover how your body feels from one day to the next and how you need to balance that.",
+              "Right, time to grind out another workout and keep the results coming one day at a time!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-25-hct",
+            "exercises": [
+              {
+                "name": "Single-Arm Dumbbell Deadlift",
+                "section": "LOWER BACK",
+                "subsection": null,
+                "info": "3 Sets x 15 Reps",
+                "sets": 3,
+                "reps": "15 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Hyperextensions",
+                "section": "LOWER BACK",
+                "subsection": null,
+                "info": "3 Sets x 15 Reps",
+                "sets": 3,
+                "reps": "15 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Single-Leg Hamstring Curl",
+                "section": "HAMSTRINGS",
+                "subsection": null,
+                "info": "3 Sets x 15 Reps",
+                "sets": 3,
+                "reps": "15 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Cable Single-Leg Stiff-Legged Deadlift",
+                "section": "HAMSTRINGS",
+                "subsection": null,
+                "info": "3 Sets x 15 Reps",
+                "sets": 3,
+                "reps": "15 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Dumbbell Weighted Crunches",
+                "section": "UPPER ABS",
+                "subsection": "Circuit (3 Sets)",
+                "info": "15 REPS",
+                "sets": null,
+                "reps": "15 REPS",
+                "rest": ""
+              },
+              {
+                "name": "Crunches",
+                "section": "UPPER ABS",
+                "subsection": "Circuit (3 Sets)",
+                "info": "15 REPS",
+                "sets": null,
+                "reps": "15 REPS",
+                "rest": ""
+              },
+              {
+                "name": "Cable Cross-Body Pulls",
+                "section": "UPPER ABS",
+                "subsection": "Circuit (3 Sets)",
+                "info": "15 REPS",
+                "sets": null,
+                "reps": "15 REPS",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 5,
+            "title": "Upper Back & Calves Workout",
+            "cardio": "Morning Cardio - 35 Minutes; Evening Cardio - 35 Minutes",
+            "notes": [
+              "Today I stopped by Dr. Jason Watson's clinic to get a checkup on my body fat reading. The machine showed that I've dropped to 16.2% body fat from 19.5% so far. There's a lot of work left to do at this point which is why I'm not going to allow my dwindling energy levels to hold me back, and neither should you! My goal is single digits for the end of this 8-week process, what about you?",
+              "On top of my body fat stats, I've had my regular cryotherapy session done and my back realigned. In an ongoing quest to achieve physical perfection from the inside as well as the outside, it's imperative for me to take care of my body outside of the gym. If you neglect your health, then you can't expect your body to perform in the gym.",
+              "We've reached the end of week 4 now; we're on the home stretch. Allow me to remind you that every detail matters more than ever. We need to set the standard high and maintain it."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-26-hct",
+            "exercises": [
+              {
+                "name": "Single-Arm Barbell Row",
+                "section": "UPPER BACK",
+                "subsection": null,
+                "info": "3 Sets x 15 reps each arm",
+                "sets": 3,
+                "reps": "15 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Single-Arm Cable Rows",
+                "section": "UPPER BACK",
+                "subsection": null,
+                "info": "3 Sets x 15 reps each arm",
+                "sets": 3,
+                "reps": "15 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Single-Arm Smith Machine Shrugs",
+                "section": "UPPER BACK",
+                "subsection": null,
+                "info": "3 Sets x 15 reps each arm",
+                "sets": 3,
+                "reps": "15 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Single-Arm Overhead Machine Pulldowns",
+                "section": "UPPER BACK",
+                "subsection": null,
+                "info": "3 x 15 reps each arm",
+                "sets": null,
+                "reps": "3 x 15 reps each arm",
+                "rest": ""
+              },
+              {
+                "name": "Seated Single Leg Calf Press",
+                "section": "CALVES",
+                "subsection": null,
+                "info": "5 Sets x 15 reps each leg",
+                "sets": 5,
+                "reps": "15 reps each leg",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 6,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "Sticking to my weekend theme of getting outside in the great outdoors, I've used a light jog to get my AM cardio done. Remember that your heart rate needs to be sticking at around 65-70% of your maximal level for optimized fat burning and to counteract catabolism. Something else to remember this weekend is that as your weight drops down, your macro calculations need to reflect that otherwise you'll be overeating.",
+              "Use this weekend to let yourself recover adequately after a very intense training week, in preparation for an even more demanding one ahead. Recovery isn't about not feeling sore; it's about being physically able to outperform your previous best. This only happens when your endocrine system is healthy, your cortisol levels are well balanced and your CNS is fully replenished. This is the true definition of recovery!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-27-hct",
+            "exercises": []
+          },
+          {
+            "day": 7,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "To start this Sunday off, I hit the mountain trails on my bike, as a means of getting my cardio done. Today I've got a gentleman from Dubai with me, who's flown all this way to spend 4 hours with me! This really blows my mind. I feel very privileged to be in this position where I can have such a positive influence on so many people. Whatever your current situation in life, endeavor to be the best you can be. Do things others won't, so you can have things others can't. There will always be haters and naysayers there to try and defy your persistence, but you just need to ignore that and focus on you. In 5 or 10 years' time, the words these people spout off at you won't matter, so don't listen to them today! Another daily tip you can take from me is taking a bath. Usually I will either start or end my day with a bath because it gives me time to relax, giving my mind the necessary freedom to de-stress. However, it's also a very functional habit for recovery because it helps increase blood flow through your muscle fibers, reducing inflammation and knotting. I thoroughly recommend you make time for this if you can."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-28-hct",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "task": "",
+        "days": [
+          {
+            "day": 1,
+            "title": "Legs, Calves, and Abs Workout",
+            "cardio": "Morning Cardio - 40 Minutes; Evening Cardio - 40 Minutes",
+            "notes": [
+              "Can you believe it's the beginning of week 5 already and I've weighed in at 215.2 lbs?! That's a loss of just half a pound, which might not seem like much, but this is where you need to use the mirror as your guide as well. It's clear to see from my reflection that I'm getting leaner and I'm also bigger, which explains why the scales aren't moving as quickly now. This is what happens when you commit to your diet plan without any excuse, use the world's best supplements and train like a savage beast.",
+              "Let's make this week our best yet, starting with a brutal leg workout. If you're able to complete this one, tag me on Instagram and use hashtag #Hardcoretrainer2.",
+              "This week we're using my DTPXtreme principle, which combines high and low reps with short rest periods for maximal penetration within the muscle. This variation of DTP matches the reps and rest periods, so if you get 30 reps, you earn 30 seconds of rest before doing the next set. The goal is to always go as heavy as you can in order to sustain intensity. Remember that each rep range is simply a guide; if you can do more because the weight is too light, DO THEM! If it's too heavy, just rest-pause all the way to the end of the set."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-29-hct",
+            "exercises": [
+              {
+                "name": "Leg Extensions",
+                "section": "QUADS",
+                "subsection": null,
+                "info": "6 Sets x 30, 20, 10, 10, 20, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 10, 20, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Hack Squat",
+                "section": "QUADS",
+                "subsection": "Superset (3 Sets)",
+                "info": "30, 25, 20 Reps",
+                "sets": null,
+                "reps": "30, 25, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Reverse Hack Squat",
+                "section": "QUADS",
+                "subsection": "Superset (3 Sets)",
+                "info": "20, 25, 30 Reps",
+                "sets": null,
+                "reps": "20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Leg Press",
+                "section": "QUADS",
+                "subsection": "Superset (3 Sets)",
+                "info": "6 Sets x 30, 20, 10, 10, 20, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 10, 20, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Calf Raises",
+                "section": "CALVES",
+                "subsection": null,
+                "info": "6 Sets x 30, 20, 10, 10, 20, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 10, 20, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Hanging Windshield Wipers",
+                "section": "LOWER ABS",
+                "subsection": "Superset x 5",
+                "info": "FAILURE",
+                "sets": null,
+                "reps": "FAILURE",
+                "rest": ""
+              },
+              {
+                "name": "Lying Windshield Wipers",
+                "section": "LOWER ABS",
+                "subsection": "Superset x 5",
+                "info": "FAILURE",
+                "sets": null,
+                "reps": "FAILURE",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "title": "Chest & Shoulders Workout",
+            "cardio": "Morning Cardio - 40 Minutes; Evening Cardio - 40 Minutes",
+            "notes": [
+              "Including today, we only have four chest and shoulder workouts left in order to completely evolve the way these muscle groups appear. When I press you will notice there's no locking out and there's a very good reason for that; it makes your chest work harder. If you lock out, all you do is make the triceps take the weight off your pecs, and we need to avoid this! Don't be fooled into thinking shortening the range of motion when pressing makes it easy, just try it! We're sticking with the DTPXtreme principle today, to crush the slow and fast twitch muscle fibers altogether. You've already seen just how brutal this methodology is after yesterday's leg session. Are your legs sore? Make sure you're getting your KAGED MUSCLE supplements in on time, along with your meals and water to recover. I'm amped to smash this workout, so let's not waste any more time! Tag me and use hashtag #HardcoreTrainer2 on Instagram."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-30-hct",
+            "exercises": [
+              {
+                "name": "Incline Dumbbell Chest Press",
+                "section": "CHEST",
+                "subsection": null,
+                "info": "6 Sets x 30, 20, 10, 10, 20, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 10, 20, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Decline Dumbbell Chest Press",
+                "section": "CHEST",
+                "subsection": null,
+                "info": "6 Sets x 30, 20, 10, 10, 20, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 10, 20, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Flat Chest Press Machine",
+                "section": "CHEST",
+                "subsection": null,
+                "info": "6 Sets x 30, 20, 10, 10, 20, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 10, 20, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Front Plate Raises",
+                "section": "SHOULDERS",
+                "subsection": null,
+                "info": "6 Sets x 30, 20, 10, 10, 20, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 10, 20, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Bent-Over Reverse Plate Flyes",
+                "section": "SHOULDERS",
+                "subsection": null,
+                "info": "6 Sets x 30, 20, 10, 10, 20, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 10, 20, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Side Lateral Plate Raises",
+                "section": "SHOULDERS",
+                "subsection": null,
+                "info": "6 Sets x 30, 20, 10, 10, 20, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 10, 20, 30 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Arm Workout",
+            "cardio": "Morning Cardio - 40 Minutes; Evening Cardio - 40 Minutes",
+            "notes": [
+              "I'm feeling really sharp and motivated today. Last night for my 40-minute cardio session, I decided to make the most of the awesome scenery around me in Boise by going for a jog. I'm very instinctive when it comes to choosing my cardio, based on how I feel and where I am. This keeps things interesting for me and allows my mind to remain stimulated, rather than becoming overrun with boredom. The main thing is that you get your cardio done and that you're able to make it part of your lifestyle, through enjoyment. Speaking of lifestyle, today I'm getting my weekly massage and visiting Dr. Watson as I endeavor to keep my body in its highest state of health possible.",
+              "Today is the next best thing to hump day, arms! Sticking with this week's theme, there are going to be a lot of reps, short rest intervals and supersets to crush the arms with the DTPXtreme principle. You'll notice that on several of the exercises today I'm using the nylon handle attachments on the bars. In case you're wondering why, they allow me to work with a fuller range of motion, and because of the extra freedom, there's less stress on my wrists and elbows.",
+              "Get your PRE-KAGED down to make sure your arms blow up as big as they can. Let's go!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-31-hct",
+            "exercises": [
+              {
+                "name": "Triceps Extensions",
+                "section": "ARMS",
+                "subsection": "Superset (6 Sets)",
+                "info": "6 Sets x 30, 25, 20, 20, 25, 30 Reps",
+                "sets": 6,
+                "reps": "30, 25, 20, 20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Dumbbell Biceps Curl",
+                "section": "ARMS",
+                "subsection": "Superset (6 Sets)",
+                "info": "6 Sets x 20, 15, 10, 10, 15, 20 Reps",
+                "sets": 6,
+                "reps": "20, 15, 10, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "EZ-Bar Skull Crushers",
+                "section": "ARMS",
+                "subsection": "Superset (6 Sets)",
+                "info": "6 Sets x 30, 25, 20, 20, 25, 30 Reps",
+                "sets": 6,
+                "reps": "30, 25, 20, 20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Cable EZ-Bar Preacher Curls",
+                "section": "ARMS",
+                "subsection": "Superset (6 Sets)",
+                "info": "6 Sets x 20, 15, 10, 10, 15, 20 Reps",
+                "sets": 6,
+                "reps": "20, 15, 10, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Dips",
+                "section": "ARMS",
+                "subsection": "Superset (6 Sets)",
+                "info": "6 Sets x 30, 25, 20, 20, 25, 30 Reps",
+                "sets": 6,
+                "reps": "30, 25, 20, 20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Hammer Curls",
+                "section": "ARMS",
+                "subsection": "Superset (6 Sets)",
+                "info": "6 Sets x 20, 15, 10, 10, 15, 20 Reps",
+                "sets": 6,
+                "reps": "20, 15, 10, 10, 15, 20 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "title": "Hamstrings, Lower Back & Upper Abs Workout",
+            "cardio": "Morning Cardio - 40 Minutes; Evening Cardio - 40 Minutes",
+            "notes": [
+              "Another day, another workout! I'm always asked about weight selection and how much you should use for certain rep ranges. I don't have a clue. That's up to you to gauge for your own body. Just remember that your muscle doesn't understand the numbers written on the stack, it just feels stress. When you're doing my program, it's extremely intense because it makes your body react in an unnatural way, which is exactly what you want!",
+              "This program isn't just for advanced trainers like me either; it's for beginners, men, women, old and young. Intensity and stress is relative to you, so whatever has gone before this program will give you the lift you need to some amazing results.",
+              "As a boy back in rural Wales, I used to tear up the motocross track on a regular basis, placing very highly in many races as well. Today is a flashback down memory lane for me, as I take to the motocross track in the baking heat. This is just another example of seeing how being active can come in many forms, and just because you carry muscle it doesn't mean you can't partake in other activities many gym goers usually distance themselves from.",
+              "Anyway, my PRE-KAGED is kicking in now and we've got hamstrings, lower back and upper abs to crush."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-32-hct",
+            "exercises": [
+              {
+                "name": "Deadlifts",
+                "section": "LOWER BACK",
+                "subsection": null,
+                "info": "6 Sets x 15, 10, 5, 5, 10, 15 Reps",
+                "sets": 6,
+                "reps": "15, 10, 5, 5, 10, 15 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Lying leg Curls",
+                "section": "HAMSTRINGS",
+                "subsection": null,
+                "info": "6 Sets x 30, 20, 10, 10, 20, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 10, 20, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated leg Curls",
+                "section": "HAMSTRINGS",
+                "subsection": null,
+                "info": "6 Sets x 30, 20, 10, 10, 20, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 10, 20, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Standing Cable Crunches",
+                "section": "UPPER ABS",
+                "subsection": "Superset (5 Sets)",
+                "info": "30 reps",
+                "sets": null,
+                "reps": "30 reps",
+                "rest": ""
+              },
+              {
+                "name": "Exercise Ball Alternating Crunches",
+                "section": "UPPER ABS",
+                "subsection": "Superset (5 Sets)",
+                "info": "30 reps",
+                "sets": null,
+                "reps": "30 reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 5,
+            "title": "Upper back & Calves Workout",
+            "cardio": "Morning Cardio - 40 Minutes; Evening Cardio - 40 Minutes",
+            "notes": [
+              "It's the end of week 5 and I'm sure you'll agree, it's been a tough one! I've been really stretched with work this week so I've had to keep on top of things from all angles. There's a lot of travel in my schedule in the coming weeks as well, so I'm going to have to control my environment, as are you, to make sure we keep seeing success together.",
+              "Today's workout is no joke; back is always a very intense workout, especially with me! Lifting straps are something I always recommend you use on a back day, especially on the rep ranges we're using with DTPXtreme this week. Your grip strength is never going to be as strong as your back, so if you're losing reps because your forearms can't cope, your back will only ever be as strong as this weakness.",
+              "As of this weekend, we are bumping up the 150 daily twists to 300, so get that in your schedule now going forward, please.",
+              "Right, time to crush this workout and finish this week off strong."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-33-hct",
+            "exercises": [
+              {
+                "name": "Pullup",
+                "section": "UPPER BACK",
+                "subsection": null,
+                "info": "6 Sets x 20, 15, 10, 10, 15, 20 Reps",
+                "sets": 6,
+                "reps": "20, 15, 10, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "T-Bar Rows",
+                "section": "UPPER BACK",
+                "subsection": null,
+                "info": "6 Sets x 20, 15, 10, 10, 15, 20 Reps",
+                "sets": 6,
+                "reps": "20, 15, 10, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Machine Row",
+                "section": "UPPER BACK",
+                "subsection": null,
+                "info": "6 Sets x 20, 15, 10, 10, 15, 20 Reps",
+                "sets": 6,
+                "reps": "20, 15, 10, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Machine Shrugs",
+                "section": "UPPER BACK",
+                "subsection": "Superset (6 Sets)",
+                "info": "6 Sets x 30, 20, 10, 10, 20, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 10, 20, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Standing Calf Raises",
+                "section": "UPPER BACK",
+                "subsection": "Superset (6 Sets)",
+                "info": "6 Sets x 30, 20, 10, 10, 20, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 10, 20, 30 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 6,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "Today I'm giving blood to the Red Cross, which is always a nice deed. If you're fortunate enough to be healthy and you're taking care of yourself, why not go one step further and share that with somebody who needs it? It's also a great thing to do for your own health, a bit like an oil change in your car. As you give blood, your body will naturally rejuvenate your levels by producing more, making you a more efficient machine. Go out and do something positive for someone today. Tag me and use hashtag #Hardcoretrainer2 so I can see what you decide to do. It always feels great to help people or do something positive!",
+              "I've been listening to audio books, as well as reading a physical book, while doing my cardio on the StairMaster today. Try and use this process to fine-tune your time management so that other areas of your life benefit as well. If you're able to educate yourself while doing cardio, you're actually learning and getting healthier at the same time. Don't just waste these moments each day aimlessly doing nothing!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-34-hct",
+            "exercises": []
+          },
+          {
+            "day": 7,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "As your body fat levels begin to fall, you might find that your body takes a little longer to recover. Energy and memory might also suffer, but you've just got to suck that up. I've been trialing KAGED MUSCLE's latest version of a natural testosterone booster, which we aim to release in 2017. Having created 7 different versions of it, I think we're on to the actual product we'll launch. My blood tests are showing that my testosterone levels are better than ever, even on a calorie-restricted diet, and I certainly don't feel as though my testosterone is starved, if you know what I mean!",
+              "Right, we've got some alterations to make to the diet for the coming week to keep this evolution happening. Protein remains at 1.23 g per pound of body weight, but your carbohydrates change to 0.76 g per pound of body weight for training days and 0.68 g per pound of body weight for rest days. This is going to help create more of an energy deficit to strip off the most stubborn fat cells in your body."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-35-hct",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "task": "",
+        "days": [
+          {
+            "day": 1,
+            "title": "Quads & Calves Workout",
+            "cardio": "Morning Cardio - 45 Minutes",
+            "notes": [
+              "Can you believe that week 6 is already here? Usually at the start of every week I check-in with a weight update, however, this morning the batteries in my scales died and I have no spare ones in the house! Smart move, Kris. Anyway, I'm going to have to do my weigh-in tomorrow morning on a fasted stomach instead. Remember that keeping the environment exactly the same is imperative when you're tracking weight because this feedback is so important.",
+              "I'm just going to check that you've now upped your daily twists to 300 per day, right? These are awesome for helping the skin around your waist stay tight as you shed the fat. While we're on reminders, both your AM and PM cardio sessions now go up to 45 minutes each.",
+              "We've got another leg day ahead of us which is going to be a huge one, so make sure you're armed with PRE-KAGED and a mind ready for war, because you'll need it. This week we're sticking with the DTP extreme principle, but this time around we're using more exercises to really take these muscles down! As your body fat comes down you will find this harder, so just keep referring to the program, rest periods and rep ranges as a means of accountability.",
+              "Tag me on your socials using #HardcoreTrainer2 and let me know. Please don't forget to. Catch you in the gym!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-36-hct",
+            "exercises": [
+              {
+                "name": "Leg Extensions",
+                "section": "QUADS",
+                "subsection": null,
+                "info": "3 Sets x 20,15,10 REPS",
+                "sets": 3,
+                "reps": "20,15,10 REPS",
+                "rest": ""
+              },
+              {
+                "name": "Squats",
+                "section": "QUADS",
+                "subsection": null,
+                "info": "3 Sets x 20, 25, 30 Reps",
+                "sets": 3,
+                "reps": "20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Leg Press",
+                "section": "QUADS",
+                "subsection": null,
+                "info": "3 Sets x 20,15,10 Reps",
+                "sets": 3,
+                "reps": "20,15,10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Hack Squats (narrow)",
+                "section": "QUADS",
+                "subsection": null,
+                "info": "3 Sets x 20,15,10 Reps",
+                "sets": 3,
+                "reps": "20,15,10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Calf Raises",
+                "section": "CALVES",
+                "subsection": null,
+                "info": "6 Sets x 30, 25, 20, 10, 15, 20 Reps",
+                "sets": 6,
+                "reps": "30, 25, 20, 10, 15, 20 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "title": "Chest & Shoulders Workout",
+            "cardio": "Morning Cardio - 45 Minutes; Evening Cardio - 45 Minutes",
+            "notes": [
+              "My scales are back in action now that I've replaced the battery, so it's time to see how much weight I've lost over the last 8 days. The scales are showing a small drop of 0.4 lbs, which I'm really happy with, actually, because I've definitely filled out and have added muscle on this program. I'm not expecting a big drop now. The mirror is my best judgment.",
+              "Remember as well on Sunday I changed your diet, so go ahead and make those changes. Your protein intake is now 1.23 g per pound of body weight, your carbohydrates are 0.76 g and this coming weekend that will drop to 0.68 g. These are starchy carbs; we aren't counting your green leafy vegetables and things alike.",
+              "Right, back to training-let's hit this workout!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-37-hct",
+            "exercises": [
+              {
+                "name": "Flat Dumbbell Press",
+                "section": "CHEST",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 reps",
+                "sets": 3,
+                "reps": "30, 20, 10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Incline Dumbbell Flyes",
+                "section": "CHEST",
+                "subsection": null,
+                "info": "3 Sets x 10, 15, 20 reps",
+                "sets": 3,
+                "reps": "10, 15, 20 reps",
+                "rest": ""
+              },
+              {
+                "name": "Decline Smith Machine Press",
+                "section": "CHEST",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 Reps",
+                "sets": 3,
+                "reps": "30, 20, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Cable Crossover",
+                "section": "CHEST",
+                "subsection": null,
+                "info": "4 Sets x 10, 15, 20, 30 reps",
+                "sets": 4,
+                "reps": "10, 15, 20, 30 reps",
+                "rest": ""
+              },
+              {
+                "name": "Incline Front Barbell Raises",
+                "section": "SHOULDERS",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 reps",
+                "sets": 3,
+                "reps": "30, 20, 10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Incline Front Dumbbell Raises",
+                "section": "SHOULDERS",
+                "subsection": null,
+                "info": "3 Sets x 10, 15, 20 reps",
+                "sets": 3,
+                "reps": "10, 15, 20 reps",
+                "rest": ""
+              },
+              {
+                "name": "Rear Delt Flyes",
+                "section": "SHOULDERS",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 reps",
+                "sets": 3,
+                "reps": "30, 20, 10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Incline Bench Rear Dumbbell Flyes",
+                "section": "SHOULDERS",
+                "subsection": null,
+                "info": "3 Sets x 10, 15, 20 reps",
+                "sets": 3,
+                "reps": "10, 15, 20 reps",
+                "rest": ""
+              },
+              {
+                "name": "Dumbbell Lateral Raise",
+                "section": "SHOULDERS",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 reps",
+                "sets": 3,
+                "reps": "30, 20, 10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Side Lateral Dumbbell Raises",
+                "section": "SHOULDERS",
+                "subsection": null,
+                "info": "3 Sets x 10, 15, 20 reps",
+                "sets": 3,
+                "reps": "10, 15, 20 reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Arm Workout",
+            "cardio": "Morning Cardio - 45 Minutes; Evening Cardio - 45 Minutes",
+            "notes": [
+              "As it's gun day, I'm going to throw down some advice for you. Don't just focus on your biceps because they're a mirror muscle; your triceps are pivotal to making your arms grow as they account for almost 70% of your total upper arm size. You always want to create and sustain balance throughout your physique, so antagonist muscle groups have an even share in strength. If there are gross imbalances, then you don't just look silly, you will also increase your chances of injury.",
+              "We're working in an opposing manner today to crush arms, going between biceps and triceps. Get your PRE-KAGED down as always and follow my lead."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-38-hct",
+            "exercises": [
+              {
+                "name": "Machine Preacher Curls",
+                "section": "Arms",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 Reps",
+                "sets": 3,
+                "reps": "30, 20, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Rope Pressdown",
+                "section": "Arms",
+                "subsection": null,
+                "info": "3 Sets x 10, 15, 20 Reps",
+                "sets": 3,
+                "reps": "10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Reverse-Grip Triceps Extensions",
+                "section": "Arms",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 Reps",
+                "sets": 3,
+                "reps": "30, 20, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Reverse-Grip Cable Biceps Curl",
+                "section": "Arms",
+                "subsection": null,
+                "info": "3 Sets x 20, 25, 30 reps",
+                "sets": 3,
+                "reps": "20, 25, 30 reps",
+                "rest": ""
+              },
+              {
+                "name": "Smith Machine Drag Curls",
+                "section": "Arms",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 reps",
+                "sets": 3,
+                "reps": "30, 20, 10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Smith Machine Close-Grip Bench",
+                "section": "Arms",
+                "subsection": null,
+                "info": "3 Sets x 20, 25, 30 Reps",
+                "sets": 3,
+                "reps": "20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Incline Overhead Dumbbell Extensions",
+                "section": "Arms",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 reps",
+                "sets": 3,
+                "reps": "30, 20, 10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Spider Curls",
+                "section": "Arms",
+                "subsection": null,
+                "info": "3 Sets x 20, 25, 30 Reps",
+                "sets": 3,
+                "reps": "20, 25, 30 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "title": "Hamstrings, Lower Back & Upper Abs Workout",
+            "cardio": "Morning Cardio - 45 Minutes; Evening Cardio - 45 Minutes",
+            "notes": [
+              "This week is going quickly and my travel schedule is beginning to really pinch now. I've got to get up extra early tomorrow in order to do my cardio then do the same when I land at the other end, which will mean my sleep is going to be cut short. The thing to always remember when it comes to getting your cardio done is that you will try to talk yourself out of doing it now, deferring it until later. Don't do that. As soon as you wake up, just go and do it. Once work is done, go and get it done in the evening. Procrastinating about it will just increase the chances of you missing it which will put you back.",
+              "When you train lower back it's really important that you learn to distinguish the difference between a workout pump and pain. If you're working out and your lower back just feels fatigued, that's great. However, if you are experiencing shooting pains, then there's probably something wrong which means you need to seek advice and change your form.",
+              "Time to go and hit up lower back, hamstrings and upper abs again!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-39-hct",
+            "exercises": [
+              {
+                "name": "Glute-Ham Raise",
+                "section": "Hamstrings",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 Reps",
+                "sets": 3,
+                "reps": "30, 20, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Leg Curls",
+                "section": "Hamstrings",
+                "subsection": null,
+                "info": "3 Sets x 20, 25, 30 Reps",
+                "sets": 3,
+                "reps": "20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Lying Hamstring Curls",
+                "section": "Hamstrings",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 Reps",
+                "sets": 3,
+                "reps": "30, 20, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Reverse Hack Squat",
+                "section": "Hamstrings",
+                "subsection": null,
+                "info": "3 Sets x 20, 25, 30 Reps",
+                "sets": 3,
+                "reps": "20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Hyperextensions",
+                "section": "Lower Back",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 reps",
+                "sets": 3,
+                "reps": "30, 20, 10 reps",
+                "rest": ""
+              },
+              {
+                "name": "Dumbbell Deadlifts",
+                "section": "Lower Back",
+                "subsection": null,
+                "info": "3 Sets x 20, 25, 30 Reps",
+                "sets": 3,
+                "reps": "20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Exercise Ball Cable Crunches",
+                "section": "Upper Abs",
+                "subsection": "Superset (5 Sets)",
+                "info": "FAILURE",
+                "sets": null,
+                "reps": "FAILURE",
+                "rest": ""
+              },
+              {
+                "name": "Ab wheel Rollouts",
+                "section": "Upper Abs",
+                "subsection": "Superset (5 Sets)",
+                "info": "FAILURE",
+                "sets": null,
+                "reps": "FAILURE",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 5,
+            "title": "Upper back & Calves Workout",
+            "cardio": "Morning Cardio - 45 Minutes; Evening Cardio - 45 Minutes",
+            "notes": [
+              "Today I've arrived in Tampa to interview Dr. Sponaugle, Sponaugle Wellness Institute, and then I'm hitting Powerhouse Gym for my workout which my good friend, Chris Cavallini, Nutrition Solutions, set up. As I'm traveling",
+              "I've carried my Nutrition Solution meals with me and I've taken the liberty of packing extra meals as well. This way if there are any delays with my flight or stopovers, there's nothing to panic about. This is what I mean when I say control your environment. Don't leave yourself so thinly spread that one small obstacle can derail your progress. The hotel I'm staying at happens to have cooking facilities in my room, but I didn't know that, so I was already prepared.",
+              "During today's back workout, I'm largely focusing on pullover movements to remove the amount of flexion in my biceps, which you get from rows and pulldowns. This is to help remove my grip out of the equation, so it doesn't limit my back's progress.",
+              "My PM cardio today is going to be a functional workout with Chris, because it's giving me something new to focus on for the day and added accountability. I'm tired so I figured it would be a smart move to get Chris down here and prevent me from taking things easy.",
+              "It's also my birthday today, which is the perfect example of not allowing occasions like this to derail you. You can always celebrate with temporary measures, but your success will be forever if you remain committed."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-40-hct",
+            "exercises": [
+              {
+                "name": "Machine Pullover",
+                "section": "UPPER BACK",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 Reps",
+                "sets": 3,
+                "reps": "30, 20, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Straight-Arm Dumbbell Pullover",
+                "section": "UPPER BACK",
+                "subsection": null,
+                "info": "3 Sets x 20, 25, 30 Reps",
+                "sets": 3,
+                "reps": "20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Straight-Arm Pulldowns",
+                "section": "UPPER BACK",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 Reps",
+                "sets": 3,
+                "reps": "30, 20, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Lat Pulldown",
+                "section": "UPPER BACK",
+                "subsection": null,
+                "info": "3 Sets x 20, 25, 30 Reps",
+                "sets": 3,
+                "reps": "20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Machine Shrugs",
+                "section": "UPPER BACK",
+                "subsection": null,
+                "info": "6 Sets x 30, 20, 10, 20, 25, 30 Reps",
+                "sets": 6,
+                "reps": "30, 20, 10, 20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Standing Calf Raise",
+                "section": "Calves",
+                "subsection": null,
+                "info": "3 Sets x 30, 20, 10 Reps",
+                "sets": 3,
+                "reps": "30, 20, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Donkey Calf Raises",
+                "section": "Calves",
+                "subsection": null,
+                "info": "3 Sets x 20, 25, 30 Reps",
+                "sets": 3,
+                "reps": "20, 25, 30 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 6,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "I wasn't here for my birthday due to travel, so this weekend I've gone up into the hills outside Boise to enjoy an active outdoors break, in celebration of my birthday. As is the theme for each weekend, I'm doing some hiking to burn off more stored energy as I pursue my goals over this intensive transformation.",
+              "I've got another delicious high-protein, very low-fat recipe to share with you, which Sunshine has prepared for me yet again.",
+              "Mix together and place on baking tray for 10-15 minutes.",
+              "Then remove once cooked and position into a stack! Enjoy them with calorie-free pancake syrup and maybe some berries if you can fit them into your carb quantity for the day. These clean cheats are great for long-term sustainability because you can look forward to something sweet without the guilt.",
+              "Give the recipe and try and let me know what you think by tagging me on your socials using #HardcoreTrainer2."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-41-hct",
+            "exercises": []
+          },
+          {
+            "day": 7,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "Sleeping isn't always going to be easy on a program like this, especially as your fat levels drop because you might feel hungrier, agitated and your brain can also feel slightly deprived. Very early this morning I couldn't sleep, so I just used this as an opportunity to wake up early and get my cardio out of the way with a brisk walk through the mountain trails, remembering to keep my heart rate between 65-70% of its maximum.",
+              "Always remember that you need to take your Clean Burn in order to maximize thermogenesis, which brings about quicker fat loss. This highly potent natural fat burner will also stabilize your blood sugar levels, helping you crush cravings. You require 3 servings per day, and I'd recommend you take them at least 30 minutes before a meal if you're having them at the same time of day to let the ingredients become absorbed. I'll catch you in the gym tomorrow for another anguishing leg workout to start week 7!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-42-hct",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "task": "",
+        "days": [
+          {
+            "day": 1,
+            "title": "Quads, Calves & Lower Abs Workout",
+            "cardio": "Morning Cardio - 50 Minutes; Evening Cardio - 50 Minutes",
+            "notes": [
+              "It's another weigh-in day as we begin week 7. Can you believe my weight has dropped down to 211.6 lbs, which is a drop of over 3 lbs?! Fat loss isn't always linear and your fluid levels will also change depending on your sleep pattern, stress levels and things alike. Nonetheless, we are putting our cardio up to 50 minutes per session, which means every AM and PM.",
+              "Today's medicine of choice is supersets in order to totally obliterate the quads, leaving nothing to chance. If you're feeling tired and lethargic, don't worry yourself, I am too. This is where champions are made and losers drop out, so don't give in now. Just suck it up and keep pushing forward.",
+              "Get your PRE-KAGED down to awaken your mind and body, and get ready for the gym."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-43-hct",
+            "exercises": [
+              {
+                "name": "Leg Extensions",
+                "section": "QUADS",
+                "subsection": "Superset (3 Sets)",
+                "info": "20, 15, 10 Reps",
+                "sets": null,
+                "reps": "20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Leg Press",
+                "section": "QUADS",
+                "subsection": "Superset (3 Sets)",
+                "info": "20, 15, 10 Reps",
+                "sets": null,
+                "reps": "20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Barbell Squat",
+                "section": "QUADS",
+                "subsection": "Superset (3 Sets)",
+                "info": "20, 15, 10 Reps",
+                "sets": null,
+                "reps": "20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Hack Squat",
+                "section": "QUADS",
+                "subsection": "Superset (3 Sets)",
+                "info": "20, 15, 10 Reps",
+                "sets": null,
+                "reps": "20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Calf Raise",
+                "section": "CALVES & LOWER ABS",
+                "subsection": "Superset (3 Sets)",
+                "info": "20, 15, 10 Reps",
+                "sets": null,
+                "reps": "20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Flat Bench Lying Leg Raises",
+                "section": "CALVES & LOWER ABS",
+                "subsection": "Superset (3 Sets)",
+                "info": "FAILURE",
+                "sets": null,
+                "reps": "FAILURE",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "title": "Chest & Shoulders Abs Workout",
+            "cardio": "Morning Cardio - 50 Minutes; Evening Cardio - 50 Minutes",
+            "notes": [
+              "My legs are really sore today, how are yours? We're now in the second to last week and our attention must be on creating fullness and burning energy. This is why we're doing supersets with short rest periods to induce more sarcoplasmic hypertrophy. This makes our muscles appear rounder and scorches through energy stores very quickly.",
+              "As we're using a lot of exercises today which work the shoulder joint, I'm doing some rotator cuff exercises just to increase the elasticity within the joint and promote synovial fluid. Your shoulders can be a real weak link on an intense transformation like this one, so always take care of them before it's too late.",
+              "Right, let's get to it!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-44-hct",
+            "exercises": [
+              {
+                "name": "Incline Dumbbell Fly",
+                "section": "Chest",
+                "subsection": "Superset (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Decline Dumbbell Press",
+                "section": "Chest",
+                "subsection": "Superset (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Machine Seated Chest Press",
+                "section": "Chest",
+                "subsection": "Superset (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Pec Deck Fly",
+                "section": "Chest",
+                "subsection": "Superset (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Upright rows",
+                "section": "Shoulders",
+                "subsection": "Superset (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Front Dumbbell Raise",
+                "section": "Shoulders",
+                "subsection": "Superset (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Smith Machine Behind-the-Neck Press",
+                "section": "Shoulders",
+                "subsection": "Superset (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Lateral Raise",
+                "section": "Shoulders",
+                "subsection": "Superset (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Arm Workout",
+            "cardio": "Morning Cardio - 50 Minutes; Evening Cardio - 50 Minutes",
+            "notes": [
+              "Today I've got a very special guest staying with me, Edgar, a beautiful young dog I've fostered for a short period of time. I'd really love to keep one, especially Edgar, but I just can't commit to the constant ownership at this point in my life. Anyway, I want to get to the gym, crush arms and get my cardio done so I can return home and spend some time with this dog.",
+              "We're going to superset antagonistic muscle groups, biceps and triceps. Historically I've always liked to do this for arm day because it really fills the upper arm with blood, getting that fascia to stretch as much as possible.",
+              "I hope you're doing your extra cardio every day now, twice a day along with your 300 twists each morning!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-45-hct",
+            "exercises": [
+              {
+                "name": "Cable Triceps Extensions",
+                "section": "Arms",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Biceps Cable Curl",
+                "section": "Arms",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Overhead Machine Triceps Extension",
+                "section": "Arms",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "20,15,10*,10,15, 20 Reps",
+                "sets": null,
+                "reps": "20,15,10*,10,15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Machine Preacher Curl",
+                "section": "Arms",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Standing EZ-bar Curl",
+                "section": "Arms",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Bench Dips",
+                "section": "Arms",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "title": "Hamstrings, Lower Back & Upper Abs Workout",
+            "cardio": "Morning Cardio - 50 Minutes; Evening Cardio - 50 Minutes",
+            "notes": [
+              "There's no way of getting around it today, I'm tired! Fatigue has set in and it would have been very easy for me to justify extra hours in bed. The difference is that I didn't do that, because my end goal means so much to me that nothing is going to convince me to take things easy now. You're going to be faced with the same predicament from time to time as well; always think about the end result if you're ever contemplating quitting.",
+              "We've got just 2 workouts to crush this week before entering the final stretch of this extreme transformation, so let's make it really count today. Don't take your foot off the gas now!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-46-hct",
+            "exercises": [
+              {
+                "name": "Machine Deadlifts",
+                "section": "Hamstrings & Lower back",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Hyperextension",
+                "section": "Hamstrings & Lower back",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Lying hamstring Curls",
+                "section": "Hamstrings & Lower back",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Stiff-Legged Deadlift",
+                "section": "Hamstrings & Lower back",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "2b. Stiff-Legged Deadlift",
+                "sets": null,
+                "reps": "2b. Stiff-Legged Deadlift",
+                "rest": ""
+              },
+              {
+                "name": "Banded Crunches",
+                "section": "Abs",
+                "subsection": "Circuit (6 Sets)",
+                "info": "Failure",
+                "sets": null,
+                "reps": "Failure",
+                "rest": ""
+              },
+              {
+                "name": "Dumbbell Crunches",
+                "section": "Abs",
+                "subsection": "Circuit (6 Sets)",
+                "info": "Failure",
+                "sets": null,
+                "reps": "Failure",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 5,
+            "title": "Upper Back & Calves Workout",
+            "cardio": "Morning Cardio - 50 Minutes; Evening Cardio - 50 Minutes",
+            "notes": [
+              "This is our final workout of week 7; it needs to be a big one! I've traveled to a different gym in Boise to get a change of scenery and expose myself to some new workout equipment. If you're feeling unmotivated or fed up with the gym you train at, mix it up and go to a new environment to work out in.",
+              "Today's back workout is primarily going to target the lats, so I want you to specifically pay close attention to squeezing your scapula backward together with each rep, to make the muscle fibers bleed. I don't give a s*** if you're feeling tired; now is the time to give yourself a push! Get your PRE-KAGED in to raise your energy levels in anticipation of this session-you'll need it."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-47-hct",
+            "exercises": [
+              {
+                "name": "Lat Pulldown",
+                "section": "Upper Back",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Machine Row",
+                "section": "Upper Back",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Bent-Over Row",
+                "section": "Upper Back",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Behind-the-Neck Pulldown",
+                "section": "Upper Back",
+                "subsection": "SUPERSET (6 Sets)",
+                "info": "20, 15, 10*, 10, 15, 20 Reps",
+                "sets": null,
+                "reps": "20, 15, 10*, 10, 15, 20 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Calf Press",
+                "section": "Calves",
+                "subsection": null,
+                "info": "3 Sets x 20, 15, 10 Reps",
+                "sets": 3,
+                "reps": "20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Smith Machine Standing Calf Raises",
+                "section": "Calves",
+                "subsection": null,
+                "info": "3 Sets x 10, 15, 20 Reps",
+                "sets": 3,
+                "reps": "10, 15, 20 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 6,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "To really drive the results, it's time to make some more changes to your diet now as we come to the end of this process. Your protein intake is going to change to 1.18 g of protein per pound of body weight. As this is \"peak week\" ready for your end photos, the carbohydrate intake is going to fluctuate as follows:",
+              "This will help deplete your muscles through the week, so that come Sunday when you carb load, they will soak the glycogen up like a sponge to enhance your overall appearance. You should appear rounder and fuller for your finishing photos. Sure, you're going to be really running on vapors for this final week, but you've come this far so I expect you to make it through from here. Taking PRE-KAGED before your workouts will help sustain better energy levels when the going gets tough.",
+              "Today's cardio for me started off with a 5K Color Run, which is a local charitable event. Doing things like this gives you something new to focus on and gives you a reason to do cardio without thinking about it, while raising money for a good cause. It was great noticing this run felt a lot easier than 6 weeks ago, which tells me this program hasn't just made me look better, it's also improved my performance."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-48-hct",
+            "exercises": []
+          },
+          {
+            "day": 7,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "It's such a beautiful day today. My cardio was made up of cycling outside, along with a jog along the Greenbelt and some swimming. Modern day life means that we spend so much time in gas chambers, which are air conditioned cars, houses, offices and gyms. If you have the opportunity to get outside and do your cardio, take it; it's always good to breathe fresh air. If it's a bit stop-start as you negotiate crossings and things alike, be sure to stop your watch so that you actually do the prescribed time.",
+              "I'll see you tomorrow for our final week of training, as we close in on the penultimate finish to this 8-week hardcore trainer!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-49-hct",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "task": "",
+        "days": [
+          {
+            "day": 1,
+            "title": "Quads, Calves & Lower Abs Workout",
+            "cardio": "Morning Cardio - 55 Minutes; Evening Cardio - 55 Minutes",
+            "notes": [
+              "It's the beginning of the end; week 8 is upon us! As always, I'm checking my weight this morning to see where I am compared to last week where I came in at 211.8 lbs. The scales are showing a small increase this week, up to 212.2 lbs, which I'm more than happy with. There's absolutely no question about it that I'm leaner than ever before and I'm carrying more muscle as well-the mirror doesn't lie.",
+              "Before legs today, I'm having a soak nice and early in the bath. Over the weekend I cycled, swam, hit the StairMaster and even did a 5K jog for charity. All this activity has meant that my quads are a bit more tender than usual this time of the week, so I'm having a bath to help increase blood flow into the area and help reduce inflammation before today's savage quad workout.",
+              "Do I need to remind you that we have just 5 workouts left together on this program? Don't you even consider taking it easy now; buckle up because this is going to be an intense last week. I'm taking no f***ing prisoners!",
+              "Your cardio has now also gone up another 5 minutes per session, which means you're now doing 55 minutes every AM and PM. Tag me on your socials using #HCTReboot to let me know you're getting it done!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-50-hct",
+            "exercises": [
+              {
+                "name": "Hack Squat",
+                "section": "Legs",
+                "subsection": null,
+                "info": "5 Sets x 30, 25, 20, 15, 10 Reps",
+                "sets": 5,
+                "reps": "30, 25, 20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Leg press",
+                "section": "Legs",
+                "subsection": null,
+                "info": "5 Sets x 10, 15, 20, 25, 30 Reps",
+                "sets": 5,
+                "reps": "10, 15, 20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Calf Raises",
+                "section": "Legs",
+                "subsection": "SUPERSET (5 Sets)",
+                "info": "30, 25, 20, 15, 10 Reps",
+                "sets": null,
+                "reps": "30, 25, 20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Decline Lying Leg Raises*",
+                "section": "Legs",
+                "subsection": "SUPERSET (5 Sets)",
+                "info": "3b. Decline Lying Leg Raises*",
+                "sets": null,
+                "reps": "3b. Decline Lying Leg Raises*",
+                "rest": ""
+              },
+              {
+                "name": "Decline Lying Leg Raises*",
+                "section": "Legs",
+                "subsection": "SUPERSET (5 Sets)",
+                "info": "4a. Decline Lying Leg Raises*",
+                "sets": null,
+                "reps": "4a. Decline Lying Leg Raises*",
+                "rest": ""
+              },
+              {
+                "name": "Seated Calf Raises",
+                "section": "Legs",
+                "subsection": "SUPERSET (5 Sets)",
+                "info": "30, 25, 20, 15, 10 Reps",
+                "sets": null,
+                "reps": "30, 25, 20, 15, 10 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "title": "Chest & Shoulders Workout",
+            "cardio": "Morning Cardio - 55 Minutes; Evening Cardio - 55 Minutes",
+            "notes": [
+              "You'll have noticed that the theme of this week has far less exercise variation but a lot more sets. We're just keeping things simple now and allowing the intensity to do its work for us. Combined with the two 55-minute cardio sessions, these workouts are going to leave you running on vapors, but this is where the fat really starts to come off and expose your physique like you've never seen it before.",
+              "I'm very proud of you for reaching this far because I know just how tough it can be; I find it hard as well. People will often mistake me as somebody who just gets to do this for a living in itself, which is so far from the truth. I've been filming this program every single day for you, while juggling my business and work commitments which is highly demanding, to say the least. This is about being in control of my environment, which I've successfully done. I hope you have as well.",
+              "Right, my PRE-KAGED is kicking in, so it's time to crush chest and shoulders one last time."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-51-hct",
+            "exercises": [
+              {
+                "name": "Incline Dumbbell Fly",
+                "section": "Chest",
+                "subsection": null,
+                "info": "5 Sets x 30, 25, 20, 15, 10 Reps",
+                "sets": 5,
+                "reps": "30, 25, 20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Decline Dumbbell Fly",
+                "section": "Chest",
+                "subsection": null,
+                "info": "2. Decline Dumbbell Fly",
+                "sets": null,
+                "reps": "2. Decline Dumbbell Fly",
+                "rest": ""
+              },
+              {
+                "name": "Front Dumbbell Raise & Press Combo",
+                "section": "Shoulders",
+                "subsection": null,
+                "info": "5 Sets x 30, 25, 20, 15, 10 Reps",
+                "sets": 5,
+                "reps": "30, 25, 20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Incline rear Delt raises",
+                "section": "Shoulders",
+                "subsection": null,
+                "info": "4. Incline rear Delt raises",
+                "sets": null,
+                "reps": "4. Incline rear Delt raises",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Arm Workout",
+            "cardio": "Morning Cardio - 55 Minutes; Evening Cardio - 55 Minutes",
+            "notes": [
+              "This is our last arm workout together, so we best make it a good one! This week we haven't been going crazy with the volume because the aim isn't to annihilate the muscles at this point in time. The work has been done; in the final week we're not going to build much muscle, so we are just focusing on burning energy now and expanding the muscle through cell swelling. This is what DTPXtreme will do for you!",
+              "A quick pointer to taking your Clean Burn is to make sure you take it 3 times a day. This could be upon waking before cardio, midday and again before your PM cardio. I'm getting a lot of questions on my Instagram about this, so I thought I'd make a point of answering it here.",
+              "After you've done this workout today, take a photo while you've got a sick pump and tag me on socials using #HCTReboot. Seeing your progress really inspires me, and I might just send you a compliment."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-52-hct",
+            "exercises": [
+              {
+                "name": "Cable Incline Triceps Extension",
+                "section": "Triceps",
+                "subsection": null,
+                "info": "5 Sets x 30, 25, 20, 15, 10 Reps",
+                "sets": 5,
+                "reps": "30, 25, 20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Decline Barbell Triceps Extension",
+                "section": "Triceps",
+                "subsection": null,
+                "info": "2. Decline Barbell Triceps Extension",
+                "sets": null,
+                "reps": "2. Decline Barbell Triceps Extension",
+                "rest": ""
+              },
+              {
+                "name": "High-Pulley Cable Curls",
+                "section": "Biceps",
+                "subsection": null,
+                "info": "5 Sets x 30, 25, 20, 15, 10 Reps",
+                "sets": 5,
+                "reps": "30, 25, 20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Dumbbell Curls",
+                "section": "Biceps",
+                "subsection": null,
+                "info": "5 Sets x 10, 15, 20, 25, 30 Reps",
+                "sets": 5,
+                "reps": "10, 15, 20, 25, 30 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "title": "Hamstrings, Lower Back & Upper Abs Workout",
+            "cardio": "Morning Cardio - 55 Minutes; Evening Cardio - 55 Minutes",
+            "notes": [
+              "This morning I felt really tired so I decided to cycle to the gym, in order to wake myself up. Sometimes you need to remain in control of your own mind by doing something which goes against how you feel at that precise moment. Speaking of which, you've been doing well getting all of your cardio done through this intensive transformation. As we're almost at the end, I need to talk to you about tapering it off, rather than just crashing and stopping everything.",
+              "You've built your body up to being conditioned to 14 cardio sessions at 55 minutes each now. I'd recommend you drop this to 50 minutes for the first week after your program and only do it for 5 of the days. The next week, cut those 5 sessions down to 45 minutes, to sustain that tapering process.",
+              "This will allow your metabolism to adapt more readily without crashing, which could leave you in a vulnerable position to gain weight quickly. Obviously, I want you to keep your diet clean as well; don't go on a binge and start yo-yo dieting! We need to look at reverse dieting so that you gradually rebuild your metabolic rate up. Your protein can remain much the same, but you will want to steadily increase your calories from carbohydrates by around 10-15% per week for the next 6 weeks. You can have a few extra fats as well, but don't mix your carbs and fats together too much.",
+              "Right, let's get this workout finished fast!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-53-hct",
+            "exercises": [
+              {
+                "name": "Rack Deadlifts",
+                "section": "Hamstrings & Back",
+                "subsection": null,
+                "info": "5 Sets x 30, 25, 20, 15, 10 Reps",
+                "sets": 5,
+                "reps": "30, 25, 20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Seated Cable Deadlift",
+                "section": "Hamstrings & Back",
+                "subsection": null,
+                "info": "5 Sets x 10, 15, 20, 25, 30 Reps",
+                "sets": 5,
+                "reps": "10, 15, 20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Single-Leg Hamstring Curl",
+                "section": "Hamstrings & Back",
+                "subsection": null,
+                "info": "5 Sets x 30, 25, 20, 15, 10 Reps",
+                "sets": 5,
+                "reps": "30, 25, 20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Sissy Squat",
+                "section": "Hamstrings & Back",
+                "subsection": null,
+                "info": "5 Sets x 10, 15, 20, 25, 30 Reps",
+                "sets": 5,
+                "reps": "10, 15, 20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Ab Crunch Machine",
+                "section": "ABS",
+                "subsection": null,
+                "info": "5 Sets x 30, 25, 20, 15, 10 Reps",
+                "sets": 5,
+                "reps": "30, 25, 20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Decline Situp",
+                "section": "ABS",
+                "subsection": null,
+                "info": "5 Sets x 10, 15, 20, 25, 30 Reps",
+                "sets": 5,
+                "reps": "10, 15, 20, 25, 30 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 5,
+            "title": "Upper Back & Calves Workout",
+            "cardio": "Morning Cardio - 55 Minutes; Evening Cardio - 55 Minutes",
+            "notes": [
+              "This is it, our final workout together, and by now I'm sure you are running on vapors! This journey should have taught you a lot about yourself, who you are as a person and where you need to learn to dig deeper in life. You should now be more in tune with your body, the food it likes to run on and the workouts that etch extra detail into your physique.",
+              "Reaching the end of this 8-week transformation is a truly momentous occasion in your life, and as I've already said this week, I'm really proud of you. Before we talk about goal setting and prepping for your photo shoot on Sunday, let's just get this workout crushed one last time.",
+              "Same as ever, get that PRE-KAGED in!"
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-54-hct",
+            "exercises": [
+              {
+                "name": "Incline Dumbbell Row",
+                "section": "Upper Back",
+                "subsection": null,
+                "info": "5 Sets x 30, 25, 20, 15, 10 Reps",
+                "sets": 5,
+                "reps": "30, 25, 20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Bent Over Dumbbell Row",
+                "section": "Upper Back",
+                "subsection": null,
+                "info": "2. Bent Over Dumbbell Row",
+                "sets": null,
+                "reps": "2. Bent Over Dumbbell Row",
+                "rest": ""
+              },
+              {
+                "name": "Wide-Grip Lat Pulldown",
+                "section": "Upper Back",
+                "subsection": null,
+                "info": "5 Sets x 30, 25, 20, 15, 10 Reps",
+                "sets": 5,
+                "reps": "30, 25, 20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Rope Lat Pulldown",
+                "section": "Upper Back",
+                "subsection": null,
+                "info": "5 Sets x 10, 15, 20, 25, 30 Reps",
+                "sets": 5,
+                "reps": "10, 15, 20, 25, 30 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Calf Press*",
+                "section": "Calves",
+                "subsection": null,
+                "info": "5 Sets x 30, 25, 20, 15, 10 Reps",
+                "sets": 5,
+                "reps": "30, 25, 20, 15, 10 Reps",
+                "rest": ""
+              },
+              {
+                "name": "Standing Calf Raises*",
+                "section": "Calves",
+                "subsection": null,
+                "info": "5 Sets x 10, 15, 20, 25, 30 Reps",
+                "sets": 5,
+                "reps": "10, 15, 20, 25, 30 Reps",
+                "rest": ""
+              }
+            ]
+          },
+          {
+            "day": 6,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "I'm heading back to Dr. Jason Watson's clinic today for my final check-in. If you recall at the beginning of this program, my stats were:",
+              "Beginning:",
+              "Finish:",
+              "The final calculations have actually been very eye-opening for a number of reasons, which I'll explain now. The total loss for me is 13 lbs, which in isolation might not appear that drastic. However, the machine that Dr. Watson used to measure my results show that I've actually lost 20.5 lbs of fat and gained over 7 lbs of lean mass, of which 2 lbs is solid muscle tissue. This is almost unheard of, especially in such a short period. Usually gaining 2 lbs of muscle tissue per year is my goal; so to do that in 8 weeks is absolutely phenomenal! This is a testament to my meticulous timing with every meal, the intensity of my workouts and the potency of KAGED MUSCLE supplements.",
+              "To further illustrate how amazing these results are, and how life-changing they are, Dr. Watson explained the benefits on my heart. For every pound of body fat you carry, there is approximately 1 mile of capillaries within that tissue which your heart has to pump blood through. That means I've removed 20 miles of blood vessels that my heart had to previously feed with blood, increasing the stress on it, of course. Who knows to what extent this could affect my longevity, as well as yours.",
+              "This is why I do these transformations, to show you that this lifestyle is about changing your life for the better. It's so much more than looking great; it's about feeling better within yourself and enhancing your state of health. I'm absolutely thrilled with the results and I'm very pleased that I documented the official stats with a non-biased scientific expert so that you're able to see for yourself how effective this program is.",
+              "Such a large part of this process has been about focusing on recovery so that I've always felt refreshed and ready to hit the gym harder than the time before, becoming almost limitless. Having my regular cryotherapy and massage has helped alleviate any previous issues I've had with joint pain and inflammation. The KAGED MUSCLE supplements I've been using, with the patented ingredients and efficacious dosages, have enabled my muscles to recover, then grow like never before. Another intrinsic piece of advice that I need to reiterate is that in order to achieve these kind of results, you must feed your body with the correct nutrients, which it is able to absorb. If you're consuming foods that cause excessive inflammation, then you won't benefit from those nutrients as you should. All of these factors might seem insignificant to you on their own, but once you bring them altogether, you create an overwhelming amount of momentum, as we've done over the last 8 weeks together.",
+              "For years I've been told these results are impossible, which is why this time I decided to prove it to you through scientific data. Somebody has to do this stuff and achieve these results, so why can't it be you? I was just a normal guy from a very rural part of Wales, who had very little other than the determination to become someone and inspire millions of people. Your own journey can begin today if you're willing to put this program into action. Don't chat, do!",
+              "As a reward to yourself, go and do something that isn't centered on food. Rather than have a big binge out, I've treated myself to some new triathlon gear and I'm also having some of my tattoos touched up. Rewarding yourself with food usually leads to bad eating patterns, so don't go down that route."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-55-hct",
+            "exercises": []
+          },
+          {
+            "day": 7,
+            "title": "Yes, You Can Take Creatine and Caffeine Together: A Review of the Science",
+            "cardio": "",
+            "notes": [
+              "Your big day is here; everything you've worked for over the last 8 weeks is about to be shown in the photos you take today. There are several steps you must take in order to present your physique in the best possible light, to illustrate your results. This is exactly what I'm doing in order to prepare for my after photos.",
+              "Step1: Take 10 g of fermented Citrulline in the morning to help increase your blood flow. This will help dilate your capillaries so that you get a better pump, giving your muscles a fuller look.",
+              "Step 2: You must keep your fluids the same as you've done for the duration of this program, along with HYDRA-CHARGE and Creatine HCl. This ensures that you're not going to dehydrate the muscle cells in your body, which would only leave you looking depleted rather than full.",
+              "Step 3: Pump up! Choose one exercise per body part (not legs), and do 3 or 4 sets to around 70% of failure. This isn't about killing the muscles now; you're just aiming to get as much blood as you can into your upper body to give the illusion of size, separation and symmetry. Enjoy this process, as this is the final part of the puzzle before you take your photos.",
+              "Step 4: Remember to take your extra carbs in today so that you've got the glycogen needed in order to fill out for your photos. You've been depleting all week in preparation for this influx in carbohydrates, so get them in.",
+              "Step 5: Take your photos! Take lots of photos from different angles and in different light. However, make sure you've got some which are in the same position/lighting as your before shots. This will give the truest reflection of your progress, which is what you want.",
+              "What's Next?",
+              "That's you done! We have reached the end and you've got your results to show the world, which I want you to use to inspire a new wave of KAGED MUSCLE® transformees. Don't just stop here, let this become a new way of life by setting new goals. If your new goal is to build muscle now, remember what I said about reverse dieting and tapering your cardio down. Remain in control now that you have gained it and become the best version of you possible! It's been a pleasure doing this transformation together. I'm glad you could make it.",
+              "Until next time,."
+            ],
+            "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-56-hct",
+            "exercises": []
+          }
+        ]
+      }
+    ]
   }
 };
