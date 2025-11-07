@@ -9,6 +9,7 @@
     <title>Sculpted Fitness Tracker</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -111,6 +112,18 @@
         .search-result {
             border: 1px solid #1f2937;
         }
+        .stats-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(17,24,39,0.92);
+            display: none;
+            flex-direction: column;
+            padding: 2.5rem 1.5rem;
+            z-index: 55;
+        }
+        .stats-overlay.active {
+            display: flex;
+        }
     </style>
 </head>
 <body class="no-js h-full text-gray-200 antialiased">
@@ -162,6 +175,18 @@
                         </div>
                         <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </button>
+                </div>
+
+                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 shadow-lg flex flex-col md:flex-row md:items-center md:justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <p class="text-sm uppercase tracking-wider text-blue-300">Progress Hub</p>
+                        <p class="text-lg font-semibold text-white">Visualize & Backup Your Journey</p>
+                        <p class="text-sm text-gray-400">Review completed weeks, compare past runs, and export your data at any time.</p>
+                    </div>
+                    <div class="space-y-3 md:space-y-0 md:space-x-3 md:flex">
+                        <button id="open-stats" class="btn-press bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium">View Progress</button>
+                        <button id="quick-export" class="btn-press px-4 py-2 rounded-lg border border-gray-600 text-sm text-gray-200 hover:text-white">Quick Export</button>
+                    </div>
                 </div>
             </main>
         </div>
@@ -254,6 +279,51 @@
         </div>
     </div>
 
+    <!-- Stats & Backup Overlay -->
+    <div id="stats-overlay" class="stats-overlay">
+        <div class="flex items-center justify-between mb-6">
+            <div>
+                <p class="text-sm uppercase tracking-widest text-blue-400">Progress & Backup</p>
+                <h2 class="text-2xl font-semibold text-white">Your Training History</h2>
+            </div>
+            <button id="close-stats" class="btn-press text-gray-400 hover:text-white">Close</button>
+        </div>
+        <div id="stats-empty" class="flex-1 flex items-center justify-center text-gray-500 text-center hidden">
+            <div>
+                <p class="text-lg font-semibold text-gray-300">No completed weeks yet.</p>
+                <p class="text-sm text-gray-400 mt-2">Log notes and finish a week to start building your history.</p>
+            </div>
+        </div>
+        <div id="stats-content" class="flex-1 space-y-6 overflow-y-auto">
+            <div class="bg-gray-900 border border-gray-700 rounded-2xl p-4">
+                <canvas id="progress-chart" height="220"></canvas>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-900 border border-gray-700 rounded-2xl p-4">
+                    <p class="text-xs uppercase tracking-wider text-gray-400">Totals</p>
+                    <div class="mt-3 space-y-2">
+                        <p class="text-sm text-gray-300">Completed Weeks: <span id="stats-weeks" class="text-blue-300 font-semibold">0</span></p>
+                        <p class="text-sm text-gray-300">Notes Captured: <span id="stats-notes" class="text-blue-300 font-semibold">0</span></p>
+                        <p class="text-sm text-gray-300">Programs Logged: <span id="stats-programs" class="text-blue-300 font-semibold">0</span></p>
+                    </div>
+                </div>
+                <div class="bg-gray-900 border border-gray-700 rounded-2xl p-4 space-y-3">
+                    <p class="text-xs uppercase tracking-wider text-gray-400">Backup & Restore</p>
+                    <p class="text-sm text-gray-400">Export your notes, progress, and history for safe keeping—or import a previous backup to restore everything.</p>
+                    <div class="space-y-2">
+                        <button id="export-data" class="btn-press w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium">Download Backup</button>
+                        <button id="import-data" class="btn-press w-full px-4 py-2 rounded-lg border border-gray-600 text-sm text-gray-200 hover:text-white">Import Backup</button>
+                        <input type="file" id="import-input" accept="application/json" class="hidden" />
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-900 border border-gray-700 rounded-2xl p-4">
+                <p class="text-xs uppercase tracking-wider text-gray-400">Recent History</p>
+                <div id="stats-history" class="mt-3 space-y-3 text-sm text-gray-300"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Search Overlay -->
     <div id="search-overlay" class="search-overlay">
         <div class="flex items-center justify-between mb-6">
@@ -291,6 +361,20 @@
         const closeSearchBtn = document.getElementById('close-search');
         const searchInput = document.getElementById('search-input');
         const searchResults = document.getElementById('search-results');
+        const openStatsBtn = document.getElementById('open-stats');
+        const quickExportBtn = document.getElementById('quick-export');
+        const statsOverlay = document.getElementById('stats-overlay');
+        const closeStatsBtn = document.getElementById('close-stats');
+        const exportDataBtn = document.getElementById('export-data');
+        const importDataBtn = document.getElementById('import-data');
+        const importInput = document.getElementById('import-input');
+        const statsEmpty = document.getElementById('stats-empty');
+        const statsContent = document.getElementById('stats-content');
+        const statsWeeks = document.getElementById('stats-weeks');
+        const statsNotes = document.getElementById('stats-notes');
+        const statsPrograms = document.getElementById('stats-programs');
+        const statsHistoryContainer = document.getElementById('stats-history');
+        const progressChartCanvas = document.getElementById('progress-chart');
         const summaryOverlay = document.getElementById('summary-overlay');
         const closeSummaryBtn = document.getElementById('close-summary');
         const summaryTitle = document.getElementById('summary-title');
@@ -302,6 +386,7 @@
         let notesCache = loadNotes();
         let historyCache = loadHistory();
         let pendingNavigation = null;
+        let progressChartInstance = null;
 
         function loadProgress() {
             try {
@@ -379,6 +464,231 @@
                 }
             }
             saveNotes(notesCache);
+            if (statsOverlay.classList.contains('active')) {
+                renderStatsView();
+            }
+        }
+
+        function collectExportData() {
+            return {
+                version: 1,
+                generatedAt: new Date().toISOString(),
+                progress: loadProgress(),
+                notes: notesCache,
+                history: historyCache
+            };
+        }
+
+        function downloadJSON(data, filename) {
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const anchor = document.createElement('a');
+            anchor.href = url;
+            anchor.download = filename;
+            document.body.appendChild(anchor);
+            anchor.click();
+            document.body.removeChild(anchor);
+            URL.revokeObjectURL(url);
+        }
+
+        function triggerExport() {
+            const data = collectExportData();
+            const timestamp = new Date().toISOString().split('T')[0];
+            downloadJSON(data, `sculpted-fitness-backup-${timestamp}.json`);
+            showMessage('Backup downloaded');
+        }
+
+        function aggregateCurrentNoteCount() {
+            let total = 0;
+            Object.values(notesCache).forEach(weekMap => {
+                if (weekMap && typeof weekMap === 'object') {
+                    Object.values(weekMap).forEach(dayNote => {
+                        if (typeof dayNote === 'string' && dayNote.trim()) {
+                            total += 1;
+                        }
+                    });
+                }
+            });
+            return total;
+        }
+
+        function renderStatsView() {
+            if (!statsOverlay) return;
+
+            const hasHistory = historyCache.length > 0;
+            const currentNotes = aggregateCurrentNoteCount();
+
+            if (!hasHistory && currentNotes === 0) {
+                statsEmpty.classList.remove('hidden');
+                statsContent.classList.add('hidden');
+                statsHistoryContainer.innerHTML = '';
+                statsWeeks.textContent = '0';
+                statsNotes.textContent = '0';
+                statsPrograms.textContent = '0';
+                if (progressChartInstance) {
+                    progressChartInstance.destroy();
+                    progressChartInstance = null;
+                }
+                return;
+            }
+
+            statsEmpty.classList.add('hidden');
+            statsContent.classList.remove('hidden');
+
+            const chronological = historyCache.slice().reverse();
+            const labels = chronological.map(entry => `${entry.programTitle || entry.programId} W${entry.week}`);
+            const dataPoints = chronological.map(entry => Object.keys(entry.summary || {}).length);
+
+            if (progressChartInstance) {
+                progressChartInstance.data.labels = labels;
+                progressChartInstance.data.datasets[0].data = dataPoints;
+                progressChartInstance.update();
+            } else if (progressChartCanvas) {
+                const ctx = progressChartCanvas.getContext('2d');
+                progressChartInstance = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels,
+                        datasets: [
+                            {
+                                label: 'Notes Logged per Week',
+                                data: dataPoints,
+                                borderColor: '#3b82f6',
+                                backgroundColor: 'rgba(59,130,246,0.15)',
+                                borderWidth: 2,
+                                fill: true,
+                                tension: 0.35,
+                                pointRadius: 4,
+                                pointBackgroundColor: '#60a5fa'
+                            }
+                        ]
+                    },
+                    options: {
+                        plugins: {
+                            legend: {
+                                labels: {
+                                    color: '#d1d5db'
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                ticks: {
+                                    color: '#9ca3af'
+                                },
+                                grid: {
+                                    color: 'rgba(55,65,81,0.3)'
+                                }
+                            },
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    color: '#9ca3af',
+                                    precision: 0
+                                },
+                                grid: {
+                                    color: 'rgba(55,65,81,0.3)'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const totalWeeks = historyCache.length;
+            const historyNotes = historyCache.reduce((sum, entry) => sum + Object.keys(entry.summary || {}).length, 0);
+            const programSet = new Set(historyCache.map(entry => entry.programId));
+            Object.keys(notesCache || {}).forEach(programId => {
+                programSet.add(programId);
+            });
+
+            statsWeeks.textContent = String(totalWeeks);
+            statsNotes.textContent = String(historyNotes + currentNotes);
+            statsPrograms.textContent = String(programSet.size);
+
+            const recentEntries = historyCache.slice(0, 6);
+            statsHistoryContainer.innerHTML = '';
+            recentEntries.forEach(entry => {
+                const wrap = document.createElement('div');
+                wrap.className = 'bg-gray-800 border border-gray-700 rounded-xl p-3';
+                const date = new Date(entry.timestamp).toLocaleString();
+                const notes = Object.entries(entry.summary || {});
+                wrap.innerHTML = `
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-sm font-semibold text-white">${entry.programTitle || entry.programId} – Week ${entry.week}</p>
+                            <p class="text-xs text-gray-400">${date}</p>
+                        </div>
+                        <span class="text-xs text-blue-300">${notes.length} notes</span>
+                    </div>
+                    <ul class="mt-3 space-y-1 text-xs text-gray-300">
+                        ${notes.map(([day, note]) => `<li><span class="text-blue-300 font-medium">Day ${day}:</span> ${note}</li>`).join('')}
+                    </ul>
+                `;
+                statsHistoryContainer.appendChild(wrap);
+            });
+        }
+
+        function showStatsOverlay() {
+            statsOverlay.classList.add('active');
+            renderStatsView();
+        }
+
+        function hideStatsOverlay() {
+            statsOverlay.classList.remove('active');
+        }
+
+        function applyImportedData(payload) {
+            if (!payload || typeof payload !== 'object') {
+                throw new Error('Invalid backup');
+            }
+
+            if (payload.notes && typeof payload.notes === 'object') {
+                saveNotes(payload.notes);
+            } else {
+                saveNotes({});
+            }
+
+            if (payload.history && Array.isArray(payload.history)) {
+                saveHistory(payload.history);
+            } else {
+                saveHistory([]);
+            }
+
+            if (payload.progress) {
+                saveProgress(payload.progress);
+            } else {
+                localStorage.removeItem(PROGRESS_KEY);
+            }
+
+            notesCache = loadNotes();
+            historyCache = loadHistory();
+            updateContinueCard();
+            renderStatsView();
+            showMessage('Backup imported');
+        }
+
+        function handleImportFile(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = event => {
+                    try {
+                        const payload = JSON.parse(event.target.result);
+                        applyImportedData(payload);
+                        resolve();
+                    } catch (err) {
+                        console.error('Failed to import backup', err);
+                        showMessage('Import failed');
+                        reject(err);
+                    }
+                };
+                reader.onerror = err => {
+                    console.error('Failed to read file', err);
+                    showMessage('Import failed');
+                    reject(err);
+                };
+                reader.readAsText(file);
+            });
         }
 
         function saveProgress(data) {
@@ -434,6 +744,9 @@
                 historyCache = historyCache.slice(0, 100);
             }
             saveHistory(historyCache);
+            if (statsOverlay.classList.contains('active')) {
+                renderStatsView();
+            }
         }
 
         function formatCardioSummary(days) {
@@ -899,6 +1212,40 @@
                 searchOverlay.classList.remove('active');
             }
         });
+        if (openStatsBtn) {
+            openStatsBtn.addEventListener('click', showStatsOverlay);
+        }
+        if (quickExportBtn) {
+            quickExportBtn.addEventListener('click', triggerExport);
+        }
+        if (closeStatsBtn) {
+            closeStatsBtn.addEventListener('click', hideStatsOverlay);
+        }
+        if (statsOverlay) {
+            statsOverlay.addEventListener('click', (e) => {
+                if (e.target === statsOverlay) {
+                    hideStatsOverlay();
+                }
+            });
+        }
+        if (exportDataBtn) {
+            exportDataBtn.addEventListener('click', triggerExport);
+        }
+        if (importDataBtn && importInput) {
+            importDataBtn.addEventListener('click', () => importInput.click());
+            importInput.addEventListener('change', async (event) => {
+                const file = event.target.files && event.target.files[0];
+                if (file) {
+                    try {
+                        await handleImportFile(file);
+                    } catch (err) {
+                        // errors already surfaced via showMessage
+                    } finally {
+                        importInput.value = '';
+                    }
+                }
+            });
+        }
         closeSummaryBtn.addEventListener('click', hideSummaryModal);
         summaryOverlay.addEventListener('click', (e) => {
             if (e.target === summaryOverlay) {
