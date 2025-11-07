@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-900">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <!-- These tags are what make it feel like a PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>My Fitness Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent; /* Removes blue flash on tap */
+            background-color: #111827; /* Same as bg-gray-900 */
+            color: #e5e7eb; /* Same as text-gray-200 */
+            min-height: 100vh;
+            position: relative;
+        }
+        .btn-press {
+            transition: all 0.1s ease;
+        }
+        .btn-press:active {
+            transform: scale(0.98);
+            filter: brightness(0.9);
+        }
+        
+        /* Page Navigation System */
+        .no-js .page {
+            position: static;
+            display: block;
+            animation: none;
+            padding: 1.5rem;
+        }
+        .no-js .page + .page {
+            margin-top: 2rem;
+        }
+        .js-enabled .page {
+            display: none; /* Hidden by default when JS is enabled */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Fade-in animation */
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .js-enabled .page.active {
+            display: block; /* Show active page */
+        }
+        .page-content {
+            height: 100vh;
+            overflow-y: auto;
+            /* Added more bottom padding for the 'Complete' button */
+            padding: 1.5rem 1.5rem 8rem 1.5rem; 
+        }
+        .no-js .page-content {
+            height: auto;
+            overflow: visible;
+            padding: 1rem 0;
+        }
+        /* Style for the header on sub-pages */
+        .page-header {
+            position: sticky;
+            top: 0;
+            /* This is the same as bg-gray-900 */
+            background-color: #111827; 
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            /* This is the same as border-gray-700 */
+            border-bottom: 1px solid #374151; 
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="no-js h-full text-gray-200 antialiased">
+
+    <!-- Page 1: Main Menu -->
+    <div id="page-main-menu" class="page active">
+        <div class="flex flex-col h-full items-center justify-center p-6 bg-gray-900">
+            <header class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-white mb-2">My Fitness Hub</h1>
+                <p class="text-lg text-gray-400">Your personal program tracker.</p>
+            </header>
+            <main class="w-full max-w-md">
+                <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wider text-center mb-4">Select a Program</h2>
+                <div class="space-y-4">
+                    <button onclick="showProgram('gethin')" class="btn-press flex items-center justify-between w-full p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                        <div class="text-left">
+                            <p class="text-lg font-semibold text-white">Kris Gethin</p>
+                            <p class="text-sm text-gray-400">Legacy Program</p>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                    <button onclick="showProgram('nippard')" class="btn-press flex items-center justify-between w-full p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                        <div class="text-left">
+                            <p class="text-lg font-semibold text-white">Jeff Nippard</p>
+                            <p class="text-sm text-gray-400">12-Week Program</p>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Page 2: Week List -->
+    <div id="page-program-weeks" class="page">
+        <div class="page-content bg-gray-900">
+            <header class="page-header flex items-center justify-between mb-6">
+                <button onclick="showPage('page-main-menu')" class="btn-press flex items-center text-blue-400 text-lg">
+                    <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    Back
+                </button>
+                <h1 id="program-title" class="text-2xl font-bold text-white text-right"></h1>
+            </header>
+            <main id="week-list" class="space-y-3"></main>
+        </div>
+    </div>
+
+    <!-- Page 3: Day List -->
+    <div id="page-week-days" class="page">
+        <div class="page-content bg-gray-900">
+            <header class="page-header flex items-center justify-between mb-6">
+                <button onclick="showProgram(currentProgram)" class="btn-press flex items-center text-blue-400 text-lg">
+                    <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    Weeks
+                </button>
+                <h1 id="week-title" class="text-2xl font-bold text-white text-right"></h1>
+            </header>
+            <main id="day-list" class="space-y-3"></main>
+        </div>
+    </div>
+
+    <!-- Page 4: Workout Details -->
+    <div id="page-workout-details" class="page">
+        <div class="page-content bg-gray-900">
+            <header class="page-header flex items-center justify-between mb-6">
+                <button onclick="showWeek(currentProgram, currentWeek)" class="btn-press flex items-center text-blue-400 text-lg">
+                    <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    Days
+                </button>
+                <h1 id="day-title" class="text-xl font-bold text-white text-right"></h1>
+            </header>
+            
+            <!-- Main workout content -->
+            <main id="workout-content" class="space-y-6"></main>
+
+            <!-- Complete button -->
+            <div class="fixed bottom-0 left-0 right-0 p-4 bg-gray-900 border-t border-gray-700">
+                <button onclick="completeWorkout()" class="btn-press w-full py-4 px-6 bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold rounded-xl shadow-lg">
+                    Complete Workout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message box for alerts -->
+    <div id="message-box" class="hidden fixed bottom-24 left-1/2 -translate-x-1/2 bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg z-50">
+        <p id="message-text"></p>
+    </div>
+
+    <script src="data/program-data.js"></script>
+    <script>
+        document.body.classList.remove('no-js');
+        document.body.classList.add('js-enabled');
+
+        // --- DATABASE ---
+        const programs = window.programs || {};
+        if (!Object.keys(programs).length) {
+            console.warn("Program data is not loaded.");
+        }
+
+        // --- PAGE NAVIGATION & STATE ---
+        let currentPage = 'page-main-menu';
+        let currentProgram = '';
+        let currentWeek = 0;
+        let currentDay = 0;
+
+        function showPage(pageId) {
+            const currentPageElement = document.getElementById(currentPage);
+            if (currentPageElement) {
+                currentPageElement.classList.remove('active');
+            }
+            
+            const nextPageElement = document.getElementById(pageId);
+            if (nextPageElement) {
+                nextPageElement.classList.add('active');
+            } else {
+                console.error("Page not found:", pageId);
+                return;
+            }
+            
+            currentPage = pageId;
+
+            // Scroll to top of new page's content
+            const content = nextPageElement.querySelector('.page-content');
+            if (content) {
+                content.scrollTo(0, 0);
+            }
+        }
+
+        // --- APP LOGIC ---
+
+        // (Step 1) Show list of Weeks for a Program
+        function showProgram(programName) {
+            currentProgram = programName;
+            const program = programs[programName];
+
+            if (!program || (program.weeks && program.weeks.length === 0)) {
+                // For 'nippard' or any other empty program
+                if (programName === 'nippard') {
+                     showMessage(`Program data for ${program.title} is not loaded yet.`);
+                } else {
+                    // This handles 'gethin' if data was missing
+                     document.getElementById('program-title').textContent = program.title;
+                     const weekList = document.getElementById('week-list');
+                     weekList.innerHTML = ''; // Clear old list
+                     // We know Gethin has 12 weeks from the PDF
+                     let totalWeeks = 12;
+                     
+                     for (let i = 1; i <= totalWeeks; i++) {
+                        const weekButton = document.createElement('button');
+                        const weekDataExists = program.weeks.find(w => w.week === i);
+                        
+                        weekButton.className = 'btn-press w-full text-left p-5 bg-gray-800 rounded-lg border border-gray-700 shadow-md flex justify-between items-center';
+                        
+                        let weekHTML = `<span class="text-lg font-semibold text-white">Week ${i}</span>`;
+                        
+                        if (!weekDataExists) {
+                            weekButton.disabled = true;
+                            weekButton.className += ' opacity-50';
+                            weekHTML += `<span class="text-xs text-gray-500">Not Loaded</span>`;
+                        } else {
+                            weekHTML += `<svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>`;
+                            weekButton.onclick = () => showWeek(programName, i);
+                        }
+                        
+                        weekButton.innerHTML = weekHTML;
+                        weekList.appendChild(weekButton);
+                    }
+                }
+            } else if (program) {
+                 // This is the normal path for Gethin
+                 document.getElementById('program-title').textContent = program.title;
+                 const weekList = document.getElementById('week-list');
+                 weekList.innerHTML = '';
+                 let totalWeeks = 12; // Gethin's program is 12 weeks
+                 
+                 for (let i = 1; i <= totalWeeks; i++) {
+                    const weekButton = document.createElement('button');
+                    const weekDataExists = program.weeks.find(w => w.week === i);
+                    
+                    weekButton.className = 'btn-press w-full text-left p-5 bg-gray-800 rounded-lg border border-gray-700 shadow-md flex justify-between items-center';
+                    let weekHTML = `<span class="text-lg font-semibold text-white">Week ${i}</span>`;
+                    
+                    if (!weekDataExists) {
+                        weekButton.disabled = true;
+                        weekButton.className += ' opacity-50';
+                        weekHTML += `<span class="text-xs text-gray-500">Not Loaded</span>`;
+                    } else {
+                        weekHTML += `<svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>`;
+                        weekButton.onclick = () => showWeek(programName, i);
+                    }
+                    
+                    weekButton.innerHTML = weekHTML;
+                    weekList.appendChild(weekButton);
+                }
+            } else {
+                 showMessage(`Program ${programName} not found.`);
+                 return;
+            }
+
+            showPage('page-program-weeks');
+        }
+
+        // (Step 2) Show list of Days for a Week
+        function showWeek(programName, weekNumber) {
+            currentWeek = weekNumber;
+            const program = programs[programName];
+            const week = program.weeks.find(w => w.week === weekNumber);
+
+            if (!week) {
+                showMessage(`Workout data for Week ${weekNumber} is not loaded.`);
+                return;
+            }
+
+            document.getElementById('week-title').textContent = `Week ${weekNumber}`;
+            const dayList = document.getElementById('day-list');
+            dayList.innerHTML = ''; // Clear old list
+
+            week.days.forEach(day => {
+                const dayButton = document.createElement('button');
+                dayButton.className = 'btn-press w-full text-left p-5 bg-gray-800 rounded-lg border border-gray-700 shadow-md';
+                dayButton.onclick = () => showDay(programName, weekNumber, day.day);
+
+                dayButton.innerHTML = `
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-sm text-blue-400 font-semibold">Day ${day.day}</span>
+                            <p class="text-lg font-semibold text-white">${day.title}</p>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                `;
+                dayList.appendChild(dayButton);
+            });
+            
+            showPage('page-week-days');
+        }
+
+        // (Step 3) Show the Workout for a specific Day
+        function showDay(programName, weekNumber, dayNumber) {
+            currentDay = dayNumber;
+            const program = programs[programName];
+            const week = program.weeks.find(w => w.week === weekNumber);
+            const day = week.days.find(d => d.day === dayNumber);
+
+            document.getElementById('day-title').textContent = `Day ${dayNumber}: ${day.title}`;
+            
+            const workoutContent = document.getElementById('workout-content');
+            workoutContent.innerHTML = ''; // Clear old content
+
+            // 1. Add Cardio
+            workoutContent.innerHTML += `
+                <div class="bg-gray-800 rounded-lg p-4 border border-gray-700">
+                    <h2 class="text-xl font-bold text-white mb-2">Cardio</h2>
+                    <p class="text-lg text-gray-300">${day.cardio}</p>
+                </div>
+            `;
+            
+            // 2. Add Weekly Task
+            workoutContent.innerHTML += `
+                <div class="bg-gray-800 rounded-lg p-4 border border-gray-700">
+                    <h2 class="text-xl font-bold text-white mb-2">Weekly Task</h2>
+                    <p class="text-lg text-gray-300">${week.task}</p>
+                </div>
+            `;
+
+            // 3. Add Exercises
+            if (day.exercises && day.exercises.length > 0) {
+                const exerciseList = document.createElement('div');
+                exerciseList.className = 'space-y-4';
+                
+                day.exercises.forEach(ex => {
+                    exerciseList.innerHTML += `
+                        <div class="bg-gray-800 rounded-lg p-4 border border-gray-700 shadow-md">
+                            <h3 class="text-2xl font-semibold text-blue-400 mb-2">${ex.name}</h3>
+                            <div class="grid grid-cols-3 gap-2 text-center mb-3">
+                                <div>
+                                    <p class="text-sm text-gray-400">SETS</p>
+                                    <p class="text-2xl font-semibold">${ex.sets}</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">REPS</p>
+                                    <p class="text-2xl font-semibold">${ex.reps}</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">REST</p>
+                                    <p class="text-2xl font-semibold">${ex.rest}</p>
+                                </div>
+                            </div>
+                            ${ex.notes ? `<p class="text-sm text-gray-400 italic mt-2">Note: ${ex.notes}</p>` : ''}
+                        </div>
+                    `;
+                });
+                workoutContent.appendChild(exerciseList);
+            }
+            
+            showPage('page-workout-details');
+        }
+
+        function completeWorkout() {
+            showMessage("Workout complete!");
+            // Next step: Save this progress and go back to the Day list
+            // e.g., showWeek(currentProgram, currentWeek);
+        }
+
+        // Custom message function
+        function showMessage(text) {
+            const messageBox = document.getElementById('message-box');
+            const messageText = document.getElementById('message-text');
+            
+            messageText.textContent = text;
+            messageBox.classList.remove('hidden');
+
+            setTimeout(() => {
+                messageBox.classList.add('hidden');
+            }, 2000);
+        }
+
+        // --- PROGRESS SAVING (Coming soon) ---
+        // We'll use localStorage to save the current program and week
+
+        // Initialize the app on first load
+        showPage('page-main-menu');
+    </script>
+</body>
+</html>

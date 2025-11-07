@@ -1,0 +1,3500 @@
+[
+  {
+    "week": 1,
+    "task": "",
+    "days": [
+      {
+        "day": 1,
+        "title": "Upper (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "45 deg Incline Barbell Press",
+            "sets": "2",
+            "reps": "6-8",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: 45 deg Incline DB Press | Sub option 2: 45 deg Incline Machine Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Cable Crossover Ladder",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Pec Deck | Sub option 2: Bottom-Half DB Flye | Do one set with low cable position, one set with medium-height cable position, and one height with a high cable position. If you only have one or two sets, choose the one or two cable positions you prefer."
+          },
+          {
+            "name": "Wide-Grip Pull-Up",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Wide-Grip Lat Pulldown | Sub option 2: Dual-Handle Lat Pulldown | 1.5x shoulder width overhand grip. Slow 2-3 second negative. Feel your lats pulling apart on the way down."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Pendlay Deficit Row",
+            "sets": "2",
+            "reps": "6-8",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Smith Machine Row | Sub option 2: Single-Arm DB Row | Stand on a bumper plate. Focus on getting a big stretch and touch your stomach/chest on each rep!"
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Bayesian Cable Curl",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Seated Super-Bayesian High Cable Curl | Sub option 2: Incline DB Stretch Curl | If you have a left-right bicep size imbalance, do these 1 arm at a time, starting with the weaker arm. Take the weaker arm to the listed RPE. Then match the reps with the other arm (stop once you've matched the reps, even if the RPE is lower). If you don't have a size imbalance, do these both arms at the same time."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Lower (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lying Leg Curl",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Seated Leg Curl | Sub option 2: Nordic Ham Curl | Set the machine so that you get the biggest stretch possible at the bottom. Prevent your butt from popping up as you curl."
+          },
+          {
+            "name": "Smith Machine Squat",
+            "sets": "2",
+            "reps": "6-8",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: DB Bulgarian Split Squat | Sub option 2: High-Bar Back Squat | Once you are under the bar, set up your feet as you would a normal squat and then bring them forward ~3-6 inches. This will cause you to lean back into the bar slightly, allowing for a more upright squat, while also placing more tension on the quads. If your heels are raising at the bottom, you may need to bring your feet more forward. If your feet feel like they are slipping or your lower back is rounding at the bottom, try bringing your feet back a bit."
+          },
+          {
+            "name": "Barbell RDL",
+            "sets": "2",
+            "reps": "6-8",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: DB RDL | Sub option 2: Snatch-Grip RDL | To keep tension on the hamstrings, stop about 75% of the way to full lockout on each rep (i.e. stay in the bottom 3/4 of the range of motion)."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "2",
+            "reps": "6-8",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          },
+          {
+            "name": "Cable Crunch",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Decline Weighted Crunch | Sub option 2: Machine Crunch | Round your lower back as you crunch. Maintain a mind-muscle connection with your 6-pack."
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      },
+      {
+        "day": 4,
+        "title": "Pull (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Neutral-Grip Lat Pulldown",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Neutral-Grip Pull-Up | Sub option 2: Dual-Handle Lat Pulldown | Do these pulldowns with the handle more out in front of you, more like a cross between pullover and a pulldown. Focus on feeling your lats working more than the weight you're using."
+          },
+          {
+            "name": "Chest-Supported Machine Row",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Chest-Supported T-Bar Row | Sub option 2: Incline Chest-Supported DB Row | Flare elbows out at roughly 45 deg and squeeze your shoulder blades together hard at the top of each rep."
+          },
+          {
+            "name": "Neutral-Grip Seated Cable Row",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Helms Row | Sub option 2: Meadows Row | Focus on squeezing your shoulder blades together, driving your elbows down and back."
+          },
+          {
+            "name": "1-Arm 45 deg Cable Rear Delt Flye",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Rope Face Pull | Sub option 2: Reverse Pec Deck | Pause for 1-2 seconds in the squeeze of each rep. Contract the rear delts hard!"
+          },
+          {
+            "name": "Machine Shrug",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Cable Paused Shrug-In | Sub option 2: DB Shrug | Brief pause at the top and bottom of ROM. Think about pulling your shoulders up to your ears!"
+          },
+          {
+            "name": "EZ-Bar Cable Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: EZ-Bar Curl | Sub option 2: DB Curl | Set up the cable at the lowest position. Maintain constant tension on the biceps. Slow, controlled reps!"
+          },
+          {
+            "name": "Machine Preacher Curl",
+            "sets": "1",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Last set RPE: ~8-9 | Sub option 1: EZ-Bar Preacher Curl | Sub option 2: DB Preacher Curl | Smooth, controlled reps. Mind-muscle connection with the biceps."
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Push (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Barbell Bench Press",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Machine Chest Press | Sub option 2: DB Bench Press | Set up a comfortable arch, quick pause on the chest and explode up on each rep."
+          },
+          {
+            "name": "Machine Shoulder Press",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Cable Shoulder Press | Sub option 2: Seated DB Shoulder Press | Ensure that your elbows break at least 90 deg. Mind-muscle connection with your delts. Smooth, controlled reps."
+          },
+          {
+            "name": "Bottom-Half DB Flye",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Bottom-Half Seated Cable Flye | Sub option 2: Low-to-High Cable Crossover | All reps and sets are to be performed in the bottom half of the ROM. Focus on feeling a deep stretch in your pecs at the bottom of each rep."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Cable Triceps Kickback",
+            "sets": "1",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Last set RPE: ~8-9 | Sub option 1: DB Triceps Kickback | Sub option 2: Bench Dip | There are two ways you can do this: upright or bent over. Choose the one that feels more comfortable for you. The main thing is that when you're in the full squeeze, your shoulder should be positioned back behind your torso."
+          },
+          {
+            "name": "Roman Chair Leg Raise",
+            "sets": "2",
+            "reps": "10-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Hanging Leg Raise | Sub option 2: Modified Candlestick | Allow your lower back to round as you curl your legs up. 10-20 reps is a broad range on purpose: just go until you hit the listed RPE with controlled form."
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Legs (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Leg Press",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Smith Machine Static Lunge | Sub option 2: DB Walking Lunge | Feet lower on the platform for more quad focus. Get as deep as you can without excessive back rounding. Control the negative and do a slight pause at the bottom of each rep."
+          },
+          {
+            "name": "Seated Leg Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Lying Leg Curl | Sub option 2: Nordic Ham Curl | Lean forward over the machine to get a maximum stretch in your hamstrings."
+          },
+          {
+            "name": "DB Bulgarian Split Squat",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: DB Step-Up | Sub option 2: Goblet Squat | Lower all the way down until your front thigh is parallel to the ground. Drive through your front heel on the way up."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Machine Hip Adduction",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Cable Hip Adduction | Sub option 2: Copenhagen Hip Adduction | Mind-muscle connection with your inner thighs. These are great for adding thigh mass from the front! Push them hard!"
+          },
+          {
+            "name": "Machine Hip Abduction",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Cable Hip Abduction | Sub option 2: Lateral Band Walk | If possible, use pads to increase the range of motion on the machine. Lean forward and grab onto the machine rails to stretch the glutes further."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 2,
+    "task": "",
+    "days": [
+      {
+        "day": 1,
+        "title": "Upper (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "45 deg Incline Barbell Press",
+            "sets": "3",
+            "reps": "6-8",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: 45 deg Incline DB Press | Sub option 2: 45 deg Incline Machine Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Cable Crossover Ladder",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Pec Deck | Sub option 2: Bottom-Half DB Flye | Do one set with low cable position, one set with medium-height cable position, and one height with a high cable position. If you only have one or two sets, choose the one or two cable positions you prefer."
+          },
+          {
+            "name": "Wide-Grip Pull-Up",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Wide-Grip Lat Pulldown | Sub option 2: Dual-Handle Lat Pulldown | 1.5x shoulder width overhand grip. Slow 2-3 second negative. Feel your lats pulling apart on the way down."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Pendlay Deficit Row",
+            "sets": "2",
+            "reps": "6-8",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Row | Sub option 2: Single-Arm DB Row | Stand on a bumper plate. Focus on getting a big stretch and touch your stomach/chest on each rep!"
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Bayesian Cable Curl",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Super-Bayesian High Cable Curl | Sub option 2: Incline DB Stretch Curl | If you have a left-right bicep size imbalance, do these 1 arm at a time, starting with the weaker arm. Take the weaker arm to the listed RPE. Then match the reps with the other arm (stop once you've matched the reps, even if the RPE is lower). If you don't have a size imbalance, do these both arms at the same time."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Lower (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lying Leg Curl",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Leg Curl | Sub option 2: Nordic Ham Curl | Set the machine so that you get the biggest stretch possible at the bottom. Prevent your butt from popping up as you curl."
+          },
+          {
+            "name": "Smith Machine Squat",
+            "sets": "3",
+            "reps": "6-8",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Bulgarian Split Squat | Sub option 2: High-Bar Back Squat | Once you are under the bar, set up your feet as you would a normal squat and then bring them forward ~3-6 inches. This will cause you to lean back into the bar slightly, allowing for a more upright squat, while also placing more tension on the quads. If your heels are raising at the bottom, you may need to bring your feet more forward. If your feet feel like they are slipping or your lower back is rounding at the bottom, try bringing your feet back a bit."
+          },
+          {
+            "name": "Barbell RDL",
+            "sets": "3",
+            "reps": "6-8",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB RDL | Sub option 2: Snatch-Grip RDL | To keep tension on the hamstrings, stop about 75% of the way to full lockout on each rep (i.e. stay in the bottom 3/4 of the range of motion)."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "2",
+            "reps": "6-8",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          },
+          {
+            "name": "Cable Crunch",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Decline Weighted Crunch | Sub option 2: Machine Crunch | Round your lower back as you crunch. Maintain a mind-muscle connection with your 6-pack."
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      },
+      {
+        "day": 4,
+        "title": "Pull (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Neutral-Grip Lat Pulldown",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Neutral-Grip Pull-Up | Sub option 2: Dual-Handle Lat Pulldown | Do these pulldowns with the handle more out in front of you, more like a cross between pullover and a pulldown. Focus on feeling your lats working more than the weight you're using."
+          },
+          {
+            "name": "Chest-Supported Machine Row",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Chest-Supported T-Bar Row | Sub option 2: Incline Chest-Supported DB Row | Flare elbows out at roughly 45 deg and squeeze your shoulder blades together hard at the top of each rep."
+          },
+          {
+            "name": "Neutral-Grip Seated Cable Row",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Helms Row | Sub option 2: Meadows Row | Focus on squeezing your shoulder blades together, driving your elbows down and back."
+          },
+          {
+            "name": "1-Arm 45 deg Cable Rear Delt Flye",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Rope Face Pull | Sub option 2: Reverse Pec Deck | Pause for 1-2 seconds in the squeeze of each rep. Contract the rear delts hard!"
+          },
+          {
+            "name": "Machine Shrug",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Paused Shrug-In | Sub option 2: DB Shrug | Brief pause at the top and bottom of ROM. Think about pulling your shoulders up to your ears!"
+          },
+          {
+            "name": "EZ-Bar Cable Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: EZ-Bar Curl | Sub option 2: DB Curl | Set up the cable at the lowest position. Maintain constant tension on the biceps. Slow, controlled reps!"
+          },
+          {
+            "name": "Machine Preacher Curl",
+            "sets": "1",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Last set RPE: 10 | Sub option 1: EZ-Bar Preacher Curl | Sub option 2: DB Preacher Curl | Smooth, controlled reps. Mind-muscle connection with the biceps."
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Push (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Barbell Bench Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Machine Chest Press | Sub option 2: DB Bench Press | Set up a comfortable arch, quick pause on the chest and explode up on each rep."
+          },
+          {
+            "name": "Machine Shoulder Press",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Shoulder Press | Sub option 2: Seated DB Shoulder Press | Ensure that your elbows break at least 90 deg. Mind-muscle connection with your delts. Smooth, controlled reps."
+          },
+          {
+            "name": "Bottom-Half DB Flye",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Bottom-Half Seated Cable Flye | Sub option 2: Low-to-High Cable Crossover | All reps and sets are to be performed in the bottom half of the ROM. Focus on feeling a deep stretch in your pecs at the bottom of each rep."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Cable Triceps Kickback",
+            "sets": "1",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Last set RPE: 10 | Sub option 1: DB Triceps Kickback | Sub option 2: Bench Dip | There are two ways you can do this: upright or bent over. Choose the one that feels more comfortable for you. The main thing is that when you're in the full squeeze, your shoulder should be positioned back behind your torso."
+          },
+          {
+            "name": "Roman Chair Leg Raise",
+            "sets": "2",
+            "reps": "10-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Hanging Leg Raise | Sub option 2: Modified Candlestick | Allow your lower back to round as you curl your legs up. 10-20 reps is a broad range on purpose: just go until you hit the listed RPE with controlled form."
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Legs (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Leg Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Static Lunge | Sub option 2: DB Walking Lunge | Feet lower on the platform for more quad focus. Get as deep as you can without excessive back rounding. Control the negative and do a slight pause at the bottom of each rep."
+          },
+          {
+            "name": "Seated Leg Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lying Leg Curl | Sub option 2: Nordic Ham Curl | Lean forward over the machine to get a maximum stretch in your hamstrings."
+          },
+          {
+            "name": "DB Bulgarian Split Squat",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Step-Up | Sub option 2: Goblet Squat | Lower all the way down until your front thigh is parallel to the ground. Drive through your front heel on the way up."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Machine Hip Adduction",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Adduction | Sub option 2: Copenhagen Hip Adduction | Mind-muscle connection with your inner thighs. These are great for adding thigh mass from the front! Push them hard!"
+          },
+          {
+            "name": "Machine Hip Abduction",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Abduction | Sub option 2: Lateral Band Walk | If possible, use pads to increase the range of motion on the machine. Lean forward and grab onto the machine rails to stretch the glutes further."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 3,
+    "task": "",
+    "days": [
+      {
+        "day": 1,
+        "title": "Upper (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "45 deg Incline Barbell Press",
+            "sets": "3",
+            "reps": "6-8",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: 45 deg Incline DB Press | Sub option 2: 45 deg Incline Machine Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Cable Crossover Ladder",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Pec Deck | Sub option 2: Bottom-Half DB Flye | Do one set with low cable position, one set with medium-height cable position, and one height with a high cable position. If you only have one or two sets, choose the one or two cable positions you prefer."
+          },
+          {
+            "name": "Wide-Grip Pull-Up",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Wide-Grip Lat Pulldown | Sub option 2: Dual-Handle Lat Pulldown | 1.5x shoulder width overhand grip. Slow 2-3 second negative. Feel your lats pulling apart on the way down."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Pendlay Deficit Row",
+            "sets": "2",
+            "reps": "6-8",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Row | Sub option 2: Single-Arm DB Row | Stand on a bumper plate. Focus on getting a big stretch and touch your stomach/chest on each rep!"
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Bayesian Cable Curl",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Super-Bayesian High Cable Curl | Sub option 2: Incline DB Stretch Curl | If you have a left-right bicep size imbalance, do these 1 arm at a time, starting with the weaker arm. Take the weaker arm to the listed RPE. Then match the reps with the other arm (stop once you've matched the reps, even if the RPE is lower). If you don't have a size imbalance, do these both arms at the same time."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Lower (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lying Leg Curl",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Leg Curl | Sub option 2: Nordic Ham Curl | Set the machine so that you get the biggest stretch possible at the bottom. Prevent your butt from popping up as you curl."
+          },
+          {
+            "name": "Smith Machine Squat",
+            "sets": "3",
+            "reps": "6-8",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Bulgarian Split Squat | Sub option 2: High-Bar Back Squat | Once you are under the bar, set up your feet as you would a normal squat and then bring them forward ~3-6 inches. This will cause you to lean back into the bar slightly, allowing for a more upright squat, while also placing more tension on the quads. If your heels are raising at the bottom, you may need to bring your feet more forward. If your feet feel like they are slipping or your lower back is rounding at the bottom, try bringing your feet back a bit."
+          },
+          {
+            "name": "Barbell RDL",
+            "sets": "3",
+            "reps": "6-8",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB RDL | Sub option 2: Snatch-Grip RDL | To keep tension on the hamstrings, stop about 75% of the way to full lockout on each rep (i.e. stay in the bottom 3/4 of the range of motion)."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "2",
+            "reps": "6-8",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          },
+          {
+            "name": "Cable Crunch",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Decline Weighted Crunch | Sub option 2: Machine Crunch | Round your lower back as you crunch. Maintain a mind-muscle connection with your 6-pack."
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      },
+      {
+        "day": 4,
+        "title": "Pull (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Neutral-Grip Lat Pulldown",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Neutral-Grip Pull-Up | Sub option 2: Dual-Handle Lat Pulldown | Do these pulldowns with the handle more out in front of you, more like a cross between pullover and a pulldown. Focus on feeling your lats working more than the weight you're using."
+          },
+          {
+            "name": "Chest-Supported Machine Row",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Chest-Supported T-Bar Row | Sub option 2: Incline Chest-Supported DB Row | Flare elbows out at roughly 45 deg and squeeze your shoulder blades together hard at the top of each rep."
+          },
+          {
+            "name": "Neutral-Grip Seated Cable Row",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Helms Row | Sub option 2: Meadows Row | Focus on squeezing your shoulder blades together, driving your elbows down and back."
+          },
+          {
+            "name": "1-Arm 45 deg Cable Rear Delt Flye",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Rope Face Pull | Sub option 2: Reverse Pec Deck | Pause for 1-2 seconds in the squeeze of each rep. Contract the rear delts hard!"
+          },
+          {
+            "name": "Machine Shrug",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Paused Shrug-In | Sub option 2: DB Shrug | Brief pause at the top and bottom of ROM. Think about pulling your shoulders up to your ears!"
+          },
+          {
+            "name": "EZ-Bar Cable Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: EZ-Bar Curl | Sub option 2: DB Curl | Set up the cable at the lowest position. Maintain constant tension on the biceps. Slow, controlled reps!"
+          },
+          {
+            "name": "Machine Preacher Curl",
+            "sets": "1",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Last set RPE: 10 | Sub option 1: EZ-Bar Preacher Curl | Sub option 2: DB Preacher Curl | Smooth, controlled reps. Mind-muscle connection with the biceps."
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Push (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Barbell Bench Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Machine Chest Press | Sub option 2: DB Bench Press | Set up a comfortable arch, quick pause on the chest and explode up on each rep."
+          },
+          {
+            "name": "Machine Shoulder Press",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Shoulder Press | Sub option 2: Seated DB Shoulder Press | Ensure that your elbows break at least 90 deg. Mind-muscle connection with your delts. Smooth, controlled reps."
+          },
+          {
+            "name": "Bottom-Half DB Flye",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Bottom-Half Seated Cable Flye | Sub option 2: Low-to-High Cable Crossover | All reps and sets are to be performed in the bottom half of the ROM. Focus on feeling a deep stretch in your pecs at the bottom of each rep."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Cable Triceps Kickback",
+            "sets": "1",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Last set RPE: 10 | Sub option 1: DB Triceps Kickback | Sub option 2: Bench Dip | There are two ways you can do this: upright or bent over. Choose the one that feels more comfortable for you. The main thing is that when you're in the full squeeze, your shoulder should be positioned back behind your torso."
+          },
+          {
+            "name": "Roman Chair Leg Raise",
+            "sets": "2",
+            "reps": "10-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Hanging Leg Raise | Sub option 2: Modified Candlestick | Allow your lower back to round as you curl your legs up. 10-20 reps is a broad range on purpose: just go until you hit the listed RPE with controlled form."
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Legs (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Leg Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Static Lunge | Sub option 2: DB Walking Lunge | Feet lower on the platform for more quad focus. Get as deep as you can without excessive back rounding. Control the negative and do a slight pause at the bottom of each rep."
+          },
+          {
+            "name": "Seated Leg Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lying Leg Curl | Sub option 2: Nordic Ham Curl | Lean forward over the machine to get a maximum stretch in your hamstrings."
+          },
+          {
+            "name": "DB Bulgarian Split Squat",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Step-Up | Sub option 2: Goblet Squat | Lower all the way down until your front thigh is parallel to the ground. Drive through your front heel on the way up."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Machine Hip Adduction",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Adduction | Sub option 2: Copenhagen Hip Adduction | Mind-muscle connection with your inner thighs. These are great for adding thigh mass from the front! Push them hard!"
+          },
+          {
+            "name": "Machine Hip Abduction",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Abduction | Sub option 2: Lateral Band Walk | If possible, use pads to increase the range of motion on the machine. Lean forward and grab onto the machine rails to stretch the glutes further."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 4,
+    "task": "",
+    "days": [
+      {
+        "day": 1,
+        "title": "Upper (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "45 deg Incline Barbell Press",
+            "sets": "3",
+            "reps": "6-8",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: 45 deg Incline DB Press | Sub option 2: 45 deg Incline Machine Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Cable Crossover Ladder",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Pec Deck | Sub option 2: Bottom-Half DB Flye | Do one set with low cable position, one set with medium-height cable position, and one height with a high cable position. If you only have one or two sets, choose the one or two cable positions you prefer."
+          },
+          {
+            "name": "Wide-Grip Pull-Up",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Wide-Grip Lat Pulldown | Sub option 2: Dual-Handle Lat Pulldown | 1.5x shoulder width overhand grip. Slow 2-3 second negative. Feel your lats pulling apart on the way down."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Pendlay Deficit Row",
+            "sets": "2",
+            "reps": "6-8",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Row | Sub option 2: Single-Arm DB Row | Stand on a bumper plate. Focus on getting a big stretch and touch your stomach/chest on each rep!"
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Bayesian Cable Curl",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Super-Bayesian High Cable Curl | Sub option 2: Incline DB Stretch Curl | If you have a left-right bicep size imbalance, do these 1 arm at a time, starting with the weaker arm. Take the weaker arm to the listed RPE. Then match the reps with the other arm (stop once you've matched the reps, even if the RPE is lower). If you don't have a size imbalance, do these both arms at the same time."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Lower (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lying Leg Curl",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Leg Curl | Sub option 2: Nordic Ham Curl | Set the machine so that you get the biggest stretch possible at the bottom. Prevent your butt from popping up as you curl."
+          },
+          {
+            "name": "Smith Machine Squat",
+            "sets": "3",
+            "reps": "6-8",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Bulgarian Split Squat | Sub option 2: High-Bar Back Squat | Once you are under the bar, set up your feet as you would a normal squat and then bring them forward ~3-6 inches. This will cause you to lean back into the bar slightly, allowing for a more upright squat, while also placing more tension on the quads. If your heels are raising at the bottom, you may need to bring your feet more forward. If your feet feel like they are slipping or your lower back is rounding at the bottom, try bringing your feet back a bit."
+          },
+          {
+            "name": "Barbell RDL",
+            "sets": "3",
+            "reps": "6-8",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB RDL | Sub option 2: Snatch-Grip RDL | To keep tension on the hamstrings, stop about 75% of the way to full lockout on each rep (i.e. stay in the bottom 3/4 of the range of motion)."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "2",
+            "reps": "6-8",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          },
+          {
+            "name": "Cable Crunch",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Decline Weighted Crunch | Sub option 2: Machine Crunch | Round your lower back as you crunch. Maintain a mind-muscle connection with your 6-pack."
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      },
+      {
+        "day": 4,
+        "title": "Pull (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Neutral-Grip Lat Pulldown",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Neutral-Grip Pull-Up | Sub option 2: Dual-Handle Lat Pulldown | Do these pulldowns with the handle more out in front of you, more like a cross between pullover and a pulldown. Focus on feeling your lats working more than the weight you're using."
+          },
+          {
+            "name": "Chest-Supported Machine Row",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Chest-Supported T-Bar Row | Sub option 2: Incline Chest-Supported DB Row | Flare elbows out at roughly 45 deg and squeeze your shoulder blades together hard at the top of each rep."
+          },
+          {
+            "name": "Neutral-Grip Seated Cable Row",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Helms Row | Sub option 2: Meadows Row | Focus on squeezing your shoulder blades together, driving your elbows down and back."
+          },
+          {
+            "name": "1-Arm 45 deg Cable Rear Delt Flye",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Rope Face Pull | Sub option 2: Reverse Pec Deck | Pause for 1-2 seconds in the squeeze of each rep. Contract the rear delts hard!"
+          },
+          {
+            "name": "Machine Shrug",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Paused Shrug-In | Sub option 2: DB Shrug | Brief pause at the top and bottom of ROM. Think about pulling your shoulders up to your ears!"
+          },
+          {
+            "name": "EZ-Bar Cable Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: EZ-Bar Curl | Sub option 2: DB Curl | Set up the cable at the lowest position. Maintain constant tension on the biceps. Slow, controlled reps!"
+          },
+          {
+            "name": "Machine Preacher Curl",
+            "sets": "1",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Last set RPE: 10 | Sub option 1: EZ-Bar Preacher Curl | Sub option 2: DB Preacher Curl | Smooth, controlled reps. Mind-muscle connection with the biceps."
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Push (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Barbell Bench Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Machine Chest Press | Sub option 2: DB Bench Press | Set up a comfortable arch, quick pause on the chest and explode up on each rep."
+          },
+          {
+            "name": "Machine Shoulder Press",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Shoulder Press | Sub option 2: Seated DB Shoulder Press | Ensure that your elbows break at least 90 deg. Mind-muscle connection with your delts. Smooth, controlled reps."
+          },
+          {
+            "name": "Bottom-Half DB Flye",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Bottom-Half Seated Cable Flye | Sub option 2: Low-to-High Cable Crossover | All reps and sets are to be performed in the bottom half of the ROM. Focus on feeling a deep stretch in your pecs at the bottom of each rep."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Cable Triceps Kickback",
+            "sets": "1",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Last set RPE: 10 | Sub option 1: DB Triceps Kickback | Sub option 2: Bench Dip | There are two ways you can do this: upright or bent over. Choose the one that feels more comfortable for you. The main thing is that when you're in the full squeeze, your shoulder should be positioned back behind your torso."
+          },
+          {
+            "name": "Roman Chair Leg Raise",
+            "sets": "2",
+            "reps": "10-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Hanging Leg Raise | Sub option 2: Modified Candlestick | Allow your lower back to round as you curl your legs up. 10-20 reps is a broad range on purpose: just go until you hit the listed RPE with controlled form."
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Legs (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Leg Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Static Lunge | Sub option 2: DB Walking Lunge | Feet lower on the platform for more quad focus. Get as deep as you can without excessive back rounding. Control the negative and do a slight pause at the bottom of each rep."
+          },
+          {
+            "name": "Seated Leg Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lying Leg Curl | Sub option 2: Nordic Ham Curl | Lean forward over the machine to get a maximum stretch in your hamstrings."
+          },
+          {
+            "name": "DB Bulgarian Split Squat",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Step-Up | Sub option 2: Goblet Squat | Lower all the way down until your front thigh is parallel to the ground. Drive through your front heel on the way up."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Machine Hip Adduction",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Adduction | Sub option 2: Copenhagen Hip Adduction | Mind-muscle connection with your inner thighs. These are great for adding thigh mass from the front! Push them hard!"
+          },
+          {
+            "name": "Machine Hip Abduction",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Abduction | Sub option 2: Lateral Band Walk | If possible, use pads to increase the range of motion on the machine. Lean forward and grab onto the machine rails to stretch the glutes further."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 5,
+    "task": "",
+    "days": [
+      {
+        "day": 1,
+        "title": "Upper (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "45 deg Incline Barbell Press",
+            "sets": "3",
+            "reps": "6-8",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: 45 deg Incline DB Press | Sub option 2: 45 deg Incline Machine Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Cable Crossover Ladder",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Pec Deck | Sub option 2: Bottom-Half DB Flye | Do one set with low cable position, one set with medium-height cable position, and one height with a high cable position. If you only have one or two sets, choose the one or two cable positions you prefer."
+          },
+          {
+            "name": "Wide-Grip Pull-Up",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Wide-Grip Lat Pulldown | Sub option 2: Dual-Handle Lat Pulldown | 1.5x shoulder width overhand grip. Slow 2-3 second negative. Feel your lats pulling apart on the way down."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Pendlay Deficit Row",
+            "sets": "2",
+            "reps": "6-8",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Row | Sub option 2: Single-Arm DB Row | Stand on a bumper plate. Focus on getting a big stretch and touch your stomach/chest on each rep!"
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Bayesian Cable Curl",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Super-Bayesian High Cable Curl | Sub option 2: Incline DB Stretch Curl | If you have a left-right bicep size imbalance, do these 1 arm at a time, starting with the weaker arm. Take the weaker arm to the listed RPE. Then match the reps with the other arm (stop once you've matched the reps, even if the RPE is lower). If you don't have a size imbalance, do these both arms at the same time."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Lower (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lying Leg Curl",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Leg Curl | Sub option 2: Nordic Ham Curl | Set the machine so that you get the biggest stretch possible at the bottom. Prevent your butt from popping up as you curl."
+          },
+          {
+            "name": "Smith Machine Squat",
+            "sets": "3",
+            "reps": "6-8",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Bulgarian Split Squat | Sub option 2: High-Bar Back Squat | Once you are under the bar, set up your feet as you would a normal squat and then bring them forward ~3-6 inches. This will cause you to lean back into the bar slightly, allowing for a more upright squat, while also placing more tension on the quads. If your heels are raising at the bottom, you may need to bring your feet more forward. If your feet feel like they are slipping or your lower back is rounding at the bottom, try bringing your feet back a bit."
+          },
+          {
+            "name": "Barbell RDL",
+            "sets": "3",
+            "reps": "6-8",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB RDL | Sub option 2: Snatch-Grip RDL | To keep tension on the hamstrings, stop about 75% of the way to full lockout on each rep (i.e. stay in the bottom 3/4 of the range of motion)."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "2",
+            "reps": "6-8",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          },
+          {
+            "name": "Cable Crunch",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Decline Weighted Crunch | Sub option 2: Machine Crunch | Round your lower back as you crunch. Maintain a mind-muscle connection with your 6-pack."
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      },
+      {
+        "day": 4,
+        "title": "Pull (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Neutral-Grip Lat Pulldown",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Neutral-Grip Pull-Up | Sub option 2: Dual-Handle Lat Pulldown | Do these pulldowns with the handle more out in front of you, more like a cross between pullover and a pulldown. Focus on feeling your lats working more than the weight you're using."
+          },
+          {
+            "name": "Chest-Supported Machine Row",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Chest-Supported T-Bar Row | Sub option 2: Incline Chest-Supported DB Row | Flare elbows out at roughly 45 deg and squeeze your shoulder blades together hard at the top of each rep."
+          },
+          {
+            "name": "Neutral-Grip Seated Cable Row",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Helms Row | Sub option 2: Meadows Row | Focus on squeezing your shoulder blades together, driving your elbows down and back."
+          },
+          {
+            "name": "1-Arm 45 deg Cable Rear Delt Flye",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Rope Face Pull | Sub option 2: Reverse Pec Deck | Pause for 1-2 seconds in the squeeze of each rep. Contract the rear delts hard!"
+          },
+          {
+            "name": "Machine Shrug",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Paused Shrug-In | Sub option 2: DB Shrug | Brief pause at the top and bottom of ROM. Think about pulling your shoulders up to your ears!"
+          },
+          {
+            "name": "EZ-Bar Cable Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: EZ-Bar Curl | Sub option 2: DB Curl | Set up the cable at the lowest position. Maintain constant tension on the biceps. Slow, controlled reps!"
+          },
+          {
+            "name": "Machine Preacher Curl",
+            "sets": "1",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Last set RPE: 10 | Sub option 1: EZ-Bar Preacher Curl | Sub option 2: DB Preacher Curl | Smooth, controlled reps. Mind-muscle connection with the biceps."
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Push (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Barbell Bench Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Machine Chest Press | Sub option 2: DB Bench Press | Set up a comfortable arch, quick pause on the chest and explode up on each rep."
+          },
+          {
+            "name": "Machine Shoulder Press",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Shoulder Press | Sub option 2: Seated DB Shoulder Press | Ensure that your elbows break at least 90 deg. Mind-muscle connection with your delts. Smooth, controlled reps."
+          },
+          {
+            "name": "Bottom-Half DB Flye",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Bottom-Half Seated Cable Flye | Sub option 2: Low-to-High Cable Crossover | All reps and sets are to be performed in the bottom half of the ROM. Focus on feeling a deep stretch in your pecs at the bottom of each rep."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Cable Triceps Kickback",
+            "sets": "1",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Last set RPE: 10 | Sub option 1: DB Triceps Kickback | Sub option 2: Bench Dip | There are two ways you can do this: upright or bent over. Choose the one that feels more comfortable for you. The main thing is that when you're in the full squeeze, your shoulder should be positioned back behind your torso."
+          },
+          {
+            "name": "Roman Chair Leg Raise",
+            "sets": "2",
+            "reps": "10-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Hanging Leg Raise | Sub option 2: Modified Candlestick | Allow your lower back to round as you curl your legs up. 10-20 reps is a broad range on purpose: just go until you hit the listed RPE with controlled form."
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Legs (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Leg Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Static Lunge | Sub option 2: DB Walking Lunge | Feet lower on the platform for more quad focus. Get as deep as you can without excessive back rounding. Control the negative and do a slight pause at the bottom of each rep."
+          },
+          {
+            "name": "Seated Leg Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lying Leg Curl | Sub option 2: Nordic Ham Curl | Lean forward over the machine to get a maximum stretch in your hamstrings."
+          },
+          {
+            "name": "DB Bulgarian Split Squat",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Step-Up | Sub option 2: Goblet Squat | Lower all the way down until your front thigh is parallel to the ground. Drive through your front heel on the way up."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Machine Hip Adduction",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Adduction | Sub option 2: Copenhagen Hip Adduction | Mind-muscle connection with your inner thighs. These are great for adding thigh mass from the front! Push them hard!"
+          },
+          {
+            "name": "Machine Hip Abduction",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Abduction | Sub option 2: Lateral Band Walk | If possible, use pads to increase the range of motion on the machine. Lean forward and grab onto the machine rails to stretch the glutes further."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      },
+      {
+        "day": 8,
+        "title": "Ramping Block",
+        "cardio": "",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 6,
+    "task": "",
+    "days": [
+      {
+        "day": 1,
+        "title": "Upper (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "45 deg Incline DB Press",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: 45 deg Incline Barbell Press | Sub option 2: 45 deg Incline Machine Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Pec Deck",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Cable Crossover Ladder | Sub option 2: Bottom-Half DB Flye | Focus on bringing your elbows together - not your hands"
+          },
+          {
+            "name": "Dual-Handle Lat Pulldown",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Wide-Grip Lat Pulldown | Sub option 2: Wide-Grip Pull-Up | Lean back by ~15 deg and drive your elbows down as you squeeze your shoulder blades together. This should feel like a mix of lats and mid-traps."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Smith Machine Row",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Pendlay Deficit Row | Sub option 2: Single-Arm DB Row | Focus on squeezing your shoulder blades together, keeping your elbows at a ~45 deg angle"
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Bayesian Cable Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Seated Super-Bayesian High Cable Curl | Sub option 2: Incline DB Stretch Curl | If you have a left-right bicep size imbalance, do these 1 arm at a time, starting with the weaker arm. Take the weaker arm to the listed RPE. Then match the reps with the other arm (stop once you've matched the reps, even if the RPE is lower). If you don't have a size imbalance, do these both arms at the same time."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Lower (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lying Leg Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Seated Leg Curl | Sub option 2: Nordic Ham Curl | Set the machine so that you get the biggest stretch possible at the bottom. Prevent your butt from popping up as you curl."
+          },
+          {
+            "name": "Smith Machine Static Lunge w/ Elevated Front Foot",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: DB Bulgarian Split Squat | Sub option 2: High-Bar Back Squat | Elevate your front foot on a small box. Minimize contribution from your back leg."
+          },
+          {
+            "name": "45 deg Hyperextension",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Glute-Ham Raise | Sub option 2: Cable Pull-Through | Squeeze your glutes hard at the top of each rep. Slow controlled reps on the way down, followed by an explosive positive."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Leg Press Calf Press",
+            "sets": "2",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Seated Calf Raise | Sub option 2: Standing Calf Raise | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          },
+          {
+            "name": "Machine Crunch",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Decline Weighted Crunch | Sub option 2: Cable Crunch | Round your lower back as you crunch. Maintain a mind-muscle connection with your 6-pack."
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      },
+      {
+        "day": 4,
+        "title": "Pull (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lean-Back Lat Pulldown",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Lean-Back Machine Pulldown | Sub option 2: Pull-Up | Initiate the pulldown with a straight up posture. As you pull the bar down, lean back by about 15-30 deg to get the mid-back more involved. Softly touch the bar to your chest on every rep and, even though you're leaning back, still control the weight!"
+          },
+          {
+            "name": "Chest-Supported T-Bar Row",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Chest-Supported Machine Row | Sub option 2: Incline Chest-Supported DB Row | Flare elbows out at roughly 45 deg and squeeze your shoulder blades together hard at the top of each rep."
+          },
+          {
+            "name": "Dual-Handle Elbows-Out Cable Row",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Arm-Out Single-Arm DB Row | Sub option 2: Meadows Row | Flare your elbows out ~45 deg. Smooth, controlled reps."
+          },
+          {
+            "name": "1-Arm 45 deg Cable Rear Delt Flye",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Rope Face Pull | Sub option 2: Reverse Pec Deck | Pause for 1-2 seconds in the squeeze of each rep. Contract the rear delts hard!"
+          },
+          {
+            "name": "Cable Paused Shrug-In",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Machine Shrug | Sub option 2: DB Shrug | Shrug up and in. Think about shrugging \"up to your ears.\" 1-2 second pause in the squeeze (at the top) of each rep, then another 1-2 second pause in the stretch (at the bottom) of each rep."
+          },
+          {
+            "name": "Cable Rope Hammer Curl",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: DB Hammer Curl | Sub option 2: Hammer Preacher Curl | Squeeze the rope hard as you curl the weight up. Smooth, controlled reps."
+          },
+          {
+            "name": "DB Concentration Curl",
+            "sets": "1",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Last set RPE: ~8-9 | Sub option 1: Concentration Cable Curl | Sub option 2: DB Preacher Curl | Smooth, controlled reps. Mind-muscle connection with the biceps."
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Push (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Machine Chest Press",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Barbell Bench Press | Sub option 2: DB Bench Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Seated DB Shoulder Press",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Cable Shoulder Press | Sub option 2: Machine Shoulder Press | Ensure that your elbows break at least 90 deg. Mind-muscle connection with your delts. Smooth, controlled reps."
+          },
+          {
+            "name": "Bottom-Half Seated Cable Flye",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Bottom-Half DB Flye | Sub option 2: Low-to-High Cable Crossover | All reps and sets are to be performed in the bottom half of the ROM. Focus on feeling a deep stretch in your pecs at the bottom of each rep."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "EZ-Bar Skull Crusher",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: DB Skull Crusher | Sub option 2: Katana Triceps Extension | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Triceps Pressdown (Bar)",
+            "sets": "1",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Last set RPE: ~8-9 | Sub option 1: Triceps Pressdown (Rope) | Sub option 2: DB Triceps Kickback | Focus on squeezing your triceps to move the weight"
+          },
+          {
+            "name": "Ab Wheel Rollout",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Swiss Ball Rollout | Sub option 2: Long-Lever Plank | Don't just bend at your hips, use your abs to lower yourself down under control and pull yourself back up. If you don't have the core strength to get all the way extended at the bottom, try to progressively increase the ROM week to week."
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Legs (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Hack Squat",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Leg Press | Sub option 2: DB Walking Lunge | Use a controlled negative (don't free fall) and then explode on the positive."
+          },
+          {
+            "name": "Seated Leg Curl",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Lying Leg Curl | Sub option 2: Nordic Ham Curl | Lean forward over the machine to get a maximum stretch in your hamstrings."
+          },
+          {
+            "name": "Walking Lunge",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~6-7 | Last set RPE: ~7-8 | Sub option 1: Smith Machine Static Lunge | Sub option 2: DB Static Lunge | Take medium strides. Minimize contribution from the back leg"
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Machine Hip Adduction",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Cable Hip Adduction | Sub option 2: Copenhagen Hip Adduction | Mind-muscle connection with your inner thighs. These are great for adding thigh mass from the front! Push them hard!"
+          },
+          {
+            "name": "Machine Hip Abduction",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Cable Hip Abduction | Sub option 2: Lateral Band Walk | If possible, use pads to increase the range of motion on the machine. Lean forward and grab onto the machine rails to stretch the glutes further."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~7-8 | Last set RPE: ~8-9 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 7,
+    "task": "",
+    "days": [
+      {
+        "day": 1,
+        "title": "Upper (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "45 deg Incline DB Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: 45 deg Incline Barbell Press | Sub option 2: 45 deg Incline Machine Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Pec Deck",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Crossover Ladder | Sub option 2: Bottom-Half DB Flye | Focus on bringing your elbows together - not your hands"
+          },
+          {
+            "name": "Dual-Handle Lat Pulldown",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Wide-Grip Lat Pulldown | Sub option 2: Wide-Grip Pull-Up | Lean back by ~15 deg and drive your elbows down as you squeeze your shoulder blades together. This should feel like a mix of lats and mid-traps."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Smith Machine Row",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Pendlay Deficit Row | Sub option 2: Single-Arm DB Row | Focus on squeezing your shoulder blades together, keeping your elbows at a ~45 deg angle"
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Bayesian Cable Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Super-Bayesian High Cable Curl | Sub option 2: Incline DB Stretch Curl | If you have a left-right bicep size imbalance, do these 1 arm at a time, starting with the weaker arm. Take the weaker arm to the listed RPE. Then match the reps with the other arm (stop once you've matched the reps, even if the RPE is lower). If you don't have a size imbalance, do these both arms at the same time."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Lower (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lying Leg Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Leg Curl | Sub option 2: Nordic Ham Curl | Set the machine so that you get the biggest stretch possible at the bottom. Prevent your butt from popping up as you curl."
+          },
+          {
+            "name": "Smith Machine Static Lunge w/ Elevated Front Foot",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Bulgarian Split Squat | Sub option 2: High-Bar Back Squat | Elevate your front foot on a small box. Minimize contribution from your back leg."
+          },
+          {
+            "name": "45 deg Hyperextension",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Glute-Ham Raise | Sub option 2: Cable Pull-Through | Squeeze your glutes hard at the top of each rep. Slow controlled reps on the way down, followed by an explosive positive."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Leg Press Calf Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Standing Calf Raise | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          },
+          {
+            "name": "Machine Crunch",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Decline Weighted Crunch | Sub option 2: Cable Crunch | Round your lower back as you crunch. Maintain a mind-muscle connection with your 6-pack."
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      },
+      {
+        "day": 4,
+        "title": "Pull (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lean-Back Lat Pulldown",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lean-Back Machine Pulldown | Sub option 2: Pull-Up | Initiate the pulldown with a straight up posture. As you pull the bar down, lean back by about 15-30 deg to get the mid-back more involved. Softly touch the bar to your chest on every rep and, even though you're leaning back, still control the weight!"
+          },
+          {
+            "name": "Chest-Supported T-Bar Row",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Chest-Supported Machine Row | Sub option 2: Incline Chest-Supported DB Row | Flare elbows out at roughly 45 deg and squeeze your shoulder blades together hard at the top of each rep."
+          },
+          {
+            "name": "Dual-Handle Elbows-Out Cable Row",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Arm-Out Single-Arm DB Row | Sub option 2: Meadows Row | Flare your elbows out ~45 deg. Smooth, controlled reps."
+          },
+          {
+            "name": "1-Arm 45 deg Cable Rear Delt Flye",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Rope Face Pull | Sub option 2: Reverse Pec Deck | Pause for 1-2 seconds in the squeeze of each rep. Contract the rear delts hard!"
+          },
+          {
+            "name": "Cable Paused Shrug-In",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Machine Shrug | Sub option 2: DB Shrug | Shrug up and in. Think about shrugging \"up to your ears.\" 1-2 second pause in the squeeze (at the top) of each rep, then another 1-2 second pause in the stretch (at the bottom) of each rep."
+          },
+          {
+            "name": "Cable Rope Hammer Curl",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Hammer Curl | Sub option 2: Hammer Preacher Curl | Squeeze the rope hard as you curl the weight up. Smooth, controlled reps."
+          },
+          {
+            "name": "DB Concentration Curl",
+            "sets": "2",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Concentration Cable Curl | Sub option 2: DB Preacher Curl | Smooth, controlled reps. Mind-muscle connection with the biceps."
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Push (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Machine Chest Press",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Barbell Bench Press | Sub option 2: DB Bench Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Seated DB Shoulder Press",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Shoulder Press | Sub option 2: Machine Shoulder Press | Ensure that your elbows break at least 90 deg. Mind-muscle connection with your delts. Smooth, controlled reps."
+          },
+          {
+            "name": "Bottom-Half Seated Cable Flye",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Bottom-Half DB Flye | Sub option 2: Low-to-High Cable Crossover | All reps and sets are to be performed in the bottom half of the ROM. Focus on feeling a deep stretch in your pecs at the bottom of each rep."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "EZ-Bar Skull Crusher",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Skull Crusher | Sub option 2: Katana Triceps Extension | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Triceps Pressdown (Bar)",
+            "sets": "2",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Triceps Pressdown (Rope) | Sub option 2: DB Triceps Kickback | Focus on squeezing your triceps to move the weight"
+          },
+          {
+            "name": "Ab Wheel Rollout",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Swiss Ball Rollout | Sub option 2: Long-Lever Plank | Don't just bend at your hips, use your abs to lower yourself down under control and pull yourself back up. If you don't have the core strength to get all the way extended at the bottom, try to progressively increase the ROM week to week."
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Legs (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Hack Squat",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Leg Press | Sub option 2: DB Walking Lunge | Use a controlled negative (don't free fall) and then explode on the positive."
+          },
+          {
+            "name": "Seated Leg Curl",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lying Leg Curl | Sub option 2: Nordic Ham Curl | Lean forward over the machine to get a maximum stretch in your hamstrings."
+          },
+          {
+            "name": "Walking Lunge",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Static Lunge | Sub option 2: DB Static Lunge | Take medium strides. Minimize contribution from the back leg"
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Machine Hip Adduction",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Adduction | Sub option 2: Copenhagen Hip Adduction | Mind-muscle connection with your inner thighs. These are great for adding thigh mass from the front! Push them hard!"
+          },
+          {
+            "name": "Machine Hip Abduction",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Abduction | Sub option 2: Lateral Band Walk | If possible, use pads to increase the range of motion on the machine. Lean forward and grab onto the machine rails to stretch the glutes further."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 8,
+    "task": "",
+    "days": [
+      {
+        "day": 1,
+        "title": "Upper (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "45 deg Incline DB Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: 45 deg Incline Barbell Press | Sub option 2: 45 deg Incline Machine Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Pec Deck",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Crossover Ladder | Sub option 2: Bottom-Half DB Flye | Focus on bringing your elbows together - not your hands"
+          },
+          {
+            "name": "Dual-Handle Lat Pulldown",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Wide-Grip Lat Pulldown | Sub option 2: Wide-Grip Pull-Up | Lean back by ~15 deg and drive your elbows down as you squeeze your shoulder blades together. This should feel like a mix of lats and mid-traps."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Smith Machine Row",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Pendlay Deficit Row | Sub option 2: Single-Arm DB Row | Focus on squeezing your shoulder blades together, keeping your elbows at a ~45 deg angle"
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Bayesian Cable Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Super-Bayesian High Cable Curl | Sub option 2: Incline DB Stretch Curl | If you have a left-right bicep size imbalance, do these 1 arm at a time, starting with the weaker arm. Take the weaker arm to the listed RPE. Then match the reps with the other arm (stop once you've matched the reps, even if the RPE is lower). If you don't have a size imbalance, do these both arms at the same time."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Lower (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lying Leg Curl",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Leg Curl | Sub option 2: Nordic Ham Curl | Set the machine so that you get the biggest stretch possible at the bottom. Prevent your butt from popping up as you curl."
+          },
+          {
+            "name": "Smith Machine Static Lunge w/ Elevated Front Foot",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Bulgarian Split Squat | Sub option 2: High-Bar Back Squat | Elevate your front foot on a small box. Minimize contribution from your back leg."
+          },
+          {
+            "name": "45 deg Hyperextension",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Glute-Ham Raise | Sub option 2: Cable Pull-Through | Squeeze your glutes hard at the top of each rep. Slow controlled reps on the way down, followed by an explosive positive."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Leg Press Calf Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Standing Calf Raise | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          },
+          {
+            "name": "Machine Crunch",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Decline Weighted Crunch | Sub option 2: Cable Crunch | Round your lower back as you crunch. Maintain a mind-muscle connection with your 6-pack."
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      },
+      {
+        "day": 4,
+        "title": "Pull (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lean-Back Lat Pulldown",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lean-Back Machine Pulldown | Sub option 2: Pull-Up | Initiate the pulldown with a straight up posture. As you pull the bar down, lean back by about 15-30 deg to get the mid-back more involved. Softly touch the bar to your chest on every rep and, even though you're leaning back, still control the weight!"
+          },
+          {
+            "name": "Chest-Supported T-Bar Row",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Chest-Supported Machine Row | Sub option 2: Incline Chest-Supported DB Row | Flare elbows out at roughly 45 deg and squeeze your shoulder blades together hard at the top of each rep."
+          },
+          {
+            "name": "Dual-Handle Elbows-Out Cable Row",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Arm-Out Single-Arm DB Row | Sub option 2: Meadows Row | Flare your elbows out ~45 deg. Smooth, controlled reps."
+          },
+          {
+            "name": "1-Arm 45 deg Cable Rear Delt Flye",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Rope Face Pull | Sub option 2: Reverse Pec Deck | Pause for 1-2 seconds in the squeeze of each rep. Contract the rear delts hard!"
+          },
+          {
+            "name": "Cable Paused Shrug-In",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Machine Shrug | Sub option 2: DB Shrug | Shrug up and in. Think about shrugging \"up to your ears.\" 1-2 second pause in the squeeze (at the top) of each rep, then another 1-2 second pause in the stretch (at the bottom) of each rep."
+          },
+          {
+            "name": "Cable Rope Hammer Curl",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Hammer Curl | Sub option 2: Hammer Preacher Curl | Squeeze the rope hard as you curl the weight up. Smooth, controlled reps."
+          },
+          {
+            "name": "DB Concentration Curl",
+            "sets": "2",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Concentration Cable Curl | Sub option 2: DB Preacher Curl | Smooth, controlled reps. Mind-muscle connection with the biceps."
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Push (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Machine Chest Press",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Barbell Bench Press | Sub option 2: DB Bench Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Seated DB Shoulder Press",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Shoulder Press | Sub option 2: Machine Shoulder Press | Ensure that your elbows break at least 90 deg. Mind-muscle connection with your delts. Smooth, controlled reps."
+          },
+          {
+            "name": "Bottom-Half Seated Cable Flye",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Bottom-Half DB Flye | Sub option 2: Low-to-High Cable Crossover | All reps and sets are to be performed in the bottom half of the ROM. Focus on feeling a deep stretch in your pecs at the bottom of each rep."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "EZ-Bar Skull Crusher",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Skull Crusher | Sub option 2: Katana Triceps Extension | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Triceps Pressdown (Bar)",
+            "sets": "2",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Triceps Pressdown (Rope) | Sub option 2: DB Triceps Kickback | Focus on squeezing your triceps to move the weight"
+          },
+          {
+            "name": "Ab Wheel Rollout",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Swiss Ball Rollout | Sub option 2: Long-Lever Plank | Don't just bend at your hips, use your abs to lower yourself down under control and pull yourself back up. If you don't have the core strength to get all the way extended at the bottom, try to progressively increase the ROM week to week."
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Legs (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Hack Squat",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Leg Press | Sub option 2: DB Walking Lunge | Use a controlled negative (don't free fall) and then explode on the positive."
+          },
+          {
+            "name": "Seated Leg Curl",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lying Leg Curl | Sub option 2: Nordic Ham Curl | Lean forward over the machine to get a maximum stretch in your hamstrings."
+          },
+          {
+            "name": "Walking Lunge",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Static Lunge | Sub option 2: DB Static Lunge | Take medium strides. Minimize contribution from the back leg"
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Machine Hip Adduction",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Adduction | Sub option 2: Copenhagen Hip Adduction | Mind-muscle connection with your inner thighs. These are great for adding thigh mass from the front! Push them hard!"
+          },
+          {
+            "name": "Machine Hip Abduction",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Abduction | Sub option 2: Lateral Band Walk | If possible, use pads to increase the range of motion on the machine. Lean forward and grab onto the machine rails to stretch the glutes further."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "2",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 9,
+    "task": "",
+    "days": [
+      {
+        "day": 1,
+        "title": "Upper (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "45 deg Incline DB Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: 45 deg Incline Barbell Press | Sub option 2: 45 deg Incline Machine Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Pec Deck",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Crossover Ladder | Sub option 2: Bottom-Half DB Flye | Focus on bringing your elbows together - not your hands"
+          },
+          {
+            "name": "Dual-Handle Lat Pulldown",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Wide-Grip Lat Pulldown | Sub option 2: Wide-Grip Pull-Up | Lean back by ~15 deg and drive your elbows down as you squeeze your shoulder blades together. This should feel like a mix of lats and mid-traps."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Smith Machine Row",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Pendlay Deficit Row | Sub option 2: Single-Arm DB Row | Focus on squeezing your shoulder blades together, keeping your elbows at a ~45 deg angle"
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Bayesian Cable Curl",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Super-Bayesian High Cable Curl | Sub option 2: Incline DB Stretch Curl | If you have a left-right bicep size imbalance, do these 1 arm at a time, starting with the weaker arm. Take the weaker arm to the listed RPE. Then match the reps with the other arm (stop once you've matched the reps, even if the RPE is lower). If you don't have a size imbalance, do these both arms at the same time."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Lower (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lying Leg Curl",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Leg Curl | Sub option 2: Nordic Ham Curl | Set the machine so that you get the biggest stretch possible at the bottom. Prevent your butt from popping up as you curl."
+          },
+          {
+            "name": "Smith Machine Static Lunge w/ Elevated Front Foot",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Bulgarian Split Squat | Sub option 2: High-Bar Back Squat | Elevate your front foot on a small box. Minimize contribution from your back leg."
+          },
+          {
+            "name": "45 deg Hyperextension",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Glute-Ham Raise | Sub option 2: Cable Pull-Through | Squeeze your glutes hard at the top of each rep. Slow controlled reps on the way down, followed by an explosive positive."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Leg Press Calf Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Standing Calf Raise | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          },
+          {
+            "name": "Machine Crunch",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Decline Weighted Crunch | Sub option 2: Cable Crunch | Round your lower back as you crunch. Maintain a mind-muscle connection with your 6-pack."
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      },
+      {
+        "day": 4,
+        "title": "Pull (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lean-Back Lat Pulldown",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lean-Back Machine Pulldown | Sub option 2: Pull-Up | Initiate the pulldown with a straight up posture. As you pull the bar down, lean back by about 15-30 deg to get the mid-back more involved. Softly touch the bar to your chest on every rep and, even though you're leaning back, still control the weight!"
+          },
+          {
+            "name": "Chest-Supported T-Bar Row",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Chest-Supported Machine Row | Sub option 2: Incline Chest-Supported DB Row | Flare elbows out at roughly 45 deg and squeeze your shoulder blades together hard at the top of each rep."
+          },
+          {
+            "name": "Dual-Handle Elbows-Out Cable Row",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Arm-Out Single-Arm DB Row | Sub option 2: Meadows Row | Flare your elbows out ~45 deg. Smooth, controlled reps."
+          },
+          {
+            "name": "1-Arm 45 deg Cable Rear Delt Flye",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Rope Face Pull | Sub option 2: Reverse Pec Deck | Pause for 1-2 seconds in the squeeze of each rep. Contract the rear delts hard!"
+          },
+          {
+            "name": "Cable Paused Shrug-In",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Machine Shrug | Sub option 2: DB Shrug | Shrug up and in. Think about shrugging \"up to your ears.\" 1-2 second pause in the squeeze (at the top) of each rep, then another 1-2 second pause in the stretch (at the bottom) of each rep."
+          },
+          {
+            "name": "Cable Rope Hammer Curl",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Hammer Curl | Sub option 2: Hammer Preacher Curl | Squeeze the rope hard as you curl the weight up. Smooth, controlled reps."
+          },
+          {
+            "name": "DB Concentration Curl",
+            "sets": "2",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Concentration Cable Curl | Sub option 2: DB Preacher Curl | Smooth, controlled reps. Mind-muscle connection with the biceps."
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Push (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Machine Chest Press",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Barbell Bench Press | Sub option 2: DB Bench Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Seated DB Shoulder Press",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Shoulder Press | Sub option 2: Machine Shoulder Press | Ensure that your elbows break at least 90 deg. Mind-muscle connection with your delts. Smooth, controlled reps."
+          },
+          {
+            "name": "Bottom-Half Seated Cable Flye",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Bottom-Half DB Flye | Sub option 2: Low-to-High Cable Crossover | All reps and sets are to be performed in the bottom half of the ROM. Focus on feeling a deep stretch in your pecs at the bottom of each rep."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "EZ-Bar Skull Crusher",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Skull Crusher | Sub option 2: Katana Triceps Extension | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Triceps Pressdown (Bar)",
+            "sets": "2",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Triceps Pressdown (Rope) | Sub option 2: DB Triceps Kickback | Focus on squeezing your triceps to move the weight"
+          },
+          {
+            "name": "Ab Wheel Rollout",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Swiss Ball Rollout | Sub option 2: Long-Lever Plank | Don't just bend at your hips, use your abs to lower yourself down under control and pull yourself back up. If you don't have the core strength to get all the way extended at the bottom, try to progressively increase the ROM week to week."
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Legs (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Hack Squat",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Leg Press | Sub option 2: DB Walking Lunge | Use a controlled negative (don't free fall) and then explode on the positive."
+          },
+          {
+            "name": "Seated Leg Curl",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lying Leg Curl | Sub option 2: Nordic Ham Curl | Lean forward over the machine to get a maximum stretch in your hamstrings."
+          },
+          {
+            "name": "Walking Lunge",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Static Lunge | Sub option 2: DB Static Lunge | Take medium strides. Minimize contribution from the back leg"
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Machine Hip Adduction",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Adduction | Sub option 2: Copenhagen Hip Adduction | Mind-muscle connection with your inner thighs. These are great for adding thigh mass from the front! Push them hard!"
+          },
+          {
+            "name": "Machine Hip Abduction",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Abduction | Sub option 2: Lateral Band Walk | If possible, use pads to increase the range of motion on the machine. Lean forward and grab onto the machine rails to stretch the glutes further."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 10,
+    "task": "",
+    "days": [
+      {
+        "day": 1,
+        "title": "Upper (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "45 deg Incline DB Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: 45 deg Incline Barbell Press | Sub option 2: 45 deg Incline Machine Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Pec Deck",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Crossover Ladder | Sub option 2: Bottom-Half DB Flye | Focus on bringing your elbows together - not your hands"
+          },
+          {
+            "name": "Dual-Handle Lat Pulldown",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Wide-Grip Lat Pulldown | Sub option 2: Wide-Grip Pull-Up | Lean back by ~15 deg and drive your elbows down as you squeeze your shoulder blades together. This should feel like a mix of lats and mid-traps."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Smith Machine Row",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Pendlay Deficit Row | Sub option 2: Single-Arm DB Row | Focus on squeezing your shoulder blades together, keeping your elbows at a ~45 deg angle"
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Bayesian Cable Curl",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Super-Bayesian High Cable Curl | Sub option 2: Incline DB Stretch Curl | If you have a left-right bicep size imbalance, do these 1 arm at a time, starting with the weaker arm. Take the weaker arm to the listed RPE. Then match the reps with the other arm (stop once you've matched the reps, even if the RPE is lower). If you don't have a size imbalance, do these both arms at the same time."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Lower (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lying Leg Curl",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Leg Curl | Sub option 2: Nordic Ham Curl | Set the machine so that you get the biggest stretch possible at the bottom. Prevent your butt from popping up as you curl."
+          },
+          {
+            "name": "Smith Machine Static Lunge w/ Elevated Front Foot",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Bulgarian Split Squat | Sub option 2: High-Bar Back Squat | Elevate your front foot on a small box. Minimize contribution from your back leg."
+          },
+          {
+            "name": "45 deg Hyperextension",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Glute-Ham Raise | Sub option 2: Cable Pull-Through | Squeeze your glutes hard at the top of each rep. Slow controlled reps on the way down, followed by an explosive positive."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Leg Press Calf Press",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Standing Calf Raise | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          },
+          {
+            "name": "Machine Crunch",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Decline Weighted Crunch | Sub option 2: Cable Crunch | Round your lower back as you crunch. Maintain a mind-muscle connection with your 6-pack."
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      },
+      {
+        "day": 4,
+        "title": "Pull (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lean-Back Lat Pulldown",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lean-Back Machine Pulldown | Sub option 2: Pull-Up | Initiate the pulldown with a straight up posture. As you pull the bar down, lean back by about 15-30 deg to get the mid-back more involved. Softly touch the bar to your chest on every rep and, even though you're leaning back, still control the weight!"
+          },
+          {
+            "name": "Chest-Supported T-Bar Row",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Chest-Supported Machine Row | Sub option 2: Incline Chest-Supported DB Row | Flare elbows out at roughly 45 deg and squeeze your shoulder blades together hard at the top of each rep."
+          },
+          {
+            "name": "Dual-Handle Elbows-Out Cable Row",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Arm-Out Single-Arm DB Row | Sub option 2: Meadows Row | Flare your elbows out ~45 deg. Smooth, controlled reps."
+          },
+          {
+            "name": "1-Arm 45 deg Cable Rear Delt Flye",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Rope Face Pull | Sub option 2: Reverse Pec Deck | Pause for 1-2 seconds in the squeeze of each rep. Contract the rear delts hard!"
+          },
+          {
+            "name": "Cable Paused Shrug-In",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Machine Shrug | Sub option 2: DB Shrug | Shrug up and in. Think about shrugging \"up to your ears.\" 1-2 second pause in the squeeze (at the top) of each rep, then another 1-2 second pause in the stretch (at the bottom) of each rep."
+          },
+          {
+            "name": "Cable Rope Hammer Curl",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Hammer Curl | Sub option 2: Hammer Preacher Curl | Squeeze the rope hard as you curl the weight up. Smooth, controlled reps."
+          },
+          {
+            "name": "DB Concentration Curl",
+            "sets": "2",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Concentration Cable Curl | Sub option 2: DB Preacher Curl | Smooth, controlled reps. Mind-muscle connection with the biceps."
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Push (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Machine Chest Press",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Barbell Bench Press | Sub option 2: DB Bench Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Seated DB Shoulder Press",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Shoulder Press | Sub option 2: Machine Shoulder Press | Ensure that your elbows break at least 90 deg. Mind-muscle connection with your delts. Smooth, controlled reps."
+          },
+          {
+            "name": "Bottom-Half Seated Cable Flye",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Bottom-Half DB Flye | Sub option 2: Low-to-High Cable Crossover | All reps and sets are to be performed in the bottom half of the ROM. Focus on feeling a deep stretch in your pecs at the bottom of each rep."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "EZ-Bar Skull Crusher",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Skull Crusher | Sub option 2: Katana Triceps Extension | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Triceps Pressdown (Bar)",
+            "sets": "2",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Triceps Pressdown (Rope) | Sub option 2: DB Triceps Kickback | Focus on squeezing your triceps to move the weight"
+          },
+          {
+            "name": "Ab Wheel Rollout",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Swiss Ball Rollout | Sub option 2: Long-Lever Plank | Don't just bend at your hips, use your abs to lower yourself down under control and pull yourself back up. If you don't have the core strength to get all the way extended at the bottom, try to progressively increase the ROM week to week."
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Legs (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Hack Squat",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Leg Press | Sub option 2: DB Walking Lunge | Use a controlled negative (don't free fall) and then explode on the positive."
+          },
+          {
+            "name": "Seated Leg Curl",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lying Leg Curl | Sub option 2: Nordic Ham Curl | Lean forward over the machine to get a maximum stretch in your hamstrings."
+          },
+          {
+            "name": "Walking Lunge",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Static Lunge | Sub option 2: DB Static Lunge | Take medium strides. Minimize contribution from the back leg"
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Machine Hip Adduction",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Adduction | Sub option 2: Copenhagen Hip Adduction | Mind-muscle connection with your inner thighs. These are great for adding thigh mass from the front! Push them hard!"
+          },
+          {
+            "name": "Machine Hip Abduction",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Abduction | Sub option 2: Lateral Band Walk | If possible, use pads to increase the range of motion on the machine. Lean forward and grab onto the machine rails to stretch the glutes further."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 11,
+    "task": "",
+    "days": [
+      {
+        "day": 1,
+        "title": "Upper (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "45 deg Incline DB Press",
+            "sets": "4",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: 45 deg Incline Barbell Press | Sub option 2: 45 deg Incline Machine Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Pec Deck",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Crossover Ladder | Sub option 2: Bottom-Half DB Flye | Focus on bringing your elbows together - not your hands"
+          },
+          {
+            "name": "Dual-Handle Lat Pulldown",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Wide-Grip Lat Pulldown | Sub option 2: Wide-Grip Pull-Up | Lean back by ~15 deg and drive your elbows down as you squeeze your shoulder blades together. This should feel like a mix of lats and mid-traps."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Smith Machine Row",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Pendlay Deficit Row | Sub option 2: Single-Arm DB Row | Focus on squeezing your shoulder blades together, keeping your elbows at a ~45 deg angle"
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Bayesian Cable Curl",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Super-Bayesian High Cable Curl | Sub option 2: Incline DB Stretch Curl | If you have a left-right bicep size imbalance, do these 1 arm at a time, starting with the weaker arm. Take the weaker arm to the listed RPE. Then match the reps with the other arm (stop once you've matched the reps, even if the RPE is lower). If you don't have a size imbalance, do these both arms at the same time."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Lower (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lying Leg Curl",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Leg Curl | Sub option 2: Nordic Ham Curl | Set the machine so that you get the biggest stretch possible at the bottom. Prevent your butt from popping up as you curl."
+          },
+          {
+            "name": "Smith Machine Static Lunge w/ Elevated Front Foot",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Bulgarian Split Squat | Sub option 2: High-Bar Back Squat | Elevate your front foot on a small box. Minimize contribution from your back leg."
+          },
+          {
+            "name": "45 deg Hyperextension",
+            "sets": "4",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Glute-Ham Raise | Sub option 2: Cable Pull-Through | Squeeze your glutes hard at the top of each rep. Slow controlled reps on the way down, followed by an explosive positive."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Leg Press Calf Press",
+            "sets": "4",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Standing Calf Raise | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          },
+          {
+            "name": "Machine Crunch",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Decline Weighted Crunch | Sub option 2: Cable Crunch | Round your lower back as you crunch. Maintain a mind-muscle connection with your 6-pack."
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      },
+      {
+        "day": 4,
+        "title": "Pull (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lean-Back Lat Pulldown",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lean-Back Machine Pulldown | Sub option 2: Pull-Up | Initiate the pulldown with a straight up posture. As you pull the bar down, lean back by about 15-30 deg to get the mid-back more involved. Softly touch the bar to your chest on every rep and, even though you're leaning back, still control the weight!"
+          },
+          {
+            "name": "Chest-Supported T-Bar Row",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Chest-Supported Machine Row | Sub option 2: Incline Chest-Supported DB Row | Flare elbows out at roughly 45 deg and squeeze your shoulder blades together hard at the top of each rep."
+          },
+          {
+            "name": "Dual-Handle Elbows-Out Cable Row",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Arm-Out Single-Arm DB Row | Sub option 2: Meadows Row | Flare your elbows out ~45 deg. Smooth, controlled reps."
+          },
+          {
+            "name": "1-Arm 45 deg Cable Rear Delt Flye",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Rope Face Pull | Sub option 2: Reverse Pec Deck | Pause for 1-2 seconds in the squeeze of each rep. Contract the rear delts hard!"
+          },
+          {
+            "name": "Cable Paused Shrug-In",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Machine Shrug | Sub option 2: DB Shrug | Shrug up and in. Think about shrugging \"up to your ears.\" 1-2 second pause in the squeeze (at the top) of each rep, then another 1-2 second pause in the stretch (at the bottom) of each rep."
+          },
+          {
+            "name": "Cable Rope Hammer Curl",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Hammer Curl | Sub option 2: Hammer Preacher Curl | Squeeze the rope hard as you curl the weight up. Smooth, controlled reps."
+          },
+          {
+            "name": "DB Concentration Curl",
+            "sets": "3",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Concentration Cable Curl | Sub option 2: DB Preacher Curl | Smooth, controlled reps. Mind-muscle connection with the biceps."
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Push (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Machine Chest Press",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Barbell Bench Press | Sub option 2: DB Bench Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Seated DB Shoulder Press",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Shoulder Press | Sub option 2: Machine Shoulder Press | Ensure that your elbows break at least 90 deg. Mind-muscle connection with your delts. Smooth, controlled reps."
+          },
+          {
+            "name": "Bottom-Half Seated Cable Flye",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Bottom-Half DB Flye | Sub option 2: Low-to-High Cable Crossover | All reps and sets are to be performed in the bottom half of the ROM. Focus on feeling a deep stretch in your pecs at the bottom of each rep."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "EZ-Bar Skull Crusher",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Skull Crusher | Sub option 2: Katana Triceps Extension | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Triceps Pressdown (Bar)",
+            "sets": "3",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Triceps Pressdown (Rope) | Sub option 2: DB Triceps Kickback | Focus on squeezing your triceps to move the weight"
+          },
+          {
+            "name": "Ab Wheel Rollout",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Swiss Ball Rollout | Sub option 2: Long-Lever Plank | Don't just bend at your hips, use your abs to lower yourself down under control and pull yourself back up. If you don't have the core strength to get all the way extended at the bottom, try to progressively increase the ROM week to week."
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Legs (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Hack Squat",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Leg Press | Sub option 2: DB Walking Lunge | Use a controlled negative (don't free fall) and then explode on the positive."
+          },
+          {
+            "name": "Seated Leg Curl",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lying Leg Curl | Sub option 2: Nordic Ham Curl | Lean forward over the machine to get a maximum stretch in your hamstrings."
+          },
+          {
+            "name": "Walking Lunge",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Static Lunge | Sub option 2: DB Static Lunge | Take medium strides. Minimize contribution from the back leg"
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Machine Hip Adduction",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Adduction | Sub option 2: Copenhagen Hip Adduction | Mind-muscle connection with your inner thighs. These are great for adding thigh mass from the front! Push them hard!"
+          },
+          {
+            "name": "Machine Hip Abduction",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Abduction | Sub option 2: Lateral Band Walk | If possible, use pads to increase the range of motion on the machine. Lean forward and grab onto the machine rails to stretch the glutes further."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 12,
+    "task": "",
+    "days": [
+      {
+        "day": 1,
+        "title": "Upper (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "45 deg Incline DB Press",
+            "sets": "4",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: 45 deg Incline Barbell Press | Sub option 2: 45 deg Incline Machine Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Pec Deck",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Crossover Ladder | Sub option 2: Bottom-Half DB Flye | Focus on bringing your elbows together - not your hands"
+          },
+          {
+            "name": "Dual-Handle Lat Pulldown",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Wide-Grip Lat Pulldown | Sub option 2: Wide-Grip Pull-Up | Lean back by ~15 deg and drive your elbows down as you squeeze your shoulder blades together. This should feel like a mix of lats and mid-traps."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "Smith Machine Row",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Pendlay Deficit Row | Sub option 2: Single-Arm DB Row | Focus on squeezing your shoulder blades together, keeping your elbows at a ~45 deg angle"
+          },
+          {
+            "name": "Overhead Cable Triceps Extension (Bar)",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Overhead Cable Triceps Extension (Rope) | Sub option 2: DB Skull Crusher | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Bayesian Cable Curl",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Super-Bayesian High Cable Curl | Sub option 2: Incline DB Stretch Curl | If you have a left-right bicep size imbalance, do these 1 arm at a time, starting with the weaker arm. Take the weaker arm to the listed RPE. Then match the reps with the other arm (stop once you've matched the reps, even if the RPE is lower). If you don't have a size imbalance, do these both arms at the same time."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Lower (Strength Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lying Leg Curl",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Leg Curl | Sub option 2: Nordic Ham Curl | Set the machine so that you get the biggest stretch possible at the bottom. Prevent your butt from popping up as you curl."
+          },
+          {
+            "name": "Smith Machine Static Lunge w/ Elevated Front Foot",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Bulgarian Split Squat | Sub option 2: High-Bar Back Squat | Elevate your front foot on a small box. Minimize contribution from your back leg."
+          },
+          {
+            "name": "45 deg Hyperextension",
+            "sets": "4",
+            "reps": "8-10",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Glute-Ham Raise | Sub option 2: Cable Pull-Through | Squeeze your glutes hard at the top of each rep. Slow controlled reps on the way down, followed by an explosive positive."
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Leg Press Calf Press",
+            "sets": "4",
+            "reps": "8-10",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Standing Calf Raise | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          },
+          {
+            "name": "Machine Crunch",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Decline Weighted Crunch | Sub option 2: Cable Crunch | Round your lower back as you crunch. Maintain a mind-muscle connection with your 6-pack."
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      },
+      {
+        "day": 4,
+        "title": "Pull (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Lean-Back Lat Pulldown",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lean-Back Machine Pulldown | Sub option 2: Pull-Up | Initiate the pulldown with a straight up posture. As you pull the bar down, lean back by about 15-30 deg to get the mid-back more involved. Softly touch the bar to your chest on every rep and, even though you're leaning back, still control the weight!"
+          },
+          {
+            "name": "Chest-Supported T-Bar Row",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Chest-Supported Machine Row | Sub option 2: Incline Chest-Supported DB Row | Flare elbows out at roughly 45 deg and squeeze your shoulder blades together hard at the top of each rep."
+          },
+          {
+            "name": "Dual-Handle Elbows-Out Cable Row",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Arm-Out Single-Arm DB Row | Sub option 2: Meadows Row | Flare your elbows out ~45 deg. Smooth, controlled reps."
+          },
+          {
+            "name": "1-Arm 45 deg Cable Rear Delt Flye",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Rope Face Pull | Sub option 2: Reverse Pec Deck | Pause for 1-2 seconds in the squeeze of each rep. Contract the rear delts hard!"
+          },
+          {
+            "name": "Cable Paused Shrug-In",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Machine Shrug | Sub option 2: DB Shrug | Shrug up and in. Think about shrugging \"up to your ears.\" 1-2 second pause in the squeeze (at the top) of each rep, then another 1-2 second pause in the stretch (at the bottom) of each rep."
+          },
+          {
+            "name": "Cable Rope Hammer Curl",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Hammer Curl | Sub option 2: Hammer Preacher Curl | Squeeze the rope hard as you curl the weight up. Smooth, controlled reps."
+          },
+          {
+            "name": "DB Concentration Curl",
+            "sets": "3",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Concentration Cable Curl | Sub option 2: DB Preacher Curl | Smooth, controlled reps. Mind-muscle connection with the biceps."
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Push (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Machine Chest Press",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "3-5 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Barbell Bench Press | Sub option 2: DB Bench Press | 1 second pause at the bottom of each rep while maintaining tension on the pecs"
+          },
+          {
+            "name": "Seated DB Shoulder Press",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Shoulder Press | Sub option 2: Machine Shoulder Press | Ensure that your elbows break at least 90 deg. Mind-muscle connection with your delts. Smooth, controlled reps."
+          },
+          {
+            "name": "Bottom-Half Seated Cable Flye",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Bottom-Half DB Flye | Sub option 2: Low-to-High Cable Crossover | All reps and sets are to be performed in the bottom half of the ROM. Focus on feeling a deep stretch in your pecs at the bottom of each rep."
+          },
+          {
+            "name": "High-Cable Lateral Raise",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: High-Cable Cuffed Lateral Raise | Sub option 2: Lean-In DB Lateral Raise | Focus on squeezing your lateral delt to move the weight."
+          },
+          {
+            "name": "EZ-Bar Skull Crusher",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: DB Skull Crusher | Sub option 2: Katana Triceps Extension | Optionally pause for 0.5-1 second in the stretched aspect of each rep"
+          },
+          {
+            "name": "Triceps Pressdown (Bar)",
+            "sets": "3",
+            "reps": "15-20",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Triceps Pressdown (Rope) | Sub option 2: DB Triceps Kickback | Focus on squeezing your triceps to move the weight"
+          },
+          {
+            "name": "Ab Wheel Rollout",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Swiss Ball Rollout | Sub option 2: Long-Lever Plank | Don't just bend at your hips, use your abs to lower yourself down under control and pull yourself back up. If you don't have the core strength to get all the way extended at the bottom, try to progressively increase the ROM week to week."
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Legs (Hypertrophy Focus)",
+        "cardio": "",
+        "exercises": [
+          {
+            "name": "Hack Squat",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-4 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Leg Press | Sub option 2: DB Walking Lunge | Use a controlled negative (don't free fall) and then explode on the positive."
+          },
+          {
+            "name": "Seated Leg Curl",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Lying Leg Curl | Sub option 2: Nordic Ham Curl | Lean forward over the machine to get a maximum stretch in your hamstrings."
+          },
+          {
+            "name": "Walking Lunge",
+            "sets": "2",
+            "reps": "10-12",
+            "rest": "2-3 min",
+            "notes": "Warm-up sets: 2-3 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Smith Machine Static Lunge | Sub option 2: DB Static Lunge | Take medium strides. Minimize contribution from the back leg"
+          },
+          {
+            "name": "Leg Extension",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Reverse Nordic | Sub option 2: Sissy Squat | Set the seat back as far as it will go while still feeling comfortable. Grab the handles as hard as you can to pull your butt down into the seat. Use a 2-3 second negative. Feel your quads pulling apart on the negative."
+          },
+          {
+            "name": "Machine Hip Adduction",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Adduction | Sub option 2: Copenhagen Hip Adduction | Mind-muscle connection with your inner thighs. These are great for adding thigh mass from the front! Push them hard!"
+          },
+          {
+            "name": "Machine Hip Abduction",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Cable Hip Abduction | Sub option 2: Lateral Band Walk | If possible, use pads to increase the range of motion on the machine. Lean forward and grab onto the machine rails to stretch the glutes further."
+          },
+          {
+            "name": "Standing Calf Raise",
+            "sets": "3",
+            "reps": "12-15",
+            "rest": "1-2 min",
+            "notes": "Warm-up sets: 1-2 | Early set RPE: ~8-9 | Last set RPE: 10 | Sub option 1: Seated Calf Raise | Sub option 2: Leg Press Calf Press | 1-2 second pause at the bottom of each rep. Instead of just going up onto your toes, think about rolling your ankle back and forth on the balls of your feet."
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Rest Day",
+        "cardio": "",
+        "exercises": []
+      }
+    ]
+  }
+]

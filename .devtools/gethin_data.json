@@ -1,0 +1,2181 @@
+[
+  {
+    "week": 1,
+    "task": "/ Day 7 / Active Rest Day Exercise Set Reps Rest Notes Neutral Grip Lat Pulldown 4 10-12 120 seconds Neutral Grip Cable Row 4 10-12 120 seconds Bent Over Barbell Row 4 10-12 120 seconds Single Arm Dumbbell Row 4 10-12 120 seconds Seated Calf Raises 6 10-12 60 seconds Cardio: 20 minutes AM  + 150 twists Exercise Set Reps Rest Notes Barbell Preacher Curls 4 10-12 60 secondsGood for the bottom portion of the bicep Cable Curls 4 10-12 60 secondsGood for the top portion of the bicep SUPERSET:  Barbell Curls with Plate Hammer Curls 4 10-12 60 secondsHammer curls work the outer part of the bicep Cable Pushdowns 4 10-12 60 seconds Overhead Cable Extensions 4 10-12 60 seconds SUPERSET: Dips with Close Grip Pushups 4 10-12 60 seconds Cardio: 20 minutes AM  + 150 twists Cardio: 20 minutes AM  + 150 twists Cardio: 20 minutes AM  + 150 twists ==== PAGE 11 ====",
+    "days": [
+      {
+        "day": 1,
+        "title": "Legs & Calves",
+        "cardio": "20 minutes AM  + 150 twists",
+        "exercises": [
+          {
+            "name": "Leg Press",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "90 seconds",
+            "notes": "May want to use knee sleeves, knee wraps, etc. Stretch in between sets."
+          },
+          {
+            "name": "Hack Squat",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "90 seconds",
+            "notes": "Optional: Use a foam roller behind your shoulders"
+          },
+          {
+            "name": "Split Squat with Barbell Plate",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "90 seconds",
+            "notes": "Use a training journal. This is important to track your progress."
+          },
+          {
+            "name": "Stiff Legged Deadlifts",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "90 seconds",
+            "notes": "Can use dumbbells, barbells, smith"
+          },
+          {
+            "name": "machine, whatever is available Lying Hamstring Curls",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Leg Curls",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Standing Calf Press",
+            "sets": "6",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Shoulders & Abs",
+        "cardio": "20 minutes AM  + 150 twists",
+        "exercises": [
+          {
+            "name": "Plate Side Raises",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": "If you have shoulder issues you can"
+          },
+          {
+            "name": "Partial Side Raises",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Rear Dumbbell Raises",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": "Chest supported on bench SUPERSET:  Incline"
+          },
+          {
+            "name": "Cable Front Raises with Facepulls",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Neck Crunches with Plate",
+            "sets": "5",
+            "reps": "10-124",
+            "rest": "5-60",
+            "notes": "secondsPut a towel in between your forehead and the plate SUPERSET:  Hanging Leg"
+          },
+          {
+            "name": "Raises with Kneeling Cable Crunches",
+            "sets": "5",
+            "reps": "failure",
+            "rest": "45 seconds",
+            "notes": "Use ab slings for the hanging"
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Chest",
+        "cardio": "20 minutes AM  + 150 twists",
+        "exercises": [
+          {
+            "name": "Pec Deck",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": "Look at an anatomy chart to see the muscles of the chest. This will help you with the mind muscle connection."
+          },
+          {
+            "name": "Smith Machine Incline Press",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": "You'll need an adjustable bench."
+          },
+          {
+            "name": "Smith Machine Flat Press",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": "You'll need an adjustable bench."
+          },
+          {
+            "name": "Incline Cable Fly",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": "You'll need an adjustable bench."
+          },
+          {
+            "name": "Cable Crossovers",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Back & Calves",
+        "cardio": "20 minutes AM  + 150 twists",
+        "exercises": [
+          {
+            "name": "Neutral Grip Lat Pulldown",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Neutral Grip Cable Row",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Bent Over Barbell Row",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Single Arm Dumbbell Row",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Calf Raises",
+            "sets": "6",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Arms",
+        "cardio": "20 minutes AM  + 150 twists",
+        "exercises": [
+          {
+            "name": "Barbell Preacher Curls",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": "Good for the bottom portion"
+          },
+          {
+            "name": "of the bicep Cable Curls",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": "Good for the top portion of the bicep"
+          },
+          {
+            "name": "SUPERSET:  Barbell Curls with Plate Hammer Curls",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": "Hammer curls work the"
+          },
+          {
+            "name": "outer part of the bicep Cable Pushdowns",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Overhead Cable Extensions",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "SUPERSET: Dips with Close Grip Pushups",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Active Rest Day",
+        "cardio": "20 minutes AM  + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 7,
+        "title": "Active Rest Day",
+        "cardio": "20 minutes AM  + 150 twists",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 2,
+    "task": "/ Day 14 / Active Rest Day Exercise Set Reps Rest Notes Chins 4 failure 120 seconds Use wrist straps Reverse Grip Lat Pulldown 4 14-18 120 seconds T Bar Rows 4 14-18 120 seconds Cable Row 4 14-18 120 secondsYou can use a machine if cable row is not available Shrugs 4 14-18 120 seconds Seated Calf Raises 6 14-18 60 seconds Cardio:  30 minutes AM + 150 twists Exercise Set Reps Rest Notes TRICEPS CIRCUIT: Cable Pushdowns + Skull Crushers + Rockers + Close Grip Press + Bench Dips + Overhead Tricep Extension 4 14-18 90 seconds Rest only after you've completed all of the exercises, no rest between exercises. BICEPS CIRCUIT: Alternating Dumbbell Curls + Leaning Forward Cable in Between Your Legs Curls + Preacher Curls with Barbell Plate + Drag Curls + Row Curls / Kneeling Curls 4 14-18 90 secondsRest only after you've completed all of the exercises, no rest between exercises. Cardio:  30 minutes AM + 150 twists Cardio:  30 minutes AM + 150 twists Cardio:  30 minutes AM + 150 twists ==== PAGE 13 ====",
+    "days": [
+      {
+        "day": 8,
+        "title": "Legs & Calves",
+        "cardio": "30 minutes AM + 150 twists",
+        "exercises": [
+          {
+            "name": "Leg Extension",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Parallel Leg Press",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "V Squat",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Sissy Squat",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Lying Hamstring Curl",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Standing Hamstring Curl",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Standing Calf Press",
+            "sets": "6",
+            "reps": "14-18",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 9,
+        "title": "Shoulders & Abs",
+        "cardio": "30 minutes AM + 150 twists",
+        "exercises": [
+          {
+            "name": "Side Raises",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Cable Rear Raises",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "EZ Bar Front Raises",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Dumbbell Upright Row",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "60 seconds",
+            "notes": "Might want to use wrist straps for this SUPERSET:  Machine"
+          },
+          {
+            "name": "Shoulder Press with Neck Crunches",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "SUPERSET:  Lying Leg Raises with Crunches",
+            "sets": "5",
+            "reps": "failure",
+            "rest": "45 seconds",
+            "notes": "Use medicine ball if you have one"
+          }
+        ]
+      },
+      {
+        "day": 10,
+        "title": "Chest",
+        "cardio": "30 minutes AM + 150 twists",
+        "exercises": [
+          {
+            "name": "Flat Dumbbell Press",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "90 seconds",
+            "notes": "Warm up with resistance band \"sword pulls\""
+          },
+          {
+            "name": "Incline Smith Machine Press",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Flat Cable Fly",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Landmine Incline Press",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Dips",
+            "sets": "4",
+            "reps": "failure",
+            "rest": "90 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 11,
+        "title": "Back & Calves",
+        "cardio": "30 minutes AM + 150 twists",
+        "exercises": [
+          {
+            "name": "Chins",
+            "sets": "4",
+            "reps": "failure",
+            "rest": "120 seconds",
+            "notes": "Use wrist straps"
+          },
+          {
+            "name": "Reverse Grip Lat Pulldown",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "T Bar Rows",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Cable Row",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "120 seconds",
+            "notes": "You can use a machine if cable row"
+          },
+          {
+            "name": "is not available Shrugs",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Calf Raises",
+            "sets": "6",
+            "reps": "14-18",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 12,
+        "title": "Arms",
+        "cardio": "30 minutes AM + 150 twists",
+        "exercises": [
+          {
+            "name": "Bench Dips + Overhead Tricep Extension",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "90 seconds",
+            "notes": "Rest only after you've completed all of the exercises, no rest between exercises. BICEPS CIRCUIT: Alternating Dumbbell Curls + Leaning Forward Cable in Between Your Legs Curls + Preacher Curls with Barbell Plate +"
+          },
+          {
+            "name": "Drag Curls + Row Curls / Kneeling Curls",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "90 seconds",
+            "notes": "Rest only after you've completed all of the exercises, no rest between exercises."
+          }
+        ]
+      },
+      {
+        "day": 13,
+        "title": "Active Rest Day",
+        "cardio": "30 minutes AM + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 14,
+        "title": "Active Rest Day",
+        "cardio": "30 minutes AM + 150 twists",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 3,
+    "task": "/ Day 21 /  Active Rest Day Exercise Set Reps Rest Notes Bent Over Machine Row 530, 25, 20, 15, 1090-120 seconds Seated Machine Low Pulley Row 510, 15, 20, 25, 3090-120 seconds Machine Pulldown 530, 25, 20, 15, 1090-120 seconds Close Grip Pulldown 510, 15, 20, 25, 3090-120 seconds Seated Calf Press 630, 20, 10, 10, 20, 3060-90 seconds Cardio:  35 minutes AM + 150 twists Exercise Set Reps Rest Notes Cable Curls 530, 25, 20, 15, 1060 seconds Preacher Curls 510, 15, 20, 25, 3060 seconds Cable Pushdown 530, 25, 20, 15, 1060 seconds Lying Cable Extensions 510, 15, 20, 25, 3060 seconds SUPERSET: Overhead Tricep Cable Extension with EZ Bar Curls 5 10-15 60 seconds Cardio:  35 minutes AM + 150 twists Cardio:  35 minutes AM + 150 twists Cardio:  35 minutes AM + 150 twists ==== PAGE 15 ====",
+    "days": [
+      {
+        "day": 15,
+        "title": "Legs & Calves",
+        "cardio": "35 minutes AM + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 16,
+        "title": "Shoulders & Abs",
+        "cardio": "35 minutes AM + 150 twists",
+        "exercises": [
+          {
+            "name": "Weighted Scissor Crunch",
+            "sets": "5",
+            "reps": "failure",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 17,
+        "title": "Chest",
+        "cardio": "35 minutes AM + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 18,
+        "title": "Back & Calves",
+        "cardio": "35 minutes AM + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 19,
+        "title": "Arms",
+        "cardio": "35 minutes AM + 150 twists",
+        "exercises": [
+          {
+            "name": "Tricep Cable Extension with EZ Bar Curls",
+            "sets": "5",
+            "reps": "10-15",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 20,
+        "title": "Active Rest Day",
+        "cardio": "35 minutes AM + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 21,
+        "title": "Active Rest Day",
+        "cardio": "35 minutes AM + 150 twists",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 4,
+    "task": "/ Day 28 / Active Rest Day Exercise Set Reps Rest Notes Reverse Grip Pulldowns 4 8-12 90-120 seconds Parallel Bent Over Barbell Row 4 8-12 90-120 seconds Reverse Grip Cable Row 4 8-12 90-120 seconds Chest Supported Dumbbell Row on Incline Bench 4 8-12 90-120 seconds SUPERSET: Shrugs with Seated Calf Press 4 8-12 60 seconds Seated Calf Press 2 8-12 45 seconds Cardio: 35 minutes AM / 20 minutes PM (do the PM cardio outside if you can) + 150 twists Exercise Set Reps Rest Notes Incline Tricep Pushdown 4 8-12 60 seconds Overhead Tricep Cable Extension with Free Range Handles 4 8-12 60 seconds SUPERSET: Parallel Bar Dips with Incline Close Grip Push-ups 4 Failure 60 seconds Arnold Dumbbell Curl with Resistance Band 4 8-12 60 seconds Spider Curls 4 8-12 60 seconds Preacher Hammer Curl 4 8-12 60 seconds Drag Curls 4 8-12 60 seconds Cardio: 35 minutes AM / 20 minutes PM (do the PM cardio outside if you can) + 150 twists Cardio: 35 minutes AM / 20 minutes PM (do the PM cardio outside if you can) + 150 twists Cardio: 35 minutes AM / 20 minutes PM (do the PM cardio outside if you can) + 150 twists ==== PAGE 17 ====",
+    "days": [
+      {
+        "day": 22,
+        "title": "Legs & Calves",
+        "cardio": "35 minutes AM / 20 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Box Squats",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "90-120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Leg Press",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "90-120 seconds",
+            "notes": "Place feet at the bottom"
+          },
+          {
+            "name": "Split Squat",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "90-120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Unilateral Lying Hamstring Curl",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Smith Machine Deadlifts",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "90-120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Donkey Calf Press",
+            "sets": "6",
+            "reps": "12-15",
+            "rest": "45 seconds",
+            "notes": "As long as legs are straight can be done on smith machine or standing press"
+          }
+        ]
+      },
+      {
+        "day": 23,
+        "title": "Shoulders & Abs",
+        "cardio": "35 minutes AM / 20 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Single Arm Cable Side Raises",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Partial Side Raises",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": "Use resistance band"
+          },
+          {
+            "name": "Chest Supported Dumbbell Rear Raises",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Front Cable Raises",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Neck Crunches",
+            "sets": "5",
+            "reps": "12-15",
+            "rest": "60 seconds",
+            "notes": "Put towel between head and plate SUPERSET: Ball"
+          },
+          {
+            "name": "Crunches with Ball Knee Tucks",
+            "sets": "5",
+            "reps": "20",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 24,
+        "title": "Chest",
+        "cardio": "35 minutes AM / 20 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Pec Deck",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "V Bar Press",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Dumbbell Press",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Cable Crossover",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Push-ups",
+            "sets": "4",
+            "reps": "failure",
+            "rest": "90 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 25,
+        "title": "Back & Calves",
+        "cardio": "35 minutes AM / 20 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Reverse Grip Pulldowns",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90-120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Parallel Bent Over Barbell Row",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90-120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Reverse Grip Cable Row",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90-120 seconds",
+            "notes": "Chest Supported"
+          },
+          {
+            "name": "Dumbbell Row on Incline Bench",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90-120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "SUPERSET: Shrugs with Seated Calf Press",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Calf Press",
+            "sets": "2",
+            "reps": "8-12",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 26,
+        "title": "Arms",
+        "cardio": "35 minutes AM / 20 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Incline Tricep Pushdown",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": "Overhead Tricep Cable"
+          },
+          {
+            "name": "Extension with Free Range Handles",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": "SUPERSET: Parallel Bar"
+          },
+          {
+            "name": "Dips with Incline Close Grip Push-ups",
+            "sets": "4",
+            "reps": "Failure",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Arnold Dumbbell Curl with Resistance Band",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Spider Curls",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Preacher Hammer Curl",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Drag Curls",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 27,
+        "title": "Active Rest Day",
+        "cardio": "35 minutes AM / 20 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 28,
+        "title": "Active Rest Day",
+        "cardio": "35 minutes AM / 20 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 5,
+    "task": "/ Day 35 / Active Rest Day Cardio:  35 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists Cardio:  35 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists Exercise Set Reps Rest Notes TRICEPS CIRCUIT: V Bar Cable Pushdowns + Skull Crushers + Parallel bar dips (to failure) + Bench Dips (to failure) + Overhead Dumbbell Extension 4 16-18 60-90 seconds Rest only after you've completed all of the exercises, no rest between exercises. BICEPS CIRCUIT: High Pulley Cable Curl + Barbell Curl + Spider Curl on an Incline Bench + Single Arm Dumbbell Curl + Double Hand Hammer Curl 4 14-18 60-90 secondsRest only after you've completed all of the exercises, no rest between exercises. SUPERSET: Cable Curls WITH V Bar Pushdowns 4 16-18 60 seconds Cardio: 35 minutes AM / 35 minutes PM (do the PM cardio outside if you can)  + 150 twists ==== PAGE 19 ====",
+    "days": [
+      {
+        "day": 29,
+        "title": "Legs & Calves",
+        "cardio": "35 minutes AM / 35 minutes PM (do the PM cardio outside if you can)  + 150 twists",
+        "exercises": [
+          {
+            "name": "Unilateral Leg Extension",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "No rest",
+            "notes": ""
+          },
+          {
+            "name": "Wedge Squat",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Unilateral Leg Press",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "No rest",
+            "notes": ""
+          },
+          {
+            "name": "Standing Single Leg Curl",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "No rest",
+            "notes": "SUPERSET: Lying"
+          },
+          {
+            "name": "Hamstring Curls with Standing Calf Press",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Standing Calf Press",
+            "sets": "2",
+            "reps": "16-18",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 30,
+        "title": "Shoulders & Abs",
+        "cardio": "35 minutes AM / 35 minutes PM (do the PM cardio outside if you can)  + 150 twists",
+        "exercises": [
+          {
+            "name": "Chest Supported Side to Front Raise",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Side Raises Single Drop Set",
+            "sets": "4",
+            "reps": "8/10",
+            "rest": "60 seconds",
+            "notes": "SUPERSET: Seated Reverse Grip Shoulder Press with EZ Bar"
+          },
+          {
+            "name": "WITH Chest Supported Dumbbell Rear Raises",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": "SUPERSET: Single Arm"
+          },
+          {
+            "name": "Dumbbell Press WITH Neck Crunches",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": "SUPERSET: Hanging Leg"
+          },
+          {
+            "name": "Raises Superset WITH Kneeling Cable Crunches",
+            "sets": "5",
+            "reps": "12-20",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 31,
+        "title": "Chest",
+        "cardio": "35 minutes AM / 35 minutes PM (do the PM cardio outside if you can)  + 150 twists",
+        "exercises": [
+          {
+            "name": "Flat Dumbbell Press",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Cable Press",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Incline Dumbbell Press",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": "Use resistance band to create more tension at the top of the movement"
+          },
+          {
+            "name": "without too much weight Pec Deck",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Incline Push-ups",
+            "sets": "4",
+            "reps": "failure",
+            "rest": "90 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 32,
+        "title": "Back & Calves",
+        "cardio": "35 minutes AM / 35 minutes PM (do the PM cardio outside if you can)  + 150 twists",
+        "exercises": [
+          {
+            "name": "Neutral Grip Chins",
+            "sets": "4",
+            "reps": "failure",
+            "rest": "90-120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Reverse Grip Pulldown Machine",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90-120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Meadow Row",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90-120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Wide Grip Seated Cable Row",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90-120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "SUPERSET: Upright Rows WITH Seated Calf Press",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Calf Press",
+            "sets": "2",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 33,
+        "title": "Arms",
+        "cardio": "35 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "+ Overhead Dumbbell Extension",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60-90 seconds",
+            "notes": "Rest only after you've completed all of the exercises, no rest between exercises. BICEPS CIRCUIT: High Pulley Cable Curl + Barbell Curl + Spider Curl on an Incline Bench + Single Arm Dumbbell"
+          },
+          {
+            "name": "Curl + Double Hand Hammer Curl",
+            "sets": "4",
+            "reps": "14-18",
+            "rest": "60-90 seconds",
+            "notes": "Rest only after you've completed all of the exercises, no rest between exercises."
+          },
+          {
+            "name": "SUPERSET: Cable Curls WITH V Bar Pushdowns",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 34,
+        "title": "Active Rest Day",
+        "cardio": "35 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 35,
+        "title": "Active Rest Day",
+        "cardio": "35 minutes AM / 35 minutes PM (do the PM cardio outside if you can)  + 150 twists",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 6,
+    "task": "/ Day 42 / Active Rest Day Cardio: 45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists Cardio: 45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists ==== PAGE 21 ====",
+    "days": [
+      {
+        "day": 36,
+        "title": "DTP Legs & Calves",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Pendulum Squat 535, 30, 25, 20,",
+            "sets": "15120",
+            "reps": "secondsCan",
+            "rest": "use Smith Machine or Barbell",
+            "notes": "Squat. Use knee sleeves or wraps for heavier sets. SUPERSET: Leg Extension WITH Lying SUPERSET: Seated Calf"
+          }
+        ]
+      },
+      {
+        "day": 37,
+        "title": "DTP Shoulders",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 38,
+        "title": "DTP Chest & Abs",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "SUPERSET: Sit-ups WITH Lying Leg Raises",
+            "sets": "5",
+            "reps": "failure",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 39,
+        "title": "DTP Back",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 40,
+        "title": "DTP Arms",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 41,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 42,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 7,
+    "task": "/ Day 49 / Active Rest Day Cardio:  45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists Cardio:  45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists ==== PAGE 23 ====",
+    "days": [
+      {
+        "day": 43,
+        "title": "Legs",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Hack squat",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Sissy Squat",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Leg Press",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Walking Lunges",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Split Squats",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 44,
+        "title": "Shoulders, Abs & Calves",
+        "cardio": "45 minutes AM / 35 minutes PM  (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Cable Rear Raises WITH Standing Lateral Raises",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Cable Shoulder Press",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": "SUPERSET: Standing"
+          },
+          {
+            "name": "Calf Raises WITH Neck Crunches",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "V Crunches",
+            "sets": "5",
+            "reps": "failure",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 45,
+        "title": "Chest",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Smith Machine Incline Press",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Flat Cable Fly",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Unilateral Low Incline Dumbbell Press",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Decline Dumbbell Fly",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Dumbbell V Press",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 46,
+        "title": "Back & Calves",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Hex bar Row",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "T bar Row",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Chest Supported Cable Rows",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Reverse Grip Dumbbell Bent Over Row",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Rack Deadlifts",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Calf Press",
+            "sets": "6",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 47,
+        "title": "Arms",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Standing Bicep Cable Curls",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": "SUPERSET: Overhead Dumbbell Tricep"
+          },
+          {
+            "name": "Extension WITH Barbell Preacher Curls",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": "SUPERSET: Seated"
+          },
+          {
+            "name": "Dumbbell Curl WITH Parallel Bar Dips",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": "SUPERSET: Unilateral Cable Curls WITH Close"
+          }
+        ]
+      },
+      {
+        "day": 48,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 49,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 8,
+    "task": "/ Day 56 / Active Rest Day Cardio: 45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists Cardio: 45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists ==== PAGE 25 ====",
+    "days": [
+      {
+        "day": 50,
+        "title": "Legs & Calves",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Extensions WITH Stiff Legged Deadlifts",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Pendulum Squat",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": "SUPERSET: Heels Elevated Dumbbell Squat WITH Freestanding Squat"
+          },
+          {
+            "name": "with Resistance Band Support",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Standing Calf Raises",
+            "sets": "6",
+            "reps": "16-18",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 51,
+        "title": "Shoulders & Abs",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Front to Side Raises",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Chest Supported Rear Dumbbell Raises",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Partial Side Raises",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Machine Shoulder Press",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Leg Raised Oblique Crunches",
+            "sets": "5",
+            "reps": "20",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 52,
+        "title": "Chest",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Incline Machine Press",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Dumbbell Incline Fly",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Pec Deck",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Cable Crossovers",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Machine Press",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Neck Crunches",
+            "sets": "5",
+            "reps": "20",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 53,
+        "title": "Back & Calves",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Lat Pulldown",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Reverse Pulldown Machine",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Neutral Grip Pulldown",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Overhand Grip Unilateral High Pulley Row",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": "SUPERSET: Seated"
+          },
+          {
+            "name": "Machine Row WITH Seated Calf Press",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Calf Press",
+            "sets": "2",
+            "reps": "16-18",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 54,
+        "title": "Arms",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Rope Extension + Parallel Bar Dips + Skullcrushers",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "120 seconds",
+            "notes": "Rest only after completing each exercise in the circuit."
+          },
+          {
+            "name": "Seated Dumbbell Curl",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "High Pulley Curls",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Hammer Curls",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Barbell Curls",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 55,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 56,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 35 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 9,
+    "task": "/ Day 63 / Active Rest Day Cardio:  45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists Cardio:  45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists ==== PAGE 27 ====",
+    "days": [
+      {
+        "day": 57,
+        "title": "DTP Legs & Calves",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 58,
+        "title": "DTP Shoulders & Abs",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Raises WITH Kneeling Cable Crunches",
+            "sets": "5",
+            "reps": "20",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 59,
+        "title": "DTP Chest",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "10, 10, 15, 20, 25,",
+            "sets": "30",
+            "reps": "60",
+            "rest": "seconds",
+            "notes": ""
+          },
+          {
+            "name": "Cable Crossovers 530, 25, 20, 15,",
+            "sets": "10",
+            "reps": "60",
+            "rest": "seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 60,
+        "title": "DTP Back",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 61,
+        "title": "DTP Arms",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 62,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 63,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 10,
+    "task": "/ Day 70 / Active Rest Day Cardio: 45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists Cardio: 45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists ==== PAGE 29 ====",
+    "days": [
+      {
+        "day": 64,
+        "title": "Legs & Calves",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Smith Machine Squat",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "120 seconds",
+            "notes": "1 st two sets: Wide Stance 2 nd"
+          },
+          {
+            "name": "two sets: Narrow Stance Split Squats",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "120 seconds",
+            "notes": "Use plate for resistance"
+          },
+          {
+            "name": "Leg Press",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "120 seconds",
+            "notes": "1 st two sets: Wide Stance 2 nd two sets: Narrow Stance SUPERSET: Walking"
+          },
+          {
+            "name": "Lunges WITH Straight Legged Calf Press",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Straight Legged Calf Press",
+            "sets": "2",
+            "reps": "8-124",
+            "rest": "5-60",
+            "notes": "seconds"
+          }
+        ]
+      },
+      {
+        "day": 65,
+        "title": "Shoulders & Abs",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Rear Cable Raises",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Side Cable Raises",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Front Barbell Raise",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Front to Rear Barbell Press",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": "Start by going in front of your face and then go in back of your head. If you have any back impingements don't go behind your neck, just go in front of your face."
+          },
+          {
+            "name": "Weighted Sit-ups",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "45 seconds",
+            "notes": "Use dumbbell for resistance"
+          },
+          {
+            "name": "Hanging Leg Raises",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 66,
+        "title": "Chest",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Low Incline Dumbbell Press",
+            "sets": "4",
+            "reps": "8-129",
+            "rest": "0-120",
+            "notes": "seconds"
+          },
+          {
+            "name": "Dumbbell Decline Press",
+            "sets": "4",
+            "reps": "8-129",
+            "rest": "0-120",
+            "notes": "seconds"
+          },
+          {
+            "name": "Machine Press",
+            "sets": "4",
+            "reps": "8-129",
+            "rest": "0-120",
+            "notes": "seconds"
+          },
+          {
+            "name": "Cable Incline Fly",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Unilateral Cable Fly",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "no rest",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 67,
+        "title": "Back & Calves",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Wide Grip Chins",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90-120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Bent Over Row",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90-120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Unilateral Hammer Rows",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90-120 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Smith Machine Bent Over Rows",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90-120 seconds",
+            "notes": "SUPERSET: Smith"
+          },
+          {
+            "name": "Machine Rack Deads WITH Seated Calf Raises",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Calf Raises",
+            "sets": "2",
+            "reps": "8-12",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 68,
+        "title": "Arms",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Preacher Curls",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Alternating Dumbbell Curls",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Concentration Curls",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Tricep Cable Pushdowns",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Overhead Cable Extension",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Bench Dips",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 69,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 70,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 11,
+    "task": "/ Day 77 / Active Rest Day Cardio:  45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists Cardio:  45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists ==== PAGE 31 ====",
+    "days": [
+      {
+        "day": 71,
+        "title": "Legs & Calves",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Leg Extension",
+            "sets": "4",
+            "reps": "16-189",
+            "rest": "0-120",
+            "notes": "seconds"
+          },
+          {
+            "name": "Hack Squat",
+            "sets": "4",
+            "reps": "16-189",
+            "rest": "0-120",
+            "notes": "seconds"
+          },
+          {
+            "name": "Leg Press",
+            "sets": "4",
+            "reps": "16-189",
+            "rest": "0-120",
+            "notes": "seconds"
+          },
+          {
+            "name": "Seated Leg Curl",
+            "sets": "4",
+            "reps": "16-189",
+            "rest": "0-120",
+            "notes": "seconds"
+          },
+          {
+            "name": "Standing Calf Press",
+            "sets": "6",
+            "reps": "16-18",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 72,
+        "title": "Shoulders, Abs & Neck",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Press WITH Rear Raises",
+            "sets": "4",
+            "reps": "16-186",
+            "rest": "0-90",
+            "notes": "seconds SUPERSET: Standing"
+          },
+          {
+            "name": "Front Raises WITH Standing Side Raises",
+            "sets": "4",
+            "reps": "16-186",
+            "rest": "0-90",
+            "notes": "seconds GIANT SET:  Machine"
+          },
+          {
+            "name": "Crunches + Hanging Leg Raises + Neck Crunches",
+            "sets": "4",
+            "reps": "16-186",
+            "rest": "0-90",
+            "notes": "seconds"
+          },
+          {
+            "name": "Neck Crunches",
+            "sets": "2",
+            "reps": "16-186",
+            "rest": "0-90",
+            "notes": "seconds"
+          }
+        ]
+      },
+      {
+        "day": 73,
+        "title": "Chest",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Dead Stop Smith Machine Press",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "V Press",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Incline Cable Fly",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Dead Stop Incline Machine Press",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Peck Deck",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 75,
+        "title": "ArmsWeek 11 / Day 74 / Back & Calves",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Tricep Cable Pushdown",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Machine Dips",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Overhead Tricep Rope Extension",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Preacher Curls",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Cable Hammer Curls",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Barbell Spider Curls",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "60 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 76,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Overhand Grip T Bar Row",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Bent Over Row",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Machine Row",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Reverse Grip Machine Row",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Single Arm Bent Over Row Overhand Grip",
+            "sets": "4",
+            "reps": "16-18",
+            "rest": "90 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Seated Calf Press",
+            "sets": "6",
+            "reps": "16-184",
+            "rest": "5-60",
+            "notes": "seconds"
+          }
+        ]
+      },
+      {
+        "day": 77,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "week": 12,
+    "task": "/ Day 84 / Active Rest Day Cardio: 45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists Cardio: 45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists ==== PAGE 33 ==== KRIS GETHIN'S  LEGACY TRAINING PROGRAMConclusion There you have it. The Legacy Video Training program is not for the faint of heart, but if you're serious about transforming your body and reaching your ultimate physique, then this is your chance. With 12 weeks of intense training and unique methodologies like Y 3 T and DTP , we're going to push your limits and get you into the best shape of your life. But remember, you can't out-train a bad diet, so stick to the nutrition plan as outlined. Let's get started, commit to every workout and join me on this journey. This is your last chance to train alongside me, so don't miss out! Let's do this together and be harder to kill.",
+    "days": [
+      {
+        "day": 78,
+        "title": "DTP Legs & Calves",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 79,
+        "title": "DTP Shoulders & Abs",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Hanging Leg Raises",
+            "sets": "4",
+            "reps": "failure",
+            "rest": "45 seconds",
+            "notes": ""
+          },
+          {
+            "name": "Crunches",
+            "sets": "4",
+            "reps": "failure",
+            "rest": "45 seconds",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "day": 80,
+        "title": "DTP Chest",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 81,
+        "title": "DTP Back & Calves",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 82,
+        "title": "DTP Arms",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": [
+          {
+            "name": "Close Grip Push-ups",
+            "sets": "3",
+            "reps": "Failure",
+            "rest": "60 seconds",
+            "notes": "4 second negatives"
+          }
+        ]
+      },
+      {
+        "day": 83,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      },
+      {
+        "day": 84,
+        "title": "Active Rest Day",
+        "cardio": "45 minutes AM / 45 minutes PM (do the PM cardio outside if you can) + 150 twists",
+        "exercises": []
+      }
+    ]
+  }
+]
