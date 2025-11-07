@@ -1075,8 +1075,13 @@
                 if (thenxFilterState.focus !== 'all' && !focusLower.includes(thenxFilterState.focus)) {
                     return false;
                 }
-                if (thenxFilterState.search && !workout.title.toLowerCase().includes(thenxFilterState.search)) {
-                    return false;
+                if (thenxFilterState.search) {
+                    const term = thenxFilterState.search;
+                    const titleMatch = workout.title.toLowerCase().includes(term);
+                    const focusMatch = focusLower.some(tag => tag.includes(term));
+                    if (!titleMatch && !focusMatch) {
+                        return false;
+                    }
                 }
                 return true;
             });

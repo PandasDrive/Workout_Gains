@@ -106,13 +106,18 @@ def fetch_page(page: int) -> List[Workout]:
 def main() -> None:
     workouts: List[Workout] = []
     page = 1
+    seen_urls = set()
     while True:
         page_workouts = fetch_page(page)
         if not page_workouts:
             break
-        workouts.extend(page_workouts)
+        for workout in page_workouts:
+            if workout.url in seen_urls:
+                continue
+            seen_urls.add(workout.url)
+            workouts.append(workout)
         page += 1
-        if page > 5:
+        if page > 60:
             break
 
     payload = {
