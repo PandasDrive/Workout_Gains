@@ -390,17 +390,17 @@
                 name: "Kris Gethin",
                 image: "images/kris.PNG",
                 programs: [
-                    { id: "gethin", subtitle: "Legacy Program" },
-                    { id: "kagedLean", subtitle: "Lean Muscle Trainer" },
-                    { id: "hardcore8", subtitle: "8-Week Hardcore Trainer" }
+                    { id: "gethin", subtitle: "Legacy Program", image: "images/gethin_legacy.PNG", imagePosition: "center top 25%" },
+                    { id: "kagedLean", subtitle: "Lean Muscle Trainer", image: "images/12_week_lean_muscle.PNG", imagePosition: "center top 28%" },
+                    { id: "hardcore8", subtitle: "8-Week Hardcore Trainer", image: "images/hard.core.PNG", imagePosition: "center" }
                 ]
             },
             nippard: {
                 name: "Jeff Nippard",
                 image: "images/jeff.PNG",
-                imagePosition: "center 25%",
+                imagePosition: "center top 18%",
                 programs: [
-                    { id: "nippard", subtitle: "12-Week Program" }
+                    { id: "nippard", subtitle: "12-Week Program", image: "images/jeff.nippard.program.PNG", imagePosition: "center top 20%" }
                 ]
             }
         };
@@ -1010,16 +1010,25 @@
                         return;
                     }
                     const weeksCount = programData.weeks.length;
+                    const weeksLabel = weeksCount ? `${weeksCount} week${weeksCount === 1 ? '' : 's'}` : 'Program';
                     const button = document.createElement('button');
-                    button.className = 'btn-press w-full text-left p-5 bg-gray-800 rounded-lg border border-gray-700 shadow-md flex justify-between items-center';
+                    button.className = 'trainer-card btn-press w-full rounded-2xl shadow-lg border border-gray-700 overflow-hidden';
                     const subtitle = programRef.subtitle && programRef.subtitle !== programData.title ? programRef.subtitle : '';
+                    const imagePosition = programRef.imagePosition || '';
+                    const bgStyle = programRef.image
+                        ? `style="background-image: url('${programRef.image}');${imagePosition ? ` background-position: ${imagePosition};` : ''}"`
+                        : '';
                     button.innerHTML = `
-                        <div>
-                            <p class="text-lg font-semibold text-white">${programData.title}</p>
-                            ${subtitle ? `<p class="text-sm text-gray-400">${subtitle}</p>` : ''}
-                            <p class="text-xs text-gray-500 mt-1">${weeksCount} week${weeksCount === 1 ? '' : 's'}</p>
+                        <div class="trainer-card-bg" ${bgStyle}></div>
+                        <div class="trainer-card-shade"></div>
+                        <div class="trainer-card-content relative z-10 flex items-center justify-between w-full p-6">
+                            <div class="text-left space-y-1">
+                                <p class="text-lg font-semibold text-white">${programData.title}</p>
+                                ${subtitle ? `<p class="text-sm text-gray-200">${subtitle}</p>` : ''}
+                                <p class="text-xs text-gray-400 uppercase tracking-wider">${weeksLabel}</p>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         </div>
-                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     `;
                     button.addEventListener('click', () => {
                         showProgram(programRef.id);
