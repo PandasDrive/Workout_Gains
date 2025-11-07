@@ -78,11 +78,9 @@
         .page-header {
             position: sticky;
             top: 0;
-            /* This is the same as bg-gray-900 */
             background-color: #111827; 
-            padding-top: 1.5rem;
+            padding-top: calc(1.5rem + env(safe-area-inset-top, 0px));
             padding-bottom: 1rem;
-            /* This is the same as border-gray-700 */
             border-bottom: 1px solid #374151; 
             z-index: 10;
         }
@@ -435,16 +433,23 @@
             } catch (error) {
                 level = 'all';
             }
+            const focusLower = focus.map(tag => tag.toLowerCase());
+            const searchHaystack = [workout.title || '', focusLower.join(' ')]
+                .join(' ')
+                .toLowerCase();
             return {
                 ...workout,
                 focus,
-                focusLower: focus.map(tag => tag.toLowerCase()),
+                focusLower,
                 level,
+                searchHaystack,
             };
         }).sort((a, b) => (b.likes ?? 0) - (a.likes ?? 0));
 
         const thenxFocusOptions = Array.from(new Set(thenxLibraryWorkouts.flatMap(workout => workout.focusLower))).filter(Boolean).sort();
         const THENX_FAVORITES_KEY = 'thenxFavorites';
+        const THENX_SEARCH_LIMIT = 60;
+        const THENX_SEARCH_DELAY = 120;
         let thenxFavorites = loadThenxFavorites();
 
         if (!programs.thenxLibrary) {
@@ -536,6 +541,7 @@
         let historyCache = loadHistory();
         let pendingNavigation = null;
         let progressChartInstance = null;
+        let thenxSearchTimeout = null;
 
         function loadProgress() {
             try {
@@ -1095,7 +1101,7 @@
             const workouts = Array.isArray(program.workouts) ? program.workouts : [];
             const focusFilter = thenxFilterState.focus;
             const filtered = workouts.filter(workout => {
-                const focusLower = workout.focusLower || (Array.isArray(workout.focus) ? workout.focus.map(tag => String(tag).toLowerCase()) : []);
+                const focusLower = workout.focusLower || [];
                 if (focusFilter === 'favorites') {
                     if (!thenxFavorites.has(workout.url)) {
                         return false;
@@ -1104,10 +1110,8 @@
                     return false;
                 }
                 if (thenxFilterState.search) {
-                    const term = thenxFilterState.search;
-                    const titleMatch = workout.title.toLowerCase().includes(term);
-                    const focusMatch = focusLower.some(tag => tag.includes(term));
-                    if (!titleMatch && !focusMatch) {
+                    const haystack = workout.searchHaystack || '';
+                    if (!haystack.includes(thenxFilterState.search)) {
                         return false;
                     }
                 }
@@ -1119,7 +1123,8 @@
                 if (thenxLibraryEmpty) thenxLibraryEmpty.classList.remove('hidden');
             } else {
                 if (thenxLibraryEmpty) thenxLibraryEmpty.classList.add('hidden');
-                filtered.forEach(workout => {
+                const fragment = document.createDocumentFragment();
+                filtered.slice(0, THENX_SEARCH_LIMIT).forEach(workout => {
                     const isFavorite = thenxFavorites.has(workout.url);
                     const card = document.createElement('a');
                     card.href = workout.url;
@@ -1154,8 +1159,9 @@
                         toggleThenxFavorite(workout.url, program);
                     });
                     card.appendChild(favoriteButton);
-                    thenxWorkoutList.appendChild(card);
+                    fragment.appendChild(card);
                 });
+                thenxWorkoutList.appendChild(fragment);
             }
 
             if (thenxLibrarySummary) {
@@ -1163,7 +1169,9 @@
                 const focusLabel = focusFilter === 'all' ? 'All focuses' : focusFilter === 'favorites' ? 'Favorites' : formatThenxTag(focusFilter);
                 const updatedLabel = program.updatedAt ? `Updated ${new Date(program.updatedAt).toLocaleDateString()}` : 'Latest refresh';
                 const favoritesLabel = thenxFavorites.size ? ` · Favorites saved: ${thenxFavorites.size}` : '';
-                thenxLibrarySummary.textContent = `${filtered.length} of ${total} workouts · ${focusLabel} · ${updatedLabel}${favoritesLabel}`;
+                const displayedCount = Math.min(filtered.length, THENX_SEARCH_LIMIT);
+                const limitedLabel = filtered.length > THENX_SEARCH_LIMIT ? ` (showing top ${THENX_SEARCH_LIMIT})` : '';
+                thenxLibrarySummary.textContent = `${displayedCount} of ${total} workouts${limitedLabel} · ${focusLabel} · ${updatedLabel}${favoritesLabel}`;
             }
         }
 
@@ -1720,10 +1728,15 @@
         }
         if (thenxSearchInput) {
             thenxSearchInput.addEventListener('input', (event) => {
-                thenxFilterState.search = event.target.value.trim().toLowerCase();
-                if (programs.thenxLibrary) {
-                    renderThenxLibraryList(programs.thenxLibrary);
+                if (thenxSearchTimeout) {
+                    clearTimeout(thenxSearchTimeout);
                 }
+                thenxSearchTimeout = setTimeout(() => {
+                    thenxFilterState.search = event.target.value.trim().toLowerCase();
+                    if (programs.thenxLibrary) {
+                        renderThenxLibraryList(programs.thenxLibrary);
+                    }
+                }, THENX_SEARCH_DELAY);
             });
         }
         if (thenxClearFiltersBtn) {
