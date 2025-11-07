@@ -16,6 +16,8 @@ Workout Library: A section organizing each program by its creator.
 
 Trainer Selection: Choose the coach first, then dive into their available programs for a cleaner flow when multiple plans exist per influencer.
 
+Calisthenics Inspiration: Browse curated ThenX featured workouts (Chris Heria) with filters and quick links for fresh bodyweight ideas.
+
 Meal Planner (Nutrition Hub): Standalone `nutrition.html` delivers the 80 Wholefoods recipe library, weekly planner, shopping list, and backup tools.
 
 Program View: A screen to select the week and day of the program.
@@ -36,9 +38,9 @@ This app will house the workout routines from the following programs I've purcha
 - Kris Gethin – 12 Week Lean Muscle Trainer (fully loaded from kaged.com)
 - Kris Gethin – 8 Week Hardcore Trainer (fully loaded from kaged.com)
 - Jeff Nippard – 12-Week Program (fully loaded)
+- Chris Heria – ThenX Featured Workouts Library (curated selection of 100 calisthenics routines)
 - Remaining Kaged Programs (e.g., 8-Week Muscle Building Trainer) – queued for import
 - Seth Feroce – AXE & Sledge and All American Roughneck series (e.g., DOMIN8, High Volume Trainer) – queued for import
-- Thenx Calisthenics – Complete beginner/intermediate/advanced bodyweight plans – queued for import
 - Additional influencer programs as I continue to grab the content I legally own
 
 4. Technical Approach
@@ -65,8 +67,9 @@ Technology: Built with a single file using HTML, Tailwind CSS, and plain JavaScr
 
 - Program Data: All structured workouts now live in `data/program-data.js`. Gethin Legacy, Gethin Lean Muscle, Gethin 8-Week Hardcore, and Nippard's 12-week program are fully populated. Future programs will be appended here as new datasets are parsed.
 - Source Material: Raw PDFs, spreadsheets, and exported text live under `WorkoutPrograms/`. Keep each original file so the data lineage is clear.
-- Dev Utilities: Helper scripts in `.devtools/` handle parsing, exporting JSON, and regenerating JS snippets (`scrape_kaged_lean.py` and `scrape_kaged_hardcore.py` output both JSON and JS for the Kaged programs). Leave the folder hidden from the main UI.
+- Dev Utilities: Helper scripts in `.devtools/` handle parsing, exporting JSON, and regenerating JS snippets (`scrape_kaged_lean.py`, `scrape_kaged_hardcore.py`, `scrape_thenx_workouts.py`). Leave the folder hidden from the main UI.
+- ThenX Metadata: `data/thenx-workouts.js` stores the curated featured-workout catalog (title, focus tags, likes, source URLs) that powers the Chris Heria library.
 - Backups & History: The PWA supports local JSON backups via the new Progress Hub. Export regularly and keep copies with the original source files.
-- Future Work: Next wave is importing the remaining Kaged collection (e.g., 8-Week Muscle Building), Seth Feroce programs, and Thenx calisthenics templates. Once these are loaded, revisit UI polish (coach bios, onboarding quiz, video demos) and consider add-on features like set tracking or social share cards.
+- Future Work: Next wave is importing the remaining Kaged collection (e.g., 8-Week Muscle Building), Seth Feroce programs, and then layering in richer guidance for the ThenX library (skill progressions, equipment tags). Once these are loaded, revisit UI polish (coach bios, onboarding quiz, video demos) and consider add-on features like set tracking or social share cards.
 - Meal Planner (Nutrition Hub): Standalone `nutrition.html` page with recipe library, weekly planner, and shopping list for the 80 Wholefoods guide.
 - Challenges - like Four Horsemen or Murphy Challenge

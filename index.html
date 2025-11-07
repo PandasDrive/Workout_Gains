@@ -361,6 +361,38 @@
         </div>
     </div>
 
+    <!-- ThenX Library Page -->
+    <div id="page-thenx-library" class="page">
+        <div class="page-header px-6">
+            <div class="flex items-center justify-between">
+                <button id="thenx-library-back" class="btn-press text-sm text-gray-300 hover:text-white flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    Back to Trainer
+                </button>
+                <div class="text-right">
+                    <p class="text-xs uppercase tracking-wider text-blue-300">Calisthenics Library</p>
+                    <h1 id="thenx-library-title" class="text-2xl font-semibold text-white">ThenX Calisthenics Library</h1>
+                </div>
+            </div>
+        </div>
+        <div class="page-content space-y-6">
+            <div class="bg-gray-900 border border-gray-700 rounded-2xl p-5 space-y-4">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <p id="thenx-library-summary" class="text-sm text-gray-300">Explore signature bodyweight circuits curated from ThenX featured workouts.</p>
+                    <div class="w-full md:w-80">
+                        <input id="thenx-search-input" type="text" placeholder="Search workouts..." class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    </div>
+                </div>
+                <div id="thenx-focus-chips" class="flex flex-wrap gap-2"></div>
+            </div>
+            <div id="thenx-library-empty" class="hidden text-center text-gray-400 bg-gray-900 border border-gray-700 rounded-2xl p-8">
+                <p class="text-lg font-semibold text-gray-300">No workouts match your filters yet.</p>
+                <p class="text-sm text-gray-400 mt-2">Try clearing the filters or searching with a different keyword.</p>
+            </div>
+            <div id="thenx-workout-list" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"></div>
+        </div>
+    </div>
+
     <!-- Search Overlay -->
     <div id="search-overlay" class="search-overlay">
         <div class="flex items-center justify-between mb-6">
@@ -374,6 +406,7 @@
         <div id="search-results" class="overflow-y-auto space-y-3"></div>
     </div>
 
+    <script src="data/thenx-workouts.js"></script>
     <script src="data/program-data.js"></script>
     <script>
         document.body.classList.remove('no-js');
@@ -383,6 +416,36 @@
         const programs = window.programs || {};
         if (!Object.keys(programs).length) {
             console.warn("Program data is not loaded.");
+        }
+
+        const thenxDataset = window.thenxWorkouts || { workouts: [], source: '', updatedAt: '' };
+        const thenxLibraryWorkouts = (thenxDataset.workouts || []).map((workout) => {
+            const focus = Array.isArray(workout.focus) ? workout.focus : [];
+            let level = 'all';
+            try {
+                const params = new URL(workout.url, window.location.origin).searchParams;
+                level = (params.get('level') || 'all').toLowerCase();
+            } catch (error) {
+                level = 'all';
+            }
+            return {
+                ...workout,
+                focus,
+                focusLower: focus.map(tag => tag.toLowerCase()),
+                level,
+            };
+        }).sort((a, b) => (b.likes ?? 0) - (a.likes ?? 0));
+
+        const thenxFocusOptions = Array.from(new Set(thenxLibraryWorkouts.flatMap(workout => workout.focusLower))).filter(Boolean).sort();
+
+        if (!programs.thenxLibrary) {
+            programs.thenxLibrary = {
+                title: "ThenX Calisthenics Library",
+                type: "library",
+                workouts: thenxLibraryWorkouts,
+                source: thenxDataset.source || "https://app.thenx.com/featured-workouts",
+                updatedAt: thenxDataset.updatedAt || ''
+            };
         }
 
         const trainers = {
@@ -401,6 +464,14 @@
                 imagePosition: "center top 18%",
                 programs: [
                     { id: "nippard", subtitle: "12-Week Program", image: "images/jeff.nippard.program.PNG", imagePosition: "center top 20%" }
+                ]
+            },
+            thenx: {
+                name: "Chris Heria",
+                image: "",
+                imagePosition: "center",
+                programs: [
+                    { id: "thenxLibrary", subtitle: "Calisthenics Library" }
                 ]
             }
         };
@@ -421,7 +492,15 @@
         const closeSearchBtn = document.getElementById('close-search');
         const searchInput = document.getElementById('search-input');
         const searchResults = document.getElementById('search-results');
+        const thenxLibraryBack = document.getElementById('thenx-library-back');
+        const thenxLibraryTitle = document.getElementById('thenx-library-title');
+        const thenxLibrarySummary = document.getElementById('thenx-library-summary');
+        const thenxFocusChipContainer = document.getElementById('thenx-focus-chips');
+        const thenxWorkoutList = document.getElementById('thenx-workout-list');
+        const thenxLibraryEmpty = document.getElementById('thenx-library-empty');
+        const thenxSearchInput = document.getElementById('thenx-search-input');
         const openStatsBtn = document.getElementById('open-stats');
+        let thenxFilterState = { focus: 'all', search: '' };
         const quickExportBtn = document.getElementById('quick-export');
         const statsOverlay = document.getElementById('stats-overlay');
         const closeStatsBtn = document.getElementById('close-stats');
@@ -895,6 +974,9 @@
         function buildSearchIndex() {
             searchIndex = [];
             Object.entries(programs).forEach(([programId, program]) => {
+                if (!program || !Array.isArray(program.weeks)) {
+                    return;
+                }
                 program.weeks.forEach(week => {
                     week.days.forEach(day => {
                         const trainerId = findTrainerForProgram(programId);
@@ -960,6 +1042,102 @@
             ) || '';
         }
 
+        function formatThenxTag(tag) {
+            return tag.split(' ').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ');
+        }
+
+        function renderThenxFocusFilters() {
+            if (!thenxFocusChipContainer) return;
+            const options = ['all', ...thenxFocusOptions];
+            thenxFocusChipContainer.innerHTML = '';
+            options.forEach(option => {
+                const button = document.createElement('button');
+                const isActive = thenxFilterState.focus === option;
+                button.className = `btn-press px-3 py-1 rounded-full text-xs font-semibold border ${isActive ? 'bg-blue-600 text-white border-blue-500' : 'bg-gray-800 border-gray-700 text-gray-300 hover:border-blue-500'}`;
+                button.textContent = option === 'all' ? 'All' : formatThenxTag(option);
+                button.addEventListener('click', () => {
+                    if (thenxFilterState.focus === option) return;
+                    thenxFilterState.focus = option;
+                    renderThenxFocusFilters();
+                    if (programs.thenxLibrary) {
+                        renderThenxLibraryList(programs.thenxLibrary);
+                    }
+                });
+                thenxFocusChipContainer.appendChild(button);
+            });
+        }
+
+        function renderThenxLibraryList(program) {
+            if (!thenxWorkoutList || !program) return;
+            const workouts = Array.isArray(program.workouts) ? program.workouts : [];
+            const filtered = workouts.filter(workout => {
+                const focusLower = workout.focusLower || (Array.isArray(workout.focus) ? workout.focus.map(tag => String(tag).toLowerCase()) : []);
+                if (thenxFilterState.focus !== 'all' && !focusLower.includes(thenxFilterState.focus)) {
+                    return false;
+                }
+                if (thenxFilterState.search && !workout.title.toLowerCase().includes(thenxFilterState.search)) {
+                    return false;
+                }
+                return true;
+            });
+
+            thenxWorkoutList.innerHTML = '';
+            if (!filtered.length) {
+                if (thenxLibraryEmpty) thenxLibraryEmpty.classList.remove('hidden');
+            } else {
+                if (thenxLibraryEmpty) thenxLibraryEmpty.classList.add('hidden');
+                filtered.forEach(workout => {
+                    const card = document.createElement('a');
+                    card.href = workout.url;
+                    card.target = '_blank';
+                    card.rel = 'noopener noreferrer';
+                    card.className = 'block bg-gray-900 border border-gray-700 rounded-2xl overflow-hidden transition hover:border-blue-500';
+                    const focusBadges = (workout.focus || []).map(tag => `<span class="px-2 py-1 rounded-full bg-gray-900/80 border border-gray-700 text-xs text-gray-200">${formatThenxTag(tag)}</span>`).join('');
+                    const backgroundStyle = workout.image ? `background-image: url('${workout.image}'); background-size: cover; background-position: center;` : '';
+                    card.innerHTML = `
+                        <div class="relative h-40 ${workout.image ? '' : 'bg-gray-800'}" ${backgroundStyle ? `style="${backgroundStyle}"` : ''}>
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/30 to-transparent"></div>
+                            <div class="absolute top-3 left-3 flex flex-wrap gap-2">${focusBadges}</div>
+                            ${workout.date ? `<div class="absolute bottom-3 left-3"><p class="text-xs text-gray-200">${workout.date}</p></div>` : ''}
+                        </div>
+                        <div class="p-4 space-y-3">
+                            <p class="text-lg font-semibold text-white">${workout.title}</p>
+                            <div class="flex items-center gap-4 text-xs text-gray-400">
+                                <span>❤️ ${workout.likes ?? '—'}</span>
+                                <span>💬 ${workout.comments ?? '—'}</span>
+                                ${workout.level && workout.level !== 'all' ? `<span class="capitalize">${workout.level}</span>` : ''}
+                            </div>
+                            <p class="text-sm text-blue-300">Open on ThenX &rarr;</p>
+                        </div>
+                    `;
+                    thenxWorkoutList.appendChild(card);
+                });
+            }
+
+            if (thenxLibrarySummary) {
+                const total = workouts.length;
+                const focusLabel = thenxFilterState.focus === 'all' ? 'All focuses' : formatThenxTag(thenxFilterState.focus);
+                const updatedLabel = program.updatedAt ? `Updated ${new Date(program.updatedAt).toLocaleDateString()}` : 'Latest refresh';
+                thenxLibrarySummary.textContent = `${filtered.length} of ${total} workouts · ${focusLabel} · ${updatedLabel}`;
+            }
+        }
+
+        function renderThenxLibrary(program) {
+            if (!program || !Array.isArray(program.workouts)) {
+                showMessage('ThenX workouts are not available yet.');
+                return;
+            }
+            if (thenxLibraryTitle) {
+                thenxLibraryTitle.textContent = program.title;
+            }
+            thenxFilterState = { focus: 'all', search: '' };
+            if (thenxSearchInput) {
+                thenxSearchInput.value = '';
+            }
+            renderThenxFocusFilters();
+            renderThenxLibraryList(program);
+        }
+
         function renderTrainerCards() {
             if (!trainerCardContainer) return;
             trainerCardContainer.innerHTML = '';
@@ -1006,11 +1184,18 @@
                 trainerProgramList.innerHTML = '';
                 trainer.programs.forEach(programRef => {
                     const programData = programs[programRef.id];
-                    if (!programData || !programData.weeks) {
+                    if (!programData) {
                         return;
                     }
-                    const weeksCount = programData.weeks.length;
-                    const weeksLabel = weeksCount ? `${weeksCount} week${weeksCount === 1 ? '' : 's'}` : 'Program';
+                    const isLibrary = programData.type === 'library';
+                    const weeksCount = Array.isArray(programData.weeks) ? programData.weeks.length : 0;
+                    const workoutsCount = isLibrary && Array.isArray(programData.workouts) ? programData.workouts.length : 0;
+                    if (!isLibrary && weeksCount === 0) {
+                        return;
+                    }
+                    const detailLabel = isLibrary
+                        ? `${workoutsCount} workout${workoutsCount === 1 ? '' : 's'}`
+                        : `${weeksCount} week${weeksCount === 1 ? '' : 's'}`;
                     const button = document.createElement('button');
                     button.className = 'trainer-card btn-press w-full rounded-2xl shadow-lg border border-gray-700 overflow-hidden';
                     const subtitle = programRef.subtitle && programRef.subtitle !== programData.title ? programRef.subtitle : '';
@@ -1025,7 +1210,7 @@
                             <div class="text-left space-y-1">
                                 <p class="text-lg font-semibold text-white">${programData.title}</p>
                                 ${subtitle ? `<p class="text-sm text-gray-200">${subtitle}</p>` : ''}
-                                <p class="text-xs text-gray-400 uppercase tracking-wider">${weeksLabel}</p>
+                                <p class="text-xs text-gray-400 uppercase tracking-wider">${detailLabel}</p>
                             </div>
                             <svg class="w-5 h-5 text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         </div>
@@ -1105,6 +1290,12 @@
                 currentTrainer = derivedTrainer;
             }
 
+            if (program.type === 'library') {
+                renderThenxLibrary(program);
+                showPage('page-thenx-library');
+                return;
+            }
+
             if (!program.weeks || !program.weeks.length) {
                 showMessage(`Program data for ${program.title} is not loaded yet.`);
                 return;
@@ -1127,6 +1318,33 @@
             });
 
             showPage('page-program-weeks');
+        }
+
+        function renderThenxLibrary(program) {
+            const trainerProgramList = document.getElementById('trainer-program-list');
+            if (!trainerProgramList) return;
+
+            trainerProgramList.innerHTML = '';
+            program.workouts.forEach(workout => {
+                const workoutButton = document.createElement('button');
+                workoutButton.className = 'trainer-card btn-press w-full rounded-2xl shadow-lg border border-gray-700 overflow-hidden';
+                workoutButton.innerHTML = `
+                    <div class="trainer-card-bg" style="background-image: url('${workout.image || ''}'); background-position: center center;"></div>
+                    <div class="trainer-card-shade"></div>
+                    <div class="trainer-card-content relative z-10 flex items-center justify-between w-full p-6">
+                        <div class="text-left space-y-1">
+                            <p class="text-lg font-semibold text-white">${workout.name}</p>
+                            <p class="text-sm text-gray-200">${workout.description || ''}</p>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">${workout.level || 'All Levels'}</p>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                `;
+                workoutButton.addEventListener('click', () => {
+                    showDay(program.id, 1, 1); // Assuming a default week/day for library workouts
+                });
+                trainerProgramList.appendChild(workoutButton);
+            });
         }
 
         // (Step 2) Show list of Days for a Week
@@ -1442,6 +1660,20 @@
                 hideSummaryModal();
             }
         });
+
+        if (thenxLibraryBack) {
+            thenxLibraryBack.addEventListener('click', () => {
+                goToTrainerPage();
+            });
+        }
+        if (thenxSearchInput) {
+            thenxSearchInput.addEventListener('input', (event) => {
+                thenxFilterState.search = event.target.value.trim().toLowerCase();
+                if (programs.thenxLibrary) {
+                    renderThenxLibraryList(programs.thenxLibrary);
+                }
+            });
+        }
     </script>
 </body>
 </html>
