@@ -28,8 +28,12 @@ Exercise Links (Future Idea): Eventually, maybe add links to YouTube videos or d
 
 This app will house the workout routines from the following programs I've purchased:
 
-- Kris Gethin – Legacy 12-Week Program
-- Jeff Nippard – 12-Week Program (data entry in progress)
+- Kris Gethin – Legacy 12-Week Program (fully loaded)
+- Jeff Nippard – 12-Week Program (fully loaded)
+- Kaged Programs (e.g., Legacy, 12-Week Hardcore Daily Trainer, 8-Week Muscle Building) – queued for import
+- Seth Feroce – AXE & Sledge and All American Roughneck series (e.g., DOMIN8, High Volume Trainer) – queued for import
+- Thenx Calisthenics – Complete beginner/intermediate/advanced bodyweight plans – queued for import
+- Additional influencer programs as I continue to grab the content I legally own
 
 4. Technical Approach
 
@@ -53,14 +57,8 @@ Technology: Built with a single file using HTML, Tailwind CSS, and plain JavaScr
 
 5. Data & Dev Notes
 
-- Program Data: Workout content now lives in `data/program-data.js`. The Gethin Legacy program currently includes manual entries for Weeks 1-4 (Weeks 5-12 are marked "Not Loaded" while we keep rebuilding them). Jeff Nippard’s 12-week program is fully populated from the spreadsheet export.
-- Source Material: Raw text extracted from the PDFs lives under `WorkoutPrograms/` for quick cross-referencing.
-- Dev Utilities: Helper scripts in `.devtools/` can regenerate structured data if we need to revisit the conversion.
-- Future Work: Continue filling Gethin Weeks 5-12, then polish tasks/notes and run a pass over cardio/rest terminology for consistency.
-
-5. Data & Dev Notes
-
-- Program Data: All of Kris Gethin’s Legacy workouts (weeks 1–12) are hard-coded inside `index.html` under `programs.gethin.weeks`.
-- Source Material: The raw text extracted from the official PDF lives at `WorkoutPrograms/legacy_program_text.txt` for quick reference.
-- Dev Utilities: A hidden `.devtools/` directory stores helper scripts. `extract_pdf.py` lives there if you ever need to re-extract or parse new PDFs—leave the folder hidden so the app stays clean.
-- Backups: Avoid editing the PDF directly; make changes in the text file or the data object and keep the extractor script handy for future programs.
+- Program Data: All structured workouts now live in `data/program-data.js`. Both Gethin and Nippard are complete (weeks 1–12). Future programs will be appended here as new datasets are parsed.
+- Source Material: Raw PDFs, spreadsheets, and exported text live under `WorkoutPrograms/`. Keep each original file so the data lineage is clear.
+- Dev Utilities: Helper scripts in `.devtools/` handle parsing, exporting JSON, and regenerating JS snippets. Leave the folder hidden from the main UI.
+- Backups & History: The PWA supports local JSON backups via the new Progress Hub. Export regularly and keep copies with the original source files.
+- Future Work: Next wave is importing the Kaged collection, Seth Feroce programs, and Thenx calisthenics templates. Once these are loaded, revisit UI polish (coach bios, onboarding quiz, video demos) and consider add-on features like set tracking or social share cards.
