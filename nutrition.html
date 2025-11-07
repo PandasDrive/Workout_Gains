@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-900">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Nutrition Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            background-color: #111827;
+            color: #e5e7eb;
+            min-height: 100vh;
+            position: relative;
+        }
+        .btn-press {
+            transition: all 0.1s ease;
+        }
+        .btn-press:active {
+            transform: scale(0.98);
+            filter: brightness(0.9);
+        }
+        .page {
+            display: none;
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .page.active {
+            display: block;
+        }
+        .page.entered {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .page.leaving {
+            opacity: 0;
+            transform: translateY(-16px);
+        }
+        .page-content {
+            height: 100vh;
+            overflow-y: auto;
+            padding: 1.5rem 1.5rem 8rem 1.5rem;
+        }
+        .page-header {
+            position: sticky;
+            top: 0;
+            background: #111827;
+            padding: 1.25rem 0 1rem 0;
+            border-bottom: 1px solid #374151;
+            z-index: 10;
+        }
+        .hero-card {
+            border: 1px solid #2563eb33;
+            background: linear-gradient(135deg, rgba(37,99,235,0.2), rgba(17,24,39,0.9));
+        }
+        .section-card {
+            border: 1px solid #1f2937;
+            background-color: #111827;
+        }
+        .planner-grid {
+            display: grid;
+            grid-template-columns: 140px repeat(7, minmax(150px, 1fr));
+            overflow-x: auto;
+        }
+        .planner-cell {
+            min-height: 140px;
+        }
+        .shopping-category {
+            border-left: 4px solid rgba(59,130,246,0.45);
+        }
+    </style>
+</head>
+<body class="h-full text-gray-200 antialiased">
+
+    <!-- Page 1: Nutrition Home -->
+    <div id="page-nutrition-home" class="page active entered">
+        <div class="flex flex-col h-full items-center justify-center p-6 bg-gray-900">
+            <header class="text-center mb-10">
+                <p class="text-xs uppercase tracking-[0.4em] text-blue-400">Nutrition Hub</p>
+                <h1 class="text-4xl font-bold text-white mb-3">80 Wholefoods Meal Prep</h1>
+                <p class="text-base text-gray-300">Plan, prep, and track nourishing meals alongside your training.</p>
+            </header>
+            <main class="w-full max-w-4xl space-y-6">
+                <section class="hero-card rounded-3xl p-6 md:p-8 shadow-xl">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-blue-300">This Week</p>
+                            <h2 class="text-2xl font-semibold text-white">Meal Prep Overview</h2>
+                            <p class="text-sm text-gray-200 mt-2">Pick recipes, build your plan, and auto-generate the grocery run. Syncs locally—export anytime.</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div class="bg-gray-900/70 border border-blue-500/30 rounded-2xl px-4 py-3">
+                                <p class="text-xs uppercase text-blue-300">Recipes Planned</p>
+                                <p id="home-recipes-planned" class="text-2xl font-semibold text-white">0</p>
+                            </div>
+                            <div class="bg-gray-900/70 border border-blue-500/30 rounded-2xl px-4 py-3">
+                                <p class="text-xs uppercase text-blue-300">Shopping Items</p>
+                                <p id="home-shopping-count" class="text-2xl font-semibold text-white">0</p>
+                            </div>
+                            <div class="bg-gray-900/70 border border-blue-500/30 rounded-2xl px-4 py-3">
+                                <p class="text-xs uppercase text-blue-300">Prep Notes</p>
+                                <p id="home-notes-count" class="text-2xl font-semibold text-white">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                        <button onclick="showPage('page-recipe-library')" class="btn-press bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-2xl px-4 py-3 flex items-center justify-center gap-2">
+                            <span>Browse Recipes</span>
+                        </button>
+                        <button onclick="showPage('page-meal-planner')" class="btn-press bg-blue-500/20 hover:bg-blue-500/30 text-blue-200 text-sm font-medium rounded-2xl px-4 py-3">
+                            Plan My Week
+                        </button>
+                        <button onclick="showPage('page-shopping-list')" class="btn-press bg-blue-500/20 hover:bg-blue-500/30 text-blue-200 text-sm font-medium rounded-2xl px-4 py-3">
+                            Shopping List
+                        </button>
+                        <button onclick="openNutritionSettings()" class="btn-press bg-gray-800 hover:bg-gray-750 text-gray-100 text-sm font-medium rounded-2xl px-4 py-3">
+                            Data & Settings
+                        </button>
+                    </div>
+                </section>
+
+                <section class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <article class="section-card rounded-2xl p-5">
+                        <h3 class="text-lg font-semibold text-white">Quick Start</h3>
+                        <p class="text-sm text-gray-400 mt-2">Import the default 80 Wholefoods weekly template, then tweak meals for your schedule.</p>
+                        <div class="mt-4 space-y-2 text-sm text-gray-300">
+                            <p>• Auto-organized by breakfast, lunch, dinner</p>
+                            <p>• Includes prep times and storage notes</p>
+                            <p>• Ready-made grocery list by category</p>
+                        </div>
+                        <button onclick="importDefaultTemplate()" class="mt-4 btn-press w-full bg-blue-600 hover:bg-blue-700 text-white rounded-xl px-4 py-3 text-sm font-medium">Load Template</button>
+                    </article>
+                    <article class="section-card rounded-2xl p-5">
+                        <h3 class="text-lg font-semibold text-white">Highlights</h3>
+                        <div class="mt-3 space-y-3 text-sm text-gray-300">
+                            <div>
+                                <p class="text-blue-300 font-semibold">Seasonal Produce</p>
+                                <p>Call out recipes that align with current seasonal ingredients to keep costs down.</p>
+                            </div>
+                            <div>
+                                <p class="text-blue-300 font-semibold">Batch Friendly</p>
+                                <p>Flag meals that reheat well or can be frozen for later in the week.</p>
+                            </div>
+                            <div>
+                                <p class="text-blue-300 font-semibold">Macro Aware</p>
+                                <p>Add quick macros per serving so you can balance with training phases.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section-card rounded-2xl p-5">
+                        <h3 class="text-lg font-semibold text-white">Linked Resources</h3>
+                        <div class="mt-3 space-y-3 text-sm text-blue-200">
+                            <button onclick="openPDF()" class="btn-press w-full text-left px-3 py-2 rounded-lg bg-blue-500/10 hover:bg-blue-500/20">80 Wholefoods PDF</button>
+                            <button onclick="showPage('page-recipe-library')" class="btn-press w-full text-left px-3 py-2 rounded-lg bg-blue-500/10 hover:bg-blue-500/20">Recipe Index</button>
+                            <button onclick="showPage('page-meal-planner')" class="btn-press w-full text-left px-3 py-2 rounded-lg bg-blue-500/10 hover:bg-blue-500/20">Weekly Planner</button>
+                            <button onclick="showPage('page-shopping-list')" class="btn-press w-full text-left px-3 py-2 rounded-lg bg-blue-500/10 hover:bg-blue-500/20">Shopping List</button>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Page 2: Recipe Library -->
+    <div id="page-recipe-library" class="page">
+        <div class="page-content bg-gray-900">
+            <header class="page-header flex items-center justify-between mb-6">
+                <button onclick="showPage('page-nutrition-home')" class="btn-press flex items-center text-blue-400 text-lg">
+                    <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    Home
+                </button>
+                <h1 class="text-2xl font-bold text-white">Recipe Library</h1>
+                <div class="hidden md:block" style="width:2rem"></div>
+            </header>
+
+            <section class="bg-gray-800/60 border border-gray-700 rounded-2xl p-4 mb-4">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <div class="flex-1">
+                        <input id="recipe-search" type="text" placeholder="Search meals, ingredients, or tags" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <select id="filter-meal-type" class="bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-sm text-gray-200">
+                            <option value="">Meal Type</option>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="snack">Snack</option>
+                        </select>
+                        <select id="filter-prep-time" class="bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-sm text-gray-200">
+                            <option value="">Prep Time</option>
+                            <option value="15">Under 15 min</option>
+                            <option value="30">Under 30 min</option>
+                            <option value="45">Under 45 min</option>
+                            <option value="60">Under 60 min</option>
+                        </select>
+                        <select id="filter-tag" class="bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-sm text-gray-200">
+                            <option value="">Tag</option>
+                            <option value="high-protein">High Protein</option>
+                            <option value="low-carb">Low Carb</option>
+                            <option value="prep-friendly">Prep Friendly</option>
+                            <option value="freezer">Freezer Friendly</option>
+                        </select>
+                        <button id="clear-filters" class="btn-press bg-gray-800 hover:bg-gray-750 text-sm text-gray-300 rounded-xl px-3 py-2">Clear</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recipe-list" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"></section>
+        </div>
+    </div>
+
+    <!-- Recipe Detail Modal -->
+    <div id="recipe-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50">
+        <div class="bg-gray-900 border border-gray-700 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-hidden">
+            <div class="flex items-center justify-between px-6 py-4 border-b border-gray-800">
+                <div>
+                    <p class="text-xs uppercase tracking-widest text-blue-300" id="recipe-modal-mealtype"></p>
+                    <h2 id="recipe-modal-title" class="text-2xl font-bold text-white"></h2>
+                    <div id="recipe-modal-macros" class="mt-2 text-xs text-gray-400"></div>
+                </div>
+                <button id="recipe-modal-close" class="btn-press text-gray-400 hover:text-white">Close</button>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 overflow-y-auto" style="max-height: calc(90vh - 120px)">
+                <section>
+                    <h3 class="text-sm uppercase tracking-wider text-gray-400">Ingredients</h3>
+                    <ul id="recipe-modal-ingredients" class="mt-3 space-y-2 text-sm text-gray-200"></ul>
+                </section>
+                <section>
+                    <h3 class="text-sm uppercase tracking-wider text-gray-400">Directions</h3>
+                    <ol id="recipe-modal-steps" class="mt-3 space-y-2 text-sm text-gray-200 list-decimal list-inside"></ol>
+                </section>
+                <section class="lg:col-span-2">
+                    <h3 class="text-sm uppercase tracking-wider text-gray-400">Notes</h3>
+                    <ul id="recipe-modal-notes" class="mt-3 space-y-2 text-sm text-gray-300 list-disc list-inside"></ul>
+                </section>
+            </div>
+            <div class="flex items-center justify-between px-6 py-4 border-t border-gray-800">
+                <div class="flex items-center gap-2 text-xs text-gray-400" id="recipe-modal-tags"></div>
+                <div class="flex items-center gap-3">
+                    <button id="recipe-favorite-button" class="btn-press text-sm text-blue-300 hover:text-blue-100">Add to Favorites</button>
+                    <button id="recipe-modal-add" class="btn-press bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-xl px-4 py-3">Add to Planner</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Meal Planner -->
+    <div id="page-meal-planner" class="page">
+        <div class="page-content bg-gray-900">
+            <header class="page-header flex items-center justify-between mb-6">
+                <button onclick="showPage('page-nutrition-home')" class="btn-press flex items-center text-blue-400 text-lg">
+                    <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    Home
+                </button>
+                <h1 class="text-2xl font-bold text-white">Weekly Planner</h1>
+                <div class="flex items-center gap-2">
+                    <button onclick="loadPreviousWeek()" class="btn-press bg-gray-800 hover:bg-gray-750 text-sm text-gray-300 rounded-xl px-3 py-2">Prev</button>
+                    <p id="planner-week-label" class="text-sm text-gray-300">Week of …</p>
+                    <button onclick="loadNextWeek()" class="btn-press bg-gray-800 hover:bg-gray-750 text-sm text-gray-300 rounded-xl px-3 py-2">Next</button>
+                </div>
+            </header>
+
+            <section class="bg-gray-800/60 border border-gray-700 rounded-2xl p-4 mb-6">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <p class="text-sm text-gray-300"><span class="text-blue-300 font-semibold">Tip:</span> Drag recipes into the grid or use the add buttons. Long-press on mobile to reposition.</p>
+                    <div class="flex gap-3">
+                        <button onclick="clearPlanner()" class="btn-press bg-gray-800 hover:bg-gray-750 text-sm text-gray-300 rounded-xl px-3 py-2">Clear Week</button>
+                        <button onclick="savePlannerTemplate()" class="btn-press bg-blue-600 hover:bg-blue-700 text-sm text-white rounded-xl px-3 py-2">Save Template</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="overflow-hidden border border-gray-800 rounded-2xl">
+                <div class="planner-grid text-sm" id="planner-grid">
+                    <!-- headers and cells populated via script -->
+                </div>
+            </section>
+
+            <section class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <article class="section-card rounded-2xl p-4">
+                    <h3 class="text-sm uppercase tracking-wider text-gray-400">Meal Notes</h3>
+                    <textarea id="planner-notes" class="mt-3 w-full bg-gray-900 border border-gray-800 rounded-xl px-3 py-3 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" rows="6" placeholder="Record adjustments, subs, or feedback."></textarea>
+                </article>
+                <article class="section-card rounded-2xl p-4">
+                    <h3 class="text-sm uppercase tracking-wider text-gray-400">Prep Checklist</h3>
+                    <ul id="planner-prep-list" class="mt-3 space-y-2 text-sm text-gray-300"></ul>
+                </article>
+                <article class="section-card rounded-2xl p-4">
+                    <h3 class="text-sm uppercase tracking-wider text-gray-400">Batching Suggestions</h3>
+                    <div id="planner-batching" class="mt-3 space-y-2 text-sm text-gray-300">
+                        <p class="text-gray-500">Add recipes to see make-ahead tips.</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <!-- Page 4: Shopping List -->
+    <div id="page-shopping-list" class="page">
+        <div class="page-content bg-gray-900">
+            <header class="page-header flex items-center justify-between mb-6">
+                <button onclick="showPage('page-nutrition-home')" class="btn-press flex items-center text-blue-400 text-lg">
+                    <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    Home
+                </button>
+                <h1 class="text-2xl font-bold text-white">Shopping List</h1>
+                <div class="flex items-center gap-2">
+                    <button onclick="printShoppingList()" class="btn-press bg-gray-800 hover:bg-gray-750 text-sm text-gray-300 rounded-xl px-3 py-2">Print / Share</button>
+                    <button onclick="clearShoppingList()" class="btn-press bg-gray-800 hover:bg-gray-750 text-sm text-gray-300 rounded-xl px-3 py-2">Clear</button>
+                </div>
+            </header>
+
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <article class="section-card rounded-2xl p-5">
+                    <h3 class="text-sm uppercase tracking-wider text-gray-400">Summary</h3>
+                    <div class="mt-3 grid grid-cols-2 gap-3 text-sm text-gray-300">
+                        <p>Unique Ingredients: <span id="shopping-unique-count" class="text-blue-300 font-semibold">0</span></p>
+                        <p>Pantry Items: <span id="shopping-pantry-count" class="text-blue-300 font-semibold">0</span></p>
+                        <p>Produce: <span id="shopping-produce-count" class="text-blue-300 font-semibold">0</span></p>
+                        <p>Proteins: <span id="shopping-protein-count" class="text-blue-300 font-semibold">0</span></p>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        <label class="flex items-center gap-2 text-sm text-gray-300">
+                            <input type="checkbox" id="shopping-hide-checked" class="accent-blue-500" />
+                            Hide purchased items
+                        </label>
+                        <label class="flex items-center gap-2 text-sm text-gray-300">
+                            <input type="checkbox" id="shopping-group-pantries" class="accent-blue-500" />
+                            Group pantry staples together
+                        </label>
+                    </div>
+                </article>
+                <article class="section-card rounded-2xl p-5">
+                    <h3 class="text-sm uppercase tracking-wider text-gray-400">Export</h3>
+                    <div class="mt-3 space-y-2">
+                        <button onclick="downloadShoppingJSON()" class="btn-press w-full bg-blue-600 hover:bg-blue-700 text-sm text-white rounded-xl px-3 py-2">Download JSON</button>
+                        <button onclick="copyShoppingPlaintext()" class="btn-press w-full bg-blue-500/20 hover:bg-blue-500/30 text-sm text-blue-200 rounded-xl px-3 py-2">Copy Plain Text</button>
+                    </div>
+                </article>
+            </section>
+
+            <section class="mt-6 space-y-4" id="shopping-list"></section>
+        </div>
+    </div>
+
+    <!-- Settings Overlay -->
+    <div id="nutrition-settings" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50">
+        <div class="bg-gray-900 border border-gray-700 rounded-3xl w-full max-w-xl p-6 space-y-5">
+            <div class="flex items-center justify-between">
+                <h2 class="text-2xl font-semibold text-white">Nutrition Data & Backups</h2>
+                <button onclick="closeNutritionSettings()" class="btn-press text-gray-400 hover:text-white">Close</button>
+            </div>
+            <div class="space-y-3 text-sm text-gray-300">
+                <p>• Export or import your planner, recipes, and shopping data.</p>
+                <p>• Link back to the original PDF for reference.</p>
+                <p>• Clear cached data if you want to start fresh.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <button onclick="downloadNutritionBackup()" class="btn-press bg-blue-600 hover:bg-blue-700 text-sm text-white rounded-xl px-3 py-2">Download Backup</button>
+                <label class="btn-press bg-blue-500/20 hover:bg-blue-500/30 text-sm text-blue-200 rounded-xl px-3 py-2 text-center cursor-pointer">
+                    Import Backup
+                    <input type="file" id="nutrition-import" accept="application/json" class="hidden" />
+                </label>
+                <button onclick="openPDF()" class="btn-press bg-gray-800 hover:bg-gray-750 text-sm text-gray-200 rounded-xl px-3 py-2">Open PDF</button>
+                <button onclick="clearAllNutritionData()" class="btn-press bg-gray-800 hover:bg-gray-750 text-sm text-gray-200 rounded-xl px-3 py-2">Clear Cached Data</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Planner Assign Overlay -->
+    <div id="planner-assign-overlay" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50">
+        <div class="bg-gray-900 border border-gray-700 rounded-3xl w-full max-w-md p-6 space-y-5">
+            <div class="flex items-center justify-between">
+                <h2 class="text-xl font-semibold text-white">Assign Recipe</h2>
+                <button id="planner-assign-close" class="btn-press text-gray-400 hover:text-white">Close</button>
+            </div>
+            <div class="space-y-4">
+                <div>
+                    <label for="planner-assign-recipe" class="block text-xs uppercase tracking-wider text-gray-400">Recipe</label>
+                    <select id="planner-assign-recipe" class="mt-1 w-full bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-sm text-gray-200"></select>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div>
+                        <label for="planner-assign-day" class="block text-xs uppercase tracking-wider text-gray-400">Day</label>
+                        <select id="planner-assign-day" class="mt-1 w-full bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-sm text-gray-200"></select>
+                    </div>
+                    <div>
+                        <label for="planner-assign-meal" class="block text-xs uppercase tracking-wider text-gray-400">Meal</label>
+                        <select id="planner-assign-meal" class="mt-1 w-full bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-sm text-gray-200">
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="planner-assign-servings" class="block text-xs uppercase tracking-wider text-gray-400">Servings</label>
+                    <input id="planner-assign-servings" type="number" min="1" value="1" class="mt-1 w-full bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-sm text-gray-200" />
+                </div>
+            </div>
+            <div class="flex justify-end gap-3">
+                <button id="planner-assign-cancel" class="btn-press bg-gray-800 hover:bg-gray-750 text-sm text-gray-300 rounded-xl px-3 py-2">Cancel</button>
+                <button id="planner-assign-confirm" class="btn-press bg-blue-600 hover:bg-blue-700 text-sm text-white rounded-xl px-4 py-2">Assign</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data/nutrition-data.js"></script>
+    <script>
+    (function () {
+        const STORAGE_KEY = 'nutritionPlannerState_v1';
+        const FAVORITE_KEY = 'nutritionFavoriteRecipes_v1';
+        const MEAL_SLOTS = ['breakfast', 'lunch', 'dinner'];
+        const MEAL_LABELS = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner' };
+        const CATEGORY_ORDER = ['produce', 'protein', 'dairy', 'pantry', 'other'];
+
+        const data = window.nutritionData || { recipes: [] };
+        const recipes = (data.recipes || []).map(enhanceRecipe);
+        const recipeIndex = new Map(recipes.map(recipe => [recipe.slug, recipe]));
+        const uniqueTags = deriveUniqueTags(recipes);
+
+        let plannerState = loadPlannerState();
+        let favoriteSet = loadFavoriteSet();
+        let activeRecipe = null;
+        let pendingAssignContext = null;
+        let notesSaveTimeout = null;
+
+        const els = {
+            recipeList: document.getElementById('recipe-list'),
+            recipeModal: document.getElementById('recipe-modal'),
+            recipeModalIngredients: document.getElementById('recipe-modal-ingredients'),
+            recipeModalSteps: document.getElementById('recipe-modal-steps'),
+            recipeModalNotes: document.getElementById('recipe-modal-notes'),
+            recipeModalMealType: document.getElementById('recipe-modal-mealtype'),
+            recipeModalTitle: document.getElementById('recipe-modal-title'),
+            recipeModalMacros: document.getElementById('recipe-modal-macros'),
+            recipeModalTags: document.getElementById('recipe-modal-tags'),
+            recipeFavoriteButton: document.getElementById('recipe-favorite-button'),
+            recipeAddButton: document.getElementById('recipe-modal-add'),
+            recipeModalClose: document.getElementById('recipe-modal-close'),
+
+            recipeSearch: document.getElementById('recipe-search'),
+            filterMealType: document.getElementById('filter-meal-type'),
+            filterPrepTime: document.getElementById('filter-prep-time'),
+            filterTag: document.getElementById('filter-tag'),
+
+            plannerGrid: document.getElementById('planner-grid'),
+            plannerWeekLabel: document.getElementById('planner-week-label'),
+            plannerNotes: document.getElementById('planner-notes'),
+            plannerPrepList: document.getElementById('planner-prep-list'),
+            plannerBatching: document.getElementById('planner-batching'),
+
+            plannerOverlay: document.getElementById('planner-assign-overlay'),
+            plannerOverlayClose: document.getElementById('planner-assign-close'),
+            plannerOverlayRecipe: document.getElementById('planner-assign-recipe'),
+            plannerOverlayDay: document.getElementById('planner-assign-day'),
+            plannerOverlayMeal: document.getElementById('planner-assign-meal'),
+            plannerOverlayServings: document.getElementById('planner-assign-servings'),
+            plannerOverlayCancel: document.getElementById('planner-assign-cancel'),
+            plannerOverlayConfirm: document.getElementById('planner-assign-confirm'),
+
+            shoppingList: document.getElementById('shopping-list'),
+            shoppingUniqueCount: document.getElementById('shopping-unique-count'),
+            shoppingPantryCount: document.getElementById('shopping-pantry-count'),
+            shoppingProduceCount: document.getElementById('shopping-produce-count'),
+            shoppingProteinCount: document.getElementById('shopping-protein-count'),
+            shoppingHideChecked: document.getElementById('shopping-hide-checked'),
+            shoppingGroupPantries: document.getElementById('shopping-group-pantries'),
+
+            homeRecipesPlanned: document.getElementById('home-recipes-planned'),
+            homeShoppingCount: document.getElementById('home-shopping-count'),
+            homeNotesCount: document.getElementById('home-notes-count'),
+
+            nutritionImport: document.getElementById('nutrition-import')
+        };
+
+        const currentFilters = {
+            search: '',
+            mealType: '',
+            prepTime: '',
+            tag: ''
+        };
+
+        document.addEventListener('DOMContentLoaded', initialise);
+
+        function initialise() {
+            populateTagFilter();
+            populatePlannerRecipeOptions();
+            bindEvents();
+            ensureWeekExists(plannerState.currentWeekStart || getCurrentWeekStartISO());
+            renderRecipeList();
+            renderPlanner();
+            renderShoppingList();
+            renderHomeStats();
+            updatePlannerNotesField();
+        }
+
+        function bindEvents() {
+            els.recipeSearch.addEventListener('input', () => {
+                currentFilters.search = els.recipeSearch.value.trim().toLowerCase();
+                renderRecipeList();
+            });
+            els.filterMealType.addEventListener('change', () => {
+                currentFilters.mealType = els.filterMealType.value;
+                renderRecipeList();
+            });
+            els.filterPrepTime.addEventListener('change', () => {
+                currentFilters.prepTime = els.filterPrepTime.value;
+                renderRecipeList();
+            });
+            els.filterTag.addEventListener('change', () => {
+                currentFilters.tag = els.filterTag.value;
+                renderRecipeList();
+            });
+
+            els.recipeFavoriteButton.addEventListener('click', () => {
+                if (!activeRecipe) return;
+                toggleFavorite(activeRecipe.slug);
+                updateRecipeModalFavoriteButton();
+                renderRecipeList();
+            });
+
+            els.recipeAddButton.addEventListener('click', () => {
+                if (!activeRecipe) return;
+                openPlannerAssignOverlay({ recipeSlug: activeRecipe.slug });
+            });
+
+            els.recipeModalClose.addEventListener('click', closeRecipeModal);
+
+            els.plannerOverlayClose.addEventListener('click', closePlannerAssignOverlay);
+            els.plannerOverlayCancel.addEventListener('click', closePlannerAssignOverlay);
+            els.plannerOverlayConfirm.addEventListener('click', confirmPlannerAssignment);
+
+            els.plannerNotes.addEventListener('input', handleNotesInput);
+
+            els.shoppingHideChecked.addEventListener('change', renderShoppingList);
+            els.shoppingGroupPantries.addEventListener('change', renderShoppingList);
+
+            els.nutritionImport.addEventListener('change', handleImportBackup);
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    closeRecipeModal();
+                    closePlannerAssignOverlay();
+                    closeNutritionSettings();
+                }
+            });
+        }
+
+        window.showPage = showPage;
+        window.openPDF = openPDF;
+        window.openNutritionSettings = openNutritionSettings;
+        window.closeNutritionSettings = closeNutritionSettings;
+        window.importDefaultTemplate = importDefaultTemplate;
+        window.loadPreviousWeek = () => shiftWeek(-1);
+        window.loadNextWeek = () => shiftWeek(1);
+        window.clearPlanner = clearPlanner;
+        window.savePlannerTemplate = savePlannerTemplate;
+        window.printShoppingList = printShoppingList;
+        window.clearShoppingList = clearShoppingList;
+        window.downloadShoppingJSON = downloadShoppingJSON;
+        window.copyShoppingPlaintext = copyShoppingPlaintext;
+        window.downloadNutritionBackup = downloadNutritionBackup;
+        window.clearAllNutritionData = clearAllNutritionData;
+
+        function enhanceRecipe(recipe) {
+            const mealType = inferMealType(recipe);
+            const tags = inferTags(recipe, mealType);
+            const { instructions, tips } = splitNotes(recipe.notes || []);
+            const searchText = (recipe.title + ' ' + recipe.ingredients.join(' ') + ' ' + instructions.join(' ') + ' ' + tips.join(' ')).toLowerCase();
+            return { ...recipe, mealType, tags, instructions, tips, searchText };
+        }
+
+        function inferMealType(recipe) {
+            const title = recipe.title.toLowerCase();
+            const ingredients = recipe.ingredients.join(' ').toLowerCase();
+            if (/(breakfast|oats|granola|pancake|toast|frittata|yogurt)/.test(title) || (ingredients.includes('egg') && !title.includes('salad'))) {
+                return 'breakfast';
+            }
+            if (/(salad|wrap|bowl|sandwich)/.test(title)) {
+                return 'lunch';
+            }
+            if (/(jerky|snack|ball|bite|bar)/.test(title)) {
+                return 'snack';
+            }
+            return 'dinner';
+        }
+
+        function inferTags(recipe, mealType) {
+            const tags = new Set([mealType]);
+            const ingredients = recipe.ingredients.join(' ').toLowerCase();
+            const title = recipe.title.toLowerCase();
+            if (/(salmon|cod|shrimp|tuna|halibut|fish)/.test(ingredients)) tags.add('seafood');
+            if (/(chicken|turkey)/.test(ingredients)) tags.add('poultry');
+            if (/(beef|bison|steak)/.test(ingredients)) tags.add('red-meat');
+            if (/(tofu|tempeh|lentil|chickpea|bean)/.test(ingredients)) tags.add('plant-based');
+            if (ingredients.includes('egg')) tags.add('egg-based');
+            if (/(rice|quinoa|couscous)/.test(ingredients)) tags.add('grain-focus');
+            if (title.includes('salad')) tags.add('salad');
+            if (tags.size === 1) tags.add('general');
+            return Array.from(tags);
+        }
+
+        function splitNotes(notes) {
+            const verbs = ['add', 'cook', 'bring', 'heat', 'serve', 'divide', 'mix', 'transfer', 'combine', 'bake', 'remove', 'whisk', 'preheat', 'slice', 'drizzle', 'stir', 'fold', 'pour', 'arrange', 'cover', 'top', 'meanwhile', 'set', 'place'];
+            const instructions = [];
+            const tips = [];
+            notes.forEach(line => {
+                const lower = line.toLowerCase();
+                if (verbs.some(verb => lower.startsWith(verb))) {
+                    instructions.push(line);
+                } else {
+                    tips.push(line);
+                }
+            });
+            if (!instructions.length) {
+                instructions.push(...tips);
+                tips.length = 0;
+            }
+            return { instructions, tips };
+        }
+
+        function deriveUniqueTags(list) {
+            const set = new Set();
+            list.forEach(recipe => recipe.tags.forEach(tag => set.add(tag)));
+            return Array.from(set).filter(Boolean);
+        }
+
+        function populateTagFilter() {
+            els.filterTag.innerHTML = '';
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.textContent = 'Tag';
+            els.filterTag.appendChild(defaultOption);
+            uniqueTags.sort().forEach(tag => {
+                const option = document.createElement('option');
+                option.value = tag;
+                option.textContent = formatTagLabel(tag);
+                els.filterTag.appendChild(option);
+            });
+        }
+
+        function populatePlannerRecipeOptions() {
+            els.plannerOverlayRecipe.innerHTML = '';
+            const sorted = [...recipes].sort((a, b) => {
+                if (a.mealType !== b.mealType) return a.mealType.localeCompare(b.mealType);
+                return a.title.localeCompare(b.title);
+            });
+            sorted.forEach(recipe => {
+                const option = document.createElement('option');
+                option.value = recipe.slug;
+                option.textContent = `${recipe.title} (${formatTagLabel(recipe.mealType)} · ${recipe.prep_time})`;
+                els.plannerOverlayRecipe.appendChild(option);
+            });
+        }
+
+        function loadPlannerState() {
+            try {
+                const raw = localStorage.getItem(STORAGE_KEY);
+                if (!raw) return createDefaultPlannerState();
+                const parsed = JSON.parse(raw);
+                if (!parsed.weeks) parsed.weeks = {};
+                return parsed;
+            } catch (error) {
+                console.warn('Unable to load planner state', error);
+                return createDefaultPlannerState();
+            }
+        }
+
+        function savePlannerState() {
+            plannerState.version = 1;
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(plannerState));
+        }
+
+        function loadFavoriteSet() {
+            try {
+                const raw = localStorage.getItem(FAVORITE_KEY);
+                if (!raw) return new Set();
+                return new Set(JSON.parse(raw));
+            } catch (error) {
+                console.warn('Unable to load favorites', error);
+                return new Set();
+            }
+        }
+
+        function saveFavoriteSet() {
+            localStorage.setItem(FAVORITE_KEY, JSON.stringify(Array.from(favoriteSet)));
+        }
+
+        function createDefaultPlannerState() {
+            return {
+                version: 1,
+                currentWeekStart: getCurrentWeekStartISO(),
+                weeks: {}
+            };
+        }
+
+        function ensureWeekExists(iso) {
+            const weekStartISO = iso || getCurrentWeekStartISO();
+            if (!plannerState.weeks[weekStartISO]) {
+                plannerState.weeks[weekStartISO] = { slots: {}, notes: '' };
+            }
+            plannerState.currentWeekStart = weekStartISO;
+        }
+
+        function getCurrentWeekData() {
+            ensureWeekExists(plannerState.currentWeekStart || getCurrentWeekStartISO());
+            return plannerState.weeks[plannerState.currentWeekStart];
+        }
+
+        function renderRecipeList() {
+            const filtered = recipes.filter(recipe => {
+                if (currentFilters.mealType && recipe.mealType !== currentFilters.mealType) return false;
+                if (currentFilters.tag && !recipe.tags.includes(currentFilters.tag)) return false;
+                if (currentFilters.prepTime) {
+                    const limit = Number(currentFilters.prepTime);
+                    if (recipe.prep_minutes > limit) return false;
+                }
+                if (currentFilters.search && !recipe.searchText.includes(currentFilters.search)) return false;
+                return true;
+            }).sort((a, b) => {
+                const favA = favoriteSet.has(a.slug);
+                const favB = favoriteSet.has(b.slug);
+                if (favA !== favB) return favB - favA;
+                return a.title.localeCompare(b.title);
+            });
+
+            els.recipeList.innerHTML = '';
+            if (!filtered.length) {
+                const emptyState = document.createElement('div');
+                emptyState.className = 'text-center text-gray-400 py-12 border border-dashed border-gray-700 rounded-2xl';
+                emptyState.textContent = 'No recipes match your filters yet. Try adjusting the search.';
+                els.recipeList.appendChild(emptyState);
+                return;
+            }
+
+            const fragment = document.createDocumentFragment();
+            filtered.forEach(recipe => fragment.appendChild(createRecipeCard(recipe)));
+            els.recipeList.appendChild(fragment);
+        }
+
+        function createRecipeCard(recipe) {
+            const card = document.createElement('button');
+            card.className = 'text-left bg-gray-800 border border-gray-700 hover:border-blue-500 rounded-2xl p-4 transition-colors';
+            card.innerHTML = `
+                <div class="flex justify-between items-start gap-3">
+                    <div>
+                        <p class="text-xs uppercase tracking-wider text-blue-300">${formatTagLabel(recipe.mealType)}</p>
+                        <p class="text-lg font-semibold text-white">${recipe.title}</p>
+                    </div>
+                    <div class="text-sm ${favoriteSet.has(recipe.slug) ? 'text-yellow-300' : 'text-gray-600'}">${favoriteSet.has(recipe.slug) ? '★' : ''}</div>
+                </div>
+                <div class="mt-2 text-xs text-gray-400">${recipe.prep_time} • ${formatMacroSummary(recipe)}</div>
+                <div class="mt-3 flex flex-wrap gap-2 text-[11px] text-gray-300">
+                    ${recipe.tags.map(tag => `<span class="px-2 py-1 rounded-full bg-gray-900 border border-gray-700">${formatTagLabel(tag)}</span>`).join('')}
+                </div>
+            `;
+            card.addEventListener('click', () => openRecipeModal(recipe));
+            return card;
+        }
+
+        function openRecipeModal(recipe) {
+            activeRecipe = recipe;
+            els.recipeModalMealType.textContent = `Meal Type: ${formatTagLabel(recipe.mealType)}`;
+            els.recipeModalTitle.textContent = recipe.title;
+            els.recipeModalMacros.textContent = formatMacroDetail(recipe);
+            els.recipeModalTags.innerHTML = recipe.tags.map(tag => `<span class="px-2 py-1 rounded-full bg-gray-900 border border-gray-700 text-xs text-gray-300">${formatTagLabel(tag)}</span>`).join(' ');
+            populateList(els.recipeModalIngredients, recipe.ingredients);
+            populateList(els.recipeModalSteps, recipe.instructions);
+            populateList(els.recipeModalNotes, recipe.tips);
+            updateRecipeModalFavoriteButton();
+            els.recipeModal.classList.remove('hidden');
+        }
+
+        function closeRecipeModal() {
+            if (!els.recipeModal) return;
+            els.recipeModal.classList.add('hidden');
+            activeRecipe = null;
+        }
+
+        function updateRecipeModalFavoriteButton() {
+            if (!activeRecipe) return;
+            const isFavorite = favoriteSet.has(activeRecipe.slug);
+            els.recipeFavoriteButton.textContent = isFavorite ? 'Remove from Favorites' : 'Add to Favorites';
+        }
+
+        function populateList(container, items) {
+            container.innerHTML = '';
+            if (!items || !items.length) {
+                const li = document.createElement('li');
+                li.className = 'text-gray-500';
+                li.textContent = 'No details available.';
+                container.appendChild(li);
+                return;
+            }
+            items.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                container.appendChild(li);
+            });
+        }
+
+        function toggleFavorite(slug) {
+            if (favoriteSet.has(slug)) {
+                favoriteSet.delete(slug);
+            } else {
+                favoriteSet.add(slug);
+            }
+            saveFavoriteSet();
+        }
+
+        function renderPlanner() {
+            const weekStartISO = plannerState.currentWeekStart || getCurrentWeekStartISO();
+            ensureWeekExists(weekStartISO);
+            const weekStartDate = new Date(weekStartISO + 'T00:00:00');
+            const days = getWeekDays(weekStartDate);
+            const weekData = getCurrentWeekData();
+
+            els.plannerWeekLabel.textContent = formatWeekLabel(weekStartDate);
+            els.plannerGrid.innerHTML = '';
+
+            const headerCell = document.createElement('div');
+            headerCell.className = 'bg-gray-900/80 border-b border-gray-800 p-3 text-sm font-semibold text-gray-300';
+            headerCell.textContent = 'Meal';
+            els.plannerGrid.appendChild(headerCell);
+
+            days.forEach(day => {
+                const cell = document.createElement('div');
+                cell.className = 'bg-gray-900/80 border-l border-b border-gray-800 p-3';
+                cell.innerHTML = `<p class="text-sm font-semibold text-gray-200">${day.label}</p><p class="text-xs text-gray-500">${day.dateLabel}</p>`;
+                els.plannerGrid.appendChild(cell);
+            });
+
+            MEAL_SLOTS.forEach(mealSlot => {
+                const rowHeader = document.createElement('div');
+                rowHeader.className = 'bg-gray-900/80 border-b border-gray-800 p-3 text-sm font-semibold text-gray-300';
+                rowHeader.textContent = MEAL_LABELS[mealSlot];
+                els.plannerGrid.appendChild(rowHeader);
+
+                days.forEach(day => {
+                    const slotKey = `${day.index}:${mealSlot}`;
+                    const slotValue = weekData.slots[slotKey];
+                    const { slug, servings } = normaliseSlotValue(slotValue);
+                    const cell = document.createElement('div');
+                    cell.className = 'planner-cell border-l border-b border-gray-800 p-3 flex flex-col gap-3 bg-gray-900/40';
+
+                    if (slug) {
+                        const recipe = recipeIndex.get(slug);
+                        if (recipe) {
+                            cell.appendChild(createPlannerRecipeChip(recipe, servings, slotKey));
+                        }
+                    }
+
+                    const addBtn = document.createElement('button');
+                    addBtn.className = 'mt-auto btn-press bg-gray-800/70 hover:bg-gray-750 text-xs text-gray-200 rounded-lg px-2 py-2';
+                    addBtn.textContent = slug ? 'Change Recipe' : 'Add Recipe';
+                    addBtn.addEventListener('click', () => openPlannerAssignOverlay({ dayIndex: day.index, meal: mealSlot, recipeSlug: slug || null, servings }));
+                    cell.appendChild(addBtn);
+
+                    els.plannerGrid.appendChild(cell);
+                });
+            });
+
+            updatePlannerNotesField();
+            renderPlannerPrepList();
+            renderHomeStats();
+            savePlannerState();
+        }
+
+        function createPlannerRecipeChip(recipe, servings, slotKey) {
+            const card = document.createElement('div');
+            card.className = 'bg-gray-800 border border-gray-700 rounded-xl p-3 flex flex-col gap-2';
+            card.innerHTML = `
+                <div class="flex justify-between items-start gap-3">
+                    <div>
+                        <p class="text-sm font-semibold text-white">${recipe.title}</p>
+                        <p class="text-xs text-gray-400">${formatMacroSummary(recipe)}</p>
+                        <p class="text-xs text-gray-500">Servings: ${servings}</p>
+                    </div>
+                    <button class="btn-press text-xs text-red-300 hover:text-red-200">Remove</button>
+                </div>
+            `;
+            card.querySelector('button').addEventListener('click', () => removeRecipeFromSlot(slotKey));
+            card.addEventListener('click', (event) => {
+                if (event.target.tagName !== 'BUTTON') {
+                    openRecipeModal(recipe);
+                }
+            });
+            return card;
+        }
+
+        function openPlannerAssignOverlay(context) {
+            pendingAssignContext = context || {};
+            const defaults = findNextAvailableSlot();
+            const recipeSlug = context.recipeSlug || findRecipeForMeal(context.meal || defaults.meal)?.slug || recipes[0]?.slug;
+            const dayIndex = context.dayIndex != null ? context.dayIndex : defaults.dayIndex;
+            const meal = context.meal || defaults.meal;
+            const servings = context.servings || 1;
+
+            els.plannerOverlayRecipe.value = recipeSlug || '';
+            populatePlannerAssignDayOptions(dayIndex);
+            els.plannerOverlayMeal.value = meal;
+            els.plannerOverlayServings.value = servings;
+            els.plannerOverlay.classList.remove('hidden');
+        }
+
+        function closePlannerAssignOverlay() {
+            els.plannerOverlay.classList.add('hidden');
+            pendingAssignContext = null;
+        }
+
+        function populatePlannerAssignDayOptions(selectedDayIdx) {
+            const start = new Date(plannerState.currentWeekStart + 'T00:00:00');
+            const days = getWeekDays(start);
+            els.plannerOverlayDay.innerHTML = '';
+            days.forEach(day => {
+                const option = document.createElement('option');
+                option.value = day.index;
+                option.textContent = `${day.label} (${day.dateLabel})`;
+                if (day.index === selectedDayIdx) option.selected = true;
+                els.plannerOverlayDay.appendChild(option);
+            });
+        }
+
+        function confirmPlannerAssignment() {
+            const recipeSlug = els.plannerOverlayRecipe.value;
+            if (!recipeSlug) return;
+            const dayIndex = Number(els.plannerOverlayDay.value);
+            const meal = els.plannerOverlayMeal.value;
+            const servings = Math.max(1, Number(els.plannerOverlayServings.value) || 1);
+            assignRecipeToSlot(recipeSlug, dayIndex, meal, servings);
+            closePlannerAssignOverlay();
+        }
+
+        function assignRecipeToSlot(recipeSlug, dayIndex, meal, servings) {
+            const week = getCurrentWeekData();
+            const slotKey = `${dayIndex}:${meal}`;
+            week.slots[slotKey] = { slug: recipeSlug, servings };
+            savePlannerState();
+            renderPlanner();
+            renderShoppingList();
+        }
+
+        function removeRecipeFromSlot(slotKey) {
+            const week = getCurrentWeekData();
+            delete week.slots[slotKey];
+            savePlannerState();
+            renderPlanner();
+            renderShoppingList();
+        }
+
+        function handleNotesInput() {
+            const week = getCurrentWeekData();
+            week.notes = els.plannerNotes.value;
+            if (notesSaveTimeout) clearTimeout(notesSaveTimeout);
+            notesSaveTimeout = setTimeout(() => {
+                savePlannerState();
+                renderHomeStats();
+            }, 400);
+        }
+
+        function renderPlannerPrepList() {
+            const entries = getPlannedEntries();
+            const prepLines = [];
+            const batchingLines = [];
+            entries.forEach(entry => {
+                const recipe = entry.recipe;
+                recipe.instructions.forEach(line => {
+                    const lower = line.toLowerCase();
+                    if (lower.startsWith('preheat') || lower.startsWith('cook') || lower.startsWith('bake') || lower.startsWith('heat')) {
+                        prepLines.push(`${recipe.title}: ${line}`);
+                    }
+                });
+                recipe.tips.forEach(line => {
+                    const lower = line.toLowerCase();
+                    if (lower.includes('refrigerate') || lower.includes('store') || lower.includes('leftover')) {
+                        batchingLines.push(`${recipe.title}: ${line}`);
+                    }
+                });
+            });
+            populateListElement(els.plannerPrepList, prepLines, 'Add recipes to generate a prep checklist.');
+            populateListElement(els.plannerBatching, batchingLines, 'Add recipes to see batching suggestions.');
+        }
+
+        function populateListElement(container, lines, emptyText) {
+            container.innerHTML = '';
+            if (!lines.length) {
+                const li = document.createElement('li');
+                li.className = 'text-gray-500';
+                li.textContent = emptyText;
+                container.appendChild(li);
+                return;
+            }
+            lines.forEach(line => {
+                const li = document.createElement('li');
+                li.textContent = line;
+                container.appendChild(li);
+            });
+        }
+
+        function renderShoppingList() {
+            const aggregate = aggregateIngredientsForWeek(getCurrentWeekData());
+            els.shoppingUniqueCount.textContent = aggregate.items.size;
+            els.shoppingProduceCount.textContent = aggregate.categoryCounts.produce || 0;
+            els.shoppingProteinCount.textContent = aggregate.categoryCounts.protein || 0;
+            els.shoppingPantryCount.textContent = aggregate.categoryCounts.pantry || 0;
+
+            els.shoppingList.innerHTML = '';
+            if (!aggregate.items.size) {
+                const empty = document.createElement('div');
+                empty.className = 'text-center text-gray-400 py-12 border border-dashed border-gray-700 rounded-2xl';
+                empty.textContent = 'Add meals to your planner to generate a shopping list.';
+                els.shoppingList.appendChild(empty);
+                return;
+            }
+
+            CATEGORY_ORDER.forEach(category => {
+                const items = aggregate.grouped[category];
+                if (!items || !items.length) return;
+                const section = document.createElement('div');
+                section.className = 'bg-gray-800/60 border border-gray-700 rounded-2xl p-4';
+                const heading = document.createElement('h3');
+                heading.className = 'text-sm uppercase tracking-wider text-blue-300 mb-3';
+                heading.textContent = formatTagLabel(category === 'other' ? 'extras' : category);
+                section.appendChild(heading);
+
+                const list = document.createElement('ul');
+                list.className = 'space-y-2 text-sm text-gray-200';
+                items.sort((a, b) => a.name.localeCompare(b.name)).forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'flex items-start gap-2';
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.className = 'mt-1 accent-blue-500';
+                    checkbox.addEventListener('change', () => {
+                        if (els.shoppingHideChecked.checked) {
+                            li.classList.toggle('hidden', checkbox.checked);
+                        }
+                    });
+                    li.appendChild(checkbox);
+                    const label = document.createElement('div');
+                    label.innerHTML = `<span>${item.name}</span>${item.count > 1 ? `<span class="text-xs text-gray-400 ml-2">×${item.count}</span>` : ''}`;
+                    li.appendChild(label);
+                    if (els.shoppingHideChecked.checked) {
+                        li.classList.toggle('hidden', checkbox.checked);
+                    }
+                    list.appendChild(li);
+                });
+                section.appendChild(list);
+                els.shoppingList.appendChild(section);
+            });
+        }
+
+        function aggregateIngredientsForWeek(week) {
+            const entries = getPlannedEntries(week);
+            const items = new Map();
+            const grouped = { produce: [], protein: [], dairy: [], pantry: [], other: [] };
+            const categoryCounts = { produce: 0, protein: 0, dairy: 0, pantry: 0, other: 0 };
+
+            entries.forEach(entry => {
+                entry.recipe.ingredients.forEach(ingredient => {
+                    const key = ingredient.toLowerCase();
+                    const item = items.get(key) || { name: ingredient, count: 0, category: categorizeIngredient(ingredient) };
+                    item.count += entry.servings;
+                    items.set(key, item);
+                });
+            });
+
+            items.forEach(item => {
+                if (!grouped[item.category]) grouped[item.category] = [];
+                grouped[item.category].push(item);
+                categoryCounts[item.category] = (categoryCounts[item.category] || 0) + 1;
+            });
+
+            return { items, grouped, categoryCounts };
+        }
+
+        function renderHomeStats() {
+            const entries = getPlannedEntries();
+            els.homeRecipesPlanned.textContent = entries.length;
+            const aggregate = aggregateIngredientsForWeek(getCurrentWeekData());
+            els.homeShoppingCount.textContent = aggregate.items.size;
+            const notes = (getCurrentWeekData().notes || '').trim().split(/\n+/).filter(Boolean);
+            els.homeNotesCount.textContent = notes.length;
+        }
+
+        function updatePlannerNotesField() {
+            const week = getCurrentWeekData();
+            els.plannerNotes.value = week.notes || '';
+        }
+
+        function getPlannedEntries(weekOverride) {
+            const week = weekOverride || getCurrentWeekData();
+            return Object.entries(week.slots).map(([slotKey, value]) => {
+                const { slug, servings } = normaliseSlotValue(value);
+                const recipe = recipeIndex.get(slug);
+                if (!recipe) return null;
+                const [dayIndex, meal] = slotKey.split(':');
+                return { slotKey, recipe, servings, dayIndex: Number(dayIndex), meal };
+            }).filter(Boolean);
+        }
+
+        function findNextAvailableSlot() {
+            const week = getCurrentWeekData();
+            for (let day = 0; day < 7; day++) {
+                for (const meal of MEAL_SLOTS) {
+                    const { slug } = normaliseSlotValue(week.slots[`${day}:${meal}`]);
+                    if (!slug) {
+                        return { dayIndex: day, meal };
+                    }
+                }
+            }
+            return { dayIndex: 0, meal: 'breakfast' };
+        }
+
+        function normaliseSlotValue(value) {
+            if (!value) return { slug: null, servings: 1 };
+            if (typeof value === 'string') return { slug: value, servings: 1 };
+            return { slug: value.slug, servings: value.servings || 1 };
+        }
+
+        function categorizeIngredient(ingredient) {
+            const lower = ingredient.toLowerCase();
+            if (/(apple|banana|berry|pepper|onion|garlic|lemon|lime|sweet potato|potato|broccoli|kale|spinach|lettuce|tomato|cucumber|zucchini|carrot|avocado|rapini|cauliflower|asparagus|mushroom)/.test(lower)) {
+                return 'produce';
+            }
+            if (/(salmon|cod|shrimp|tuna|halibut|fish|chicken|turkey|bison|beef|steak|egg|pork)/.test(lower)) {
+                return 'protein';
+            }
+            if (/(yogurt|cheese|milk|parmesan|cream|feta|mozzarella|tzatziki|halloumi|ricotta|butter)/.test(lower)) {
+                return 'dairy';
+            }
+            if (/(rice|quinoa|couscous|tortilla|pasta|oil|vinegar|honey|flour|spice|seasoning|sauce|tamari|soy sauce|hummus|sriracha|tahini|coconut|almond|pistachio|walnut)/.test(lower)) {
+                return 'pantry';
+            }
+            return 'other';
+        }
+
+        function findRecipeForMeal(meal) {
+            const candidates = recipes.filter(recipe => recipe.mealType === meal);
+            const favorites = candidates.filter(recipe => favoriteSet.has(recipe.slug));
+            if (favorites.length) return favorites[0];
+            if (candidates.length) return candidates[0];
+            return recipes[0] || null;
+        }
+
+        function shiftWeek(delta) {
+            const current = new Date((plannerState.currentWeekStart || getCurrentWeekStartISO()) + 'T00:00:00');
+            current.setDate(current.getDate() + delta * 7);
+            const iso = toISODate(current);
+            ensureWeekExists(iso);
+            savePlannerState();
+            renderPlanner();
+            renderShoppingList();
+        }
+
+        function getWeekDays(startDate) {
+            const formatter = new Intl.DateTimeFormat('en-US', { weekday: 'short' });
+            const dateFormatter = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric' });
+            const days = [];
+            for (let index = 0; index < 7; index++) {
+                const date = new Date(startDate);
+                date.setDate(startDate.getDate() + index);
+                days.push({
+                    index,
+                    date,
+                    label: formatter.format(date),
+                    dateLabel: dateFormatter.format(date)
+                });
+            }
+            return days;
+        }
+
+        function formatWeekLabel(date) {
+            const formatter = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+            return 'Week of ' + formatter.format(date);
+        }
+
+        function getCurrentWeekStartISO() {
+            const now = new Date();
+            const day = now.getDay();
+            const diff = day === 0 ? -6 : 1 - day;
+            const monday = new Date(now);
+            monday.setDate(now.getDate() + diff);
+            monday.setHours(0, 0, 0, 0);
+            return toISODate(monday);
+        }
+
+        function toISODate(date) {
+            return date.toISOString().slice(0, 10);
+        }
+
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                if (page.id === pageId) {
+                    if (!page.classList.contains('active')) {
+                        page.classList.add('active', 'entered');
+                    }
+                } else if (page.classList.contains('active')) {
+                    page.classList.remove('active', 'entered');
+                }
+            });
+            if (pageId === 'page-shopping-list') {
+                renderShoppingList();
+            }
+            if (pageId === 'page-meal-planner') {
+                renderPlanner();
+            }
+        }
+
+        function openPDF() {
+            const source = (data && data.source) ? String(data.source).replace(/\\/g, '/') : 'food_plans/the-80-wholefoods-mains-to-nourish-3.pdf';
+            window.open(source, '_blank');
+        }
+
+        function openNutritionSettings() {
+            document.getElementById('nutrition-settings').classList.remove('hidden');
+        }
+
+        function closeNutritionSettings() {
+            document.getElementById('nutrition-settings').classList.add('hidden');
+        }
+
+        function importDefaultTemplate() {
+            if (!recipes.length) return;
+            if (!confirm('This will overwrite the current week. Continue?')) return;
+            const week = getCurrentWeekData();
+            week.slots = {};
+            const breakfasts = recipes.filter(recipe => recipe.mealType === 'breakfast');
+            const lunches = recipes.filter(recipe => recipe.mealType === 'lunch');
+            const dinners = recipes.filter(recipe => recipe.mealType === 'dinner');
+
+            for (let day = 0; day < 7; day++) {
+                if (breakfasts.length) week.slots[`${day}:breakfast`] = { slug: breakfasts[day % breakfasts.length].slug, servings: 1 };
+                if (lunches.length) week.slots[`${day}:lunch`] = { slug: lunches[day % lunches.length].slug, servings: 1 };
+                if (dinners.length) week.slots[`${day}:dinner`] = { slug: dinners[day % dinners.length].slug, servings: 1 };
+            }
+
+            savePlannerState();
+            renderPlanner();
+            renderShoppingList();
+            renderHomeStats();
+            showPage('page-meal-planner');
+        }
+
+        function clearPlanner() {
+            if (!confirm('Clear all meals for the current week?')) return;
+            const week = getCurrentWeekData();
+            week.slots = {};
+            week.notes = '';
+            savePlannerState();
+            renderPlanner();
+            renderShoppingList();
+        }
+
+        function savePlannerTemplate() {
+            const week = getCurrentWeekData();
+            const template = { slots: week.slots, notes: week.notes };
+            navigator.clipboard.writeText(JSON.stringify(template, null, 2))
+                .then(() => alert('Current planner copied to clipboard.'))
+                .catch(() => alert('Unable to copy planner template.'));
+        }
+
+        function printShoppingList() {
+            window.print();
+        }
+
+        function clearShoppingList() {
+            els.shoppingHideChecked.checked = false;
+            els.shoppingGroupPantries.checked = false;
+            renderShoppingList();
+        }
+
+        function downloadShoppingJSON() {
+            const aggregate = aggregateIngredientsForWeek(getCurrentWeekData());
+            const payload = {
+                weekStart: plannerState.currentWeekStart,
+                items: CATEGORY_ORDER.flatMap(category => (aggregate.grouped[category] || []).map(item => ({
+                    category,
+                    name: item.name,
+                    count: item.count
+                })))
+            };
+            downloadJSONFile(`nutrition-shopping-${plannerState.currentWeekStart}.json`, payload);
+        }
+
+        function copyShoppingPlaintext() {
+            const aggregate = aggregateIngredientsForWeek(getCurrentWeekData());
+            const weekStart = plannerState.currentWeekStart;
+            const lines = [`Shopping List – Week of ${weekStart}`, ''];
+            CATEGORY_ORDER.forEach(category => {
+                const items = aggregate.grouped[category];
+                if (!items || !items.length) return;
+                lines.push(formatTagLabel(category === 'other' ? 'extras' : category) + ':');
+                items.sort((a, b) => a.name.localeCompare(b.name)).forEach(item => {
+                    lines.push(`- ${item.name}${item.count > 1 ? ` x${item.count}` : ''}`);
+                });
+                lines.push('');
+            });
+            navigator.clipboard.writeText(lines.join('\n'))
+                .then(() => alert('Shopping list copied to clipboard.'))
+                .catch(() => alert('Unable to copy shopping list.'));
+        }
+
+        function downloadNutritionBackup() {
+            const backup = {
+                version: 1,
+                plannerState,
+                favorites: Array.from(favoriteSet)
+            };
+            downloadJSONFile(`nutrition-backup-${plannerState.currentWeekStart}.json`, backup);
+        }
+
+        function clearAllNutritionData() {
+            if (!confirm('Clear all nutrition planner data and favorites?')) return;
+            plannerState = createDefaultPlannerState();
+            favoriteSet = new Set();
+            savePlannerState();
+            saveFavoriteSet();
+            renderRecipeList();
+            renderPlanner();
+            renderShoppingList();
+            renderHomeStats();
+            updatePlannerNotesField();
+        }
+
+        function handleImportBackup(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = () => {
+                try {
+                    const parsed = JSON.parse(reader.result);
+                    if (parsed.plannerState) {
+                        plannerState = parsed.plannerState;
+                    }
+                    if (parsed.favorites) {
+                        favoriteSet = new Set(parsed.favorites);
+                    }
+                    ensureWeekExists(plannerState.currentWeekStart || getCurrentWeekStartISO());
+                    savePlannerState();
+                    saveFavoriteSet();
+                    renderRecipeList();
+                    renderPlanner();
+                    renderShoppingList();
+                    renderHomeStats();
+                    updatePlannerNotesField();
+                    closeNutritionSettings();
+                } catch (error) {
+                    alert('Unable to import backup: ' + error.message);
+                }
+            };
+            reader.readAsText(file);
+            event.target.value = '';
+        }
+
+        function formatMacroSummary(recipe) {
+            return `Calories ${Math.round(recipe.calories)} • Protein ${Math.round(recipe.protein_g)}g`;
+        }
+
+        function formatMacroDetail(recipe) {
+            return `Calories ${Math.round(recipe.calories)} • Protein ${Math.round(recipe.protein_g)}g • Carbs ${Math.round(recipe.carbs_g)}g • Fat ${Math.round(recipe.fat_g)}g • Fiber ${Math.round(recipe.fiber_g)}g • Sugar ${Math.round(recipe.sugar_g)}g • Sodium ${Math.round(recipe.sodium_mg)}mg`;
+        }
+
+        function formatTagLabel(tag) {
+            return tag.split('-').map(capitalize).join(' ');
+        }
+
+        function capitalize(value) {
+            if (!value) return '';
+            return value.charAt(0).toUpperCase() + value.slice(1);
+        }
+
+        function downloadJSONFile(filename, data) {
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+    })();
+    </script>
+
+</body>
+</html>

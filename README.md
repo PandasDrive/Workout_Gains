@@ -16,6 +16,8 @@ Workout Library: A section organizing each program by its creator.
 
 Trainer Selection: Choose the coach first, then dive into their available programs for a cleaner flow when multiple plans exist per influencer.
 
+Meal Planner (Nutrition Hub): Standalone `nutrition.html` delivers the 80 Wholefoods recipe library, weekly planner, shopping list, and backup tools.
+
 Program View: A screen to select the week and day of the program.
 
 Daily Workout View: Cleanly display the specific exercises, sets, reps, and rest periods for the current day.
@@ -65,3 +67,4 @@ Technology: Built with a single file using HTML, Tailwind CSS, and plain JavaScr
 - Dev Utilities: Helper scripts in `.devtools/` handle parsing, exporting JSON, and regenerating JS snippets (`scrape_kaged_lean.py` outputs both JSON and JS for the lean program). Leave the folder hidden from the main UI.
 - Backups & History: The PWA supports local JSON backups via the new Progress Hub. Export regularly and keep copies with the original source files.
 - Future Work: Next wave is importing the remaining Kaged collection, Seth Feroce programs, and Thenx calisthenics templates. Once these are loaded, revisit UI polish (coach bios, onboarding quiz, video demos) and consider add-on features like set tracking or social share cards.
+- Meal Planner (Nutrition Hub): Standalone `nutrition.html` page with recipe library, weekly planner, and shopping list for the 80 Wholefoods guide.

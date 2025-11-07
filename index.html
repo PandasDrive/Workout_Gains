@@ -188,15 +188,27 @@
                 <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wider text-center mb-4">Select a Trainer</h2>
                 <div id="trainer-card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 
-                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 shadow-lg flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div class="mb-4 md:mb-0">
-                        <p class="text-sm uppercase tracking-wider text-blue-300">Progress Hub</p>
-                        <p class="text-lg font-semibold text-white">Visualize & Backup Your Journey</p>
-                        <p class="text-sm text-gray-400">Review completed weeks, compare past runs, and export your data at any time.</p>
+                <div class="space-y-4">
+                    <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 shadow-lg flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div class="mb-4 md:mb-0">
+                            <p class="text-sm uppercase tracking-wider text-blue-300">Progress Hub</p>
+                            <p class="text-lg font-semibold text-white">Visualize & Backup Your Journey</p>
+                            <p class="text-sm text-gray-400">Review completed weeks, compare past runs, and export your data at any time.</p>
+                        </div>
+                        <div class="space-y-3 md:space-y-0 md:space-x-3 md:flex">
+                            <button id="open-stats" class="btn-press bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium">View Progress</button>
+                            <button id="quick-export" class="btn-press px-4 py-2 rounded-lg border border-gray-600 text-sm text-gray-200 hover:text-white">Quick Export</button>
+                        </div>
                     </div>
-                    <div class="space-y-3 md:space-y-0 md:space-x-3 md:flex">
-                        <button id="open-stats" class="btn-press bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium">View Progress</button>
-                        <button id="quick-export" class="btn-press px-4 py-2 rounded-lg border border-gray-600 text-sm text-gray-200 hover:text-white">Quick Export</button>
+                    <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 shadow-lg flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div class="mb-4 md:mb-0">
+                            <p class="text-sm uppercase tracking-wider text-blue-300">Meal Prep</p>
+                            <p class="text-lg font-semibold text-white">Nutrition Hub</p>
+                            <p class="text-sm text-gray-400">Browse recipes, plan meals, and generate shopping lists from the 80 Wholefoods guide.</p>
+                        </div>
+                        <div>
+                            <a href="nutrition.html" class="btn-press inline-flex items-center bg-blue-500/20 hover:bg-blue-500/30 text-blue-200 text-sm font-medium rounded-xl px-4 py-2">Open Nutrition Hub</a>
+                        </div>
                     </div>
                 </div>
             </main>
