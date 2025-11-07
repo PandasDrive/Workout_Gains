@@ -90,6 +90,32 @@
             border: 1px solid #2563eb33;
             background: linear-gradient(135deg, rgba(37,99,235,0.15), rgba(59,130,246,0.05));
         }
+        .trainer-card {
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+            background-color: #1f2937;
+        }
+        .trainer-card-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.35;
+            transition: opacity 0.2s ease;
+        }
+        .trainer-card-shade {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(17,24,39,0.8), rgba(37,99,235,0.15));
+            transition: opacity 0.2s ease;
+        }
+        .trainer-card:hover .trainer-card-bg {
+            opacity: 0.5;
+        }
+        .trainer-card:hover .trainer-card-shade {
+            opacity: 0.7;
+        }
         .search-trigger {
             border: 1px solid #374151;
         }
@@ -159,23 +185,8 @@
                     </div>
                 </div>
 
-                <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wider text-center mb-4">Select a Program</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <button onclick="showProgram('gethin')" class="btn-press flex items-center justify-between w-full p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
-                        <div class="text-left">
-                            <p class="text-lg font-semibold text-white">Kris Gethin</p>
-                            <p class="text-sm text-gray-400">Legacy Program</p>
-                        </div>
-                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </button>
-                    <button onclick="showProgram('nippard')" class="btn-press flex items-center justify-between w-full p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
-                        <div class="text-left">
-                            <p class="text-lg font-semibold text-white">Jeff Nippard</p>
-                            <p class="text-sm text-gray-400">12-Week Program</p>
-                        </div>
-                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </button>
-                </div>
+                <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wider text-center mb-4">Select a Trainer</h2>
+                <div id="trainer-card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 
                 <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 shadow-lg flex flex-col md:flex-row md:items-center md:justify-between">
                     <div class="mb-4 md:mb-0">
@@ -192,13 +203,27 @@
         </div>
     </div>
 
-    <!-- Page 2: Week List -->
-    <div id="page-program-weeks" class="page">
+    <!-- Page 2: Trainer Programs -->
+    <div id="page-trainer-programs" class="page">
         <div class="page-content bg-gray-900">
             <header class="page-header flex items-center justify-between mb-6">
                 <button onclick="showPage('page-main-menu')" class="btn-press flex items-center text-blue-400 text-lg">
                     <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                    Back
+                    Home
+                </button>
+                <h1 id="trainer-title" class="text-2xl font-bold text-white text-right"></h1>
+            </header>
+            <main id="trainer-program-list" class="space-y-3"></main>
+        </div>
+    </div>
+
+    <!-- Page 3: Week List -->
+    <div id="page-program-weeks" class="page">
+        <div class="page-content bg-gray-900">
+            <header class="page-header flex items-center justify-between mb-6">
+                <button onclick="goToTrainerPage()" class="btn-press flex items-center text-blue-400 text-lg">
+                    <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    Trainers
                 </button>
                 <h1 id="program-title" class="text-2xl font-bold text-white text-right"></h1>
             </header>
@@ -348,9 +373,31 @@
             console.warn("Program data is not loaded.");
         }
 
+        const trainers = {
+            gethin: {
+                name: "Kris Gethin",
+                image: "images/kris.PNG",
+                programs: [
+                    { id: "gethin", subtitle: "Legacy Program" },
+                    { id: "kagedLean", subtitle: "Lean Muscle Trainer" }
+                ]
+            },
+            nippard: {
+                name: "Jeff Nippard",
+                image: "images/jeff.PNG",
+                imagePosition: "center 25%",
+                programs: [
+                    { id: "nippard", subtitle: "12-Week Program" }
+                ]
+            }
+        };
+
         const PROGRESS_KEY = 'fitnessProgress';
         const NOTES_KEY = 'fitnessNotes';
         const HISTORY_KEY = 'fitnessHistory';
+        const trainerCardContainer = document.getElementById('trainer-card-container');
+        const trainerProgramList = document.getElementById('trainer-program-list');
+        const trainerTitle = document.getElementById('trainer-title');
         const continueCard = document.getElementById('continue-card');
         const continueTitle = document.getElementById('continue-title');
         const continueSubtitle = document.getElementById('continue-subtitle');
@@ -715,15 +762,28 @@
                 continueCard.classList.add('hidden');
                 return;
             }
+            let trainerId = progress.trainerId || findTrainerForProgram(progress.programId);
+            if (!progress.trainerId && trainerId) {
+                const updated = { ...progress, trainerId };
+                saveProgress(updated);
+                progress.trainerId = trainerId;
+            }
+            const trainerName = trainerId && trainers[trainerId] ? trainers[trainerId].name : '';
             continueCard.classList.remove('hidden');
-            continueTitle.textContent = `${program.title} – Week ${progress.week}, Day ${progress.day}`;
-            continueSubtitle.textContent = `Last visited: ${progress.dayTitle}`;
+            const headline = trainerName ? `${trainerName} – Week ${progress.week}, Day ${progress.day}` : `${program.title} – Week ${progress.week}, Day ${progress.day}`;
+            continueTitle.textContent = headline;
+            continueSubtitle.textContent = `${program.title} · ${progress.dayTitle}`;
             continueBtn.dataset.program = progress.programId;
             continueBtn.dataset.week = progress.week;
             continueBtn.dataset.day = progress.day;
+            continueBtn.dataset.trainer = trainerId || '';
         }
 
         function resumeProgress(programId, weekNumber, dayNumber) {
+            const trainerId = findTrainerForProgram(programId);
+            if (trainerId) {
+                currentTrainer = trainerId;
+            }
             showProgram(programId);
             showWeek(programId, weekNumber);
             showDay(programId, weekNumber, dayNumber);
@@ -731,11 +791,14 @@
         }
 
         function logWeekCompletion(programId, weekNumber, summary) {
+            const trainerId = findTrainerForProgram(programId);
             const entry = {
                 id: `${programId}-${weekNumber}-${Date.now()}`,
                 timestamp: Date.now(),
                 programId,
                 programTitle: programs[programId]?.title || programId,
+                trainerId,
+                trainerName: trainerId && trainers[trainerId] ? trainers[trainerId].name : '',
                 week: weekNumber,
                 summary
             };
@@ -821,10 +884,13 @@
             Object.entries(programs).forEach(([programId, program]) => {
                 program.weeks.forEach(week => {
                     week.days.forEach(day => {
+                        const trainerId = findTrainerForProgram(programId);
+                        const trainerName = trainerId && trainers[trainerId] ? trainers[trainerId].name : '';
                         day.exercises.forEach(exercise => {
                             searchIndex.push({
                                 programId,
                                 programTitle: program.title,
+                                trainerName,
                                 week: week.week,
                                 weekTask: week.task,
                                 day: day.day,
@@ -856,10 +922,11 @@
             results.forEach(item => {
                 const card = document.createElement('button');
                 card.className = 'search-result w-full text-left p-4 rounded-xl bg-gray-800 hover:bg-gray-750';
+                const header = item.trainerName ? `${item.trainerName} · ${item.programTitle}` : item.programTitle;
                 card.innerHTML = `
                     <div class="flex justify-between items-start">
                         <div>
-                            <p class="text-sm uppercase tracking-wider text-blue-300">${item.programTitle}</p>
+                            <p class="text-sm uppercase tracking-wider text-blue-300">${header}</p>
                             <p class="text-lg font-semibold text-white">${item.exerciseName}</p>
                             <p class="text-sm text-gray-300">Week ${item.week}, Day ${item.day} – ${item.dayTitle}</p>
                             ${item.notes ? `<p class="text-xs text-gray-400 mt-1">${item.notes}</p>` : ''}
@@ -874,7 +941,92 @@
             });
         }
 
+        function findTrainerForProgram(programId) {
+            return Object.keys(trainers).find(trainerId =>
+                trainers[trainerId].programs.some(program => program.id === programId)
+            ) || '';
+        }
+
+        function renderTrainerCards() {
+            if (!trainerCardContainer) return;
+            trainerCardContainer.innerHTML = '';
+            Object.entries(trainers).forEach(([trainerId, trainer]) => {
+                const button = document.createElement('button');
+                button.className = 'trainer-card btn-press w-full rounded-2xl shadow-lg border border-gray-700';
+                const programSummary = trainer.programs
+                    .map(programRef => programRef.subtitle || (programs[programRef.id]?.title ?? ''))
+                    .filter(Boolean)
+                    .join(' | ');
+                const position = trainer.imagePosition || '';
+                const bgStyle = trainer.image
+                    ? `style="background-image: url('${trainer.image}');${position ? ` background-position: ${position};` : ''}"`
+                    : '';
+                button.innerHTML = `
+                    <div class="trainer-card-bg" ${bgStyle}></div>
+                    <div class="trainer-card-shade"></div>
+                    <div class="trainer-card-content relative z-10 flex items-center justify-between w-full p-6">
+                        <div class="text-left">
+                            <p class="text-lg font-semibold text-white">${trainer.name}</p>
+                            ${programSummary ? `<p class="text-sm text-gray-200">${programSummary}</p>` : ''}
+                        </div>
+                        <svg class="w-5 h-5 text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                `;
+                button.addEventListener('click', () => {
+                    showTrainer(trainerId);
+                });
+                trainerCardContainer.appendChild(button);
+            });
+        }
+
+        function showTrainer(trainerId) {
+            const trainer = trainers[trainerId];
+            if (!trainer) {
+                showMessage('Trainer not found.');
+                return;
+            }
+            currentTrainer = trainerId;
+            if (trainerTitle) {
+                trainerTitle.textContent = trainer.name;
+            }
+            if (trainerProgramList) {
+                trainerProgramList.innerHTML = '';
+                trainer.programs.forEach(programRef => {
+                    const programData = programs[programRef.id];
+                    if (!programData || !programData.weeks) {
+                        return;
+                    }
+                    const weeksCount = programData.weeks.length;
+                    const button = document.createElement('button');
+                    button.className = 'btn-press w-full text-left p-5 bg-gray-800 rounded-lg border border-gray-700 shadow-md flex justify-between items-center';
+                    const subtitle = programRef.subtitle && programRef.subtitle !== programData.title ? programRef.subtitle : '';
+                    button.innerHTML = `
+                        <div>
+                            <p class="text-lg font-semibold text-white">${programData.title}</p>
+                            ${subtitle ? `<p class="text-sm text-gray-400">${subtitle}</p>` : ''}
+                            <p class="text-xs text-gray-500 mt-1">${weeksCount} week${weeksCount === 1 ? '' : 's'}</p>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    `;
+                    button.addEventListener('click', () => {
+                        showProgram(programRef.id);
+                    });
+                    trainerProgramList.appendChild(button);
+                });
+            }
+            showPage('page-trainer-programs');
+        }
+
+        function goToTrainerPage() {
+            if (currentTrainer && trainers[currentTrainer]) {
+                showTrainer(currentTrainer);
+            } else {
+                showPage('page-main-menu');
+            }
+        }
+
         // --- PAGE NAVIGATION & STATE ---
+        let currentTrainer = '';
         let currentPage = '';
         let currentProgram = '';
         let currentWeek = 0;
@@ -921,70 +1073,36 @@
         function showProgram(programName) {
             currentProgram = programName;
             const program = programs[programName];
-
-            if (!program || (program.weeks && program.weeks.length === 0)) {
-                // For 'nippard' or any other empty program
-                if (programName === 'nippard') {
-                     showMessage(`Program data for ${program.title} is not loaded yet.`);
-                } else {
-                    // This handles 'gethin' if data was missing
-                     document.getElementById('program-title').textContent = program.title;
-                     const weekList = document.getElementById('week-list');
-                     weekList.innerHTML = ''; // Clear old list
-                     // We know Gethin has 12 weeks from the PDF
-                     let totalWeeks = 12;
-                     
-                     for (let i = 1; i <= totalWeeks; i++) {
-                        const weekButton = document.createElement('button');
-                        const weekDataExists = program.weeks.find(w => w.week === i);
-                        
-                        weekButton.className = 'btn-press w-full text-left p-5 bg-gray-800 rounded-lg border border-gray-700 shadow-md flex justify-between items-center';
-                        
-                        let weekHTML = `<span class="text-lg font-semibold text-white">Week ${i}</span>`;
-                        
-                        if (!weekDataExists) {
-                            weekButton.disabled = true;
-                            weekButton.className += ' opacity-50';
-                            weekHTML += `<span class="text-xs text-gray-500">Not Loaded</span>`;
-                        } else {
-                            weekHTML += `<svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>`;
-                            weekButton.onclick = () => showWeek(programName, i);
-                        }
-                        
-                        weekButton.innerHTML = weekHTML;
-                        weekList.appendChild(weekButton);
-                    }
-                }
-            } else if (program) {
-                 // This is the normal path for Gethin
-                 document.getElementById('program-title').textContent = program.title;
-                 const weekList = document.getElementById('week-list');
-                 weekList.innerHTML = '';
-                 let totalWeeks = 12; // Gethin's program is 12 weeks
-                 
-                 for (let i = 1; i <= totalWeeks; i++) {
-                    const weekButton = document.createElement('button');
-                    const weekDataExists = program.weeks.find(w => w.week === i);
-                    
-                    weekButton.className = 'btn-press w-full text-left p-5 bg-gray-800 rounded-lg border border-gray-700 shadow-md flex justify-between items-center';
-                    let weekHTML = `<span class="text-lg font-semibold text-white">Week ${i}</span>`;
-                    
-                    if (!weekDataExists) {
-                        weekButton.disabled = true;
-                        weekButton.className += ' opacity-50';
-                        weekHTML += `<span class="text-xs text-gray-500">Not Loaded</span>`;
-                    } else {
-                        weekHTML += `<svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>`;
-                        weekButton.onclick = () => showWeek(programName, i);
-                    }
-                    
-                    weekButton.innerHTML = weekHTML;
-                    weekList.appendChild(weekButton);
-                }
-            } else {
-                 showMessage(`Program ${programName} not found.`);
-                 return;
+            if (!program) {
+                showMessage(`Program ${programName} not found.`);
+                return;
             }
+
+            const derivedTrainer = findTrainerForProgram(programName);
+            if (!currentTrainer || !trainers[currentTrainer] || !trainers[currentTrainer].programs.some(p => p.id === programName)) {
+                currentTrainer = derivedTrainer;
+            }
+
+            if (!program.weeks || !program.weeks.length) {
+                showMessage(`Program data for ${program.title} is not loaded yet.`);
+                return;
+            }
+
+            document.getElementById('program-title').textContent = program.title;
+            const weekList = document.getElementById('week-list');
+            weekList.innerHTML = '';
+
+            const orderedWeeks = [...program.weeks].sort((a, b) => a.week - b.week);
+            orderedWeeks.forEach(week => {
+                const weekButton = document.createElement('button');
+                weekButton.className = 'btn-press w-full text-left p-5 bg-gray-800 rounded-lg border border-gray-700 shadow-md flex justify-between items-center';
+                weekButton.innerHTML = `
+                    <span class="text-lg font-semibold text-white">Week ${week.week}</span>
+                    <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                `;
+                weekButton.addEventListener('click', () => showWeek(programName, week.week));
+                weekList.appendChild(weekButton);
+            });
 
             showPage('page-program-weeks');
         }
@@ -1031,6 +1149,9 @@
             const week = program.weeks.find(w => w.week === weekNumber);
             const day = week.days.find(d => d.day === dayNumber);
 
+            const cardioText = day.cardio && day.cardio.trim() ? day.cardio : "See program guidance for cardio.";
+            const weeklyTaskText = week.task && week.task.trim() ? week.task : "See program guidance for this week's focus.";
+
             document.getElementById('day-title').textContent = `Day ${dayNumber}: ${day.title}`;
             
             const workoutContent = document.getElementById('workout-content');
@@ -1040,7 +1161,7 @@
             workoutContent.innerHTML += `
                 <div class="bg-gray-800 rounded-lg p-4 border border-gray-700">
                     <h2 class="text-xl font-bold text-white mb-2">Cardio</h2>
-                    <p class="text-lg text-gray-300">${day.cardio}</p>
+                    <p class="text-lg text-gray-300">${cardioText}</p>
                 </div>
             `;
             
@@ -1048,7 +1169,7 @@
             workoutContent.innerHTML += `
                 <div class="bg-gray-800 rounded-lg p-4 border border-gray-700">
                     <h2 class="text-xl font-bold text-white mb-2">Weekly Task</h2>
-                    <p class="text-lg text-gray-300">${week.task}</p>
+                    <p class="text-lg text-gray-300">${weeklyTaskText}</p>
                 </div>
             `;
 
@@ -1132,6 +1253,7 @@
 
             saveProgress({
                 programId: programName,
+                trainerId: currentTrainer || findTrainerForProgram(programName),
                 week: weekNumber,
                 day: dayNumber,
                 dayTitle: day.title
@@ -1184,11 +1306,15 @@
         showPage('page-main-menu');
         updateContinueCard();
         buildSearchIndex();
+        renderTrainerCards();
 
         continueBtn.addEventListener('click', () => {
             const programId = continueBtn.dataset.program;
             const week = Number(continueBtn.dataset.week);
             const day = Number(continueBtn.dataset.day);
+            if (continueBtn.dataset.trainer) {
+                currentTrainer = continueBtn.dataset.trainer;
+            }
             resumeProgress(programId, week, day);
         });
         resetProgressBtn.addEventListener('click', () => {
@@ -1254,4 +1380,5 @@
         });
     </script>
 </body>
+</html>
 </html>

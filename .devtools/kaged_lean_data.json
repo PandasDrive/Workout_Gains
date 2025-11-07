@@ -1,0 +1,3567 @@
+{
+  "title": "Kaged 12-Week Lean Muscle",
+  "weeks": [
+    {
+      "week": 1,
+      "task": "",
+      "days": [
+        {
+          "day": 1,
+          "title": "Legs, Calves And Abs",
+          "cardio": "For cardio, we start easy this week. You'll perform 15 minutes of steady-state cardio each day. On most days, you'll perform your steady-state cardio upon waking. But today I want you to perform your cardio immediately after you finish your legs and abs workout. That's because it will help you burn out lactic acid and recover better.",
+          "exercises": [
+            {
+              "name": "Leg Extensions",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Rest 2 minutes and stretch between each set",
+              "notes": ""
+            },
+            {
+              "name": "Machine squats",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Rest 3 minutes and stretch between each set",
+              "notes": ""
+            },
+            {
+              "name": "Leg presses",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Rest 3 minutes and stretch between each set",
+              "notes": ""
+            },
+            {
+              "name": "Lying hamstrings curls",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 2 minutes and stretch between each set",
+              "notes": ""
+            },
+            {
+              "name": "Standing calves raises",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Rest 2 minutes and stretch between each set",
+              "notes": ""
+            },
+            {
+              "name": "Elevated sit-ups",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "Rest 2 minutes and stretch between each set",
+              "notes": ""
+            },
+            {
+              "name": "Lying leg raises",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "Rest 2 minutes between each set",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Back",
+          "cardio": "Today you'll perform your 15 minutes of steady-state cardio upon rising. You can take in CLEAN BURN®, AMINO SYNERGY, and GLUTAMINE before or during your session, but make sure you avoid eating a meal. Amino Synergy will supply amino acids to help protect your muscles, and not having carbohydrates from a full meal will encourage your body to burn fat to fuel this activity. I'll be making adjustments to your cardio throughout this Trainer series, but you'll perform just 15 minutes during the first week on my 12-Week Lean Muscle Program.",
+          "exercises": [
+            {
+              "name": "High machine lat pulldowns",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 2 minutes and stretch between each set",
+              "notes": ""
+            },
+            {
+              "name": "Reverse-grip lat pulldowns",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 2 minutes and stretch between each set",
+              "notes": ""
+            },
+            {
+              "name": "Reverse-grip bent-over barbell rows",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 2 minutes and stretch between each set",
+              "notes": ""
+            },
+            {
+              "name": "Cable rows",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 2 minutes and stretch between each set",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell deadlifts",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 2 minutes and stretch between each set",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Chest And Abs",
+          "cardio": "Don't forget to begin your day with 15 minutes of steady-state cardio. If you didn't perform this upon waking, then you can finish your day with it. The last will help boost metabolism to keep burning body fat while you sleep.",
+          "exercises": [
+            {
+              "name": "Incline chest presses",
+              "sets": 3,
+              "reps": "10-15 Reps",
+              "rest": "Rest 90 seconds and stretch between sets",
+              "notes": ""
+            },
+            {
+              "name": "Incline dumbbell flyes",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 90 seconds and stretch between sets",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell chest presses",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 90 seconds and stretch between sets",
+              "notes": ""
+            },
+            {
+              "name": "Decline cable flyes",
+              "sets": 3,
+              "reps": "10 Reps",
+              "rest": "Rest 90 seconds and stretch between sets",
+              "notes": ""
+            },
+            {
+              "name": "Pushups",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "Rest 90 seconds between each set",
+              "notes": ""
+            },
+            {
+              "name": "Obliques crunches",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Tuck crunches",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Bicycle crunches",
+              "sets": "",
+              "reps": "Rest 30-40 seconds before the next move",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Plank",
+              "sets": "",
+              "reps": "Rest 1 minute between each variation",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Variation: Knee to opposite elbow",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Variation: Side plank thread the needle",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Shoulders And Calves",
+          "cardio": "Note that you'll also perform steady-state cardio upon waking today-only 15 minutes during the first week of this program. We'll eventually increase the duration and intensity of your cardio on this 12-Week Lean Muscle Program . Finally, you'll take a break from abs today. With that background in mind, let's get started:",
+          "exercises": [
+            {
+              "name": "Seated lateral raises",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 90 seconds and stretch between sets",
+              "notes": ""
+            },
+            {
+              "name": "Rear-delt Pec-deck flyes",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 90 seconds and stretch between sets",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell shoulder presses",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 90 seconds and stretch between sets",
+              "notes": ""
+            },
+            {
+              "name": "Incline rear-delt dumbbell raises",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 90 seconds and stretch between sets",
+              "notes": ""
+            },
+            {
+              "name": "Machine shoulder presses",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 90 seconds and stretch between each set",
+              "notes": ""
+            },
+            {
+              "name": "Seated calves raises",
+              "sets": "",
+              "reps": "Rest 1 minute and stretch between sets",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Arms And Abs",
+          "cardio": "Remember to perform 15 minutes of steady-state cardio upon rising. As we get deeper into this 12-week program I'll provide more suggestions about when and how to perform cardio.",
+          "exercises": [
+            {
+              "name": "Triceps extensions",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET triceps extensions and cable curls, resting 1 minute between each superset",
+              "notes": ""
+            },
+            {
+              "name": "Cable curls",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Lying triceps extensions",
+              "sets": "",
+              "reps": "(skullcrushers)",
+              "rest": "3 Sets/15 Reps",
+              "notes": "Circuit Combo Lying Triceps Extensions & Neutral-Grip Barbell Curls. Rest 1-2 minutes between sets"
+            },
+            {
+              "name": "Neutral-grip barbell curls",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Bench dips",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "Rest 1-2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell curls",
+              "sets": 3,
+              "reps": "15 per arm",
+              "rest": "Rest 1-2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Lying leg raises",
+              "sets": 5,
+              "reps": "20 Sets",
+              "rest": "SUPERSET lying leg raises and crunches, resting 30-40 seconds between each superset",
+              "notes": ""
+            },
+            {
+              "name": "Crunches",
+              "sets": 5,
+              "reps": "20 Sets",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Rest Day",
+          "cardio": "Today is your first day of rest from weight training. You'll only perform 15 minutes of cardio, which you can do upon rising. This will help burn out the lactic acid that's collected in your legs muscles throughout your first week on my 12-Week Lean Muscle Program , and it will also support overall recovery. In subsequent weeks I'll be increasing the duration of your cardio, and employing different strategies such as high-intensity interval training (HIIT) that encourage your body to release stored fat. And you'll also perform 2 daily sessions of cardio starting with Day 8 and continuing throughout the rest of my 12-week program.",
+          "exercises": [
+            {
+              "name": "EXERCISE",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Rest Day",
+          "cardio": "Today, you'll perform 15 minutes of steady-state cardio upon waking. As I said yesterday, we're really going to bump up the duration and intensity of cardio as this 12-week program progresses. My tip today is about the advantage of performing some form of exercise every day.",
+          "exercises": [
+            {
+              "name": "EXERCISE",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "task": "",
+      "days": [
+        {
+          "day": 1,
+          "title": "Legs, Calves And Abs",
+          "cardio": "Remember that you'll be performing 2 sessions of cardio for 20 minutes each day this week. While you'll perform steady-state cardio upon waking every day, I want you to perform your second cardio session on legs day after your workout in the p.m. That's because today's cardio will help you burn out the lactic acid in your legs and reduce soreness. If you train soon after waking, make sure your first cardio is immediately after the workout, not before.",
+          "exercises": [
+            {
+              "name": "Smith machine squats",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Walking barbell lunges",
+              "sets": 3,
+              "reps": "20 Reps per Leg",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Leg presses",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Place feet in a neutral stance, and rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Lying hamstrings curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "SUPERSET lying hamstrings curls with standing calves presses, resting 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Standing calves raises",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Abs rollouts",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "SUPERSET abs rollouts with leg raises, resting 1 minute between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Lying leg raises",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Back",
+          "cardio": "This is our second back workout on my 12-Week Lean Muscle Program . You'll perform cardio upon waking before you get to the gym, that is if you train later in the day, but if you train early, hit back and then do your first cardio immediately following. That will help transport nutrients to your legs, which should be sore from yesterday's workout. It also gets your blood flowing and supports burning body fat. You'll keep this cardio session to 20 minutes of steady state this week. Then you'll perform another 20-minute session at the end of the day.",
+          "exercises": [
+            {
+              "name": "Lat pulldowns",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 1-2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Chin ups",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "Rest 1-2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Bent-over dumbbell row",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 1-2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Machine deadlifts",
+              "sets": 3,
+              "reps": "15-20 Reps",
+              "rest": "Rest 1-2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Close-grip pulldowns",
+              "sets": 3,
+              "reps": "15-20 Reps",
+              "rest": "Rest 1-2 minutes between sets",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Chest And Abs",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Incline dumbbell presses",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "SUPERSET incline dumbbell presses with decline dumbbell flyes resting 1-2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Decline dumbbell flyes",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated machine chest",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 1 minute between sets",
+              "notes": ""
+            },
+            {
+              "name": "Bent-over cable flyes",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 1 minute between sets",
+              "notes": ""
+            },
+            {
+              "name": "Lying crunches",
+              "sets": 1,
+              "reps": "40 Reps",
+              "rest": "Perform 20 reps with control and then 20 reps fast",
+              "notes": ""
+            },
+            {
+              "name": "Twisting Crunches",
+              "sets": "",
+              "reps": "Perform 20 reps per side with control, then 20 reps per side fast",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Sit-Ups",
+              "sets": "",
+              "reps": "Perform 20 reps with control and then 20 reps fast",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Bicycle crunches",
+              "sets": 1,
+              "reps": "20 Sets",
+              "rest": "Perform 10 reps per side",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "| Kaged",
+          "cardio": "You'll begin today with your morning cardio performed upon waking, and then you'll weight-train after consuming at least one meal. You can weight train at any time of day you like. Danielle and Kai trained at 11 a.m. most days depending on their schedules. But you can train before your morning cardio, mid-morning, mid-afternoon, after work, or before bed (as long as your p.m. cardio follows). The key is to choose the time that suits your lifestyle best, and make sure you get in every workout. For instance, if you're training in the morning but you're forced to miss a morning workout, you can easily get it in before bedtime. When you miss the time of day when you typically train you can always make it up later-never allow yourself the excuse that you're \"too busy\" to work out.",
+          "exercises": [
+            {
+              "name": "Rear-delts dumbbell raises",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Rest 1 minute between sets",
+              "notes": ""
+            },
+            {
+              "name": "Arnold presses",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Seated dumbbell lateral raises",
+              "sets": 3,
+              "reps": "10+10+10 Reps",
+              "rest": "Perform a triple drop with no rest, and then rest 90 seconds between full drop sets",
+              "notes": ""
+            },
+            {
+              "name": "Machine unilateral shoulder presses",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Bilateral dumbbell front raises",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Barbell upright rows",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Seated calves raises",
+              "sets": "",
+              "reps": "Rest 1 minute between sets",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Arms And Abs",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Triceps pushdowns",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET triceps pushdowns with overhead triceps rope extensions, resting 90 seconds between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Overhead triceps extensions",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Close-grip pushups",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "SUPERSET close-grip pushups and bench dips, resting 90 seconds between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Bench dips",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Cable curls",
+              "sets": 3,
+              "reps": "12 Reps",
+              "rest": "SUPERSET cable curls with barbell curls, resting 1-2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Barbell curls",
+              "sets": 3,
+              "reps": "12 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Bilateral to unilateral dumbbell biceps curls",
+              "sets": 3,
+              "reps": "15 + Failure",
+              "rest": "Begin with bilateral, transition to unilateral to failure. Rest 1 minute between sets.",
+              "notes": ""
+            },
+            {
+              "name": "Medicine ball crunches",
+              "sets": 3,
+              "reps": "20 + 10 Sets",
+              "rest": "SUPERSET of slow-and-hold for 20 reps followed by 10 fast with no hold for medicine ball crunches; then perform 20 reps of regular lying raises followed by 10 reps where you lift your butt off the ground. Rest 2 minutes between these abs supersets.",
+              "notes": ""
+            },
+            {
+              "name": "Lying leg raises + butt-raise variation",
+              "sets": 3,
+              "reps": "20 + 10 Sets",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "| Kaged",
+          "cardio": "While today is an active rest day, you'll still perform cardio twice today. The intensity of the cardio should be enough to make you sweat. Over the upcoming weeks we're going to take up the intensity of cardio quite a bit, using it as an important tool to support shedding body fat. You'll perform your first 20 minutes of cardio upon rising, and then you'll get in another 20-minute session much later in the day. It's crucial that you do not combine these sessions. You want the fat-burning advantage that comes with increasing your metabolism twice each day.",
+          "exercises": []
+        },
+        {
+          "day": 7,
+          "title": "| Kaged",
+          "cardio": "* Weigh yourself upon rising. Remember that the goals is not to lose weight - although that will happen - but to use your current bodyweight as a metric for shifting your diet, adjusting your cardio, and/or changing up your supplements.",
+          "exercises": [
+            {
+              "name": "EXERCISE",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "task": "",
+      "days": [
+        {
+          "day": 1,
+          "title": "| Kaged",
+          "cardio": "You'll note that Danielle and Kai talk about the 60 minutes of cardio they performed today at the beginning of the video. I have recommended that you perform a morning session of 25 minutes and an evening session of 35 minutes, both steady-state for this week. The key is to make sure that you split them into sessions separated by several hours to spike metabolism at different times of day.",
+          "exercises": [
+            {
+              "name": "Leg Extensions",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "SUPERSET: 20 reps of leg extensions followed immediately by 20 walking lunges per leg. No rest throughout the entire superset",
+              "notes": ""
+            },
+            {
+              "name": "Walking Lunges",
+              "sets": 3,
+              "reps": "20 Reps per Leg",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Machine Squats",
+              "sets": 4,
+              "reps": "20 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Leg Presses",
+              "sets": 4,
+              "reps": "20 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Stiff-Legged Dumbbell Deadlifts",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Single-Leg Standing Calves Raises",
+              "sets": "",
+              "reps": "20 + 10 per leg",
+              "rest": "Perform 20 reps slowly, and then finish off with 10 fast reps. Then perform the same number of reps for the other leg. No rest between sets",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Back, Traps And Abs",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Reverse-Grip Lat Pulldowns",
+              "sets": 3,
+              "reps": "12-15 Reps",
+              "rest": "SUPERSET You'll perform a set of reverse-grip lat pulldowns followed immediately by bent-over dumbbell rows. Then you'll rest for 2 minutes between supersets.",
+              "notes": ""
+            },
+            {
+              "name": "Bent-Over Dumbbell Rows",
+              "sets": 3,
+              "reps": "12-15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Lat Pulldowns",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET You'll perform regular grip lat pulldowns followed immediately by seated cable rows. Then you'll rest 2 minutes between supersets.",
+              "notes": ""
+            },
+            {
+              "name": "Seated Cable Rows",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Straight-Arm Cable Pulldowns",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET Perform a set of straight-arm",
+              "notes": "cable pulldowns to target lats followed immediately by a set of dumbbell shrugs to target traps. Then rest 2 minutes before repeating this circuit."
+            },
+            {
+              "name": "Dumbbell Shrugs",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Partner-Assisted Sit-Ups",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "SUPERSET Perform as many hanging leg",
+              "notes": "raises as you can with straight legs, then go to full failure with the bent-leg version. Follow this immediately with partner assisted sit-ups. Then rest 2 minutes between supersets"
+            },
+            {
+              "name": "Hanging Leg Raises",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Chest",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Flat Bench Presses",
+              "sets": 3,
+              "reps": "6/6 Reps",
+              "rest": "Performed with a drop set and 90 seconds of rest between each full set",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell Bench Presses",
+              "sets": 3,
+              "reps": "10-15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Cable Crossover Presses",
+              "sets": 3,
+              "reps": "10-15 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Unilateral Incline Chest Presses",
+              "sets": 3,
+              "reps": "8-10 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Pec Deck Flyes",
+              "sets": 3,
+              "reps": "12 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Shoulders And Calves",
+          "cardio": "Don't forget about your cardio-I say this to my clients all the time, but I'm always shocked at how often they neglect to get in 1 of their 2 cardio sessions each day. It's a crucial part of my 12-Week Lean Muscle Program , and I don't want you to underestimate the importance of these cardio sessions.",
+          "exercises": [
+            {
+              "name": "Barbell Front Raises",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET: Perform barbell front raises followed immediately by standing barbell presses using the same weight. Rest 90 seconds between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Standing Barbell Presses",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Dumbbell Lateral-Front Raises",
+              "sets": 3,
+              "reps": "12 Reps",
+              "rest": "Each rep includes both a lateral and front raise. Then burn out with lateral raises. Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Seated Dumbbell Shoulder Presses",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Reverse Cable Crossovers",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Seated calves raises",
+              "sets": "",
+              "reps": "Perform the first 20 reps slow, and then follow with 10 fast reps. Rest 90 seconds between sets",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Arms And Abs",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Barbell Curls",
+              "sets": 4,
+              "reps": "30/20/10/(10-10-10)",
+              "rest": "Perform 3 regular sets followed by 1 double drop set of 10 reps for each of the weights. Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Seated Cable Curls",
+              "sets": 3,
+              "reps": "10/10",
+              "rest": "Perform 10 reps, and then drop weight and perform another 10 reps. Do this 3 times, resting 90 seconds after completing each drop set",
+              "notes": ""
+            },
+            {
+              "name": "Triceps Cable Pushdowns",
+              "sets": 4,
+              "reps": "30/20/10/(10-10-10)",
+              "rest": "Perform 3 regular sets followed by 1 double drop set of 10 reps for each of the weights. Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Incline Barbell Extensions",
+              "sets": 3,
+              "reps": "20/20/(10-10-10) x 2",
+              "rest": "Perform 2 regular sets of 20 reps followed by 2 double drop set of 10 reps for each of the weights. Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Bench Dips",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Elevated Sit-Ups",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Reverse Crunches",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "| Kaged",
+          "cardio": "By this point in my 12-Week Lean Muscle Program you should know the drill. You're going to perform 2 sets of steady-state cardio today. That means 25 minutes upon rising, and then another 35 minutes later in the day. Again, intensity should be enough to cause you to sweat. You may think this is a little boring, but cardio is going to get much more intense in the weeks to come. Trust me, you won't be bored when that happens!",
+          "exercises": []
+        },
+        {
+          "day": 7,
+          "title": "| Kaged",
+          "cardio": "* Weigh yourself upon rising. Remember that the goal is not to lose weight - although that will happen - but to use your current bodyweight as a metric for shifting your diet, adjusting your cardio, and/or changing up your supplements. At this point, you should be reducing body weight by shedding stored body fat. Use your current bodyweight to recalculate the amount of calories you should consume each day.",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "task": "",
+      "days": [
+        {
+          "day": 1,
+          "title": "Legs And Calves",
+          "cardio": "Today, I'm introducing high-intensity interval training (HIIT), a type of cardio that has been demonstrated by research to release more fat from storage than typical steady-state cardio performed for the same duration. You'll be performing this form of cardio every day this week in the same quantities. Then, next week will begin to take up the intensity of our HIIT cardio to promote additional fat-burning as the body begins to accommodate.",
+          "exercises": [
+            {
+              "name": "Lying Hamstrings Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "SUPERSET: Lying hamstrings curls and walking lunges. No rest between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Walking Lunges",
+              "sets": 3,
+              "reps": "20 Reps per Leg",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Smith Machine Squats (Females)",
+              "sets": 4,
+              "reps": "20 Reps",
+              "rest": "Sets 1-2: Straight set",
+              "notes": "Sets 3-4: Drop set Rest 2 minutes between sets"
+            },
+            {
+              "name": "Squats (Males)",
+              "sets": 4,
+              "reps": "20 Reps",
+              "rest": "Sets 1-2: Straight set",
+              "notes": "Sets 3-4: Drop set Rest 2 minutes between sets"
+            },
+            {
+              "name": "Stiff-Legged Barbell Deadlifts",
+              "sets": 4,
+              "reps": "15-20 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Leg Extension",
+              "sets": 4,
+              "reps": "20 Reps",
+              "rest": "Each rep to be done as 1 + ½ , resting 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Standing Calves Presses",
+              "sets": 4,
+              "reps": "20 + 10 Reps",
+              "rest": "First 20 reps to be done slowly; last 10 reps to be done fast. Rest 1 minute between sets",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Back And Abs",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Unilateral Seated Vertical Rows",
+              "sets": 4,
+              "reps": "12-15 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Smith Machine Bent-Over Rows",
+              "sets": 4,
+              "reps": "10+10 Reps",
+              "rest": "Perform these as a drop set of 20 reps total and rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Seated Cable Rows",
+              "sets": 4,
+              "reps": "16-20 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Neutral-Grip Lat Pulldowns With V-Bar Grip",
+              "sets": 4,
+              "reps": "16-20 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Lying Leg Raises",
+              "sets": 4,
+              "reps": "Failure",
+              "rest": "Once you reach failure perform pulses at the top. Rest 1 minute between sets",
+              "notes": ""
+            },
+            {
+              "name": "Twist Crunches",
+              "sets": 4,
+              "reps": "Failure",
+              "rest": "When you reach failure perform regular crunches. Rest 1 minute between sets",
+              "notes": ""
+            },
+            {
+              "name": "V-Ups",
+              "sets": 4,
+              "reps": "Failure",
+              "rest": "Rest 1 minute between sets",
+              "notes": ""
+            },
+            {
+              "name": "Crossover V-Ups",
+              "sets": 4,
+              "reps": "Failure",
+              "rest": "Rest 1 minute between sets",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Chest",
+          "cardio": "Don't forget to perform your 2 sets of cardio today, including HIIT for 10 minutes in the first session and 15 minutes in the second session as described in the chart.",
+          "exercises": [
+            {
+              "name": "Bear Crawls",
+              "sets": 3,
+              "reps": "10/10 Reps",
+              "rest": "Take 10 steps forward then 10 steps back, and rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Unilateral Medicine Ball Pushups",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Staggered Pushups",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Incline Dumbbell Flyes",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET: Perform decline dumbbell flyes followed immediately by decline dumbbell presses using the same weight. Then rest 90 seconds between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Decline",
+              "sets": "",
+              "reps": "Dumbbell Flyes",
+              "rest": "3 Set/Failure",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "| Kaged",
+          "cardio": "Remember to get in your HIIT cardio early in the day and later in the day.",
+          "exercises": [
+            {
+              "name": "Seated rear-delts dumbbell raises",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "SUPERSET: Perform seated rear-delts raises followed immediately by front-delts raises. When you can't complete more stand to finish each exercise. Do not rest during the entire superset",
+              "notes": ""
+            },
+            {
+              "name": "Seated front dumbbell raises",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Lateral raises",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET: Perform a set of lateral raises followed immediately by right-angle lateral raises. Rest 90 seconds between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Right-Angle Lateral Raises",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Alternating Dumbbell Shoulder Presses",
+              "sets": 4,
+              "reps": "12 - 15 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Barbell upright rows",
+              "sets": 2,
+              "reps": "20 Reps",
+              "rest": "Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Lying cable upright rows",
+              "sets": "",
+              "reps": "Rest 90 seconds between sets",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated calves raises",
+              "sets": "",
+              "reps": "Perform 20 with strict form and complete with 10 fast reps. Rest 90 seconds between sets",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Arms And Abs",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Lying Cable Curls",
+              "sets": 5,
+              "reps": "50/40/30/20/10",
+              "rest": "Using my DTP technique. Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Barbell Curls",
+              "sets": 5,
+              "reps": "10/15/20/25/30",
+              "rest": "Using my DTP technique. Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Triceps Cable Pushdowns",
+              "sets": 5,
+              "reps": "50/40/30/20/10",
+              "rest": "Using my DTP technique. Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Skull Crushers",
+              "sets": 5,
+              "reps": "10/15/20/25/30",
+              "rest": "Using my DTP technique. Rest 90 seconds between sets",
+              "notes": ""
+            },
+            {
+              "name": "Hanging Leg Raises",
+              "sets": 5,
+              "reps": "Failure",
+              "rest": "SUPERSET: Perform as many hanging leg raises as you can to failure, then switch to hanging knee raises without resting. Then rest 90 seconds before performing the next superset",
+              "notes": ""
+            },
+            {
+              "name": "Hanging Knee Raises",
+              "sets": 5,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Lying Leg Raises",
+              "sets": 5,
+              "reps": "Failure",
+              "rest": "SUPERSET: Perform as many lying leg raises as you can to failure, then switch to lying knee ups without resting. Then rest 90 seconds before performing the next superset",
+              "notes": ""
+            },
+            {
+              "name": "Lying Knee Ups",
+              "sets": 5,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "| Kaged",
+          "cardio": "Today, you've earned some time away from the gym unless that's where you perform your cardio. Remember it's okay to perform cardio at home if you don't have a piece of high-tech equipment. You can easily include jogging on the streets, a track or trails in a park, and then you can also perform your HIIT training in the same place. You can even jump rope in your basement or garage. The key thing is to get in your 2 cardio sessions today, split by several hours to boost metabolism.",
+          "exercises": []
+        },
+        {
+          "day": 7,
+          "title": "| Kaged",
+          "cardio": "This is precisely the result you want to see after about 4 weeks on my 12-week program. Just stay on track with your weight training, cardio, and supplementation. I'll be taking up both the cardio and weight-training intensity next week so you'll naturally be burning more calories, and you'll potentially be adding muscle mass, which also helps burns calories to support fat loss.",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "task": "",
+      "days": [
+        {
+          "day": 1,
+          "title": "Legs And Calves",
+          "cardio": "Last week was your first week of incorporating HIIT cardio. This week we'll change up the rhythm. You'll still perform 25 minutes of steady state cardio. Then you'll transition into HIIT cardio for an additional 10 minutes during your first cardio session of the day, and then an additional 15 minutes of HIIT cardio in your second session. Now, though, you'll perform 60 second intervals, working as hard as you can for 60 seconds followed by 60 seconds of recovery at the pace that will allow you to go all out again after this relatively short recovery phase. You'll almost think you can feel these HIIT-cardio session melting stored fat! They're very intense.",
+          "exercises": [
+            {
+              "name": "High Leg Presses",
+              "sets": 5,
+              "reps": "50/40/30/20/10 Reps",
+              "rest": "SUPERSET: You'll perform high leg presses using DTP followed immediately by 10 steps per leg for walking lunges. Rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Standing Lunges",
+              "sets": 5,
+              "reps": "10 Reps per Leg",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Low Leg Presses",
+              "sets": 5,
+              "reps": "10/20/30/40/50 Reps",
+              "rest": "SUPSERSET: You'll perform low leg presses using DTP followed immediately by leg extensions using DTP. Rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Leg Extensions",
+              "sets": 5,
+              "reps": "10/20/30/40/50 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Calves Raises",
+              "sets": 3,
+              "reps": "20 +10 Reps",
+              "rest": "Perform 20 reps with strict form, and then do 10 more fast. Rest 1 minute between each of these 3 sets",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Back And Abs",
+          "cardio": "You'll perform your first cardio session upon waking, and then a few-or several-hours later you'll train your back and abs today. Take a look at my workout chart to make sure you're getting the right amount and the proper HIIT sessions for each workout.",
+          "exercises": [
+            {
+              "name": "Lat Pulldowns",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Chin-Ups",
+              "sets": 4,
+              "reps": "Failure",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Reverse-Grip Lat Pulldowns With EZ-Bar",
+              "sets": 4,
+              "reps": "15 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Unilateral High Row Machine",
+              "sets": 4,
+              "reps": "15 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Bent-Over Dumbbell Rows",
+              "sets": 4,
+              "reps": "12-15 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Decline Bench Sit-Ups",
+              "sets": 3,
+              "reps": "10+10+10 Reps",
+              "rest": "Perform 10 reps of opposite elbow to knee; 10 reps of opposite hand to opposite knee; then 10 reps straight up. Rest 1 minute between sets",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Chest",
+          "cardio": "Don't forget to get in your cardio upon rising-and remember that you can switch up the type of cardio you're performing. That also ups the ante on your HIIT-cardio sessions, which you'll now be performing for 60 seconds on and 60 seconds off. Again, after 25 minutes you'll follow this rhythm for 10 minutes in the morning and then for 15 minutes in the evening (or after your workouts).",
+          "exercises": [
+            {
+              "name": "Incline Dumbbell Flyes",
+              "sets": 3,
+              "reps": "15-20 Reps",
+              "rest": "SUPERSET: Perform all reps for incline dumbbell flyes followed immediately by decline dumbbell presses, and then rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Decline Dumbbell Presses",
+              "sets": 3,
+              "reps": "10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Incline Dumbbell Presses",
+              "sets": 3,
+              "reps": "10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Decline Dumbbell Flyes",
+              "sets": 3,
+              "reps": "10 Reps",
+              "rest": "SUPERSET: Perform all reps for decline dumbbell flyes followed immediately by incline dumbbell presses, and then rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Kneeling Cable Flyes",
+              "sets": 3,
+              "reps": "20/20/10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Banded Partner Pushups",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Shoulders And Calves",
+          "cardio": "And don't forget about your cardio-it's a crucial component of your 12-Week Lean Muscle Program . I really cannot emphasize this enough.",
+          "exercises": [
+            {
+              "name": "Seated dumbbell shoulder presses",
+              "sets": 3,
+              "reps": "10 Reps",
+              "rest": "SUPERSET: Perform seated shoulder presses followed immediately by standing lateral raises, and then rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Standing dumbbell lateral raises",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated Smith machine shoulder presses",
+              "sets": 3,
+              "reps": "10 Reps",
+              "rest": "SUPERSET: Perform seated Smith machine shoulder presses followed immediately by standing plate front raises, and then rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Standing plate front raises",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Machine shoulder presses",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET: Perform machine shoulder presses followed immediately by dumbbell rear-delts raises, and then rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell rear-delts raises",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated calves presses",
+              "sets": 3,
+              "reps": "20 +20 Reps",
+              "rest": "For each set perform 20 strict reps followed immediately by 20 bouncing reps, and then rest 1 minute between sets",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Arms And Abs",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Cable curls",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "CIRCUIT: You'll perform each of 4 exercises for 15 reps without resting (cable curls, alternating dumbbell curls, plate hammer curls, barbell curls). After you complete all 4 rest for 2-3 minutes before the next circuit",
+              "notes": ""
+            },
+            {
+              "name": "Alternating dumbbell curls",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Plate Hammer Curls",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Barbell curls",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Triceps cable extensions",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "CIRCUIT: You'll perform each of 5 exercises for 15 reps without resting (triceps cable extensions, overhead rope extensions, incline barbell extensions, bench dips, close-grip pushups). After you complete all 5 exercises rest for 2-3 minutes before the next circuit",
+              "notes": ""
+            },
+            {
+              "name": "Overhead rope extensions",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Incline barbell extensions",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Bench dips",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Close-grip pushups",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Banded leg raises",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET: Perform a set of banded leg raises followed immediately by pike sit-ups with a bar; then rest for 1 minute between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Pike sit-ups with a bar or stick",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Crossover V-ups",
+              "sets": 1,
+              "reps": "15 Reps per side",
+              "rest": "Alternate sides for a total of 30 reps",
+              "notes": ""
+            },
+            {
+              "name": "Bicycle crunches",
+              "sets": 1,
+              "reps": "15 Reps per side",
+              "rest": "Alternate sides for a total of 30 reps",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "| Kaged",
+          "cardio": "It's around this point where you really start noticing your results. You've following this program for 34 days, and you've been cutting calories and eating healthy throughout. In addition, you've been burning quite a few calories through your cardio every day.",
+          "exercises": []
+        },
+        {
+          "day": 7,
+          "title": "| Kaged",
+          "cardio": "This is precisely the result you want to see after your reevaluation at the end of Week Four. Just stay on track with your weight training, cardio, and supplementation. I'll be taking up both the cardio and weight-training intensity next week so you'll naturally be burning more calories, and you'll potentially be adding muscle mass, which also helps burns calories to support fat loss.",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "task": "",
+      "days": [
+        {
+          "day": 1,
+          "title": "Legs And Calves",
+          "cardio": "Today begins with another upshift in cardio. Today, you'll perform a total of 40 minutes during both your morning and later-in-the-day sessions. So, this week you'll perform a total of 80 minutes of cardio a day. Morning and later cardio sessions are identical this week. Here's what you'll do:",
+          "exercises": [
+            {
+              "name": "Leg Extensions",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "CIRCUIT: Perform leg extensions followed immediately by weighted walking lunges and then immediately by leg presses, ending with machine squats. Rest for 2-3 minutes between each of the 3 circuits",
+              "notes": ""
+            },
+            {
+              "name": "Weighted Walking Lunges",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Leg Presses",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Machine Squats",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Or Smith machine squats, whichever you prefer",
+              "notes": ""
+            },
+            {
+              "name": "Lying Hamstrings Curls",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Standing Calves Raises",
+              "sets": 3,
+              "reps": "20 +10 Reps",
+              "rest": "Perform 20 with strict form, and then do 10 more fast. Rest 1 minute between each of these 3 sets",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Back And Abs",
+          "cardio": "Then we'll transition to an abs-and-cardio superset. This begins with partner-assisted medicine ball sit-ups. Take a look at today's video to see how this move works. If you don't have a partner, then you can perform a solo move such as plate or medicine ball sit-ups.",
+          "exercises": [
+            {
+              "name": "Wide-grip lats pulldowns",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "GIANT SET: Perform wide-grip lats pulldowns followed immediately by bent-over dumbbell rows, and then immediately by close-grip cable rows. Then rest for 2 minutes between giant sets",
+              "notes": ""
+            },
+            {
+              "name": "Bent-over Dumbbell Rows",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Close-Grip Cable Rows",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Reverse-Grip Pulldowns",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET: Perform reverse-grip pulldowns followed immediately by dumbbell deadlifts, then rest for 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell Deadlifts",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Partner-Assisted Medicine Ball Sit-Ups",
+              "sets": 4,
+              "reps": "30/20/15/10",
+              "rest": "SUPERSET: For this superset perform sit-ups followed immediately by a 2-minute HIIT session. Do not rest throughout the abs-and-cardio superset",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Chest",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Smith Machine Bench Presses",
+              "sets": 3,
+              "reps": "10-15 Reps",
+              "rest": "OPTION 1: Perform Smith machine bench presses. Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Incline Barbell Presses",
+              "sets": 3,
+              "reps": "10-15 Reps",
+              "rest": "OPTION 2: Perform incline barbell presses. Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Incline Dumbbell Presses",
+              "sets": 3,
+              "reps": "10 Reps",
+              "rest": "OPTION 1: Perform incline dumbbell presses if your first move was Smith machine bench presses. Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Flat Dumbbell Presses",
+              "sets": 3,
+              "reps": "10 Reps",
+              "rest": "OPTION 2: Perform flat dumbbell presses if your first move was incline barbell presses. Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Decline Dumbbell Presses",
+              "sets": 3,
+              "reps": "10 Reps",
+              "rest": "SUPERSET: Perform dumbbell presses followed immediately by high cable crossovers. Then rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "High Cable Flyes",
+              "sets": 3,
+              "reps": "10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Pec Deck Flyes",
+              "sets": 3,
+              "reps": "10 Reps",
+              "rest": "SUPERSET: Perform pec deck flyes followed immediately by bear crawls with 10 steps per side forward and 10 steps per side back. Rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Bear Crawls",
+              "sets": 3,
+              "reps": "10 per side forward + 10 per side back",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Shoulders And Abs",
+          "cardio": "Today's workout includes a circuit of 5 moves. You'll not only target each head of your delts, but you'll also include a compound move to hit all of them, and you'll cap it off with a HIIT session of cardio. I've built the moves in this order for this circuit: seated lateral raises to hit side delts; seated shoulder pressed to work all 3 heads of the delts; seated rear-delts raises to work posterior delts; then standing front cable raises to work anterior delts.",
+          "exercises": [
+            {
+              "name": "Seated Lateral Raises",
+              "sets": 4,
+              "reps": "15 Reps",
+              "rest": "CIRCUIT: Perform 1 set of all 5 moves (seated lateral raises, seated shoulder presses, seated rear-delts raises, standing cable front raises and cardio) in succession without rest, and then rest 2 minutes before the next circuit.",
+              "notes": ""
+            },
+            {
+              "name": "Seated Shoulder Presses",
+              "sets": 4,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated Rear-Delts Raises",
+              "sets": 4,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Cable Front Raises",
+              "sets": 4,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Barbell Presses",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET: Perform standing barbell presses followed immediately by standing cable face pulls, and then rest for 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Standing Cable Face Pulls",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Banded Crunches",
+              "sets": 4,
+              "reps": "Failure",
+              "rest": "Rest 1 minute between sets",
+              "notes": ""
+            },
+            {
+              "name": "Sit-Ups",
+              "sets": 4,
+              "reps": "Failure",
+              "rest": "GIANT SET: Perform sit-ups followed immediately by lying leg raises, then by plank to failure. Rest 1 minute between giant sets",
+              "notes": ""
+            },
+            {
+              "name": "Lying Leg Raises",
+              "sets": 2,
+              "reps": "10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Plank",
+              "sets": 2,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Arms And Calves",
+          "cardio": "Today, you'll be performing 2 giant sets for arms that also incorporate HIIT cardio, followed by 2 supersets that don't include cardio. For that reason it's important that you get in your first cardio session a few hours before your workout and your second cardio session a few hours after your workout. However, if you weight train upon rising, you can do that first, and then perform your first full cardio session after today's workout or a few hours later, and then make sure to get in your second cardio session several hours after that.",
+          "exercises": [
+            {
+              "name": "EZ-Bar Cable Curls",
+              "sets": 4,
+              "reps": "20/20/10 + 5/10 + 5 + 5 Reps",
+              "rest": "GIANT SET: Perform a set of EZ-bar cable curls followed immediately by overhead rope extensions. Then perform a 1-minute session of HIIT step-ups cardio. Do not rest throughout this entire giant set",
+              "notes": ""
+            },
+            {
+              "name": "Overhead Rope Extensions",
+              "sets": 3,
+              "reps": "20/20/10 + 5/10 + 5 + 5 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Step-Ups",
+              "sets": 4,
+              "reps": "1 Minute",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Barbell Curls",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Lying Triceps Extensions",
+              "sets": 3,
+              "reps": "15/15 + 5/10 + 5 + 5 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Mountain Climbers",
+              "sets": 3,
+              "reps": "1 Minute",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated Dumbbell Curls",
+              "sets": 3,
+              "reps": "20/8+5/8+5 Reps",
+              "rest": "SUPERSET: Perform seated dumbbell curls followed immediately by overhead dumbbell extensions. For the last 2 supersets include a drop set for each move. Rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Overhead Dumbbell Extensions",
+              "sets": 3,
+              "reps": "20/10+5/8+5 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated Calves Raises",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "SUPERSET: Perform seated calves presses with strict control and then go to failure with strict control for standing calves raises performed on the back of the seated calves raise machine. Rest 1 minute between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Standing Calves Raises",
+              "sets": 3,
+              "reps": "FAILURE",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "| Kaged",
+          "cardio": "Today, you'll complete your 2 sessions of cardio as we have all week. Remember it's 20 minutes of steady-state cardio followed by 10 minutes of HIIT for 60-second intervals, and then finish off with 10 more minutes of steady-state cardio. As with most weekends, I recommend that you try to get outdoors and shift things up for one or both sessions. Just remember that you do need to perform 2 sessions, and they should be separated by several hours to keep your metabolism revving.",
+          "exercises": []
+        },
+        {
+          "day": 7,
+          "title": "| Kaged",
+          "cardio": "At the end of the day today, you will have officially completed half of your 12-Week Lean Muscle Program . That in itself is an amazing achievement, but the harder work is ahead. Today you'll perform your weekly reevaluation in addition to performing the 2 cardio sessions as outlined in the workout chart-the same as you've done throughout Week Six.",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "task": "",
+      "days": [
+        {
+          "day": 1,
+          "title": "| Kaged",
+          "cardio": "This week, you'll take your cardio up another notch. You'll perform 2 sessions of 50 minutes each. Both will have the same rhythm: You'll perform 40 minutes of steady-state followed immediately by 10 minutes of HIIT, but for this workout your HIIT sessions will be 30 seconds on/30 seconds off for a total of 10 HIIT sessions in those 10 minutes at the end each cardio session.",
+          "exercises": [
+            {
+              "name": "Leg Extensions",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "GIANT SET 1: Perform a set of leg extensions, goblet squats and stationary overhead lunges without resting, and then rest for 2 minutes before your next giant set",
+              "notes": ""
+            },
+            {
+              "name": "Goblet Squats",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Stationary Overhead Lunges",
+              "sets": 3,
+              "reps": "10 Reps Per Leg",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Lying Hamstrings Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Or Smith machine squats, whichever you prefer",
+              "notes": ""
+            },
+            {
+              "name": "Stiff-Legged Deadlifts",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Single-Leg Calves Raises",
+              "sets": 3,
+              "reps": "10 +10 Reps per Leg",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Machine Squats Or Leg Presses",
+              "sets": 3,
+              "reps": "20 Reps per Leg",
+              "rest": "Choose your preferred move. Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Twist Crunches",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Crunches",
+              "sets": 1,
+              "reps": "20 + 10 Reps",
+              "rest": "Perform 20 slow reps followed by 10 fast reps",
+              "notes": ""
+            },
+            {
+              "name": "V-Ups",
+              "sets": 1,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Raised Leg Crunches",
+              "sets": 1,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Elbow-To-Knee Twists",
+              "sets": 1,
+              "reps": "20 per Side + 20",
+              "rest": "Perform 20 reps to one side, and then perform 20 reps to the other. Finish off with 20 fast reps per side",
+              "notes": ""
+            },
+            {
+              "name": "Opposite Hand To Foot V-Ups",
+              "sets": 1,
+              "reps": "10 per Side + 20",
+              "rest": "Alternate sides, completing 10 reps to each leg, and then burnout with regular V-ups",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Back And Traps",
+          "cardio": "Throughout this week, you'll perform 2 sessions of cardio for 50 minutes. Each session begins with 40 minutes of steady state, followed by 10 minutes of HIIT for 30 seconds on/30 seconds of recovery. I'm not doing this to repeat myself-I'm doing it to emphasize the importance of these cardio sessions. I can't tell you how many of my clients \"forget\" to perform a cardio session if I don't mention it specifically. So don't be that client-complete all of your cardio as I've dictated.",
+          "exercises": [
+            {
+              "name": "Neutral-grip lat pulldowns",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "CIRCUIT: Perform 1 set of each of the 4 moves of this circuit (neutral-grip lat pulldowns, cable rows, dumbbell deadlifts and kettlebell swings) without rest. Perform as many kettlebell swings as you can in 1 minute. Continue into the next circuit without resting",
+              "notes": ""
+            },
+            {
+              "name": "Cable Rows",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell Deadlifts",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Kettlebell Swings",
+              "sets": 3,
+              "reps": "1 Minute",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Unilateral high rows",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "GIANT SET: You'll perform 1 set of each of these 3 exercises in each giant set. The moves: unilateral high rows, shrugs, and step-ups should be performed without resting. Also do not rest between giant sets",
+              "notes": ""
+            },
+            {
+              "name": "Machine shrugs",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Step-ups",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Smith machine inverted pull-ups",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET: Perform Smith machine inverted pull-ups followed immediately by a set of combat ropes. Do not rest between or at any point during these 3 super sets",
+              "notes": ""
+            },
+            {
+              "name": "Combat ropes",
+              "sets": 3,
+              "reps": "1 minute",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Chest",
+          "cardio": "Follow up this superset with tire sledgehammers if that move is available in your gym. If not, the key is to find a type of cardio that incorporates your upper body into HIIT cardio for 1-minute on and 1-minute off for 3 sets. You can use a rower or bear crawls if you don't have this option.",
+          "exercises": [
+            {
+              "name": "Flat-Bench Dumbbell Flyes",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET 1: Perform flat-bench dumbbell flyes followed by pushups (to failure) and then rest 1 minute between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Pushups",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Tire Sledgehammers",
+              "sets": 3,
+              "reps": "1 Minute",
+              "rest": "Rest 1 minute between each 1-minute set",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell Presses",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET 2: Perform a set of dumbbell presses followed immediately by 1 minute of sled pushes. Do not rest during or after the super set",
+              "notes": ""
+            },
+            {
+              "name": "Sled Pushes",
+              "sets": 3,
+              "reps": "1 Minute",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Incline Dumbbell Flyes",
+              "sets": 3,
+              "reps": "15 Reps SUPERSET 3: Perform a set of incline dumbbell flyes followed immediately by 1 minute of the running set explained in the video. Do not rest during or after the super set",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Side Running + Back And Forth Running",
+              "sets": 3,
+              "reps": "1 Minute",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Cable Crossovers",
+              "sets": 3,
+              "reps": "15/8+8/8+8+8 Reps",
+              "rest": "Perform one regular set followed by a set with 1 drop, and then for the last set include 2 drops for 8 reps each",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Shoulders And Abs",
+          "cardio": "Today we're going to focus on weights moves without cardio intervals included in multi-move sets. We've used that technique earlier this week, but we have used that technique enough for this week. We'll come back to it after Kai and Danielle have had a chance to recover from that specific type of intensity.",
+          "exercises": [
+            {
+              "name": "Standing Front Raise/Side Raise Combo",
+              "sets": 4,
+              "reps": "10/10/10+5 Reps",
+              "rest": "SUPERSET: Perform a set of the standing front raise/side raise combo followed immediately by dumbbell lateral raises. Rest 2 minutes between supersets, and include 5 negatives for both moves",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell Lateral Raises",
+              "sets": 4,
+              "reps": "10/10/10+5 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell Rear-Delts Raises",
+              "sets": 4,
+              "reps": "10+10 Reps Perform 10 reps on an incline bench and then stand and complete 10 more reps. Rest 2 minutes between sets",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Plate Front Raises",
+              "sets": 4,
+              "reps": "10+10 Reps",
+              "rest": "Perform 10 reps seated and then stand and complete 10 more reps. Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Seated Barbell Presses",
+              "sets": 3,
+              "reps": "10-12 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Banded Standing Shoulder Presses",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 1 minute between sets",
+              "notes": ""
+            },
+            {
+              "name": "Sit-Ups Variations",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Arms And Calves",
+          "cardio": "And that's a wrap for Week Seven's weight training. Don't forget you have a lot on your to-do list for the weekend, including double sessions of cardio, calorie cutting and your 16-hour intermittent fast.",
+          "exercises": [
+            {
+              "name": "Cable Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "SUPERSET 1: Perform a set of cable biceps curls followed immediately by rope triceps extensions. Rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Rope Triceps Extensions",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Overhead Triceps Extensions",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET 2: Perform a set of overhead triceps extensions followed immediately by barbell curls. Rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Barbell Curls",
+              "sets": 3,
+              "reps": "1 5 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Lying Triceps Extensions",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Dumbbell Curls",
+              "sets": 3,
+              "reps": "10 -15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated Calves Raises + Standing Calves Burnouts",
+              "sets": 3,
+              "reps": "20+failure + failure",
+              "rest": "After 20 reps, go to failure with seated calves raises. Then stand and perform standing calves raises to failure",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Day 6",
+          "cardio": "Today, you'll complete your 2 sessions of cardio as we have all week. Remember it's 40 minutes of steady-state cardio followed by 10 minutes of HIIT for 30-seconds on and 30 seconds off. As with most weekends, I recommend that you try to get outdoors and shift things up for one or both sessions. Just remember that you do need to perform 2 sessions, and they should be separated by several hours to keep your metabolism revving.",
+          "exercises": [
+            {
+              "name": "EXERCISE",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Day 7",
+          "cardio": "Today you'll perform your weekly reevaluation in addition to performing the 2 cardio sessions as outlined in the workout chart-the same as you've done throughout Week Seven. You'll also weigh yourself and make certain that the program is continuing to work for you.",
+          "exercises": [
+            {
+              "name": "EXERCISE",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "task": "",
+      "days": [
+        {
+          "day": 1,
+          "title": "| Kaged",
+          "cardio": "And don't forget about your cardio! Today you'll perform 2 sessions of steady-state cardio that last 60 minutes each. And you'll do that every day throughout Week 8. However, I want you to split up these 60-minute sessions by performing 45 minutes on one type of cardio equipment and the last 15 minutes on another. For instance, a good choice is to perform 45 minutes on an elliptical trainer followed by 15 minutes on a Stepmill® or other type of stair machine. You can also include treadmill, jump rope or any other type of steady-state cardio you choose.",
+          "exercises": [
+            {
+              "name": "Leg Extensions",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "CIRCUIT 1: Perform leg extensions, lying hamstrings curls, glutes/hams raises and bear crawls with no rest. Then go immediately into the next circuit without resting",
+              "notes": ""
+            },
+            {
+              "name": "Lying Hamstrings Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Glutes/Hams Raises",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Bear Crawls",
+              "sets": 3,
+              "reps": "10 per side forward and 10 per side back",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Squats",
+              "sets": 3,
+              "reps": "15-20 Reps",
+              "rest": "CIRCUIT 2: For this circuit, you'll perform squats, followed immediately by walking lunges, and then standing calves raises and abs rollers. You'll rest for 2 minutes between each of these circuits",
+              "notes": ""
+            },
+            {
+              "name": "Walking Lunges",
+              "sets": 3,
+              "reps": "20 per leg",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Calves Raises",
+              "sets": 3,
+              "reps": "30 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Abs Rollers",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Leg Press Calves Raises",
+              "sets": 3,
+              "reps": "30 Reps",
+              "rest": "GIANT SET: You'll perform leg extension calves raises, followed immediately by goblet squats, and conclude with medicine ball sit-ups. No rest until you've completed the entire giant set",
+              "notes": ""
+            },
+            {
+              "name": "Goblet Squats",
+              "sets": 3,
+              "reps": "30 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Medicine Ball Sit-Ups",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Back",
+          "cardio": "Then you'll do the same with lat pulldowns, going with 10-15 reps per set. You can perform these on a machine or with a cable. So this workout begins with more traditional bodybuilding moves without the increased cardiovascular intensity of cardio moves, as we've been incorporating. Variety makes everything better, including muscle growth and fat loss. Today's workout targets muscle growth.",
+          "exercises": [
+            {
+              "name": "Bent-Over Rows",
+              "sets": 4,
+              "reps": "15-20 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Lat Pulldowns",
+              "sets": 4,
+              "reps": "10-15 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Reverse-Grip Pulldowns",
+              "sets": 4,
+              "reps": "10-15 Reps",
+              "rest": "SUPERSET 1: Perform a set of reverse-grip pulldowns followed immediately by dumbbell pullovers. Rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell Pullovers",
+              "sets": 4,
+              "reps": "10-15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated Cable Rows",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET 2: Perform a set of seated cable rows followed immediately by dumbbell deadlifts. Rest 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell Deadlifts",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Chest",
+          "cardio": "We aren't going to shake things up that much from yesterday's emphasis on traditional bodybuilding moves: You'll be training chest with a heavy compound movements. Other than your 2 cardio sessions, you'll only focus on chest today in your training.",
+          "exercises": [
+            {
+              "name": "Smith Machine Presses",
+              "sets": 3,
+              "reps": "10-15 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Incline Barbell Presses",
+              "sets": 3,
+              "reps": "10-15 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Incline Plate Presses",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "SUPERSET: Perform incline plate presses followed immediately by pushups to failure. Then rest for 2 minutes between supersets",
+              "notes": ""
+            },
+            {
+              "name": "Pushups",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Incline Cable Flyes",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            },
+            {
+              "name": "Decline Dumbbell Presses",
+              "sets": 4,
+              "reps": "10 Reps",
+              "rest": "Rest 2 minutes between sets",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "| Kaged",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Rear-Delts Dumbbell Raises",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "CIRCUIT: This 5-move circuit includes rear-delts dumbbell raises, cable upright rows, TRX rear-delts raises, Arnold presses and kettlebell swings. Perform all moves with no rest between exercises or circuits",
+              "notes": ""
+            },
+            {
+              "name": "Cable Upright Rows",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "TRX Rear-Delts Raises",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Arnold Presses",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Kettlebell Swings",
+              "sets": 3,
+              "reps": "1 Minute",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell Lateral Raises",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "GIANT SET 1: Perform dumbbell lateral raises, followed immediately by cable front raises and then burpees with no rest. Also, do not rest between giant sets",
+              "notes": ""
+            },
+            {
+              "name": "Cable Front Raises",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Burpees",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Machine Shoulder Presses",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated Plate Raises",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Mountain Climbers",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Incline Leg Raises",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "| Kaged",
+          "cardio": "Next up is your triceps circuit. This one includes 4 weight exercises followed by tire sledgehammers. We're applying the same philosophy-take this small target muscle group to failure, include some intense cardio, and then hit the muscle again. You'll, in effect, perform a total of 15 sets with no rest.",
+          "exercises": [
+            {
+              "name": "Standing cable curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "CIRCUIT 1: This 6-move circuit includes standing cable curls, standing dumbbell curls, standing barbell curls, standing hammer curls, standing barbell drag curls and weighted sled pushes and pulls. Complete all moves with no rest, and go immediately into the next circuit",
+              "notes": ""
+            },
+            {
+              "name": "Standing Dumbbell Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Barbell Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Hammer Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Barbell Drag Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Weighted Sled Pushes And Pulls",
+              "sets": 3,
+              "reps": "2 Minutes",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Triceps Cable Pushdowns",
+              "sets": "",
+              "reps": "CIRCUIT 2: This 5-move circuit includes triceps cable pushdowns, incline barbell extensions, bench dips, cable overhead rope extensions and tire sledgehammers. Complete all moves with no rest, and go immediately into the next circuit",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Incline Barbell Extensions",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Bench Dips",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Cable Overhead Rope Extensions",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Tire Sledgehammers",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated Calves Raises",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "| Kaged",
+          "cardio": "Congratulations on completing your Week Eight of weight-training workouts on my 12-Week Lean Muscle Program . You're almost two-thirds of the way through this program, and you're entering the home stretch. The weight training will continue to get more intense, as will the dieting and cardio. By this time, though, I'm confident that you've developed the disciplinary tools necessary to get you through challenging phases that arise from day to day.",
+          "exercises": []
+        },
+        {
+          "day": 7,
+          "title": "| Kaged",
+          "cardio": "Here's what else you need to do today in addition to your 2 cardio sessions, as described in today's chart:",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "task": "",
+      "days": [
+        {
+          "day": 1,
+          "title": "Legs, Calves & Abs",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Leg Extensions",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Circuit: Leg Extensions, Goblet Squats, Walking Lunges, Box Jumps.",
+              "notes": ""
+            },
+            {
+              "name": "Goblet Squats",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Walking Lunges",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Box Jumps",
+              "sets": 3,
+              "reps": "1Minute",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Squats",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Giant Set: Squats, Lying Hamstring Curls, Frog Jumps",
+              "notes": ""
+            },
+            {
+              "name": "Lying Hamstring Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Frog Jumps",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Sit-Ups",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Single Leg Bodyweight Calf Raises",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Back",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Wide Grip Lat Pulldowns",
+              "sets": 3,
+              "reps": "10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Wide Grip Chin Ups",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Neutral-Grip Chin Ups",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Neutral Grip Bent Over Rows",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Shrugs",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Minimize your leg bounce on these so that you fully target your traps",
+              "notes": ""
+            },
+            {
+              "name": "Staggered Grip Deadlifts",
+              "sets": 3,
+              "reps": "10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Single Arm Rows",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Chest",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Cable Crossovers",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "Circuit: Cable Crossovers, Incline Flyes, Single Arm Kettlebell Swings, (Regular) Kettlebell Swings",
+              "notes": ""
+            },
+            {
+              "name": "Incline Flyes",
+              "sets": 3,
+              "reps": "15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Single Arm Kettlebell Swings",
+              "sets": 3,
+              "reps": "30 Seconds",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "(Regular) Kettlebell Swings",
+              "sets": 3,
+              "reps": "30 Seconds",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Decline Flyes",
+              "sets": 3,
+              "reps": "10-15 Reps",
+              "rest": "Circuit: Decline Flyes, Push Ups, Skaters",
+              "notes": ""
+            },
+            {
+              "name": "Push Ups",
+              "sets": 3,
+              "reps": "10-15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Skaters",
+              "sets": 3,
+              "reps": "1 Minute",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Dead Stop Bench Press",
+              "sets": 3,
+              "reps": "10-15 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Shoulders",
+          "cardio": "Remember that you should be doing your two cardio sessions every day, morning and evening. To get the most out of this trainer, it's imperative that you do all your cardio sessions. This week's cardio has been straight forward, 2 sessions of 60-minute steady state cardio each day.",
+          "exercises": [
+            {
+              "name": "Reverse Pec Deck",
+              "sets": 3,
+              "reps": "10-15 Reps",
+              "rest": "Giant Set: Reverse Pec Deck, Rear Delt Dumbbell Raises, Dumbbell Front Raises",
+              "notes": ""
+            },
+            {
+              "name": "Rear Delt Dumbbell Raises",
+              "sets": 3,
+              "reps": "10- 15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell Front Raises",
+              "sets": 3,
+              "reps": "10- 15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated Dumbbell Shoulder Presses",
+              "sets": "",
+              "reps": "Giant Set 2: Seated Dumbbell Shoulder Presses, Standing Lateral Raises, Cable Front Raises",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Lateral Raises",
+              "sets": 3,
+              "reps": "10- 15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Cable Front Raises",
+              "sets": 3,
+              "reps": "10-15 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Side to Side Front Raises",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Side Raises",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Arms, Calves & Abs",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Incline Barbell Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "CIRCUIT 1: Incline Barbell Curls, Standing Unilateral Bicep Curls, Seated Cable Curl, Burpees",
+              "notes": ""
+            },
+            {
+              "name": "Standing Unilateral Bicep Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated Cable Curl",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Burpees",
+              "sets": 3,
+              "reps": "1 Minute",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Alternate Dumbbell Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "Circuit 2: Alternate Dumbbell Curls, Barbell Preacher Curls, Standing Dumbbell Hammer Curls, Bear Crawls",
+              "notes": ""
+            },
+            {
+              "name": "Barbell Preacher Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Dumbbell Hammer Curls",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Bear Crawls",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Rope Extensions",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Overhead Bar Extension",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Unilateral Cable Triceps Extension",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Skull Crushers",
+              "sets": 3,
+              "reps": "1 5 Reps",
+              "rest": "Superset 1: Skull Crushers, Dumbbell Kickbacks",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell Kickbacks",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated Calf Press",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "Superset 2: Seated Calf Press, Lying Leg Raises",
+              "notes": ""
+            },
+            {
+              "name": "Lying Leg Raises",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "| Kaged",
+          "cardio": "Remember that even though today is a recovery day, you'll still be performing 2 cardio sessions as active recovery to get blood flowing to your muscles and keep your metabolic furnace burning high. You'll also start a 16 hour fast after you last meal of the day today.",
+          "exercises": []
+        },
+        {
+          "day": 7,
+          "title": "| Kaged",
+          "cardio": "I want you to weigh yourself and adjust accordingly. You'll be doing 2 cardio sessions today as well, make sure you separate them at least 7 hours apart and try to do at least one of them outside. Doing at least one of your cardio sessions outside will help break up the monotony of doing long duration cardio in the same gym day in and day out and allow you to get some healthy restorative red light from the sun instead of the artificial bluer light in the gym.",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "task": "",
+      "days": [
+        {
+          "day": 1,
+          "title": "Dtp Legs & Abs",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Squats",
+              "sets": 5,
+              "reps": "50/40/30/20/10 Reps",
+              "rest": "For this exercise go from 50 reps on your first set all the way down to 10 reps for your 5 th set.",
+              "notes": ""
+            },
+            {
+              "name": "Leg Press",
+              "sets": 5,
+              "reps": "50/40/30/20/10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Weighted Lunges",
+              "sets": 3,
+              "reps": "20 Reps (each leg)",
+              "rest": "Giant Set: Weighted Lunges, Hanging Leg Raises, Planks",
+              "notes": ""
+            },
+            {
+              "name": "Hanging Leg Raises",
+              "sets": 2,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Planks",
+              "sets": 3,
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Dtp Back & Calves",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Bent Over Barbell Rows",
+              "sets": 5,
+              "reps": "30/25/20/15/10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Barbell Deadlifts",
+              "sets": 5,
+              "reps": "10/15/20/25/30 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Calve Raises",
+              "sets": 3,
+              "reps": "30 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Dtp Chest",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Incline Dumbbell Chest Press",
+              "sets": 5,
+              "reps": "50/40/30/20/10 Reps",
+              "rest": "Start with 50 reps for your 1 st set and finish with 10 reps on your 5 th set",
+              "notes": ""
+            },
+            {
+              "name": "Decline Barbell Press",
+              "sets": 5,
+              "reps": "10/20/30/40/50 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Dtp Shoulders & Abs",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Seated Barbell Military Press",
+              "sets": 5,
+              "reps": "50/40/30/20/10 Reps",
+              "rest": "Start with 50 reps for your 1 st set and finish with 10 reps on your 5 th set",
+              "notes": ""
+            },
+            {
+              "name": "Cable Upright Row",
+              "sets": 5,
+              "reps": "10/20/30/40/50 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Oblique Twist with Medicine Ball",
+              "sets": 1,
+              "reps": "30 Reps",
+              "rest": "Superset: Oblique Twist with Medicine Ball, Sit-Ups",
+              "notes": ""
+            },
+            {
+              "name": "Sit-Ups",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Knee Tucks on Ball",
+              "sets": 1,
+              "reps": "Failure",
+              "rest": "Superset: Knee Tucks on Medicine Ball, Plank on Medicine Ball",
+              "notes": ""
+            },
+            {
+              "name": "Plank on Ball",
+              "sets": 1,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Dtp Arms & Calves",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Cable Curls",
+              "sets": 5,
+              "reps": "50/40/30/20/10 Reps",
+              "rest": "Superset: Cable Curls, Triceps Rope Extension",
+              "notes": ""
+            },
+            {
+              "name": "Triceps Rope Extension",
+              "sets": 5,
+              "reps": "50/40/30/20/10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Standing Barbell Curls",
+              "sets": 5,
+              "reps": "10/20/30/40/50 Reps",
+              "rest": "Superset 2: Standing Barbell Curls, Overhead Triceps Extension",
+              "notes": ""
+            },
+            {
+              "name": "Overhead Triceps Extension",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Calf Press on Leg Press",
+              "sets": 3,
+              "reps": "30 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Active Rest",
+          "cardio": "Today is an active rest day, you'll do two sessions of cardio separated by seven hours at minimum. You'll also start your 16 hour fast after your last meal today.",
+          "exercises": []
+        },
+        {
+          "day": 7,
+          "title": "| Kaged",
+          "cardio": "Today you'll weigh yourself to reevaluate your progress and you'll perform two sessions of steady state cardio separated by at least seven hours.",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "task": "",
+      "days": [
+        {
+          "day": 1,
+          "title": "Dtp Legs",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Wide Stance Squats",
+              "sets": 5,
+              "reps": "50/40/30/20/10 Reps",
+              "rest": "For this exercise go from 50 reps on your first set all the way down to 10 reps for your 5 th set.",
+              "notes": ""
+            },
+            {
+              "name": "Wide Stance Squats",
+              "sets": 5,
+              "reps": "10/20/30/40/50 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "| Kaged",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Bent Over Barbell RowsReverse Grip Bent Over Rows",
+              "sets": 10,
+              "reps": "30/25/20/15/10/10/15/20/25/30 Reps",
+              "rest": "We'll do these as free-standing barbell rows and finish up the final sets on the smith machine",
+              "notes": ""
+            },
+            {
+              "name": "Medicine Ball Leg Raises",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated Calf Raises",
+              "sets": 3,
+              "reps": "30 Reps",
+              "rest": "20 reps strict, 10 reps fast",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Dtp Chest",
+          "cardio": "Congratulations we've only got 1 ½ weeks left for the 12 Week Lean Muscle trainer . I want you to think about what you've accomplished over these past 10 ½ weeks. At this point in the trainer it's common to be obsessed with measuring food, cardio, and weekly scale readings.",
+          "exercises": [
+            {
+              "name": "Flat Dumbbell Presses",
+              "sets": 5,
+              "reps": "50/40/30/20/10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Flat Dumbbell Flyes",
+              "sets": 5,
+              "reps": "10/20/30/40/50 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Dtp Shoulders",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Seated Dumbbell Military Presses",
+              "sets": 5,
+              "reps": "30/25/20/15/10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Barbell Upright Rows",
+              "sets": 5,
+              "reps": "10/15/20/25/30 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Dtp Arms",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Narrow Grip Barbell Curls",
+              "sets": 5,
+              "reps": "30/25/20/15/10 Reps",
+              "rest": "Superset 1: Narrow Grip Barbell Curls, Lying Triceps Extensions",
+              "notes": ""
+            },
+            {
+              "name": "Lying Triceps Extension",
+              "sets": 5,
+              "reps": "30/25/20/15/10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Wide Grip Barbell Curls",
+              "sets": 5,
+              "reps": "10/15/20/25/30 Reps",
+              "rest": "Superset 2: Wide Grip Barbell Curls, Incline Triceps Extension",
+              "notes": ""
+            },
+            {
+              "name": "Incline Triceps Extension",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Hanging Leg Raises",
+              "sets": 3,
+              "reps": "30 Reps",
+              "rest": "Superset 3: Hanging Leg Raises, Single Leg Calve Raises",
+              "notes": ""
+            },
+            {
+              "name": "Single Leg Bodyweight Calve Raises",
+              "sets": 3,
+              "reps": "30 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Active Recovery",
+          "cardio": "Congratulations you've made it to your active recovery day. Remember that you'll perform cardio today even though it's a recovery day. And you'll do a 16 hour fast following your last meal of the day.",
+          "exercises": []
+        },
+        {
+          "day": 7,
+          "title": "| Kaged",
+          "cardio": "Cardio",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "task": "",
+      "days": [
+        {
+          "day": 1,
+          "title": "Chest, Back & Abs",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Flat Dumbbell Presses",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Bent Over Dumbbell Rows",
+              "sets": 5,
+              "reps": "30/25/20/15/10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Incline Dumbbell Presses",
+              "sets": 5,
+              "reps": "30/25/20/15/10 Reps",
+              "rest": "Superset 2: Incline Dumbbell Presses, Dumbbell Deadlifts",
+              "notes": ""
+            },
+            {
+              "name": "Dumbbell Deadlifts",
+              "sets": 5,
+              "reps": "30/25/20/15/10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Sit-Ups",
+              "sets": 3,
+              "reps": "9 Reps",
+              "rest": "Superset 3: Sit-Ups, Lying Leg Raises",
+              "notes": ""
+            },
+            {
+              "name": "Lying Leg Raises",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Legs & Calves",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Squats",
+              "sets": 5,
+              "reps": "30/25/20/15/10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Leg Presses",
+              "sets": 5,
+              "reps": "30/25/20/15/10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Seated Calf Raises",
+              "sets": 5,
+              "reps": "30 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Arms",
+          "cardio": "Don't forget to continue doing your cardio this week. You should be doing 2 sessions of 60-minute steady-state cardio separated by at least 7 hours minimum.",
+          "exercises": [
+            {
+              "name": "Triceps Rope Extension",
+              "sets": 5,
+              "reps": "30/25/20/15/10 Reps",
+              "rest": "Superset 1: Triceps Rope Extension, Alternate Dumbbell Curls",
+              "notes": ""
+            },
+            {
+              "name": "Alternate Dumbbell Curls",
+              "sets": 5,
+              "reps": "30/25/20/15/10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Rope Curls",
+              "sets": 5,
+              "reps": "30 Reps",
+              "rest": "Superset 2: Rope Curls, Lying Triceps Extensions",
+              "notes": ""
+            },
+            {
+              "name": "Lying Triceps Extensions",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Shoulders",
+          "cardio": "Cardio",
+          "exercises": [
+            {
+              "name": "Seated Dumbbell Shoulder Presses",
+              "sets": 5,
+              "reps": "30/25/20/15/10 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Rear Dumbbell Raises",
+              "sets": 5,
+              "reps": "10/15/20/25/30 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Sit-Up Variation",
+              "sets": 3,
+              "reps": "Failure",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Finale",
+          "cardio": "Use program guidance for cardio.",
+          "exercises": [
+            {
+              "name": "Push Ups",
+              "sets": "",
+              "reps": "",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Curls",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Dips",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Rear Raises",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Side Raises",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            },
+            {
+              "name": "Shoulder Press",
+              "sets": 3,
+              "reps": "20 Reps",
+              "rest": "",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
