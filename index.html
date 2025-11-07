@@ -378,12 +378,19 @@
         <div class="page-content space-y-6">
             <div class="bg-gray-900 border border-gray-700 rounded-2xl p-5 space-y-4">
                 <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                    <p id="thenx-library-summary" class="text-sm text-gray-300">Explore signature bodyweight circuits curated from ThenX featured workouts. Type in a body part you want to workout! There are also Beginner, Intermediate, and Hard difficulty on the website!</p>
+                    <p id="thenx-library-summary" class="text-sm text-gray-300">Explore signature bodyweight circuits curated from ThenX featured workouts.</p>
                     <div class="w-full md:w-80">
                         <input id="thenx-search-input" type="text" placeholder="Search workouts..." class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
                     </div>
                 </div>
-                <div id="thenx-focus-chips" class="flex flex-wrap gap-2"></div>
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                    <div class="w-full sm:flex-1">
+                        <div class="overflow-x-auto -mx-1 sm:mx-0">
+                            <div id="thenx-focus-chips" class="inline-flex gap-2 px-1 sm:px-0 whitespace-nowrap"></div>
+                        </div>
+                    </div>
+                    <button id="thenx-clear-filters" class="btn-press text-xs sm:text-sm text-gray-300 hover:text-white border border-gray-700 rounded-full px-3 py-1">Clear Filters</button>
+                </div>
             </div>
             <div id="thenx-library-empty" class="hidden text-center text-gray-400 bg-gray-900 border border-gray-700 rounded-2xl p-8">
                 <p class="text-lg font-semibold text-gray-300">No workouts match your filters yet.</p>
@@ -437,6 +444,8 @@
         }).sort((a, b) => (b.likes ?? 0) - (a.likes ?? 0));
 
         const thenxFocusOptions = Array.from(new Set(thenxLibraryWorkouts.flatMap(workout => workout.focusLower))).filter(Boolean).sort();
+        const THENX_FAVORITES_KEY = 'thenxFavorites';
+        let thenxFavorites = loadThenxFavorites();
 
         if (!programs.thenxLibrary) {
             programs.thenxLibrary = {
@@ -471,7 +480,7 @@
                 image: "images/chris.heria.PNG",
                 imagePosition: "center top 25%",
                 programs: [
-                    { id: "thenxLibrary", subtitle: "Calisthenics Library", image: "images/thenx.cali.libarary.png", imagePosition: "center top" }
+                    { id: "thenxLibrary", subtitle: "Calisthenics Library", image: "images/thenx.cali.libary.PNG", imagePosition: "center top 40%" }
                 ]
             }
         };
@@ -499,6 +508,7 @@
         const thenxWorkoutList = document.getElementById('thenx-workout-list');
         const thenxLibraryEmpty = document.getElementById('thenx-library-empty');
         const thenxSearchInput = document.getElementById('thenx-search-input');
+        const thenxClearFiltersBtn = document.getElementById('thenx-clear-filters');
         const openStatsBtn = document.getElementById('open-stats');
         let thenxFilterState = { focus: 'all', search: '' };
         const quickExportBtn = document.getElementById('quick-export');
@@ -1048,15 +1058,28 @@
 
         function renderThenxFocusFilters() {
             if (!thenxFocusChipContainer) return;
-            const options = ['all', ...thenxFocusOptions];
+            if (thenxFilterState.focus === 'favorites' && thenxFavorites.size === 0) {
+                thenxFilterState.focus = 'all';
+            }
+            const hasFavorites = thenxFavorites.size > 0;
+            const options = ['all'];
+            if (hasFavorites || thenxFilterState.focus === 'favorites') {
+                options.push('favorites');
+            }
+            options.push(...thenxFocusOptions);
             thenxFocusChipContainer.innerHTML = '';
             options.forEach(option => {
                 const button = document.createElement('button');
                 const isActive = thenxFilterState.focus === option;
-                button.className = `btn-press px-3 py-1 rounded-full text-xs font-semibold border ${isActive ? 'bg-blue-600 text-white border-blue-500' : 'bg-gray-800 border-gray-700 text-gray-300 hover:border-blue-500'}`;
-                button.textContent = option === 'all' ? 'All' : formatThenxTag(option);
+                const isDisabled = option === 'favorites' && thenxFavorites.size === 0;
+                button.className = `btn-press px-3 py-1 rounded-full text-xs font-semibold border ${isActive ? 'bg-blue-600 text-white border-blue-500' : 'bg-gray-800 border-gray-700 text-gray-300 hover:border-blue-500'} ${isDisabled ? 'opacity-50 pointer-events-none' : ''}`;
+                if (option === 'favorites') {
+                    button.innerHTML = '★ Favorites';
+                } else {
+                    button.textContent = option === 'all' ? 'All' : formatThenxTag(option);
+                }
                 button.addEventListener('click', () => {
-                    if (thenxFilterState.focus === option) return;
+                    if (thenxFilterState.focus === option || isDisabled) return;
                     thenxFilterState.focus = option;
                     renderThenxFocusFilters();
                     if (programs.thenxLibrary) {
@@ -1070,9 +1093,14 @@
         function renderThenxLibraryList(program) {
             if (!thenxWorkoutList || !program) return;
             const workouts = Array.isArray(program.workouts) ? program.workouts : [];
+            const focusFilter = thenxFilterState.focus;
             const filtered = workouts.filter(workout => {
                 const focusLower = workout.focusLower || (Array.isArray(workout.focus) ? workout.focus.map(tag => String(tag).toLowerCase()) : []);
-                if (thenxFilterState.focus !== 'all' && !focusLower.includes(thenxFilterState.focus)) {
+                if (focusFilter === 'favorites') {
+                    if (!thenxFavorites.has(workout.url)) {
+                        return false;
+                    }
+                } else if (focusFilter !== 'all' && !focusLower.includes(focusFilter)) {
                     return false;
                 }
                 if (thenxFilterState.search) {
@@ -1092,11 +1120,12 @@
             } else {
                 if (thenxLibraryEmpty) thenxLibraryEmpty.classList.add('hidden');
                 filtered.forEach(workout => {
+                    const isFavorite = thenxFavorites.has(workout.url);
                     const card = document.createElement('a');
                     card.href = workout.url;
                     card.target = '_blank';
                     card.rel = 'noopener noreferrer';
-                    card.className = 'block bg-gray-900 border border-gray-700 rounded-2xl overflow-hidden transition hover:border-blue-500';
+                    card.className = 'block bg-gray-900 border border-gray-700 rounded-2xl overflow-hidden relative transition hover:border-blue-500';
                     const focusBadges = (workout.focus || []).map(tag => `<span class="px-2 py-1 rounded-full bg-gray-900/80 border border-gray-700 text-xs text-gray-200">${formatThenxTag(tag)}</span>`).join('');
                     const backgroundStyle = workout.image ? `background-image: url('${workout.image}'); background-size: cover; background-position: center;` : '';
                     card.innerHTML = `
@@ -1115,15 +1144,26 @@
                             <p class="text-sm text-blue-300">Open on ThenX &rarr;</p>
                         </div>
                     `;
+                    const favoriteButton = document.createElement('button');
+                    favoriteButton.type = 'button';
+                    favoriteButton.className = `absolute top-3 right-3 text-lg ${isFavorite ? 'text-yellow-300' : 'text-gray-300 hover:text-yellow-200'} bg-gray-900/70 backdrop-blur px-2 py-1 rounded-full`;
+                    favoriteButton.innerHTML = isFavorite ? '★ Fav' : '☆ Fav';
+                    favoriteButton.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        toggleThenxFavorite(workout.url, program);
+                    });
+                    card.appendChild(favoriteButton);
                     thenxWorkoutList.appendChild(card);
                 });
             }
 
             if (thenxLibrarySummary) {
                 const total = workouts.length;
-                const focusLabel = thenxFilterState.focus === 'all' ? 'All focuses' : formatThenxTag(thenxFilterState.focus);
+                const focusLabel = focusFilter === 'all' ? 'All focuses' : focusFilter === 'favorites' ? 'Favorites' : formatThenxTag(focusFilter);
                 const updatedLabel = program.updatedAt ? `Updated ${new Date(program.updatedAt).toLocaleDateString()}` : 'Latest refresh';
-                thenxLibrarySummary.textContent = `${filtered.length} of ${total} workouts · ${focusLabel} · ${updatedLabel}`;
+                const favoritesLabel = thenxFavorites.size ? ` · Favorites saved: ${thenxFavorites.size}` : '';
+                thenxLibrarySummary.textContent = `${filtered.length} of ${total} workouts · ${focusLabel} · ${updatedLabel}${favoritesLabel}`;
             }
         }
 
@@ -1293,6 +1333,11 @@
             const derivedTrainer = findTrainerForProgram(programName);
             if (!currentTrainer || !trainers[currentTrainer] || !trainers[currentTrainer].programs.some(p => p.id === programName)) {
                 currentTrainer = derivedTrainer;
+            }
+
+            const programTitleEl = document.getElementById('program-title');
+            if (programTitleEl) {
+                programTitleEl.textContent = program.title;
             }
 
             if (program.type === 'library') {
@@ -1680,6 +1725,53 @@
                     renderThenxLibraryList(programs.thenxLibrary);
                 }
             });
+        }
+        if (thenxClearFiltersBtn) {
+            thenxClearFiltersBtn.addEventListener('click', () => {
+                thenxFilterState = { focus: 'all', search: '' };
+                if (thenxSearchInput) {
+                    thenxSearchInput.value = '';
+                }
+                renderThenxFocusFilters();
+                if (programs.thenxLibrary) {
+                    renderThenxLibraryList(programs.thenxLibrary);
+                }
+            });
+        }
+
+        function loadThenxFavorites() {
+            try {
+                const raw = localStorage.getItem(THENX_FAVORITES_KEY);
+                if (!raw) return new Set();
+                return new Set(JSON.parse(raw));
+            } catch (error) {
+                console.warn('Unable to load ThenX favorites', error);
+                return new Set();
+            }
+        }
+
+        function saveThenxFavorites(favorites) {
+            try {
+                localStorage.setItem(THENX_FAVORITES_KEY, JSON.stringify(Array.from(favorites)));
+            } catch (error) {
+                console.warn('Unable to save ThenX favorites', error);
+            }
+        }
+
+        function toggleThenxFavorite(url, program) {
+            if (thenxFavorites.has(url)) {
+                thenxFavorites.delete(url);
+            } else {
+                thenxFavorites.add(url);
+            }
+            saveThenxFavorites(thenxFavorites);
+            if (thenxFilterState.focus === 'favorites' && thenxFavorites.size === 0) {
+                thenxFilterState.focus = 'all';
+            }
+            renderThenxFocusFilters();
+            if (program) {
+                renderThenxLibraryList(program);
+            }
         }
     </script>
 </body>
