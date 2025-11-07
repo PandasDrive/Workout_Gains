@@ -43,15 +43,24 @@
             left: 0;
             width: 100%;
             height: 100%;
-            /* Fade-in animation */
-            animation: fadeIn 0.3s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
         }
         .js-enabled .page.active {
             display: block; /* Show active page */
+        }
+        .js-enabled .page.entering {
+            opacity: 0;
+            transform: translateY(16px);
+        }
+        .js-enabled .page.entered {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .js-enabled .page.leaving {
+            opacity: 0;
+            transform: translateY(-16px);
         }
         .page-content {
             height: 100vh;
@@ -214,6 +223,37 @@
         <p id="message-text"></p>
     </div>
 
+    <!-- Weekly Summary Modal -->
+    <div id="summary-overlay" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50">
+        <div class="bg-gray-900 border border-gray-700 rounded-2xl max-w-xl w-full p-6 space-y-5 shadow-2xl">
+            <div class="flex justify-between items-start">
+                <div>
+                    <p class="text-sm uppercase tracking-widest text-blue-400">Weekly Snapshot</p>
+                    <h2 id="summary-title" class="text-2xl font-semibold text-white"></h2>
+                </div>
+                <button id="close-summary" class="btn-press text-gray-400 hover:text-white">Close</button>
+            </div>
+            <div class="bg-gray-800 rounded-xl border border-gray-700 p-4 space-y-3">
+                <div>
+                    <p class="text-xs uppercase tracking-wider text-gray-400">Cardio Completed</p>
+                    <p id="summary-cardio" class="text-lg font-semibold text-white"></p>
+                </div>
+                <div>
+                    <p class="text-xs uppercase tracking-wider text-gray-400">Weekly Task</p>
+                    <p id="summary-task" class="text-sm text-gray-300"></p>
+                </div>
+                <div>
+                    <p class="text-xs uppercase tracking-wider text-gray-400">Notes Entered</p>
+                    <ul id="summary-notes" class="text-sm text-gray-300 space-y-1"></ul>
+                </div>
+            </div>
+            <div>
+                <p class="text-xs uppercase tracking-wider text-gray-400">Historical Notes</p>
+                <div id="summary-history" class="bg-gray-800 rounded-xl border border-gray-700 p-4 space-y-3 max-h-48 overflow-y-auto text-sm text-gray-300"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Search Overlay -->
     <div id="search-overlay" class="search-overlay">
         <div class="flex items-center justify-between mb-6">
@@ -239,6 +279,8 @@
         }
 
         const PROGRESS_KEY = 'fitnessProgress';
+        const NOTES_KEY = 'fitnessNotes';
+        const HISTORY_KEY = 'fitnessHistory';
         const continueCard = document.getElementById('continue-card');
         const continueTitle = document.getElementById('continue-title');
         const continueSubtitle = document.getElementById('continue-subtitle');
@@ -249,7 +291,17 @@
         const closeSearchBtn = document.getElementById('close-search');
         const searchInput = document.getElementById('search-input');
         const searchResults = document.getElementById('search-results');
+        const summaryOverlay = document.getElementById('summary-overlay');
+        const closeSummaryBtn = document.getElementById('close-summary');
+        const summaryTitle = document.getElementById('summary-title');
+        const summaryCardio = document.getElementById('summary-cardio');
+        const summaryTask = document.getElementById('summary-task');
+        const summaryNotes = document.getElementById('summary-notes');
+        const summaryHistory = document.getElementById('summary-history');
         let searchIndex = [];
+        let notesCache = loadNotes();
+        let historyCache = loadHistory();
+        let pendingNavigation = null;
 
         function loadProgress() {
             try {
@@ -259,6 +311,74 @@
                 console.error('Failed to load progress', err);
                 return null;
             }
+        }
+
+        function loadNotes() {
+            try {
+                const stored = localStorage.getItem(NOTES_KEY);
+                return stored ? JSON.parse(stored) : {};
+            } catch (err) {
+                console.error('Failed to load notes', err);
+                return {};
+            }
+        }
+
+        function saveNotes(notes) {
+            try {
+                localStorage.setItem(NOTES_KEY, JSON.stringify(notes));
+                notesCache = notes;
+            } catch (err) {
+                console.error('Failed to save notes', err);
+            }
+        }
+
+        function loadHistory() {
+            try {
+                const stored = localStorage.getItem(HISTORY_KEY);
+                return stored ? JSON.parse(stored) : [];
+            } catch (err) {
+                console.error('Failed to load history', err);
+                return [];
+            }
+        }
+
+        function saveHistory(history) {
+            try {
+                localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+                historyCache = history;
+            } catch (err) {
+                console.error('Failed to save history', err);
+            }
+        }
+
+        function getWeekNotes(programId, weekNumber) {
+            return (notesCache[programId] && notesCache[programId][weekNumber]) ? { ...notesCache[programId][weekNumber] } : {};
+        }
+
+        function getDayNote(programId, weekNumber, dayNumber) {
+            const programNotes = notesCache[programId];
+            if (!programNotes) return '';
+            const weekNotes = programNotes[weekNumber];
+            if (!weekNotes) return '';
+            return weekNotes[dayNumber] || '';
+        }
+
+        function setDayNote(programId, weekNumber, dayNumber, value) {
+            if (!notesCache[programId]) {
+                notesCache[programId] = {};
+            }
+            if (!notesCache[programId][weekNumber]) {
+                notesCache[programId][weekNumber] = {};
+            }
+            if (value && value.trim()) {
+                notesCache[programId][weekNumber][dayNumber] = value.trim();
+            } else {
+                delete notesCache[programId][weekNumber][dayNumber];
+                if (Object.keys(notesCache[programId][weekNumber]).length === 0) {
+                    delete notesCache[programId][weekNumber];
+                }
+            }
+            saveNotes(notesCache);
         }
 
         function saveProgress(data) {
@@ -298,6 +418,89 @@
             showWeek(programId, weekNumber);
             showDay(programId, weekNumber, dayNumber);
             searchOverlay.classList.remove('active');
+        }
+
+        function logWeekCompletion(programId, weekNumber, summary) {
+            const entry = {
+                id: `${programId}-${weekNumber}-${Date.now()}`,
+                timestamp: Date.now(),
+                programId,
+                programTitle: programs[programId]?.title || programId,
+                week: weekNumber,
+                summary
+            };
+            historyCache.unshift(entry);
+            if (historyCache.length > 100) {
+                historyCache = historyCache.slice(0, 100);
+            }
+            saveHistory(historyCache);
+        }
+
+        function formatCardioSummary(days) {
+            const cardioLines = days
+                .map(day => day.cardio)
+                .filter(Boolean);
+            if (!cardioLines.length) return 'No cardio logged this week.';
+            const uniqueLines = Array.from(new Set(cardioLines));
+            return uniqueLines.join('\n');
+        }
+
+        function showSummaryModal(programId, weekNumber, weekNotes) {
+            const program = programs[programId];
+            if (!program) return;
+            const weekData = program.weeks.find(w => w.week === weekNumber);
+            if (!weekData) return;
+
+            summaryTitle.textContent = `${program.title} – Week ${weekNumber}`;
+            const cardioSummary = formatCardioSummary(weekData.days);
+            summaryCardio.innerHTML = cardioSummary.replace(/\n/g, '<br>');
+            summaryTask.textContent = weekData.task || 'No weekly task logged.';
+
+            summaryNotes.innerHTML = '';
+            const noteEntries = Object.entries(weekNotes || {});
+            if (noteEntries.length === 0) {
+                const li = document.createElement('li');
+                li.textContent = 'No notes entered this week.';
+                summaryNotes.appendChild(li);
+            } else {
+                noteEntries.sort((a, b) => Number(a[0]) - Number(b[0]));
+                noteEntries.forEach(([day, note]) => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<span class="text-blue-300">Day ${day}:</span> ${note}`;
+                    summaryNotes.appendChild(li);
+                });
+            }
+
+            summaryHistory.innerHTML = '';
+            const matchingHistory = historyCache.filter(entry => entry.programId === programId && entry.week === weekNumber);
+            if (!matchingHistory.length) {
+                const p = document.createElement('p');
+                p.className = 'text-gray-400';
+                p.textContent = 'No previous runs yet. Complete this week to start building your timeline.';
+                summaryHistory.appendChild(p);
+            } else {
+                matchingHistory.forEach(entry => {
+                    const wrap = document.createElement('div');
+                    const date = new Date(entry.timestamp).toLocaleString();
+                    wrap.innerHTML = `
+                        <p class="text-xs text-gray-500">${date}</p>
+                        <ul class="text-sm text-gray-300 space-y-1">
+                            ${Object.entries(entry.summary).map(([day, note]) => `<li><span class="text-blue-300">Day ${day}:</span> ${note}</li>`).join('')}
+                        </ul>
+                    `;
+                    summaryHistory.appendChild(wrap);
+                });
+            }
+
+            summaryOverlay.classList.remove('hidden');
+        }
+
+        function hideSummaryModal() {
+            summaryOverlay.classList.add('hidden');
+            if (pendingNavigation && pendingNavigation.type === 'week') {
+                showWeek(pendingNavigation.program, pendingNavigation.week);
+            }
+            pendingNavigation = null;
         }
 
         function buildSearchIndex() {
@@ -359,24 +562,36 @@
         }
 
         // --- PAGE NAVIGATION & STATE ---
-        let currentPage = 'page-main-menu';
+        let currentPage = '';
         let currentProgram = '';
         let currentWeek = 0;
         let currentDay = 0;
 
         function showPage(pageId) {
+            if (currentPage === pageId) {
+                return;
+            }
+
             const currentPageElement = document.getElementById(currentPage);
             if (currentPageElement) {
-                currentPageElement.classList.remove('active');
+                currentPageElement.classList.remove('entered');
+                currentPageElement.classList.add('leaving');
+                setTimeout(() => {
+                    currentPageElement.classList.remove('active', 'leaving');
+                }, 250);
             }
             
             const nextPageElement = document.getElementById(pageId);
-            if (nextPageElement) {
-                nextPageElement.classList.add('active');
-            } else {
+            if (!nextPageElement) {
                 console.error("Page not found:", pageId);
                 return;
             }
+
+            nextPageElement.classList.add('active', 'entering');
+            requestAnimationFrame(() => {
+                nextPageElement.classList.remove('entering');
+                nextPageElement.classList.add('entered');
+            });
             
             currentPage = pageId;
 
@@ -524,6 +739,52 @@
                 </div>
             `;
 
+            // 2.5 Training Notes
+            const noteCard = document.createElement('div');
+            noteCard.className = 'bg-gray-800 rounded-lg p-4 border border-gray-700 space-y-3';
+            const noteTitle = document.createElement('h2');
+            noteTitle.className = 'text-xl font-bold text-white';
+            noteTitle.textContent = 'Training Notes';
+            const noteSubtitle = document.createElement('p');
+            noteSubtitle.className = 'text-sm text-gray-400';
+            noteSubtitle.textContent = 'Capture weights, pacing, or how you felt.';
+            const noteTextarea = document.createElement('textarea');
+            noteTextarea.className = 'w-full bg-gray-900 border border-gray-700 rounded-xl p-3 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none';
+            noteTextarea.rows = 4;
+            noteTextarea.value = getDayNote(programName, weekNumber, dayNumber);
+
+            let noteSaveTimer;
+            noteTextarea.addEventListener('input', (event) => {
+                clearTimeout(noteSaveTimer);
+                const value = event.target.value;
+                noteSaveTimer = setTimeout(() => {
+                    setDayNote(programName, weekNumber, dayNumber, value);
+                }, 250);
+            });
+
+            const previousHistory = historyCache.find(entry => entry.programId === programName && entry.week === weekNumber && entry.summary && entry.summary[String(dayNumber)]);
+            const historyBlock = document.createElement('div');
+            historyBlock.className = 'bg-gray-900 border border-gray-800 rounded-lg p-3';
+            if (previousHistory) {
+                const date = new Date(previousHistory.timestamp).toLocaleDateString();
+                historyBlock.innerHTML = `
+                    <p class="text-xs uppercase tracking-wider text-gray-500">Previously Logged</p>
+                    <p class="text-sm text-gray-300">${previousHistory.summary[String(dayNumber)]}</p>
+                    <p class="text-xs text-gray-500 mt-2">Completed on ${date}</p>
+                `;
+            } else {
+                historyBlock.innerHTML = `
+                    <p class="text-xs uppercase tracking-wider text-gray-500">Previously Logged</p>
+                    <p class="text-sm text-gray-400">Complete this week to start building history.</p>
+                `;
+            }
+
+            noteCard.appendChild(noteTitle);
+            noteCard.appendChild(noteSubtitle);
+            noteCard.appendChild(noteTextarea);
+            noteCard.appendChild(historyBlock);
+            workoutContent.appendChild(noteCard);
+
             // 3. Add Exercises
             if (day.exercises && day.exercises.length > 0) {
                 const exerciseList = document.createElement('div');
@@ -566,9 +827,28 @@
         }
 
         function completeWorkout() {
+            if (!currentProgram || !currentWeek) {
+                showMessage("Workout complete!");
+                return;
+            }
+
             showMessage("Workout complete!");
-            // Next step: Save this progress and go back to the Day list
-            // e.g., showWeek(currentProgram, currentWeek);
+
+            const program = programs[currentProgram];
+            const weekData = program && program.weeks ? program.weeks.find(w => w.week === currentWeek) : null;
+            const days = weekData && Array.isArray(weekData.days) ? weekData.days : [];
+            const lastDayNumber = days.length ? days[days.length - 1].day : null;
+            const isFinalDay = lastDayNumber === currentDay;
+            const weekNotes = getWeekNotes(currentProgram, currentWeek);
+            const hasNotes = Object.keys(weekNotes).length > 0;
+
+            if (isFinalDay && hasNotes) {
+                logWeekCompletion(currentProgram, currentWeek, weekNotes);
+                showSummaryModal(currentProgram, currentWeek, weekNotes);
+                pendingNavigation = { type: 'week', program: currentProgram, week: currentWeek };
+            } else {
+                showWeek(currentProgram, currentWeek);
+            }
         }
 
         // Custom message function
@@ -617,6 +897,12 @@
         searchOverlay.addEventListener('click', (e) => {
             if (e.target === searchOverlay) {
                 searchOverlay.classList.remove('active');
+            }
+        });
+        closeSummaryBtn.addEventListener('click', hideSummaryModal);
+        summaryOverlay.addEventListener('click', (e) => {
+            if (e.target === summaryOverlay) {
+                hideSummaryModal();
             }
         });
     </script>
