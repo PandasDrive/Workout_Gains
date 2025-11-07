@@ -76,6 +76,32 @@
             border-bottom: 1px solid #374151; 
             z-index: 10;
         }
+        .continue-card {
+            border: 1px solid #2563eb33;
+            background: linear-gradient(135deg, rgba(37,99,235,0.15), rgba(59,130,246,0.05));
+        }
+        .search-trigger {
+            border: 1px solid #374151;
+        }
+        .search-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(17,24,39,0.95);
+            display: none;
+            flex-direction: column;
+            padding: 2.5rem 1.5rem;
+            z-index: 50;
+        }
+        .search-overlay.active {
+            display: flex;
+        }
+        .search-input {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+        }
+        .search-result {
+            border: 1px solid #1f2937;
+        }
     </style>
 </head>
 <body class="no-js h-full text-gray-200 antialiased">
@@ -87,9 +113,32 @@
                 <h1 class="text-4xl font-bold text-white mb-2">My Fitness Hub</h1>
                 <p class="text-lg text-gray-400">Your personal program tracker.</p>
             </header>
-            <main class="w-full max-w-md">
+            <main class="w-full max-w-xl space-y-6">
+                <div class="flex items-center justify-between">
+                    <div class="text-left">
+                        <p class="text-sm uppercase tracking-widest text-blue-400">Welcome Back</p>
+                        <p class="text-2xl font-semibold text-white">Your Programs</p>
+                    </div>
+                    <button id="open-search" class="search-trigger btn-press px-4 py-2 rounded-xl flex items-center text-sm font-medium text-blue-300 hover:text-white">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"></path></svg>
+                        Search Workouts
+                    </button>
+                </div>
+
+                <div id="continue-card" class="continue-card hidden rounded-2xl p-5 flex flex-col md:flex-row md:items-center md:justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <p class="text-sm uppercase tracking-wider text-blue-300">Continue</p>
+                        <p id="continue-title" class="text-lg font-semibold text-white"></p>
+                        <p id="continue-subtitle" class="text-sm text-gray-300"></p>
+                    </div>
+                    <div class="space-y-2 md:space-y-0 md:space-x-3 md:flex">
+                        <button id="continue-btn" class="btn-press bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium">Resume Workout</button>
+                        <button id="reset-progress" class="btn-press text-sm text-gray-300 hover:text-white px-4 py-2 rounded-lg border border-transparent">Reset</button>
+                    </div>
+                </div>
+
                 <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wider text-center mb-4">Select a Program</h2>
-                <div class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <button onclick="showProgram('gethin')" class="btn-press flex items-center justify-between w-full p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
                         <div class="text-left">
                             <p class="text-lg font-semibold text-white">Kris Gethin</p>
@@ -165,6 +214,19 @@
         <p id="message-text"></p>
     </div>
 
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="flex items-center justify-between mb-6">
+            <h2 class="text-2xl font-semibold text-white">Search Exercises</h2>
+            <button id="close-search" class="btn-press text-gray-400 hover:text-white text-sm">Close</button>
+        </div>
+        <div class="mb-6">
+            <input id="search-input" type="text" placeholder="Search by exercise name..." class="search-input w-full px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-white placeholder-gray-500" />
+            <p class="text-sm text-gray-400 mt-2">Tip: try "squat", "pulldown", or "DTP".</p>
+        </div>
+        <div id="search-results" class="overflow-y-auto space-y-3"></div>
+    </div>
+
     <script src="data/program-data.js"></script>
     <script>
         document.body.classList.remove('no-js');
@@ -174,6 +236,126 @@
         const programs = window.programs || {};
         if (!Object.keys(programs).length) {
             console.warn("Program data is not loaded.");
+        }
+
+        const PROGRESS_KEY = 'fitnessProgress';
+        const continueCard = document.getElementById('continue-card');
+        const continueTitle = document.getElementById('continue-title');
+        const continueSubtitle = document.getElementById('continue-subtitle');
+        const continueBtn = document.getElementById('continue-btn');
+        const resetProgressBtn = document.getElementById('reset-progress');
+        const searchOverlay = document.getElementById('search-overlay');
+        const openSearchBtn = document.getElementById('open-search');
+        const closeSearchBtn = document.getElementById('close-search');
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
+        let searchIndex = [];
+
+        function loadProgress() {
+            try {
+                const stored = localStorage.getItem(PROGRESS_KEY);
+                return stored ? JSON.parse(stored) : null;
+            } catch (err) {
+                console.error('Failed to load progress', err);
+                return null;
+            }
+        }
+
+        function saveProgress(data) {
+            try {
+                localStorage.setItem(PROGRESS_KEY, JSON.stringify(data));
+            } catch (err) {
+                console.error('Failed to save progress', err);
+            }
+        }
+
+        function clearProgress() {
+            localStorage.removeItem(PROGRESS_KEY);
+            updateContinueCard();
+        }
+
+        function updateContinueCard() {
+            const progress = loadProgress();
+            if (!progress) {
+                continueCard.classList.add('hidden');
+                return;
+            }
+            const program = programs[progress.programId];
+            if (!program) {
+                continueCard.classList.add('hidden');
+                return;
+            }
+            continueCard.classList.remove('hidden');
+            continueTitle.textContent = `${program.title} – Week ${progress.week}, Day ${progress.day}`;
+            continueSubtitle.textContent = `Last visited: ${progress.dayTitle}`;
+            continueBtn.dataset.program = progress.programId;
+            continueBtn.dataset.week = progress.week;
+            continueBtn.dataset.day = progress.day;
+        }
+
+        function resumeProgress(programId, weekNumber, dayNumber) {
+            showProgram(programId);
+            showWeek(programId, weekNumber);
+            showDay(programId, weekNumber, dayNumber);
+            searchOverlay.classList.remove('active');
+        }
+
+        function buildSearchIndex() {
+            searchIndex = [];
+            Object.entries(programs).forEach(([programId, program]) => {
+                program.weeks.forEach(week => {
+                    week.days.forEach(day => {
+                        day.exercises.forEach(exercise => {
+                            searchIndex.push({
+                                programId,
+                                programTitle: program.title,
+                                week: week.week,
+                                weekTask: week.task,
+                                day: day.day,
+                                dayTitle: day.title,
+                                cardio: day.cardio,
+                                exerciseName: exercise.name,
+                                notes: exercise.notes
+                            });
+                        });
+                    });
+                });
+            });
+        }
+
+        function renderSearchResults(query) {
+            const normalized = query.trim().toLowerCase();
+            searchResults.innerHTML = '';
+            if (!normalized) {
+                return;
+            }
+            const results = searchIndex.filter(item => item.exerciseName.toLowerCase().includes(normalized)).slice(0, 30);
+            if (results.length === 0) {
+                const empty = document.createElement('div');
+                empty.className = 'text-gray-400';
+                empty.textContent = 'No exercises found. Try another keyword.';
+                searchResults.appendChild(empty);
+                return;
+            }
+            results.forEach(item => {
+                const card = document.createElement('button');
+                card.className = 'search-result w-full text-left p-4 rounded-xl bg-gray-800 hover:bg-gray-750';
+                card.innerHTML = `
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-sm uppercase tracking-wider text-blue-300">${item.programTitle}</p>
+                            <p class="text-lg font-semibold text-white">${item.exerciseName}</p>
+                            <p class="text-sm text-gray-300">Week ${item.week}, Day ${item.day} – ${item.dayTitle}</p>
+                            ${item.notes ? `<p class="text-xs text-gray-400 mt-1">${item.notes}</p>` : ''}
+                        </div>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                `;
+                card.onclick = () => {
+                    resumeProgress(item.programId, item.week, item.day);
+                };
+                searchResults.appendChild(card);
+            });
         }
 
         // --- PAGE NAVIGATION & STATE ---
@@ -373,6 +555,14 @@
             }
             
             showPage('page-workout-details');
+
+            saveProgress({
+                programId: programName,
+                week: weekNumber,
+                day: dayNumber,
+                dayTitle: day.title
+            });
+            updateContinueCard();
         }
 
         function completeWorkout() {
@@ -399,6 +589,36 @@
 
         // Initialize the app on first load
         showPage('page-main-menu');
+        updateContinueCard();
+        buildSearchIndex();
+
+        continueBtn.addEventListener('click', () => {
+            const programId = continueBtn.dataset.program;
+            const week = Number(continueBtn.dataset.week);
+            const day = Number(continueBtn.dataset.day);
+            resumeProgress(programId, week, day);
+        });
+        resetProgressBtn.addEventListener('click', () => {
+            clearProgress();
+        });
+
+        openSearchBtn.addEventListener('click', () => {
+            searchOverlay.classList.add('active');
+            searchInput.focus();
+            searchInput.value = '';
+            searchResults.innerHTML = '';
+        });
+        closeSearchBtn.addEventListener('click', () => {
+            searchOverlay.classList.remove('active');
+        });
+        searchInput.addEventListener('input', (e) => {
+            renderSearchResults(e.target.value);
+        });
+        searchOverlay.addEventListener('click', (e) => {
+            if (e.target === searchOverlay) {
+                searchOverlay.classList.remove('active');
+            }
+        });
     </script>
 </body>
 </html>
