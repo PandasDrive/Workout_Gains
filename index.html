@@ -1951,7 +1951,7 @@
         if (directType) {
             const sourceText = directTypeFromRest ? restRaw : notesRaw;
             const parsedMembers = collectMembersFromText(sourceText, exercises, index);
-            const hasStructure = sourceText.includes(':') || /(perform|followed|includes)/i.test(sourceText);
+                        const hasStructure = sourceText.includes(':') || /(perform|followed|includes|circuit|compound)/i.test(sourceText);
             if (parsedMembers.size >= 2 || hasStructure) {
                 return buildMetaFromText(directType, sourceText, index, exercises, parsedMembers);
             }
@@ -1968,7 +1968,7 @@
                 if (!prevType) continue;
                 const prevText = prevTypeFromRest ? prevRest : prevNotes;
                 const parsedMembers = collectMembersFromText(prevText, exercises, prev);
-                const hasStructure = prevText.includes(':') || /(perform|followed|includes)/i.test(prevText);
+                const hasStructure = prevText.includes(':') || /(perform|followed|includes|circuit|compound)/i.test(prevText);
                 if (!hasStructure && parsedMembers.size < 2) continue;
                 const members = ensureMembers(prevType, new Set(parsedMembers), exercises, prev);
                 if (members.has(normalizedName)) {
