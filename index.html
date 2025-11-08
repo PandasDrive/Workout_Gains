@@ -166,6 +166,53 @@
         .collapsible-trigger[aria-expanded="true"] .icon-rotate {
             transform: rotate(90deg);
         }
+
+        .metric-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 9999px;
+            border: 1px solid var(--metric-color, rgba(59, 130, 246, 0.35));
+            background: linear-gradient(135deg, color-mix(in srgb, var(--metric-color, rgba(59,130,246,0.3)) 20%, rgba(17,24,39,0.9)), rgba(17, 24, 39, 0.9));
+            box-shadow: 0 4px 10px color-mix(in srgb, var(--metric-color, rgba(59,130,246,0.3)) 25%, transparent);
+            text-transform: uppercase;
+            font-size: 0.65rem;
+            letter-spacing: 0.12em;
+            color: rgba(191, 219, 254, 0.85);
+        }
+
+        .metric-badge-dot {
+            display: inline-block;
+            width: 0.45rem;
+            height: 0.45rem;
+            border-radius: 9999px;
+            background: var(--metric-color, rgba(96, 165, 250, 0.9));
+            box-shadow: 0 0 4px color-mix(in srgb, var(--metric-color, rgba(96,165,250,0.9)) 40%, transparent);
+        }
+
+        .metric-badge-label {
+            color: rgba(191, 219, 254, 0.7);
+        }
+
+        .metric-badge-value {
+            color: rgba(219, 234, 254, 0.95);
+            text-transform: none;
+            letter-spacing: 0;
+            font-weight: 600;
+        }
+
+        .metric-badge--sets {
+            --metric-color: rgba(167, 139, 250, 0.45);
+        }
+
+        .metric-badge--reps {
+            --metric-color: rgba(96, 165, 250, 0.45);
+        }
+
+        .metric-badge--rest {
+            --metric-color: rgba(248, 180, 127, 0.45);
+        }
     </style>
 </head>
 <body class="no-js h-full text-gray-200 antialiased">
@@ -1594,19 +1641,23 @@
                         topRow.appendChild(titleWrap);
 
                         const metrics = [
-                            exercise.sets ? { label: 'Sets', value: exercise.sets } : null,
-                            exercise.reps ? { label: 'Reps', value: exercise.reps } : null,
-                            exercise.rest ? { label: 'Rest', value: exercise.rest } : null
+                            exercise.sets ? { label: 'Sets', value: exercise.sets, type: 'sets' } : null,
+                            exercise.reps ? { label: 'Reps', value: exercise.reps, type: 'reps' } : null,
+                            exercise.rest ? { label: 'Rest', value: exercise.rest, type: 'rest' } : null
                         ].filter(Boolean);
 
                         if (metrics.length) {
-                            const metricsWrap = document.createElement('div');
-                            metricsWrap.className = 'flex flex-wrap items-center gap-2 text-xs uppercase tracking-wider text-gray-400 self-start sm:self-auto sm:justify-end';
+                        const metricsWrap = document.createElement('div');
+                        metricsWrap.className = 'flex flex-wrap items-center gap-3 text-xs uppercase tracking-wider text-gray-400 self-start sm:self-auto sm:justify-end';
 
                             metrics.forEach(metric => {
                                 const badge = document.createElement('span');
-                                badge.className = 'px-2 py-1 rounded-lg bg-gray-900 border border-gray-700 text-gray-300';
-                                badge.innerHTML = `<span class="text-gray-500">${metric.label}:</span> <span class="text-gray-200 normal-case">${metric.value}</span>`;
+                                badge.className = `metric-badge metric-badge--${metric.type}`;
+                            badge.innerHTML = `
+                                <span class="metric-badge-dot"></span>
+                                <span class="metric-badge-label">${metric.label}</span>
+                                <span class="metric-badge-value">${metric.value}</span>
+                            `;
                                 metricsWrap.appendChild(badge);
                             });
 
