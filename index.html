@@ -1608,11 +1608,13 @@
                     </div>
                 `;
                 card.dataset.angle = angle.toString();
+                card.style.transition = 'none';
                 splashCardsContainer.appendChild(card);
                 splashMeta.push({ card, angle });
                 setSplashCardTransform(card, angle, baseRadius, 0.92);
                 card.style.opacity = '0';
                 card.style.visibility = 'hidden';
+                card.dataset.transitionFrozen = 'true';
             });
 
             requestAnimationFrame(() => splashCarousel.classList.add('ready'));
@@ -1665,6 +1667,10 @@
                     card.dataset.angle = angle;
                     requestAnimationFrame(() => {
                         requestAnimationFrame(() => {
+                            if (card.dataset.transitionFrozen === 'true') {
+                                card.style.transition = '';
+                                delete card.dataset.transitionFrozen;
+                            }
                             card.style.visibility = 'visible';
                             card.style.opacity = '1';
                             setSplashCardTransform(card, angle, baseRadius, 1);
