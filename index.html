@@ -1607,10 +1607,11 @@
                         <span class="splash-card-name">${item.label || ''}</span>
                     </div>
                 `;
+                card.dataset.angle = angle.toString();
                 splashCardsContainer.appendChild(card);
-            splashMeta.push({ card, angle });
-            setSplashCardTransform(card, angle, baseRadius, 0.92);
-            card.style.opacity = '0';
+                splashMeta.push({ card, angle });
+                setSplashCardTransform(card, angle, baseRadius, 0.92);
+                card.style.opacity = '0';
                 card.style.visibility = 'hidden';
             });
 
@@ -1625,32 +1626,34 @@
                 splashFinished = true;
                 if (fallbackTimer) clearTimeout(fallbackTimer);
                 splashCarousel.classList.remove('spinning');
-                splashCarousel.classList.add('expanding');
                 splashMeta.forEach(({ card, angle }, idx) => {
                     setTimeout(() => {
-                        setSplashCardTransform(card, angle, baseRadius * 3.6, 1.08);
+                        setSplashCardTransform(card, angle, baseRadius, 1.08);
                         card.style.opacity = '0';
                         setTimeout(() => {
                             card.style.visibility = 'hidden';
                         }, 100);
-                    }, idx * 40);
+                    }, idx * 35);
                 });
+                splashOverlay.classList.add('is-hidden');
                 setTimeout(() => {
-                    splashOverlay.classList.add('is-hidden');
-                    setTimeout(() => {
-                        if (splashOverlay.parentElement) {
-                            splashOverlay.remove();
-                        }
-                        startTrainerCardEntrance();
-                    }, 350);
-                }, 260);
+                    if (splashOverlay.parentElement) {
+                        splashOverlay.remove();
+                    }
+                    splashCarousel.classList.remove('expanding');
+                    splashMeta.forEach(({ card, angle }) => {
+                        setSplashCardTransform(card, angle, baseRadius, 1);
+                    });
+                    startTrainerCardEntrance();
+                }, 350);
             };
 
             splashCarousel.addEventListener('animationend', (event) => {
                 if (event.animationName === 'carousel-spin') {
-                    splashMeta.forEach(({ card }) => {
+                    splashMeta.forEach(({ card, angle }) => {
                         card.style.opacity = '1';
-                        setSplashCardTransform(card, parseFloat(card.dataset.angle || 0), baseRadius, 1);
+                        card.style.visibility = 'visible';
+                        setSplashCardTransform(card, angle, baseRadius, 1);
                     });
                     finishSplash();
                 }
