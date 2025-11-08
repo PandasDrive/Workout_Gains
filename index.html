@@ -1576,7 +1576,7 @@
                         item.className = 'p-4 space-y-3';
 
                         const topRow = document.createElement('div');
-                        topRow.className = 'flex flex-wrap items-baseline justify-between gap-4';
+                        topRow.className = 'flex flex-col gap-3 sm:flex-row sm:items-baseline sm:justify-between';
 
                         const titleWrap = document.createElement('div');
                         titleWrap.className = 'flex items-baseline gap-3';
@@ -1601,7 +1601,7 @@
 
                         if (metrics.length) {
                             const metricsWrap = document.createElement('div');
-                            metricsWrap.className = 'flex flex-wrap items-center gap-2 text-xs uppercase tracking-wider text-gray-400';
+                            metricsWrap.className = 'flex flex-wrap items-center gap-2 text-xs uppercase tracking-wider text-gray-400 self-start sm:self-auto sm:justify-end';
 
                             metrics.forEach(metric => {
                                 const badge = document.createElement('span');
