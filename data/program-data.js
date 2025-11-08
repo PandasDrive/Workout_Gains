@@ -4627,9 +4627,2202 @@ window.programs = {
       }
     ]
   },
-kagedLean: {
-    title: "Kaged 12-Week Lean Muscle",
-    weeks: [
+  "tawnaBikini": {
+    "title": "Tawna Eubanks Bikini Trainer",
+    "weeks": [
+      {
+        "week": 1,
+        "task": "Lock in bikini prep habits: push mind–muscle connection, log nutrition, hit 5 steady-state cardio sessions (25 min at 135–150 bpm), and pose for 5 minutes after every lift.",
+        "days": [
+          {
+            "day": 1,
+            "title": "Glutes & Delts",
+            "cardio": "Steady-state cardio: 25 min at 135–150 bpm (count this toward your 5 weekly sessions through Week 2, then drop to 3).",
+            "exercises": [
+              {
+                "name": "Barbell Hip Thrust",
+                "sets": "4",
+                "reps": "10,5,20,20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Barbell Walking Lunge",
+                "sets": "4",
+                "reps": "10 steps each leg",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Back Extension",
+                "sets": "2",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Gluteator",
+                "sets": "4",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Lateral Raise Machine",
+                "sets": "4",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Alternating Dumbbell Front Raise",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Reverse Cable Fly",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Six Ways",
+                "sets": "2",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "title": "Back & Arms",
+            "cardio": "Steady-state cardio: 25 min at 135–150 bpm (count this toward your 5 weekly sessions through Week 2, then drop to 3). Add 5 min vacuum holds after cardio.",
+            "exercises": [
+              {
+                "name": "Close Grip Pull-Down",
+                "sets": "1",
+                "reps": "10-20 Reps",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Chin-Up",
+                "sets": "2",
+                "reps": "Failure",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "BARBELL T-BAR Row",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Alternate Exercise: Machine Row",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Wide-grip Pulldown",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Close-grip Bench Press",
+                "sets": "3",
+                "reps": "6, 9, 12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "EZ-Bar Curl",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Overhead Rope Extension",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Preacher Curl",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "title": "Rest + Active Recovery",
+            "cardio": "Optional: 30 min brisk walk or light cycling + 10 min guided stretching.",
+            "exercises": []
+          },
+          {
+            "day": 4,
+            "title": "Shoulders",
+            "cardio": "Steady-state cardio: 25 min at 135–150 bpm (count this toward your 5 weekly sessions through Week 2, then drop to 3).",
+            "exercises": [
+              {
+                "name": "Smith Machine Shoulder Press",
+                "sets": 4,
+                "reps": "8-10",
+                "rest": "90s",
+                "notes": "Control eccentric for 3 seconds."
+              },
+              {
+                "name": "Incline Dumbbell Press",
+                "sets": "3",
+                "reps": "15",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Dumbbell Lateral Raise",
+                "sets": "2",
+                "reps": "8* * 4-second lowering count.",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Cable Upright Row",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Standing Dumbbell Lateral Raise",
+                "sets": "4",
+                "reps": "12, 10, 8, 8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Front Plate Raise",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Reverse Pec Deck",
+                "sets": "4",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 5,
+            "title": "Legs",
+            "cardio": "Steady-state cardio: 25 min at 135–150 bpm (count this toward your 5 weekly sessions through Week 2, then drop to 3).",
+            "exercises": [
+              {
+                "name": "Lying Leg Curl",
+                "sets": "3",
+                "reps": "6",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Leg Press",
+                "sets": "4",
+                "reps": "20,15,10,10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Stiff Legged Deadlift",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Leg Extension",
+                "sets": "3",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Leg Curl",
+                "sets": "3",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 6,
+            "title": "Glutes Focus",
+            "cardio": "Steady-state cardio: 25 min at 135–150 bpm (count this toward your 5 weekly sessions through Week 2, then drop to 3).",
+            "exercises": [
+              {
+                "name": "Banded Hip Thrust",
+                "sets": "2",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Side Leg Raises",
+                "sets": "2",
+                "reps": "8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Dumbbell Frog Pump",
+                "sets": "2",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Seated Hip Abduction",
+                "sets": "3",
+                "reps": "30,30,30* *First set leaning back, second set upright, and third set leaning forward.",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 7,
+            "title": "Rest + Mobility",
+            "cardio": "Optional: 20-30 min light swim or yoga flow + 5 min posing practice.",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "task": "Refine week-one execution, keep 5 steady-state sessions at 135–150 bpm before tapering next phase, and continue daily posing and nutrition tracking.",
+        "days": [
+          {
+            "day": 8,
+            "title": "Glutes & Delts",
+            "cardio": "Steady-state cardio: 25 min at 135–150 bpm (count this toward your 5 weekly sessions through Week 2, then drop to 3).",
+            "exercises": [
+              {
+                "name": "Barbell Hip Thrust",
+                "sets": "4",
+                "reps": "10,5,20,20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Barbell Walking Lunge",
+                "sets": "4",
+                "reps": "10 steps each leg",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Back Extension",
+                "sets": "2",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Gluteator",
+                "sets": "4",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Lateral Raise Machine",
+                "sets": "4",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Alternating Dumbbell Front Raise",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Reverse Cable Fly",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Six Ways",
+                "sets": "2",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 9,
+            "title": "Back & Arms",
+            "cardio": "Steady-state cardio: 25 min at 135–150 bpm (count this toward your 5 weekly sessions through Week 2, then drop to 3). Add 5 min vacuum holds after cardio.",
+            "exercises": [
+              {
+                "name": "Close Grip Pull-Down",
+                "sets": "1",
+                "reps": "10-20 Reps",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Chin-Up",
+                "sets": "2",
+                "reps": "Failure",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "BARBELL T-BAR Row",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Alternate Exercise: Machine Row",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Wide-grip Pulldown",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Close-grip Bench Press",
+                "sets": "3",
+                "reps": "6, 3, 12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "EZ-Bar Curl",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Overhead Rope Extension",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Preacher Curl",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 10,
+            "title": "Rest Day",
+            "cardio": "Optional active recovery: light walk, mobility, or yoga. No required cardio session today.",
+            "exercises": []
+          },
+          {
+            "day": 11,
+            "title": "Shoulders",
+            "cardio": "Steady-state cardio: 25 min at 135–150 bpm (count this toward your 5 weekly sessions through Week 2, then drop to 3).",
+            "exercises": [
+              {
+                "name": "Push Press",
+                "sets": "2",
+                "reps": "5* * 4-second lowering count.",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Incline Dumbbell Press",
+                "sets": "3",
+                "reps": "15",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Dumbbell Lateral Raise",
+                "sets": "2",
+                "reps": "8* * 4-second lowering count.",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Cable Upright Row",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Standing Dumbbell Lateral Raise",
+                "sets": "4",
+                "reps": "12, 10, 8, 8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Front Plate Raise",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Reverse Pec Deck",
+                "sets": "4",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 12,
+            "title": "Legs",
+            "cardio": "Steady-state cardio: 25 min at 135–150 bpm (count this toward your 5 weekly sessions through Week 2, then drop to 3).",
+            "exercises": [
+              {
+                "name": "Lying Leg Curl",
+                "sets": "3",
+                "reps": "6",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Leg Press",
+                "sets": "4",
+                "reps": "20,15,10,10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Stiff Legged Deadlift",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Leg Extension",
+                "sets": "3",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Leg Curl",
+                "sets": "3",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 13,
+            "title": "Glutes",
+            "cardio": "Steady-state cardio: 25 min at 135–150 bpm (count this toward your 5 weekly sessions through Week 2, then drop to 3).",
+            "exercises": [
+              {
+                "name": "Banded Hip Thrust",
+                "sets": "2",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Side Leg Raises",
+                "sets": "2",
+                "reps": "8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Dumbbell Frog Pump",
+                "sets": "2",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Seated Hip Abduction",
+                "sets": "3",
+                "reps": "30,30,30* *First set leaning back, second set upright, and third set leaning forward.",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 14,
+            "title": "Rest Day",
+            "cardio": "Optional active recovery: light walk, mobility, or yoga. No required cardio session today.",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "task": "Shift to three steady-state sessions (25 min at 135-150 bpm), layer in 3-second eccentrics on key lifts, and keep posing daily.",
+        "days": [
+          {
+            "day": 15,
+            "title": "Glutes & Delts",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Barbell Hip Thrust",
+                "sets": "4",
+                "reps": "10,5,20,20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Barbell Walking Lunge",
+                "sets": "4",
+                "reps": "10 steps each leg",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Back Extension",
+                "sets": "2",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Gluteator",
+                "sets": "4",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Lateral Raise Machine",
+                "sets": "4",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Alternating Dumbbell Front Raise",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Reverse Cable Fly",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Six Ways",
+                "sets": "2",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 16,
+            "title": "Back & Arms",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward). Add 5 min vacuum holds after cardio.",
+            "exercises": [
+              {
+                "name": "Close Grip Pull-Down",
+                "sets": "1",
+                "reps": "10-20 Reps",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Chin-Up",
+                "sets": "2",
+                "reps": "Failure",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "BARBELL T-BAR Row",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Alternate Exercise: Machine Row",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Wide-grip Pulldown",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Close-grip Bench Press",
+                "sets": "3",
+                "reps": "6, 3, 12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "EZ-Bar Curl",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Overhead Rope Extension",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Superset: Preacher Curl -> Triceps Dip Machine",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 17,
+            "title": "Rest Day",
+            "cardio": "Optional active recovery: light walk, mobility, or yoga. No required cardio session today.",
+            "exercises": []
+          },
+          {
+            "day": 18,
+            "title": "Shoulders",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Push Press",
+                "sets": "2",
+                "reps": "5* * 4-second lowering count.",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Incline Dumbbell Press",
+                "sets": "3",
+                "reps": "15",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Dumbbell Lateral Raise",
+                "sets": "2",
+                "reps": "8* * 4-second lowering count.",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Cable Upright Row",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Standing Dumbbell Lateral Raise",
+                "sets": "4",
+                "reps": "12, 10, 8, 8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Front Plate Raise",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Reverse Pec Deck",
+                "sets": "4",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 19,
+            "title": "Legs",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Lying Leg Curl",
+                "sets": "3",
+                "reps": "6",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Leg Press",
+                "sets": "4",
+                "reps": "20,15,10,10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Stiff Legged Deadlift",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Leg Extension",
+                "sets": "3",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Leg Curl",
+                "sets": "3",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 20,
+            "title": "Glutes",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Banded Hip Thrust",
+                "sets": "2",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Side Leg Raises",
+                "sets": "2",
+                "reps": "8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Dumbbell Frog Pump",
+                "sets": "2",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Seated Hip Abduction",
+                "sets": "3",
+                "reps": "30,30,30* *First set leaning back, second set upright, and third set leaning forward.",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 21,
+            "title": "Rest Day",
+            "cardio": "Optional active recovery: light walk, mobility, or yoga. No required cardio session today.",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "task": "Hold steady with three cardio sessions, chase progressive overload without sacrificing form, and continue daily posing practice.",
+        "days": [
+          {
+            "day": 22,
+            "title": "Glutes & Delts",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Barbell Hip Thrust",
+                "sets": "4",
+                "reps": "10,5,20,20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Barbell Walking Lunge",
+                "sets": "4",
+                "reps": "10 steps each leg",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Back Extension",
+                "sets": "2",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Gluteator",
+                "sets": "4",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Lateral Raise Machine",
+                "sets": "4",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Alternating Dumbbell Front Raise",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Reverse Cable Fly",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Six Ways",
+                "sets": "2",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 23,
+            "title": "Back & Arms",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward). Add 5 min vacuum holds after cardio.",
+            "exercises": [
+              {
+                "name": "Close Grip Pull-Down",
+                "sets": "1",
+                "reps": "10-12 Reps",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Chin-Up",
+                "sets": "2",
+                "reps": "Failure",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "BARBELL T-BAR Row",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Alternate Exercise: Machine Row",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Wide-grip Pulldown",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Close-grip Bench Press",
+                "sets": "3",
+                "reps": "6, 3, 12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "EZ-Bar Curl",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Overhead Rope Extension",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Superset: Preacher Curl -> Triceps Dip Machine",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 24,
+            "title": "Rest Day",
+            "cardio": "Optional active recovery: light walk, mobility, or yoga. No required cardio session today.",
+            "exercises": []
+          },
+          {
+            "day": 25,
+            "title": "Shoulders",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Push Press",
+                "sets": "2",
+                "reps": "5* * 4-second lowering count.",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Incline Dumbbell Press",
+                "sets": "3",
+                "reps": "15",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Dumbbell Lateral Raise",
+                "sets": "2",
+                "reps": "8* * 4-second lowering count.",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Cable Upright Row",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Standing Dumbbell Lateral Raise",
+                "sets": "4",
+                "reps": "12, 10, 8, 8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Front Plate Raise",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Reverse Pec Deck",
+                "sets": "4",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 26,
+            "title": "Legs",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Lying Leg Curl",
+                "sets": "3",
+                "reps": "6* *4-second lowering count",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Leg Press",
+                "sets": "4",
+                "reps": "20,15,10,10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Stiff Legged Deadlift",
+                "sets": "4",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Leg Extension",
+                "sets": "3",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Leg Curl",
+                "sets": "3",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 27,
+            "title": "Glutes",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Banded Hip Thrust",
+                "sets": "2",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Side Leg Raises",
+                "sets": "2",
+                "reps": "8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Dumbbell Frog Pump",
+                "sets": "2",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Seated Hip Abduction",
+                "sets": "3",
+                "reps": "30,30,30* *First set leaning back, second set upright, and third set leaning forward.",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 28,
+            "title": "Rest Day",
+            "cardio": "Optional active recovery: light walk, mobility, or yoga. No required cardio session today.",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "task": "New split kicks in - keep three steady-state sessions, track pumps and midsection tightness, and rehearse stage transitions.",
+        "days": [
+          {
+            "day": 29,
+            "title": "Glutes",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Barbell Glute Bridge (Dropset)",
+                "sets": "1",
+                "reps": "10/10/10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Gluteator",
+                "sets": "1",
+                "reps": "20/20/20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Bulgarian Split Squat",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Stiff-Legged Deadlift",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Lying Hip Abduction",
+                "sets": "2",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 30,
+            "title": "Delts & Abs",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Seated Barbell Military Press",
+                "sets": "3",
+                "reps": "8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Upright Cable Row",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Delt Blaster Giant Set",
+                "sets": "3",
+                "reps": "10/10/10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Six Ways",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Hanging Leg Raise",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Cable Crunch",
+                "sets": "2",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Decline Weighted Sit-up",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 31,
+            "title": "Rest Day",
+            "cardio": "Optional active recovery: light walk, mobility, or yoga. No required cardio session today.",
+            "exercises": []
+          },
+          {
+            "day": 32,
+            "title": "Chest & Back",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Weighted Chin-up",
+                "sets": "3",
+                "reps": "3",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Close-Grip Bench Press",
+                "sets": "3",
+                "reps": "8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Inverted Row",
+                "sets": "3",
+                "reps": "FAILURE",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "One-Arm Dumbbell Row",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Face Pull",
+                "sets": "2",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Superset: EZ-Bar Curl -> Skullcrusher",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 33,
+            "title": "Legs",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Single-Leg Press",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Leg Press",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Standing Leg Curl",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Goblet Squat",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Back Extension",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Calf Raise",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 34,
+            "title": "Delts & Glutes",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "One-Arm Cable Lateral Raise",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Barbell Front Raise",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Reverse Pec Deck",
+                "sets": "3",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Barbell Glute Bridge",
+                "sets": "3",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Seated Hip Abduction",
+                "sets": "3",
+                "reps": "30/30/30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Dumbbell Frog Pump",
+                "sets": "3",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 35,
+            "title": "Rest",
+            "cardio": "Optional active recovery: light walk, mobility, or yoga. No required cardio session today.",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "task": "Match or beat Week 5 numbers while staying precise, maintain three cardio sessions, and polish presentation work.",
+        "days": [
+          {
+            "day": 36,
+            "title": "Glutes",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Barbell Glute Bridge (Dropset)",
+                "sets": "1",
+                "reps": "10/10/10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Gluteator",
+                "sets": "1",
+                "reps": "20/20/20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Bulgarian Split Squat",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Stiff-Legged Deadlift",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Lying Hip Abduction",
+                "sets": "2",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 37,
+            "title": "Delts & Abs",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Seated Barbell Military Press",
+                "sets": "3",
+                "reps": "8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Upright Cable Row",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Delt Blaster Giant Set",
+                "sets": "3",
+                "reps": "10/10/10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Six Ways",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Hanging Leg Raise",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Cable Crunch",
+                "sets": "2",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Decline Weighted Sit-up",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 38,
+            "title": "Rest Day",
+            "cardio": "Optional active recovery: light walk, mobility, or yoga. No required cardio session today.",
+            "exercises": []
+          },
+          {
+            "day": 39,
+            "title": "Chest & Back",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Weighted Chin-up",
+                "sets": "3",
+                "reps": "3",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Close-Grip Bench Press",
+                "sets": "3",
+                "reps": "8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Inverted Row",
+                "sets": "3",
+                "reps": "FAILURE",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "One-Arm Dumbbell Row",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Face Pull",
+                "sets": "2",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Superset: EZ-Bar Curl -> Skullcrusher",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 40,
+            "title": "Legs",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Single-Leg Press",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Leg Press",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Standing Leg Curl",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Goblet Squat",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Back Extension",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Calf Raise",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 41,
+            "title": "Glutes & Delts",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "One-Arm Cable Lateral Raise",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Barbell Front Raise",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Reverse Pec Deck",
+                "sets": "3",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Barbell Glute Bridge",
+                "sets": "3",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Seated Hip Abduction",
+                "sets": "3",
+                "reps": "30/30/30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Dumbbell Frog Pump",
+                "sets": "3",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 42,
+            "title": "Rest Day",
+            "cardio": "Optional active recovery: light walk, mobility, or yoga. No required cardio session today.",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "task": "Push conditioning with tight rest, keep three cardio sessions, and run full posing walkthroughs after lifts.",
+        "days": [
+          {
+            "day": 43,
+            "title": "Glutes",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Barbell Glute Bridge (Dropset)",
+                "sets": "1",
+                "reps": "10/10/10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Gluteator",
+                "sets": "1",
+                "reps": "20/20/20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Bulgarian Split Squat",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Stiff-Legged Deadlift",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Lying Hip Abduction",
+                "sets": "2",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 44,
+            "title": "Delts & Abs",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Seated Barbell Military Press",
+                "sets": "3",
+                "reps": "8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Upright Cable Row",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Delt Blaster Giant Set",
+                "sets": "3",
+                "reps": "10/10/10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Six Ways",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Hanging Leg Raise",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Cable Crunch",
+                "sets": "2",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Decline Weighted Sit-up",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 45,
+            "title": "Rest Day",
+            "cardio": "Optional active recovery: light walk, mobility, or yoga. No required cardio session today.",
+            "exercises": []
+          },
+          {
+            "day": 46,
+            "title": "Chest & Back",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Weighted Chin-up",
+                "sets": "3",
+                "reps": "3",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Close-Grip Bench Press",
+                "sets": "3",
+                "reps": "8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Inverted Row",
+                "sets": "3",
+                "reps": "FAILURE",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "One-Arm Dumbbell Row",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Face Pull",
+                "sets": "2",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Superset: EZ-Bar Curl -> Skullcrusher",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 47,
+            "title": "Legs",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Single-Leg Press",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Leg Press",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Standing Leg Curl",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Goblet Squat",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Back Extension",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Calf Raise",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 48,
+            "title": "Delts & Glutes",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "One-Arm Cable Lateral Raise",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Barbell Front Raise",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Reverse Pec Deck",
+                "sets": "3",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Barbell Glute Bridge",
+                "sets": "3",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Seated Hip Abduction",
+                "sets": "3",
+                "reps": "30/30/30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Dumbbell Frog Pump",
+                "sets": "3",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 49,
+            "title": "Rest Day",
+            "cardio": "Optional active recovery: light walk, mobility, or yoga. No required cardio session today.",
+            "exercises": []
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "task": "Final polish week: prioritize recovery, maintain three steady-state sessions, and rehearse stage presentation daily.",
+        "days": [
+          {
+            "day": 50,
+            "title": "Glutes",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Barbell Glute Bridge (Dropset)",
+                "sets": "1",
+                "reps": "10/10/10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Gluteator",
+                "sets": "1",
+                "reps": "20/20/20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Bulgarian Split Squat",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Stiff-Legged Deadlift",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Lying Hip Abduction",
+                "sets": "2",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 51,
+            "title": "Delts & Abs",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Seated Barbell Military Press",
+                "sets": "3",
+                "reps": "8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Upright Cable Row",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Delt Blaster Giant Set",
+                "sets": "3",
+                "reps": "10/10/10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Six Ways",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Hanging Leg Raise",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Cable Crunch",
+                "sets": "2",
+                "reps": "20",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Decline Weighted Sit-up",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 52,
+            "title": "Rest Day",
+            "cardio": "Optional active recovery: light walk, mobility, or yoga. No required cardio session today.",
+            "exercises": []
+          },
+          {
+            "day": 53,
+            "title": "Chest & Back",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Weighted Chin-up",
+                "sets": "3",
+                "reps": "3",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Close-Grip Bench Press",
+                "sets": "3",
+                "reps": "8",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Inverted Row",
+                "sets": "3",
+                "reps": "FAILURE",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "One-Arm Dumbbell Row",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Seated Face Pull",
+                "sets": "2",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Superset: EZ-Bar Curl -> Skullcrusher",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 54,
+            "title": "Legs",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "Single-Leg Press",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Leg Press",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Standing Leg Curl",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Goblet Squat",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Back Extension",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Calf Raise",
+                "sets": "2",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 55,
+            "title": "Delts & Glutes",
+            "cardio": "Steady-state cardio: 25 min at 135-150 bpm (count this toward your 3 weekly sessions from Week 3 onward).",
+            "exercises": [
+              {
+                "name": "One-Arm Cable Lateral Raise",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Barbell Front Raise",
+                "sets": "3",
+                "reps": "10",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Reverse Pec Deck",
+                "sets": "3",
+                "reps": "12",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Barbell Glute Bridge",
+                "sets": "3",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Banded Seated Hip Abduction",
+                "sets": "3",
+                "reps": "30/30/30",
+                "rest": "",
+                "notes": ""
+              },
+              {
+                "name": "Dumbbell Frog Pump",
+                "sets": "3",
+                "reps": "30",
+                "rest": "",
+                "notes": ""
+              }
+            ]
+          },
+          {
+            "day": 56,
+            "title": "Final Day!",
+            "cardio": "Optional celebration: light movement, stretching, and posing practice - no required cardio today.",
+            "exercises": []
+          }
+        ]
+      }
+    ]
+  },
+    "kagedLean": {
+        "title": "Kaged 12-Week Lean Muscle",
+        "weeks": [
         {
             "week": 1,
             "task": "",
