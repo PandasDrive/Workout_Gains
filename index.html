@@ -1766,11 +1766,110 @@
                         return item;
                     };
 
-                    const getGroupMeta = (exercise) => {
+        const GROUP_CAPTIONS = {
+            superset: 'Perform each move back-to-back before resting.',
+            triple: 'Move through the trio without rest, then recover after completing all three.',
+            circuit: 'Work through the circuit continuously before taking your rest.',
+            giant: 'Cycle through each move in order, then repeat for the prescribed rounds.'
+        };
+
+        const normalizeExerciseName = (value = '') => value
+            .toLowerCase()
+            .replace(/[^a-z0-9\s]/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+        const detectGroupType = (text = '') => {
+            const lower = text.toLowerCase();
+            if (!lower) return null;
+            if (lower.includes('triple set')) return 'triple';
+            if (lower.includes('giant set')) return 'giant';
+            if (lower.includes('superset')) return 'superset';
+            if (lower.includes('circuit')) return 'circuit';
+            return null;
+        };
+
+        const toTitleCase = (value = '') => value
+            .replace(/\s+/g, ' ')
+            .trim()
+            .split(' ')
+            .filter(Boolean)
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+            .join(' ');
+
+        const buildGroupLabelFromText = (type, text = '') => {
+            if (!text) return toTitleCase(type);
+            const trimmed = text.trim();
+            const colonIndex = trimmed.indexOf(':');
+            if (colonIndex !== -1) {
+                return toTitleCase(trimmed.substring(0, colonIndex));
+            }
+            const periodIndex = trimmed.indexOf('.');
+            if (periodIndex !== -1) {
+                return toTitleCase(trimmed.substring(0, periodIndex));
+            }
+            const match = trimmed.match(new RegExp(`${type}\\s*\\d+`, 'i'));
+            if (match) {
+                return toTitleCase(match[0]);
+            }
+            return toTitleCase(type);
+        };
+
+        const collectMembersFromText = (text = '', exercises, anchorIndex) => {
+            const normalizedText = normalizeExerciseName(text);
+            const members = new Set();
+            if (!normalizedText) return members;
+
+            const maxIndex = Math.min(exercises.length, anchorIndex + 12);
+            for (let i = anchorIndex; i < maxIndex; i++) {
+                const candidate = normalizeExerciseName(exercises[i]?.name || '');
+                if (!candidate) continue;
+                if (normalizedText.includes(candidate)) {
+                    members.add(candidate);
+                }
+            }
+            return members;
+        };
+
+        const ensureMembers = (type, members, exercises, anchorIndex) => {
+            const fallbackCount = type === 'triple' ? 3 : type === 'circuit' ? 5 : type === 'giant' ? 3 : 2;
+            if (!members.size) {
+                for (let i = anchorIndex; i < Math.min(exercises.length, anchorIndex + fallbackCount); i++) {
+                    const candidate = normalizeExerciseName(exercises[i]?.name || '');
+                    if (candidate) {
+                        members.add(candidate);
+                    }
+                }
+            } else {
+                const anchorName = normalizeExerciseName(exercises[anchorIndex]?.name || '');
+                if (anchorName) {
+                    members.add(anchorName);
+                }
+            }
+            return members;
+        };
+
+        const buildMetaFromText = (type, text, sourceIndex, exercises, presetMembers = null) => {
+            const label = buildGroupLabelFromText(type, text);
+            const baseMembers = presetMembers ? new Set(presetMembers) : collectMembersFromText(text, exercises, sourceIndex);
+            const members = ensureMembers(type, baseMembers, exercises, sourceIndex);
+            return {
+                key: `${type}|rest|${sourceIndex}`,
+                label,
+                type,
+                derivedFromRest: true,
+                caption: GROUP_CAPTIONS[type] || GROUP_CAPTIONS.superset,
+                members
+            };
+        };
+
+        const getGroupMeta = (exercise, index, exercises) => {
                         if (!exercise) return null;
                         const subsectionRaw = typeof exercise.subsection === 'string' ? exercise.subsection.trim() : '';
                         const sectionRaw = typeof exercise.section === 'string' ? exercise.section.trim() : '';
                         const nameRaw = typeof exercise.name === 'string' ? exercise.name.trim() : '';
+        const restRaw = typeof exercise.rest === 'string' ? exercise.rest.trim() : '';
+        const notesRaw = typeof exercise.notes === 'string' ? exercise.notes.trim() : '';
 
                         const buildMeta = (type, source, labelPrimary, labelSecondary = '') => {
                             const lowerPrimary = labelPrimary.toLowerCase();
@@ -1781,13 +1880,9 @@
                                 key,
                                 label,
                                 type,
-                        caption: type === 'giant'
-                            ? 'Cycle through each move in order, then repeat for the prescribed rounds.'
-                            : type === 'triple'
-                                ? 'Move through the trio without rest, then recover after completing all three.'
-                                : type === 'circuit'
-                                    ? 'Work through the circuit continuously before taking your rest.'
-                                    : 'Perform each move back-to-back before resting.'
+                        derivedFromRest: false,
+                        caption: GROUP_CAPTIONS[type] || GROUP_CAPTIONS.superset,
+                        members: null
                             };
                         };
 
@@ -1850,18 +1945,50 @@
                             }
                         }
 
-                        return null;
+        const directTypeFromRest = detectGroupType(restRaw);
+        const directTypeFromNotes = detectGroupType(notesRaw);
+        const directType = directTypeFromRest || directTypeFromNotes;
+        if (directType) {
+            const sourceText = directTypeFromRest ? restRaw : notesRaw;
+            const parsedMembers = collectMembersFromText(sourceText, exercises, index);
+            const hasStructure = sourceText.includes(':') || /(perform|followed|includes)/i.test(sourceText);
+            if (parsedMembers.size >= 2 || hasStructure) {
+                return buildMetaFromText(directType, sourceText, index, exercises, parsedMembers);
+            }
+        }
+
+        const normalizedName = normalizeExerciseName(nameRaw);
+        if (normalizedName) {
+            for (let prev = index - 1; prev >= 0; prev--) {
+                const prevRest = typeof exercises[prev]?.rest === 'string' ? exercises[prev].rest.trim() : '';
+                const prevNotes = typeof exercises[prev]?.notes === 'string' ? exercises[prev].notes.trim() : '';
+                const prevTypeFromRest = detectGroupType(prevRest);
+                const prevTypeFromNotes = detectGroupType(prevNotes);
+                const prevType = prevTypeFromRest || prevTypeFromNotes;
+                if (!prevType) continue;
+                const prevText = prevTypeFromRest ? prevRest : prevNotes;
+                const parsedMembers = collectMembersFromText(prevText, exercises, prev);
+                const hasStructure = prevText.includes(':') || /(perform|followed|includes)/i.test(prevText);
+                if (!hasStructure && parsedMembers.size < 2) continue;
+                const members = ensureMembers(prevType, new Set(parsedMembers), exercises, prev);
+                if (members.has(normalizedName)) {
+                    return buildMetaFromText(prevType, prevText, prev, exercises, members);
+                }
+            }
+        }
+
+        return null;
                     };
 
                     for (let idx = 0; idx < day.exercises.length; idx++) {
                         const exercise = day.exercises[idx];
-                        const groupMeta = getGroupMeta(exercise);
+                const groupMeta = getGroupMeta(exercise, idx, day.exercises);
 
                         if (groupMeta) {
                             const groupedExercises = [];
                             while (
                                 idx < day.exercises.length &&
-                                getGroupMeta(day.exercises[idx])?.key === groupMeta.key
+                        getGroupMeta(day.exercises[idx], idx, day.exercises)?.key === groupMeta.key
                             ) {
                                 groupedExercises.push(day.exercises[idx]);
                                 idx++;
@@ -1890,7 +2017,7 @@
                             };
 
                             let buckets = [groupedExercises];
-                            if (['superset', 'triple', 'circuit'].includes(groupMeta.type)) {
+                            if (!groupMeta.derivedFromRest && ['superset', 'triple', 'circuit'].includes(groupMeta.type)) {
                                 const hasNumberedPrefixes = groupedExercises.some(ex => {
                                     const name = typeof ex.name === 'string' ? ex.name.trim() : '';
                                     return /^\d+[A-Za-z]+/.test(name);
@@ -1940,7 +2067,7 @@
                                     });
                                 buckets = sortedKeys.map(key => bucketsByPrefix.get(String(key)));
                                 }
-                            } else if (groupMeta.type === 'giant') {
+                            } else if (!groupMeta.derivedFromRest && groupMeta.type === 'giant') {
                                 const bucketsByBase = new Map();
                                 groupedExercises.forEach(ex => {
                                     const name = typeof ex.name === 'string' ? ex.name.trim() : '';
