@@ -114,6 +114,143 @@
         .trainer-card:hover .trainer-card-shade {
             opacity: 0.7;
         }
+
+        /* Splash Intro */
+        #splash-overlay {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at center, rgba(17, 24, 39, 0.96), rgba(10, 12, 28, 0.98));
+            z-index: 70;
+            transition: opacity 0.6s ease;
+            perspective: 1200px;
+            overflow: hidden;
+            transform-style: preserve-3d;
+        }
+        #splash-overlay.is-hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .splash-carousel {
+            position: relative;
+            width: min(68vw, 360px);
+            height: min(68vw, 360px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform-style: preserve-3d;
+            transform: rotateX(22deg) rotateY(0deg) scale(0.85);
+            opacity: 0;
+            transition: opacity 0.7s ease;
+        }
+        .splash-carousel.ready {
+            opacity: 1;
+        }
+        .splash-carousel.spinning {
+            animation: carousel-spin 3.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) forwards;
+        }
+        .splash-carousel.expanding {
+            animation: carousel-expand 0.7s ease-in forwards;
+        }
+        #splash-cards {
+            position: absolute;
+            inset: 0;
+            transform-style: preserve-3d;
+        }
+        .splash-card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 148px;
+            height: 76px;
+            padding: 0.75rem 1rem;
+            border-radius: 1.25rem;
+            border: 1px solid rgba(59, 130, 246, 0.28);
+            box-shadow: 0 16px 45px rgba(37, 99, 235, 0.28);
+            overflow: hidden;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.32);
+            transform-origin: center;
+            visibility: hidden;
+            transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.9s ease;
+            backface-visibility: visible;
+            transform-style: preserve-3d;
+        }
+        .splash-card-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            filter: saturate(1.1);
+        }
+        .splash-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(140deg, rgba(17, 24, 39, 0.76), rgba(17, 24, 39, 0.25));
+            display: flex;
+            align-items: flex-end;
+            padding: 0.55rem 0.75rem;
+        }
+        .splash-card-name {
+            display: block;
+            text-transform: uppercase;
+            font-size: 0.78rem;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            color: rgba(248, 250, 252, 0.92);
+        }
+        .trainer-card.card-await {
+            opacity: 0;
+            transform: translateY(26px) scale(0.97);
+        }
+        .trainer-card.card-fly-in {
+            animation: trainer-card-fly-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+            animation-delay: var(--card-delay, 0s);
+        }
+
+        @keyframes carousel-spin {
+            0% {
+                transform: rotateX(22deg) rotateY(0deg) scale(0.85);
+            }
+            100% {
+                transform: rotateX(22deg) rotateY(360deg) scale(1.02);
+            }
+        }
+        @keyframes carousel-expand {
+            0% {
+                transform: rotateX(22deg) rotateY(360deg) scale(1.02);
+            }
+            100% {
+                transform: rotateX(22deg) rotateY(380deg) scale(3.1);
+                opacity: 0;
+            }
+        }
+        @keyframes trainer-card-fly-in {
+            0% {
+                opacity: 0;
+                transform: translateY(24px) scale(0.96);
+            }
+            60% {
+                opacity: 1;
+                transform: translateY(-4px) scale(1.01);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        @media (max-width: 480px) {
+            .splash-card {
+                width: 124px;
+                height: 68px;
+                padding: 0.65rem 0.9rem;
+            }
+            .splash-card-name {
+                font-size: 0.75rem;
+            }
+        }
         .search-trigger {
             border: 1px solid #374151;
         }
@@ -282,6 +419,12 @@
     </style>
 </head>
 <body class="no-js h-full text-gray-200 antialiased">
+
+    <div id="splash-overlay">
+        <div class="splash-carousel" id="splash-carousel">
+            <div id="splash-cards"></div>
+        </div>
+    </div>
 
     <!-- Page 1: Main Menu -->
     <div id="page-main-menu" class="page active">
@@ -624,7 +767,7 @@
                 image: "images/tawna.eubank.PNG",
                 imagePosition: "center top 28%",
                 programs: [
-                    { id: "tawnaBikini", subtitle: "Bikini Trainer", image: "images/tawna.eubank.PNG", imagePosition: "center top 28%" }
+                    { id: "tawnaBikini", subtitle: "Bikini Trainer", image: "images/biki.8.week.PNG", imagePosition: "center top 35%" }
                 ]
             }
         };
@@ -675,6 +818,9 @@
         const summaryTask = document.getElementById('summary-task');
         const summaryNotes = document.getElementById('summary-notes');
         const summaryHistory = document.getElementById('summary-history');
+        const splashOverlay = document.getElementById('splash-overlay');
+        const splashCarousel = document.getElementById('splash-carousel');
+        const splashCardsContainer = document.getElementById('splash-cards');
         let searchIndex = [];
         let notesCache = loadNotes();
         let historyCache = loadHistory();
@@ -1355,11 +1501,178 @@
                         <svg class="w-5 h-5 text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </div>
                 `;
+                button.classList.add('card-await');
+                button.dataset.cardAnimated = 'false';
                 button.addEventListener('click', () => {
                     showTrainer(trainerId);
                 });
                 trainerCardContainer.appendChild(button);
             });
+            startTrainerCardEntrance();
+        }
+
+        function startTrainerCardEntrance() {
+            if (!trainerCardContainer) return;
+            if (splashOverlay && splashOverlay.parentElement && !splashOverlay.classList.contains('is-hidden')) {
+                return;
+            }
+            const pendingCards = Array.from(trainerCardContainer.querySelectorAll('.trainer-card'))
+                .filter(card => card.dataset.cardAnimated !== 'true');
+            if (!pendingCards.length) return;
+
+            pendingCards.forEach((card, index) => {
+                card.dataset.cardAnimated = 'true';
+                card.style.setProperty('--card-delay', `${index * 0.09}s`);
+                card.classList.add('card-fly-in');
+                card.addEventListener('animationend', () => {
+                    card.classList.remove('card-fly-in');
+                    card.classList.remove('card-await');
+                }, { once: true });
+            });
+        }
+
+        function setSplashCardTransform(card, angleDeg, radiusPx, scale = 1) {
+            card.style.transform = `translate3d(-50%, -50%, 0) rotateY(${angleDeg}deg) translateZ(${radiusPx}px) rotateY(${-angleDeg}deg) scale(${scale})`;
+        }
+
+        function initSplashSequence() {
+            if (!splashOverlay || !splashCarousel || !splashCardsContainer) {
+                startTrainerCardEntrance();
+                return;
+            }
+
+            const splashItems = [];
+            const seen = new Set();
+            Object.entries(trainers).forEach(([trainerId, trainer]) => {
+                if (trainer.image && !seen.has(`trainer:${trainerId}`)) {
+                    splashItems.push({
+                        label: trainer.name,
+                        image: trainer.image
+                    });
+                    seen.add(`trainer:${trainerId}`);
+                }
+                if (Array.isArray(trainer.programs)) {
+                    trainer.programs.forEach(programRef => {
+                        const programId = programRef.id;
+                        if (!programId) return;
+                        const splashId = `program:${programId}`;
+                        if (seen.has(splashId)) return;
+                        const programData = programs[programId];
+                        const programLabel = programRef.subtitle || programData?.title || trainer.name;
+                        const programImage = programRef.image || programData?.image;
+                        if (programImage) {
+                            splashItems.push({
+                                label: programLabel,
+                                image: programImage
+                            });
+                            seen.add(splashId);
+                        }
+                    });
+                }
+            });
+
+            while (splashItems.length > 0 && splashItems.length < 4) {
+                splashItems.push({ ...splashItems[splashItems.length % splashItems.length] });
+            }
+
+            if (!splashItems.length) {
+                splashOverlay.classList.add('is-hidden');
+                setTimeout(() => {
+                    if (splashOverlay.parentElement) splashOverlay.remove();
+                    startTrainerCardEntrance();
+                }, 250);
+                return;
+            }
+
+            splashCardsContainer.innerHTML = '';
+            const viewportMin = Math.min(window.innerWidth, window.innerHeight);
+            let baseRadius = Math.max(130, Math.min(viewportMin * 0.22, 220));
+            const desiredSize = baseRadius * 2 + 200;
+            const maxSize = viewportMin * 0.92;
+            const finalSize = Math.min(desiredSize, maxSize);
+            splashCarousel.style.width = `${finalSize}px`;
+            splashCarousel.style.height = `${finalSize}px`;
+            baseRadius = Math.min(baseRadius, finalSize / 2 - 80);
+            baseRadius = Math.max(baseRadius, 110);
+
+            const splashMeta = [];
+            splashItems.forEach((item, index) => {
+                const angle = (360 / splashItems.length) * index;
+                const card = document.createElement('div');
+                card.className = 'splash-card';
+                const backgroundStyle = item.image ? `style="background-image: url('${item.image}')"` : '';
+                card.innerHTML = `
+                    <div class="splash-card-bg" ${backgroundStyle}></div>
+                    <div class="splash-card-overlay">
+                        <span class="splash-card-name">${item.label || ''}</span>
+                    </div>
+                `;
+                splashCardsContainer.appendChild(card);
+            splashMeta.push({ card, angle });
+            setSplashCardTransform(card, angle, baseRadius, 0.92);
+            card.style.opacity = '0';
+                card.style.visibility = 'hidden';
+            });
+
+            requestAnimationFrame(() => splashCarousel.classList.add('ready'));
+
+            let splashFinished = false;
+            let fallbackTimer = null;
+            const spinDurationMs = 3200;
+
+            const finishSplash = () => {
+                if (splashFinished) return;
+                splashFinished = true;
+                if (fallbackTimer) clearTimeout(fallbackTimer);
+                splashCarousel.classList.remove('spinning');
+                splashCarousel.classList.add('expanding');
+                splashMeta.forEach(({ card, angle }, idx) => {
+                    setTimeout(() => {
+                        setSplashCardTransform(card, angle, baseRadius * 3.6, 1.08);
+                        card.style.opacity = '0';
+                        setTimeout(() => {
+                            card.style.visibility = 'hidden';
+                        }, 100);
+                    }, idx * 40);
+                });
+                setTimeout(() => {
+                    splashOverlay.classList.add('is-hidden');
+                    setTimeout(() => {
+                        if (splashOverlay.parentElement) {
+                            splashOverlay.remove();
+                        }
+                        startTrainerCardEntrance();
+                    }, 350);
+                }, 260);
+            };
+
+            splashCarousel.addEventListener('animationend', (event) => {
+                if (event.animationName === 'carousel-spin') {
+                    splashMeta.forEach(({ card }) => {
+                        card.style.opacity = '1';
+                        setSplashCardTransform(card, parseFloat(card.dataset.angle || 0), baseRadius, 1);
+                    });
+                    finishSplash();
+                }
+            });
+
+            requestAnimationFrame(() => {
+                splashCarousel.classList.add('spinning');
+                splashMeta.forEach(({ card, angle }) => {
+                    card.dataset.angle = angle;
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(() => {
+                            card.style.visibility = 'visible';
+                            card.style.opacity = '1';
+                            setSplashCardTransform(card, angle, baseRadius, 1);
+                        });
+                    });
+                });
+            });
+
+            fallbackTimer = setTimeout(() => {
+                finishSplash();
+            }, spinDurationMs + 600);
         }
 
         function showTrainer(trainerId) {
@@ -2251,6 +2564,7 @@
         updateContinueCard();
         buildSearchIndex();
         renderTrainerCards();
+        initSplashSequence();
 
         continueBtn.addEventListener('click', () => {
             const programId = continueBtn.dataset.program;
