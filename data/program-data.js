@@ -5111,7 +5111,7 @@ kagedLean: {
                 },
                 {
                     "day": 4,
-                    "title": "| Kaged",
+                    "title": "Shoulders And Calves",
                     "cardio": "You'll begin today with your morning cardio performed upon waking, and then you'll weight-train after consuming at least one meal. You can weight train at any time of day you like. Danielle and Kai trained at 11 a.m. most days depending on their schedules. But you can train before your morning cardio, mid-morning, mid-afternoon, after work, or before bed (as long as your p.m. cardio follows). The key is to choose the time that suits your lifestyle best, and make sure you get in every workout. For instance, if you're training in the morning but you're forced to miss a morning workout, you can easily get it in before bedtime. When you miss the time of day when you typically train you can always make it up later-never allow yourself the excuse that you're \"too busy\" to work out.",
                     "exercises": [
                         {
@@ -5237,13 +5237,13 @@ kagedLean: {
                 },
                 {
                     "day": 6,
-                    "title": "| Kaged",
+                    "title": "Active Rest Day",
                     "cardio": "While today is an active rest day, you'll still perform cardio twice today. The intensity of the cardio should be enough to make you sweat. Over the upcoming weeks we're going to take up the intensity of cardio quite a bit, using it as an important tool to support shedding body fat. You'll perform your first 20 minutes of cardio upon rising, and then you'll get in another 20-minute session much later in the day. It's crucial that you do not combine these sessions. You want the fat-burning advantage that comes with increasing your metabolism twice each day.",
                     "exercises": []
                 },
                 {
                     "day": 7,
-                    "title": "| Kaged",
+                    "title": "Rest Day & Weigh-In",
                     "cardio": "* Weigh yourself upon rising. Remember that the goals is not to lose weight - although that will happen - but to use your current bodyweight as a metric for shifting your diet, adjusting your cardio, and/or changing up your supplements.",
                     "exercises": [
                         {
@@ -5263,7 +5263,7 @@ kagedLean: {
             "days": [
                 {
                     "day": 1,
-                    "title": "| Kaged",
+                    "title": "Legs And Calves",
                     "cardio": "You'll note that Danielle and Kai talk about the 60 minutes of cardio they performed today at the beginning of the video. I have recommended that you perform a morning session of 25 minutes and an evening session of 35 minutes, both steady-state for this week. The key is to make sure that you split them into sessions separated by several hours to spike metabolism at different times of day.",
                     "exercises": [
                         {
@@ -5522,13 +5522,13 @@ kagedLean: {
                 },
                 {
                     "day": 6,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Recovery",
                     "cardio": "By this point in my 12-Week Lean Muscle Program you should know the drill. You're going to perform 2 sets of steady-state cardio today. That means 25 minutes upon rising, and then another 35 minutes later in the day. Again, intensity should be enough to cause you to sweat. You may think this is a little boring, but cardio is going to get much more intense in the weeks to come. Trust me, you won't be bored when that happens!",
                     "exercises": []
                 },
                 {
                     "day": 7,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Reevaluate",
                     "cardio": "* Weigh yourself upon rising. Remember that the goal is not to lose weight - although that will happen - but to use your current bodyweight as a metric for shifting your diet, adjusting your cardio, and/or changing up your supplements. At this point, you should be reducing body weight by shedding stored body fat. Use your current bodyweight to recalculate the amount of calories you should consume each day.",
                     "exercises": []
                 }
@@ -5701,7 +5701,7 @@ kagedLean: {
                 },
                 {
                     "day": 4,
-                    "title": "| Kaged",
+                    "title": "Shoulders, Traps And Calves",
                     "cardio": "Remember to get in your HIIT cardio early in the day and later in the day.",
                     "exercises": [
                         {
@@ -5827,13 +5827,13 @@ kagedLean: {
                 },
                 {
                     "day": 6,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Recovery",
                     "cardio": "Today, you've earned some time away from the gym unless that's where you perform your cardio. Remember it's okay to perform cardio at home if you don't have a piece of high-tech equipment. You can easily include jogging on the streets, a track or trails in a park, and then you can also perform your HIIT training in the same place. You can even jump rope in your basement or garage. The key thing is to get in your 2 cardio sessions today, split by several hours to boost metabolism.",
                     "exercises": []
                 },
                 {
                     "day": 7,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Reevaluate",
                     "cardio": "This is precisely the result you want to see after about 4 weeks on my 12-week program. Just stay on track with your weight training, cardio, and supplementation. I'll be taking up both the cardio and weight-training intensity next week so you'll naturally be burning more calories, and you'll potentially be adding muscle mass, which also helps burns calories to support fat loss.",
                     "exercises": []
                 }
@@ -6139,13 +6139,13 @@ kagedLean: {
                 },
                 {
                     "day": 6,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Recovery",
                     "cardio": "It's around this point where you really start noticing your results. You've following this program for 34 days, and you've been cutting calories and eating healthy throughout. In addition, you've been burning quite a few calories through your cardio every day.",
                     "exercises": []
                 },
                 {
                     "day": 7,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Reevaluate",
                     "cardio": "This is precisely the result you want to see after your reevaluation at the end of Week Four. Just stay on track with your weight training, cardio, and supplementation. I'll be taking up both the cardio and weight-training intensity next week so you'll naturally be burning more calories, and you'll potentially be adding muscle mass, which also helps burns calories to support fat loss.",
                     "exercises": []
                 }
@@ -6472,13 +6472,13 @@ kagedLean: {
                 },
                 {
                     "day": 6,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Recovery",
                     "cardio": "Today, you'll complete your 2 sessions of cardio as we have all week. Remember it's 20 minutes of steady-state cardio followed by 10 minutes of HIIT for 60-second intervals, and then finish off with 10 more minutes of steady-state cardio. As with most weekends, I recommend that you try to get outdoors and shift things up for one or both sessions. Just remember that you do need to perform 2 sessions, and they should be separated by several hours to keep your metabolism revving.",
                     "exercises": []
                 },
                 {
                     "day": 7,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Reevaluate",
                     "cardio": "At the end of the day today, you will have officially completed half of your 12-Week Lean Muscle Program . That in itself is an amazing achievement, but the harder work is ahead. Today you'll perform your weekly reevaluation in addition to performing the 2 cardio sessions as outlined in the workout chart-the same as you've done throughout Week Six.",
                     "exercises": []
                 }
@@ -6490,7 +6490,7 @@ kagedLean: {
             "days": [
                 {
                     "day": 1,
-                    "title": "| Kaged",
+                    "title": "Legs, Calves And Abs",
                     "cardio": "This week, you'll take your cardio up another notch. You'll perform 2 sessions of 50 minutes each. Both will have the same rhythm: You'll perform 40 minutes of steady-state followed immediately by 10 minutes of HIIT, but for this workout your HIIT sessions will be 30 seconds on/30 seconds off for a total of 10 HIIT sessions in those 10 minutes at the end each cardio session.",
                     "exercises": [
                         {
@@ -6867,7 +6867,7 @@ kagedLean: {
             "days": [
                 {
                     "day": 1,
-                    "title": "| Kaged",
+                    "title": "Legs, Calves And Abs",
                     "cardio": "And don't forget about your cardio! Today you'll perform 2 sessions of steady-state cardio that last 60 minutes each. And you'll do that every day throughout Week 8. However, I want you to split up these 60-minute sessions by performing 45 minutes on one type of cardio equipment and the last 15 minutes on another. For instance, a good choice is to perform 45 minutes on an elliptical trainer followed by 15 minutes on a Stepmill® or other type of stair machine. You can also include treadmill, jump rope or any other type of steady-state cardio you choose.",
                     "exercises": [
                         {
@@ -7049,7 +7049,7 @@ kagedLean: {
                 },
                 {
                     "day": 4,
-                    "title": "| Kaged",
+                    "title": "Shoulders, Traps And Abs",
                     "cardio": "Cardio",
                     "exercises": [
                         {
@@ -7096,51 +7096,51 @@ kagedLean: {
                         },
                         {
                             "name": "Cable Front Raises",
-                            "sets": "",
-                            "reps": "",
+                            "sets": 3,
+                            "reps": "15 Reps",
                             "rest": "",
                             "notes": ""
                         },
                         {
                             "name": "Burpees",
-                            "sets": "",
-                            "reps": "",
+                            "sets": 3,
+                            "reps": "20 Reps",
                             "rest": "",
                             "notes": ""
                         },
                         {
                             "name": "Machine Shoulder Presses",
-                            "sets": "",
-                            "reps": "",
-                            "rest": "",
+                            "sets": 3,
+                            "reps": "15 Reps",
+                            "rest": "GIANT SET 2: Perform machine shoulder presses, seated plate raises and mountain climbers back-to-back with no rest between sets or giant sets.",
                             "notes": ""
                         },
                         {
                             "name": "Seated Plate Raises",
-                            "sets": "",
-                            "reps": "",
+                            "sets": 3,
+                            "reps": "15 Reps",
                             "rest": "",
                             "notes": ""
                         },
                         {
                             "name": "Mountain Climbers",
-                            "sets": "",
-                            "reps": "",
+                            "sets": 3,
+                            "reps": "1 Minute",
                             "rest": "",
                             "notes": ""
                         },
                         {
                             "name": "Incline Leg Raises",
-                            "sets": "",
-                            "reps": "",
-                            "rest": "",
+                            "sets": 3,
+                            "reps": "20 Reps",
+                            "rest": "GIANT SET 3: Finish with incline leg raises paired with any prescribed ab variations, keeping rest minimal.",
                             "notes": ""
                         }
                     ]
                 },
                 {
                     "day": 5,
-                    "title": "| Kaged",
+                    "title": "Arms And Calves Workout",
                     "cardio": "Next up is your triceps circuit. This one includes 4 weight exercises followed by tire sledgehammers. We're applying the same philosophy-take this small target muscle group to failure, include some intense cardio, and then hit the muscle again. You'll, in effect, perform a total of 15 sets with no rest.",
                     "exercises": [
                         {
@@ -7231,13 +7231,13 @@ kagedLean: {
                 },
                 {
                     "day": 6,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Recovery",
                     "cardio": "Congratulations on completing your Week Eight of weight-training workouts on my 12-Week Lean Muscle Program . You're almost two-thirds of the way through this program, and you're entering the home stretch. The weight training will continue to get more intense, as will the dieting and cardio. By this time, though, I'm confident that you've developed the disciplinary tools necessary to get you through challenging phases that arise from day to day.",
                     "exercises": []
                 },
                 {
                     "day": 7,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Reevaluate",
                     "cardio": "Here's what else you need to do today in addition to your 2 cardio sessions, as described in today's chart:",
                     "exercises": []
                 }
@@ -7613,13 +7613,13 @@ kagedLean: {
                 },
                 {
                     "day": 6,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Recovery",
                     "cardio": "Remember that even though today is a recovery day, you'll still be performing 2 cardio sessions as active recovery to get blood flowing to your muscles and keep your metabolic furnace burning high. You'll also start a 16 hour fast after you last meal of the day today.",
                     "exercises": []
                 },
                 {
                     "day": 7,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Reevaluate",
                     "cardio": "I want you to weigh yourself and adjust accordingly. You'll be doing 2 cardio sessions today as well, make sure you separate them at least 7 hours apart and try to do at least one of them outside. Doing at least one of your cardio sessions outside will help break up the monotony of doing long duration cardio in the same gym day in and day out and allow you to get some healthy restorative red light from the sun instead of the artificial bluer light in the gym.",
                     "exercises": []
                 }
@@ -7819,7 +7819,7 @@ kagedLean: {
                 },
                 {
                     "day": 7,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Reevaluate",
                     "cardio": "Today you'll weigh yourself to reevaluate your progress and you'll perform two sessions of steady state cardio separated by at least seven hours.",
                     "exercises": []
                 }
@@ -7852,7 +7852,7 @@ kagedLean: {
                 },
                 {
                     "day": 2,
-                    "title": "| Kaged",
+                    "title": "Dtp Back, Abs, Calves",
                     "cardio": "Cardio",
                     "exercises": [
                         {
@@ -7977,7 +7977,7 @@ kagedLean: {
                 },
                 {
                     "day": 7,
-                    "title": "| Kaged",
+                    "title": "Active Rest And Recovery",
                     "cardio": "Cardio",
                     "exercises": []
                 }
