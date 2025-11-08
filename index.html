@@ -155,7 +155,7 @@
             max-height: 0;
         }
         .collapsible-card.expanded {
-            max-height: 1200px;
+            max-height: 20000px;
         }
         .collapsible-trigger {
             cursor: pointer;
@@ -212,6 +212,72 @@
 
         .metric-badge--rest {
             --metric-color: rgba(248, 180, 127, 0.45);
+        }
+
+        .metric-badge--info {
+            --metric-color: rgba(94, 234, 212, 0.4);
+        }
+        .metric-badge--info .metric-badge-label {
+            color: rgba(191, 219, 254, 0.6);
+        }
+
+        .group-block {
+            border-radius: 1rem;
+            padding: 1.25rem;
+        }
+
+        .group-block--superset {
+            border: 1px solid rgba(251, 191, 36, 0.25);
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(17, 24, 39, 0.92));
+        }
+
+        .group-block--giant {
+            border: 1px solid rgba(94, 234, 212, 0.2);
+            background: linear-gradient(135deg, rgba(94, 234, 212, 0.08), rgba(17, 24, 39, 0.92));
+        }
+
+        .group-heading {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .group-label {
+            font-size: 0.7rem;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .group-caption {
+            font-size: 0.75rem;
+            color: rgba(229, 231, 235, 0.6);
+        }
+
+        .group-block--superset .group-label {
+            color: rgba(251, 191, 36, 0.8);
+        }
+
+        .group-block--giant .group-label {
+            color: rgba(94, 234, 212, 0.75);
+        }
+
+        .group-block--triple {
+            border: 1px solid rgba(129, 140, 248, 0.25);
+            background: linear-gradient(135deg, rgba(129, 140, 248, 0.08), rgba(17, 24, 39, 0.92));
+        }
+
+        .group-block--triple .group-label {
+            color: rgba(165, 180, 252, 0.8);
+        }
+
+        .group-block--circuit {
+            border: 1px solid rgba(45, 212, 191, 0.3);
+            background: linear-gradient(135deg, rgba(45, 212, 191, 0.08), rgba(17, 24, 39, 0.92));
+        }
+
+        .group-block--circuit .group-label {
+            color: rgba(45, 212, 191, 0.8);
         }
     </style>
 </head>
@@ -1618,46 +1684,63 @@
                 const exerciseList = workoutCard.querySelector('.divide-y');
 
                 if (exerciseList) {
-                    day.exercises.forEach((exercise, index) => {
+                    let exerciseCounter = 0;
+
+                    const createExerciseRow = (exercise, indexLabel, options = {}) => {
                         const item = document.createElement('div');
-                        item.className = 'p-4 space-y-3';
+                        item.className = options.compact
+                            ? 'rounded-xl border border-gray-800/70 bg-gray-900/70 p-4 space-y-3'
+                            : 'p-4 space-y-3';
 
                         const topRow = document.createElement('div');
                         topRow.className = 'flex flex-col gap-3 sm:flex-row sm:items-baseline sm:justify-between';
 
                         const titleWrap = document.createElement('div');
-                        titleWrap.className = 'flex items-baseline gap-3';
+                        titleWrap.className = 'flex items-baseline gap-3 flex-wrap';
 
                         const indexTag = document.createElement('span');
                         indexTag.className = 'text-xs font-semibold uppercase tracking-widest text-blue-400';
-                        indexTag.textContent = `#${index + 1}`;
+                        indexTag.textContent = indexLabel;
                         titleWrap.appendChild(indexTag);
 
                         const nameEl = document.createElement('p');
-                        nameEl.className = 'text-lg font-semibold text-white';
-                        nameEl.textContent = exercise.name || `Exercise ${index + 1}`;
+                        nameEl.className = options.compact ? 'text-base font-semibold text-white' : 'text-lg font-semibold text-white';
+                        const rawName = exercise.name || `Exercise ${indexLabel.replace('#', '')}`;
+                        const displayName = options.stripPrefix
+                            ? rawName.replace(/^\d+[A-Za-z]+[\.\-\):]*\s*/, '').replace(/^\d+[\.\-\):]*\s*/, '')
+                            : rawName;
+                        nameEl.textContent = displayName;
                         titleWrap.appendChild(nameEl);
+
+                        if (exercise.section && exercise.section.trim()) {
+                            const sectionTag = document.createElement('span');
+                            sectionTag.className = 'px-2 py-1 rounded-full border border-gray-800 text-[0.6rem] uppercase tracking-[0.25em] text-gray-500';
+                            sectionTag.textContent = exercise.section;
+                            titleWrap.appendChild(sectionTag);
+                        }
 
                         topRow.appendChild(titleWrap);
 
-                        const metrics = [
-                            exercise.sets ? { label: 'Sets', value: exercise.sets, type: 'sets' } : null,
-                            exercise.reps ? { label: 'Reps', value: exercise.reps, type: 'reps' } : null,
-                            exercise.rest ? { label: 'Rest', value: exercise.rest, type: 'rest' } : null
-                        ].filter(Boolean);
+                        const metrics = [];
+                        if (exercise.sets) metrics.push({ label: 'Sets', value: exercise.sets, type: 'sets' });
+                        if (exercise.reps) metrics.push({ label: 'Reps', value: exercise.reps, type: 'reps' });
+                        if (exercise.rest) metrics.push({ label: 'Rest', value: exercise.rest, type: 'rest' });
+                        if (metrics.length === 0 && exercise.info && exercise.info.trim()) {
+                            metrics.push({ label: 'Target', value: exercise.info, type: 'info' });
+                        }
 
                         if (metrics.length) {
-                        const metricsWrap = document.createElement('div');
-                        metricsWrap.className = 'flex flex-wrap items-center gap-3 text-xs uppercase tracking-wider text-gray-400 self-start sm:self-auto sm:justify-end';
+                            const metricsWrap = document.createElement('div');
+                            metricsWrap.className = 'flex flex-wrap items-center gap-3 text-xs uppercase tracking-wider text-gray-400 self-start sm:self-auto sm:justify-end';
 
                             metrics.forEach(metric => {
                                 const badge = document.createElement('span');
                                 badge.className = `metric-badge metric-badge--${metric.type}`;
-                            badge.innerHTML = `
-                                <span class="metric-badge-dot"></span>
-                                <span class="metric-badge-label">${metric.label}</span>
-                                <span class="metric-badge-value">${metric.value}</span>
-                            `;
+                                badge.innerHTML = `
+                                    <span class="metric-badge-dot"></span>
+                                    <span class="metric-badge-label">${metric.label}</span>
+                                    <span class="metric-badge-value">${metric.value}</span>
+                                `;
                                 metricsWrap.appendChild(badge);
                             });
 
@@ -1666,6 +1749,13 @@
 
                         item.appendChild(topRow);
 
+                        if (exercise.info && exercise.info.trim() && metrics.every(m => m.value !== exercise.info.trim())) {
+                            const infoEl = document.createElement('p');
+                            infoEl.className = 'text-sm text-blue-200/80';
+                            infoEl.textContent = exercise.info.trim();
+                            item.appendChild(infoEl);
+                        }
+
                         if (exercise.notes && exercise.notes.trim()) {
                             const noteEl = document.createElement('p');
                             noteEl.className = 'text-sm text-gray-400 leading-relaxed';
@@ -1673,8 +1763,238 @@
                             item.appendChild(noteEl);
                         }
 
-                        exerciseList.appendChild(item);
-                    });
+                        return item;
+                    };
+
+                    const getGroupMeta = (exercise) => {
+                        if (!exercise) return null;
+                        const subsectionRaw = typeof exercise.subsection === 'string' ? exercise.subsection.trim() : '';
+                        const sectionRaw = typeof exercise.section === 'string' ? exercise.section.trim() : '';
+                        const nameRaw = typeof exercise.name === 'string' ? exercise.name.trim() : '';
+
+                        const buildMeta = (type, source, labelPrimary, labelSecondary = '') => {
+                            const lowerPrimary = labelPrimary.toLowerCase();
+                            const lowerSecondary = labelSecondary ? labelSecondary.toLowerCase() : '';
+                            const key = `${type}|${source}|${lowerPrimary}|${lowerSecondary}`;
+                            const label = labelSecondary ? `${labelSecondary} · ${labelPrimary}` : labelPrimary;
+                            return {
+                                key,
+                                label,
+                                type,
+                        caption: type === 'giant'
+                            ? 'Cycle through each move in order, then repeat for the prescribed rounds.'
+                            : type === 'triple'
+                                ? 'Move through the trio without rest, then recover after completing all three.'
+                                : type === 'circuit'
+                                    ? 'Work through the circuit continuously before taking your rest.'
+                                    : 'Perform each move back-to-back before resting.'
+                            };
+                        };
+
+                    const subsectionLower = subsectionRaw.toLowerCase();
+                    const sectionLower = sectionRaw.toLowerCase();
+                    const nameLower = nameRaw.toLowerCase();
+
+                    if (subsectionLower.includes('giant set')) {
+                        return buildMeta('giant', 'subsection', subsectionRaw, sectionRaw);
+                    }
+                    if (subsectionLower.includes('superset')) {
+                        return buildMeta('superset', 'subsection', subsectionRaw, sectionRaw);
+                    }
+                    if (subsectionLower.includes('triple set')) {
+                        return buildMeta('triple', 'subsection', subsectionRaw, sectionRaw);
+                    }
+                    if (subsectionLower.includes('circuit')) {
+                        return buildMeta('circuit', 'subsection', subsectionRaw, sectionRaw);
+                        }
+                    if (sectionLower.includes('giant set')) {
+                        return buildMeta('giant', 'section', sectionRaw);
+                        }
+                    if (sectionLower.includes('superset')) {
+                        return buildMeta('superset', 'section', sectionRaw);
+                    }
+                    if (sectionLower.includes('triple set')) {
+                        return buildMeta('triple', 'section', sectionRaw);
+                    }
+                    if (sectionLower.includes('circuit')) {
+                        return buildMeta('circuit', 'section', sectionRaw);
+                        }
+                        if (sectionRaw && subsectionRaw) {
+                            const combined = `${sectionRaw} ${subsectionRaw}`;
+                        const combinedLower = combined.toLowerCase();
+                        if (combinedLower.includes('giant set')) {
+                                return buildMeta('giant', 'combined', combined);
+                            }
+                        if (combinedLower.includes('superset')) {
+                                return buildMeta('superset', 'combined', combined);
+                        }
+                        if (combinedLower.includes('triple set')) {
+                            return buildMeta('triple', 'combined', combined);
+                        }
+                        if (combinedLower.includes('circuit')) {
+                            return buildMeta('circuit', 'combined', combined);
+                            }
+                        }
+                        if (nameRaw) {
+                        if (nameLower.includes('giant set')) {
+                                return buildMeta('giant', 'name', nameRaw);
+                            }
+                        if (nameLower.includes('superset')) {
+                                return buildMeta('superset', 'name', nameRaw);
+                        }
+                        if (nameLower.includes('triple set')) {
+                            return buildMeta('triple', 'name', nameRaw);
+                        }
+                        if (nameLower.includes('circuit')) {
+                            return buildMeta('circuit', 'name', nameRaw);
+                            }
+                        }
+
+                        return null;
+                    };
+
+                    for (let idx = 0; idx < day.exercises.length; idx++) {
+                        const exercise = day.exercises[idx];
+                        const groupMeta = getGroupMeta(exercise);
+
+                        if (groupMeta) {
+                            const groupedExercises = [];
+                            while (
+                                idx < day.exercises.length &&
+                                getGroupMeta(day.exercises[idx])?.key === groupMeta.key
+                            ) {
+                                groupedExercises.push(day.exercises[idx]);
+                                idx++;
+                            }
+                            idx -= 1;
+
+                            const createGroupBlock = (label, exercisesInGroup) => {
+                                const wrapper = document.createElement('div');
+                                wrapper.className = `group-block group-block--${groupMeta.type} space-y-4`;
+
+                                const heading = document.createElement('div');
+                                heading.className = 'group-heading';
+                                heading.innerHTML = `
+                                    <p class="group-label">${label}</p>
+                                    <p class="group-caption">${groupMeta.caption}</p>
+                                `;
+                                wrapper.appendChild(heading);
+
+                                exercisesInGroup.forEach(groupExercise => {
+                                    exerciseCounter += 1;
+                                    const row = createExerciseRow(groupExercise, `#${exerciseCounter}`, { compact: true, stripPrefix: true });
+                                    wrapper.appendChild(row);
+                                });
+
+                                exerciseList.appendChild(wrapper);
+                            };
+
+                            let buckets = [groupedExercises];
+                            if (['superset', 'triple', 'circuit'].includes(groupMeta.type)) {
+                                const hasNumberedPrefixes = groupedExercises.some(ex => {
+                                    const name = typeof ex.name === 'string' ? ex.name.trim() : '';
+                                    return /^\d+[A-Za-z]+/.test(name);
+                                });
+
+                                if (!hasNumberedPrefixes) {
+                                    const fallbackBuckets = [];
+                                    const defaultChunk = groupMeta.type === 'triple' ? 3 : groupedExercises.length === 1 ? 1 : 2;
+                                    const chunkSize = groupMeta.type === 'circuit' ? defaultChunk : defaultChunk;
+                                    for (let start = 0; start < groupedExercises.length; start += chunkSize) {
+                                        fallbackBuckets.push(groupedExercises.slice(start, start + chunkSize));
+                                    }
+                                    if (fallbackBuckets.length > 1) {
+                                        const lastBucket = fallbackBuckets[fallbackBuckets.length - 1];
+                                        if (lastBucket.length === 1) {
+                                            fallbackBuckets[fallbackBuckets.length - 2] = fallbackBuckets[fallbackBuckets.length - 2].concat(lastBucket);
+                                            fallbackBuckets.pop();
+                                        }
+                                    }
+                                    buckets = fallbackBuckets;
+                                } else {
+                                const bucketsByPrefix = new Map();
+                                groupedExercises.forEach(ex => {
+                                    const name = typeof ex.name === 'string' ? ex.name.trim() : '';
+                                    const match = name.match(/^(\d+)([A-Za-z]+)/);
+                                    const key = match ? `${match[1]}${match[2].toUpperCase()}` : null;
+                                    if (!key) {
+                                        const fallbackKey = `fallback-${bucketsByPrefix.size}`;
+                                        if (!bucketsByPrefix.has(fallbackKey)) {
+                                            bucketsByPrefix.set(fallbackKey, []);
+                                        }
+                                        bucketsByPrefix.get(fallbackKey).push(ex);
+                                        return;
+                                    }
+                                    if (!bucketsByPrefix.has(match[1])) {
+                                        bucketsByPrefix.set(match[1], []);
+                                    }
+                                    bucketsByPrefix.get(match[1]).push(ex);
+                                });
+                                const sortedKeys = Array.from(bucketsByPrefix.keys())
+                                    .map(key => Number.isNaN(Number(key)) ? key : Number(key))
+                                    .sort((a, b) => {
+                                        if (typeof a === 'number' && typeof b === 'number') return a - b;
+                                        if (typeof a === 'number') return -1;
+                                        if (typeof b === 'number') return 1;
+                                        return String(a).localeCompare(String(b));
+                                    });
+                                buckets = sortedKeys.map(key => bucketsByPrefix.get(String(key)));
+                                }
+                            } else if (groupMeta.type === 'giant') {
+                                const bucketsByBase = new Map();
+                                groupedExercises.forEach(ex => {
+                                    const name = typeof ex.name === 'string' ? ex.name.trim() : '';
+                                    const match = name.match(/^(\d+)/);
+                                    const key = match ? match[1] : `fallback-${bucketsByBase.size}`;
+                                    if (!bucketsByBase.has(key)) {
+                                        bucketsByBase.set(key, []);
+                                    }
+                                    bucketsByBase.get(key).push(ex);
+                                });
+                                const sortedKeys = Array.from(bucketsByBase.keys())
+                                    .map(key => Number.isNaN(Number(key)) ? key : Number(key))
+                                    .sort((a, b) => {
+                                        if (typeof a === 'number' && typeof b === 'number') return a - b;
+                                        if (typeof a === 'number') return -1;
+                                        if (typeof b === 'number') return 1;
+                                        return String(a).localeCompare(String(b));
+                                    });
+                                buckets = sortedKeys.map(key => bucketsByBase.get(String(key)));
+                            }
+
+                            buckets.forEach((bucket, bucketIndex) => {
+                                if (!bucket.length) return;
+                                let bucketLabel = groupMeta.label;
+                                const firstExercise = bucket[0];
+                                if (['superset', 'triple', 'circuit'].includes(groupMeta.type)) {
+                                    const match = firstExercise && typeof firstExercise.name === 'string'
+                                        ? firstExercise.name.trim().match(/^(\d+)([A-Za-z]+)/)
+                                        : null;
+                                    if (match) {
+                                        bucketLabel = `${groupMeta.label} · ${match[1]}${match[2].toUpperCase()}`;
+                                    } else if (buckets.length > 1) {
+                                        const labelTerm = groupMeta.type === 'circuit' ? 'Circuit' : groupMeta.type === 'triple' ? 'Set' : 'Set';
+                                        bucketLabel = `${groupMeta.label} · ${labelTerm} ${bucketIndex + 1}`;
+                                    }
+                                } else if (groupMeta.type === 'giant' && buckets.length > 1) {
+                                    const match = firstExercise && typeof firstExercise.name === 'string'
+                                        ? firstExercise.name.trim().match(/^(\d+)/)
+                                        : null;
+                                    if (match) {
+                                        bucketLabel = `${groupMeta.label} · Round ${match[1]}`;
+                                    } else {
+                                        bucketLabel = `${groupMeta.label} · Round ${bucketIndex + 1}`;
+                                    }
+                                }
+
+                                createGroupBlock(bucketLabel, bucket);
+                            });
+                        } else {
+                            exerciseCounter += 1;
+                            const item = createExerciseRow(exercise, `#${exerciseCounter}`);
+                            exerciseList.appendChild(item);
+                        }
+                    }
                 }
 
                 workoutContent.appendChild(workoutCard);

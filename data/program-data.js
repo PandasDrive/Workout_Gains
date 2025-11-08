@@ -8577,6 +8577,24 @@ kagedLean: {
                 "sets": 3,
                 "reps": "10 reps",
                 "rest": ""
+              },
+              {
+                "name": "Decline Cross-Body Situp",
+                "section": "Upper Abs",
+                "subsection": "Superset (4 Sets)",
+                "info": "Failure",
+                "sets": null,
+                "reps": "Failure",
+                "rest": ""
+              },
+              {
+                "name": "Cross-Body Situp",
+                "section": "Upper Abs",
+                "subsection": "Superset (4 Sets)",
+                "info": "Failure",
+                "sets": null,
+                "reps": "Failure",
+                "rest": ""
               }
             ]
           },
@@ -8707,7 +8725,71 @@ kagedLean: {
             "notes": [],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-8-hct",
             "video": "https://www.youtube.com/embed/FANSxLhUmMc",
-            "exercises": []
+        "exercises": [
+          {
+            "name": "Leg Extensions",
+            "section": "Legs",
+            "subsection": null,
+            "info": "3 Sets x 20, 10, 20* Reps",
+            "sets": 3,
+            "reps": "20, 10, 20* Reps",
+            "rest": ""
+          },
+          {
+            "name": "Band-Resisted Leg Press",
+            "section": "Legs",
+            "subsection": null,
+            "info": "4 Sets x 20, 15, 10, 5 Reps",
+            "sets": 4,
+            "reps": "20, 15, 10, 5 Reps",
+            "rest": ""
+          },
+          {
+            "name": "Alternating Squat-Lunge Combo",
+            "section": "Legs",
+            "subsection": null,
+            "info": "3 Sets x 20 alternating reps",
+            "sets": 3,
+            "reps": "20 Alternating Reps",
+            "rest": ""
+          },
+          {
+            "name": "Seated Calf Press",
+            "section": "Calves",
+            "subsection": null,
+            "info": "5 Sets x 30, 20, 10, 20, 30 Reps",
+            "sets": 5,
+            "reps": "30, 20, 10, 20, 30 Reps",
+            "rest": ""
+          },
+          {
+            "name": "Lying Incline Leg Raise",
+            "section": "Lower Abs",
+            "subsection": "Triple Set (3 Sets)",
+            "info": "15 Reps",
+            "sets": null,
+            "reps": "15 Reps",
+            "rest": ""
+          },
+          {
+            "name": "Exercise Ball Knee Tucks",
+            "section": "Lower Abs",
+            "subsection": "Triple Set (3 Sets)",
+            "info": "20 Reps",
+            "sets": null,
+            "reps": "20 Reps",
+            "rest": ""
+          },
+          {
+            "name": "Bodyweight Plank",
+            "section": "Lower Abs",
+            "subsection": "Triple Set (3 Sets)",
+            "info": "30 Second Hold",
+            "sets": null,
+            "reps": "30 Second Hold",
+            "rest": ""
+          }
+        ]
           },
           {
             "day": 2,
