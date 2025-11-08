@@ -4774,45 +4774,31 @@ kagedLean: {
                         },
                         {
                             "name": "Obliques crunches",
-                            "sets": "",
-                            "reps": "",
-                            "rest": "",
+                            "sets": 3,
+                            "reps": "Failure",
+                            "rest": "Rest 30-40 seconds between sets",
                             "notes": ""
                         },
                         {
                             "name": "Tuck crunches",
-                            "sets": "",
-                            "reps": "",
-                            "rest": "",
+                            "sets": 3,
+                            "reps": "Failure",
+                            "rest": "Rest 30-40 seconds between sets",
                             "notes": ""
                         },
                         {
                             "name": "Bicycle crunches",
-                            "sets": "",
-                            "reps": "Rest 30-40 seconds before the next move",
-                            "rest": "",
+                            "sets": 3,
+                            "reps": "Failure",
+                            "rest": "Rest 30-40 seconds between sets",
                             "notes": ""
                         },
                         {
                             "name": "Plank",
-                            "sets": "",
-                            "reps": "Rest 1 minute between each variation",
-                            "rest": "",
-                            "notes": ""
-                        },
-                        {
-                            "name": "Variation: Knee to opposite elbow",
-                            "sets": "",
-                            "reps": "",
-                            "rest": "",
-                            "notes": ""
-                        },
-                        {
-                            "name": "Variation: Side plank thread the needle",
-                            "sets": "",
-                            "reps": "",
-                            "rest": "",
-                            "notes": ""
+                            "sets": 3,
+                            "reps": "Failure",
+                            "rest": "Rest 1 minute between each variation",
+                            "notes": "Variation 1: Knee to opposite elbow. Variation 2: Side plank thread the needle."
                         }
                     ]
                 },
