@@ -1551,14 +1551,19 @@
                 
                 day.exercises.forEach(ex => {
                     const setsDisplay = (ex.sets !== undefined && ex.sets !== null && ex.sets !== '') ? ex.sets : '--';
-                    const repsDisplay = ex.reps && ex.reps.trim() ? ex.reps.trim() : (ex.info && ex.info.trim() ? ex.info.trim() : '--');
-                    const restDisplay = ex.rest && ex.rest.trim() ? ex.rest.trim() : '--';
+                    const repsRaw = ex.reps !== undefined && ex.reps !== null ? ex.reps : '';
+                    const repsText = typeof repsRaw === 'string' ? repsRaw.trim() : (repsRaw !== '' ? String(repsRaw) : '');
+                    const infoRaw = ex.info !== undefined && ex.info !== null ? ex.info : '';
+                    const restRaw = ex.rest !== undefined && ex.rest !== null ? ex.rest : '';
+                    const restText = typeof restRaw === 'string' ? restRaw.trim() : (restRaw !== '' ? String(restRaw) : '');
+                    const repsDisplay = repsText || (typeof infoRaw === 'string' ? infoRaw.trim() : String(infoRaw || '--'));
+                    const restDisplay = restText || '--';
                     const tags = [ex.section, ex.subsection].filter(Boolean);
                     const tagsMarkup = tags.length
                         ? `<div class="flex flex-wrap gap-2 mb-2">${tags.map(tag => `<span class="px-2 py-1 rounded-full bg-gray-900 border border-gray-700 text-xs text-gray-300">${tag}</span>`).join('')}</div>`
                         : '';
-                    const infoLine = ex.info && ex.info.trim() && ex.info.trim() !== repsDisplay
-                        ? `<p class="text-sm text-gray-400">${ex.info}</p>`
+                    const infoLine = typeof infoRaw === 'string' && infoRaw.trim() && infoRaw.trim() !== repsDisplay
+                        ? `<p class="text-sm text-gray-400">${infoRaw}</p>`
                         : '';
                     const notesLine = ex.notes
                         ? `<p class="text-sm text-gray-400 italic mt-2">Note: ${ex.notes}</p>`
