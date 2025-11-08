@@ -148,6 +148,24 @@
         .stats-overlay.active {
             display: flex;
         }
+
+        .collapsible-card {
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+            max-height: 0;
+        }
+        .collapsible-card.expanded {
+            max-height: 1200px;
+        }
+        .collapsible-trigger {
+            cursor: pointer;
+        }
+        .collapsible-trigger .icon-rotate {
+            transition: transform 0.2s ease;
+        }
+        .collapsible-trigger[aria-expanded="true"] .icon-rotate {
+            transform: rotate(90deg);
+        }
     </style>
 </head>
 <body class="no-js h-full text-gray-200 antialiased">
@@ -1467,9 +1485,21 @@
             
             // 2. Add Weekly Task
             workoutContent.innerHTML += `
-                <div class="bg-gray-800 rounded-lg p-4 border border-gray-700">
-                    <h2 class="text-xl font-bold text-white mb-2">Weekly Task</h2>
-                    <p class="text-lg text-gray-300">${weeklyTaskText}</p>
+                <div class="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
+                    <div class="overflow-hidden">
+                        <button class="collapsible-trigger w-full flex items-center justify-between px-4 py-3 text-left focus:outline-none" aria-expanded="true">
+                            <div>
+                                <h2 class="text-xl font-bold text-white">Weekly Task</h2>
+                                <p class="text-xs text-gray-400">Tap to collapse or expand</p>
+                            </div>
+                            <svg class="w-4 h-4 text-gray-400 icon-rotate" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                        <div class="collapsible-card expanded">
+                            <div class="p-4 pt-0">
+                                <p class="text-lg text-gray-300">${weeklyTaskText}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             `;
 
@@ -1477,12 +1507,19 @@
                 const videoCard = document.createElement('div');
                 videoCard.className = 'bg-gray-800 rounded-lg border border-gray-700 shadow-lg overflow-hidden';
                 videoCard.innerHTML = `
-                    <div class="p-4 border-b border-gray-700">
-                        <h2 class="text-xl font-bold text-white">Daily Video</h2>
-                        <p class="text-sm text-gray-400 mt-1">Follow along with the official walkthrough for this session.</p>
-                    </div>
-                    <div class="relative" style="padding-top: 56.25%;">
-                        <iframe src="${day.video}" title="Workout video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="absolute inset-0 w-full h-full border-none"></iframe>
+                    <div class="overflow-hidden">
+                        <button class="collapsible-trigger w-full flex items-center justify-between px-4 py-3 text-left focus:outline-none" aria-expanded="false">
+                            <div>
+                                <h2 class="text-xl font-bold text-white">Daily Video</h2>
+                                <p class="text-xs text-gray-400">Tap to view walkthrough</p>
+                            </div>
+                            <svg class="w-4 h-4 text-gray-400 icon-rotate" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                        <div class="collapsible-card">
+                            <div class="relative" style="padding-top: 56.25%;">
+                                <iframe src="${day.video}" title="Workout video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="absolute inset-0 w-full h-full border-none"></iframe>
+                            </div>
+                        </div>
                     </div>
                 `;
                 workoutContent.appendChild(videoCard);
@@ -1490,38 +1527,49 @@
 
             if (Array.isArray(day.notes) && day.notes.length) {
                 const coachCard = document.createElement('div');
-                coachCard.className = 'bg-gray-800 rounded-lg p-4 border border-gray-700 space-y-3';
-                const coachTitle = document.createElement('h2');
-                coachTitle.className = 'text-xl font-bold text-white';
-                coachTitle.textContent = 'Coach Notes';
-                coachCard.appendChild(coachTitle);
-                day.notes.forEach(noteText => {
-                    const paragraph = document.createElement('p');
-                    paragraph.className = 'text-sm text-gray-300 leading-relaxed';
-                    paragraph.textContent = noteText;
-                    coachCard.appendChild(paragraph);
-                });
-                if (day.url) {
-                    const link = document.createElement('a');
-                    link.href = day.url;
-                    link.target = '_blank';
-                    link.rel = 'noopener noreferrer';
-                    link.className = 'inline-flex items-center gap-2 text-sm text-blue-300 hover:text-blue-100';
-                    link.innerHTML = 'View full article &rarr;';
-                    coachCard.appendChild(link);
-                }
+                coachCard.className = 'bg-gray-800 rounded-lg border border-gray-700 shadow-lg overflow-hidden';
+                const triggerId = `coach-notes-${weekNumber}-${dayNumber}`;
+                coachCard.innerHTML = `
+                    <div class="overflow-hidden">
+                        <button class="collapsible-trigger w-full flex items-center justify-between px-4 py-3 text-left focus:outline-none" aria-expanded="true" aria-controls="${triggerId}">
+                            <div>
+                                <h2 class="text-xl font-bold text-white">Coach Notes</h2>
+                                <p class="text-xs text-gray-400">Tap to collapse or expand</p>
+                            </div>
+                            <svg class="w-4 h-4 text-gray-400 icon-rotate" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                        <div id="${triggerId}" class="collapsible-card expanded">
+                            <div class="p-4 space-y-3">
+                                ${day.notes.map(noteText => `<p class="text-sm text-gray-300 leading-relaxed">${noteText}</p>`).join('')}
+                                ${day.url ? `<a href="${day.url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-blue-300 hover:text-blue-100">View full article →</a>` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
                 workoutContent.appendChild(coachCard);
             }
 
             // 2.5 Training Notes
             const noteCard = document.createElement('div');
-            noteCard.className = 'bg-gray-800 rounded-lg p-4 border border-gray-700 space-y-3';
-            const noteTitle = document.createElement('h2');
-            noteTitle.className = 'text-xl font-bold text-white';
-            noteTitle.textContent = 'Training Notes';
-            const noteSubtitle = document.createElement('p');
-            noteSubtitle.className = 'text-sm text-gray-400';
-            noteSubtitle.textContent = 'Capture weights, pacing, or how you felt.';
+            noteCard.className = 'bg-gray-800 rounded-lg border border-gray-700 overflow-hidden shadow-lg';
+            const notesPanelId = `training-notes-${weekNumber}-${dayNumber}`;
+            noteCard.innerHTML = `
+                <div class="overflow-hidden">
+                    <button class="collapsible-trigger w-full flex items-center justify-between px-4 py-3 text-left focus:outline-none" aria-expanded="true" aria-controls="${notesPanelId}">
+                        <div>
+                            <h2 class="text-xl font-bold text-white">Training Notes</h2>
+                            <p class="text-xs text-gray-400">Tap to collapse or expand</p>
+                        </div>
+                        <svg class="w-4 h-4 text-gray-400 icon-rotate" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                    <div id="${notesPanelId}" class="collapsible-card expanded">
+                        <div class="p-4 space-y-3">
+                            <p class="text-sm text-gray-400">Capture weights, pacing, or how you felt.</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            const notesContainer = noteCard.querySelector('.collapsible-card .p-4');
             const noteTextarea = document.createElement('textarea');
             noteTextarea.className = 'w-full bg-gray-900 border border-gray-700 rounded-xl p-3 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none';
             noteTextarea.rows = 4;
@@ -1553,63 +1601,11 @@
                 `;
             }
 
-            noteCard.appendChild(noteTitle);
-            noteCard.appendChild(noteSubtitle);
-            noteCard.appendChild(noteTextarea);
-            noteCard.appendChild(historyBlock);
+            notesContainer.appendChild(noteTextarea);
+            notesContainer.appendChild(historyBlock);
             workoutContent.appendChild(noteCard);
 
-            // 3. Add Exercises
-            if (day.exercises && day.exercises.length > 0) {
-                const exerciseList = document.createElement('div');
-                exerciseList.className = 'space-y-4';
-                
-                day.exercises.forEach(ex => {
-                    const setsDisplay = (ex.sets !== undefined && ex.sets !== null && ex.sets !== '') ? ex.sets : '--';
-                    const repsRaw = ex.reps !== undefined && ex.reps !== null ? ex.reps : '';
-                    const repsText = typeof repsRaw === 'string' ? repsRaw.trim() : (repsRaw !== '' ? String(repsRaw) : '');
-                    const infoRaw = ex.info !== undefined && ex.info !== null ? ex.info : '';
-                    const restRaw = ex.rest !== undefined && ex.rest !== null ? ex.rest : '';
-                    const restText = typeof restRaw === 'string' ? restRaw.trim() : (restRaw !== '' ? String(restRaw) : '');
-                    const repsDisplay = repsText || (typeof infoRaw === 'string' ? infoRaw.trim() : String(infoRaw || '--'));
-                    const restDisplay = restText || '--';
-                    const tags = [ex.section, ex.subsection].filter(Boolean);
-                    const tagsMarkup = tags.length
-                        ? `<div class="flex flex-wrap gap-2 mb-2">${tags.map(tag => `<span class="px-2 py-1 rounded-full bg-gray-900 border border-gray-700 text-xs text-gray-300">${tag}</span>`).join('')}</div>`
-                        : '';
-                    const infoLine = typeof infoRaw === 'string' && infoRaw.trim() && infoRaw.trim() !== repsDisplay
-                        ? `<p class="text-sm text-gray-400">${infoRaw}</p>`
-                        : '';
-                    const notesLine = ex.notes
-                        ? `<p class="text-sm text-gray-400 italic mt-2">Note: ${ex.notes}</p>`
-                        : '';
-
-                    const card = document.createElement('div');
-                    card.className = 'bg-gray-800 rounded-lg p-4 border border-gray-700 shadow-md space-y-3';
-                    card.innerHTML = `
-                        ${tagsMarkup}
-                        <h3 class="text-2xl font-semibold text-blue-400">${ex.name}</h3>
-                        <div class="grid grid-cols-3 gap-2 text-center">
-                                <div>
-                                    <p class="text-sm text-gray-400">SETS</p>
-                                <p class="text-2xl font-semibold">${setsDisplay}</p>
-                                </div>
-                                <div>
-                                <p class="text-sm text-gray-400">REPS / FORMAT</p>
-                                <p class="text-lg font-semibold">${repsDisplay}</p>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-gray-400">REST</p>
-                                <p class="text-lg font-semibold">${restDisplay}</p>
-                                </div>
-                            </div>
-                        ${infoLine}
-                        ${notesLine}
-                    `;
-                    exerciseList.appendChild(card);
-                });
-                workoutContent.appendChild(exerciseList);
-            }
+            setupCollapsibles(workoutContent);
             
             showPage('page-workout-details');
 
@@ -1806,6 +1802,26 @@
                 renderThenxLibraryList(program);
             }
         }
+
+        // Collapsible cards
+        function setupCollapsibles(scope = document) {
+            const triggers = scope.querySelectorAll('.collapsible-trigger');
+            triggers.forEach(trigger => {
+                if (trigger.dataset.collapsibleBound === 'true') return;
+                const card = trigger.nextElementSibling;
+                if (!card || !card.classList.contains('collapsible-card')) return;
+                trigger.dataset.collapsibleBound = 'true';
+                if (!trigger.hasAttribute('aria-expanded')) {
+                    trigger.setAttribute('aria-expanded', 'true');
+                }
+                trigger.addEventListener('click', () => {
+                    const expanded = trigger.getAttribute('aria-expanded') === 'true';
+                    trigger.setAttribute('aria-expanded', String(!expanded));
+                    card.classList.toggle('expanded', !expanded);
+                });
+            });
+        }
+        setupCollapsibles(document);
     </script>
 </body>
 </html>
