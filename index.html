@@ -206,8 +206,8 @@
         .splash-card.burst-enter.burst-fanned {
             transform: translate(-50%, -50%) translate(var(--fan-x, 0px), var(--fan-y, 0px)) rotate(var(--fan-tilt, 0deg)) scale(1);
         }
-        .splash-card.fly-out {
-            transform: translate(-50%, -50%) translate(var(--fan-out-x, 0px), var(--fan-out-y, 0px)) rotate(var(--fan-tilt, 0deg)) scale(1.12);
+        .splash-card.fan-exit {
+            transform: translate(-50%, -50%) scale(0.28) rotate(var(--fan-tilt, 0deg));
             opacity: 0;
         }
         .splash-card-bg {
@@ -1546,16 +1546,12 @@
             });
         }
 
-        function setSplashCardTransform(card, angleDeg, fanRadius, flyOutRadius) {
+        function setSplashCardTransform(card, angleDeg, fanRadius) {
             const radians = (angleDeg - 90) * (Math.PI / 180);
             const fanX = Math.cos(radians) * fanRadius;
             const fanY = Math.sin(radians) * fanRadius;
-            const flyX = Math.cos(radians) * flyOutRadius;
-            const flyY = Math.sin(radians) * flyOutRadius;
             card.style.setProperty('--fan-x', `${fanX.toFixed(2)}px`);
             card.style.setProperty('--fan-y', `${fanY.toFixed(2)}px`);
-            card.style.setProperty('--fan-out-x', `${flyX.toFixed(2)}px`);
-            card.style.setProperty('--fan-out-y', `${flyY.toFixed(2)}px`);
             card.style.setProperty('--fan-tilt', `0deg`);
             card.style.setProperty('--entry-tilt', `0deg`);
         }
@@ -1618,7 +1614,6 @@
             splashCarousel.style.width = `${finalSize}px`;
             splashCarousel.style.height = `${finalSize}px`;
             const fanRadius = Math.max(90, Math.min(baseRadius, finalSize / 2 - 60));
-            const flyOutRadius = Math.max(fanRadius * 1.45, fanRadius + 80);
 
             const splashMeta = [];
             splashItems.forEach((item, index) => {
@@ -1635,7 +1630,7 @@
                     </div>
                 `;
                 splashCardsContainer.appendChild(card);
-                setSplashCardTransform(card, angle, fanRadius, flyOutRadius);
+                setSplashCardTransform(card, angle, fanRadius);
                 card.style.opacity = '0';
                 card.style.visibility = 'hidden';
                 splashMeta.push({ card, angle });
@@ -1669,14 +1664,17 @@
                     splashOverlay.removeEventListener('touchstart', skipHandler);
                 }
 
-                splashMeta.forEach(({ card }, idx) => {
+                const collapseOrder = [...splashMeta].reverse();
+                collapseOrder.forEach(({ card }, idx) => {
                     setTimeout(() => {
-                        card.classList.add('fly-out');
+                        card.classList.remove('burst-fanned');
+                        setTimeout(() => {
+                            card.classList.add('fan-exit');
+                        }, 100);
                     }, idx * 55);
                 });
 
-                const flyOutDuration = 560;
-                const removalDelay = (splashMeta.length - 1) * 55 + flyOutDuration;
+                const collapseDuration = (collapseOrder.length - 1) * 55 + 400;
                 setTimeout(() => {
                     splashOverlay.classList.add('is-hidden');
                     setTimeout(() => {
@@ -1684,12 +1682,12 @@
                             splashOverlay.remove();
                         }
                         startTrainerCardEntrance();
-                    }, 320);
-                }, removalDelay);
+                    }, 240);
+                }, collapseDuration);
             };
 
-            const totalFanTime = (splashMeta.length - 1) * 90 + 20;
-            const holdDuration = .1;
+            const totalFanTime = (splashMeta.length - 1) * 90 + 40;
+            const holdDuration = 420;
             holdTimer = setTimeout(() => {
                 finishSplash();
             }, totalFanTime + holdDuration);
