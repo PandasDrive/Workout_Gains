@@ -39,6 +39,7 @@ class DayPlan:
     notes: List[str]
     exercises: List[Exercise]
     url: str
+    video: Optional[str]
 
 
 def normalise_text(value: str) -> str:
@@ -152,6 +153,16 @@ def parse_day(url: str) -> DayPlan:
 
     cardio_text = '; '.join(dict.fromkeys(cardio_parts)) if cardio_parts else ''
 
+    video_url = None
+    for iframe in soup.select('iframe[src]'):
+        src = iframe.get('src')
+        if not src:
+            continue
+        lowered = src.lower()
+        if 'youtube.com' in lowered or 'youtu.be' in lowered or 'vimeo.com' in lowered:
+            video_url = src
+            break
+
     return DayPlan(
         day_number=extract_day_number(url),
         title=title,
@@ -159,6 +170,7 @@ def parse_day(url: str) -> DayPlan:
         notes=deduplicate_notes(notes),
         exercises=exercises,
         url=url,
+        video=video_url,
     )
 
 
@@ -250,6 +262,7 @@ def build_weeks(days: List[DayPlan]) -> List[Dict]:
                     "cardio": day.cardio,
                     "notes": day.notes,
                     "url": day.url,
+                    "video": day.video,
                     "exercises": [
                         {
                             "name": exercise.name,
@@ -290,6 +303,7 @@ def main() -> None:
                 "cardio": day.cardio,
                 "notes": day.notes,
                 "url": day.url,
+                "video": day.video,
                 "exercises": [asdict(ex) for ex in day.exercises],
             }
             for day in days

@@ -161,15 +161,15 @@
             </header>
             <main class="w-full max-w-xl space-y-6">
                 <div class="flex items-center justify-between">
-                    <div class="text-left">
+                        <div class="text-left">
                         <p class="text-sm uppercase tracking-widest text-blue-400">Welcome Back</p>
                         <p class="text-2xl font-semibold text-white">Your Programs</p>
-                    </div>
+                        </div>
                     <button id="open-search" class="search-trigger btn-press px-4 py-2 rounded-xl flex items-center text-sm font-medium text-blue-300 hover:text-white">
                         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"></path></svg>
                         Search Workouts
                     </button>
-                </div>
+                        </div>
 
                 <div id="continue-card" class="continue-card hidden rounded-2xl p-5 flex flex-col md:flex-row md:items-center md:justify-between">
                     <div class="mb-4 md:mb-0">
@@ -1361,14 +1361,14 @@
                 return;
             }
 
-            document.getElementById('program-title').textContent = program.title;
-            const weekList = document.getElementById('week-list');
-            weekList.innerHTML = '';
-
+                 document.getElementById('program-title').textContent = program.title;
+                 const weekList = document.getElementById('week-list');
+                 weekList.innerHTML = '';
+                 
             const orderedWeeks = [...program.weeks].sort((a, b) => a.week - b.week);
             orderedWeeks.forEach(week => {
-                const weekButton = document.createElement('button');
-                weekButton.className = 'btn-press w-full text-left p-5 bg-gray-800 rounded-lg border border-gray-700 shadow-md flex justify-between items-center';
+                    const weekButton = document.createElement('button');
+                    weekButton.className = 'btn-press w-full text-left p-5 bg-gray-800 rounded-lg border border-gray-700 shadow-md flex justify-between items-center';
                 weekButton.innerHTML = `
                     <span class="text-lg font-semibold text-white">Week ${week.week}</span>
                     <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
@@ -1473,6 +1473,21 @@
                 </div>
             `;
 
+            if (day.video) {
+                const videoCard = document.createElement('div');
+                videoCard.className = 'bg-gray-800 rounded-lg border border-gray-700 shadow-lg overflow-hidden';
+                videoCard.innerHTML = `
+                    <div class="p-4 border-b border-gray-700">
+                        <h2 class="text-xl font-bold text-white">Daily Video</h2>
+                        <p class="text-sm text-gray-400 mt-1">Follow along with the official walkthrough for this session.</p>
+                    </div>
+                    <div class="relative" style="padding-top: 56.25%;">
+                        <iframe src="${day.video}" title="Workout video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="absolute inset-0 w-full h-full border-none"></iframe>
+                    </div>
+                `;
+                workoutContent.appendChild(videoCard);
+            }
+
             if (Array.isArray(day.notes) && day.notes.length) {
                 const coachCard = document.createElement('div');
                 coachCard.className = 'bg-gray-800 rounded-lg p-4 border border-gray-700 space-y-3';
@@ -1575,19 +1590,19 @@
                         ${tagsMarkup}
                         <h3 class="text-2xl font-semibold text-blue-400">${ex.name}</h3>
                         <div class="grid grid-cols-3 gap-2 text-center">
-                            <div>
-                                <p class="text-sm text-gray-400">SETS</p>
+                                <div>
+                                    <p class="text-sm text-gray-400">SETS</p>
                                 <p class="text-2xl font-semibold">${setsDisplay}</p>
-                            </div>
-                            <div>
+                                </div>
+                                <div>
                                 <p class="text-sm text-gray-400">REPS / FORMAT</p>
                                 <p class="text-lg font-semibold">${repsDisplay}</p>
-                            </div>
-                            <div>
-                                <p class="text-sm text-gray-400">REST</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">REST</p>
                                 <p class="text-lg font-semibold">${restDisplay}</p>
+                                </div>
                             </div>
-                        </div>
                         ${infoLine}
                         ${notesLine}
                     `;
@@ -1610,7 +1625,7 @@
 
         function completeWorkout() {
             if (!currentProgram || !currentWeek) {
-                showMessage("Workout complete!");
+            showMessage("Workout complete!");
                 return;
             }
 

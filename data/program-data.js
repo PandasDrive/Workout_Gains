@@ -8210,6 +8210,7 @@ kagedLean: {
               "Today we're crushing quads, lower abs and calves. Let's have it!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-1-hct",
+            "video": "https://www.youtube.com/embed/P7ak9G2A8to",
             "exercises": [
               {
                 "name": "Hack Squats",
@@ -8304,6 +8305,7 @@ kagedLean: {
               "These readings have given me a marker to improve upon going into this transformation-especially that body fat reading. Anyway, let's hit our chest and shoulders hard today!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-2-hct",
+            "video": "https://www.youtube.com/embed/d9GJksb0o3c",
             "exercises": [
               {
                 "name": "Dumbbell Chest Press (DTP Extreme)*",
@@ -8417,6 +8419,7 @@ kagedLean: {
               "Now let's go and hammer arms!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-3-hct",
+            "video": "https://www.youtube.com/embed/dDxyceJq_wI",
             "exercises": [
               {
                 "name": "Reverse-Grip Cable Triceps Pushdown",
@@ -8537,6 +8540,7 @@ kagedLean: {
               "Right now, it's time to crush lower back, hamstrings and upper abs."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-4-hct",
+            "video": "https://www.youtube.com/embed/oLBvfFgnKmE?si=e6dGxug2QQxP5Fcz",
             "exercises": [
               {
                 "name": "Deadlifts",
@@ -8587,6 +8591,7 @@ kagedLean: {
               "Let's crush back and calves."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-5-hct",
+            "video": "https://www.youtube.com/embed/_wzelL_oVdo",
             "exercises": [
               {
                 "name": "Lat Pulldowns",
@@ -8673,6 +8678,7 @@ kagedLean: {
               "Other than your 2 cardio sessions today, relax."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-6-hct",
+            "video": "https://www.youtube.com/embed/CZ3waXuNhvM",
             "exercises": []
           },
           {
@@ -8685,6 +8691,7 @@ kagedLean: {
               "I'll catch you in the gym tomorrow for the beginning of week 2. Enjoy your day off because you'll need the energy for the leg session I've got planned for you."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-7-hct",
+            "video": "https://www.youtube.com/embed/SWL-SU1wNpQ",
             "exercises": []
           }
         ]
@@ -8699,6 +8706,7 @@ kagedLean: {
             "cardio": "",
             "notes": [],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-8-hct",
+            "video": "https://www.youtube.com/embed/FANSxLhUmMc",
             "exercises": []
           },
           {
@@ -8710,6 +8718,7 @@ kagedLean: {
               "Then it's time for another chest and shoulders workout!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-9-hct",
+            "video": "https://www.youtube.com/embed/pIegIZOK7z4",
             "exercises": [
               {
                 "name": "Hammer Press",
@@ -8785,6 +8794,7 @@ kagedLean: {
               "Today with our arms workout, we're using resistance bands again, so suck it up and let's get it done!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-10-hct",
+            "video": "https://www.youtube.com/embed/Pp-MfvlVqpM",
             "exercises": [
               {
                 "name": "Overhead Tricep Extensions",
@@ -8878,6 +8888,7 @@ kagedLean: {
               "It's time for another lower back, hamstrings and upper abs workout already!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-11-hct",
+            "video": "https://www.youtube.com/embed/DpZXfPl9IWo",
             "exercises": [
               {
                 "name": "Deadlifts",
@@ -8962,6 +8973,7 @@ kagedLean: {
               "Let's finish the week on a high and crush upper back and calves."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-12-hct",
+            "video": "https://www.youtube.com/embed/i9ekqAJBZBI",
             "exercises": [
               {
                 "name": "Pull-ups",
@@ -9029,6 +9041,7 @@ kagedLean: {
               "Stir and place in a waffle maker. Serve with calorie-free pancake syrup!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-13-hct",
+            "video": "https://www.youtube.com/embed/VgDeoYUOXDc",
             "exercises": []
           },
           {
@@ -9040,6 +9053,7 @@ kagedLean: {
               "For more active recovery I've decided to do some paddle boarding with some friends. Doing something like this, you'll not only burn extra calories, you'll also give yourself a mental break from the day-to-day stresses of working life. As the weather and company was so good, I hosted a BBQ where I cooked some asparagus, salmon and lean meats for all to enjoy. As always, I'm making sure these all fit my macros, but this just illustrates how this program can also allow for some great tasting food as well as amazing results."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-14-hct",
+            "video": "https://www.youtube.com/embed/C70zdLl6pOY",
             "exercises": []
           }
         ]
@@ -9059,6 +9073,7 @@ kagedLean: {
               "It's that time again for legs, calves and lower abs."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-15-hct",
+            "video": "https://www.youtube.com/embed/J_sCt1HYOGo",
             "exercises": [
               {
                 "name": "Leg Extension",
@@ -9153,6 +9168,7 @@ kagedLean: {
               "Let's get to it!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-16-hct",
+            "video": "https://www.youtube.com/embed/zvLNd70bqNA",
             "exercises": [
               {
                 "name": "Incline Dumbbell Fly & Press Combo",
@@ -9264,6 +9280,7 @@ kagedLean: {
               "Are you ready to crush arms again?"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-17-hct",
+            "video": "https://www.youtube.com/embed/g26gYXJor-k",
             "exercises": [
               {
                 "name": "Kneeling Cable Overhead Triceps Extension",
@@ -9356,6 +9373,7 @@ kagedLean: {
               "We're already near the end of week 3. Before you know it you'll be halfway through this transformation. This should awaken your mind to the fact that time passes so quickly, which is why you need to remain in control of your daily actions. Every workout has to surpass the last one; leave nothing to chance here. Missing your supplements for a day, or even one meal can knock you back. We've got another lower back, hamstrings and upper abs workout ahead of us today. Usually we hit lower back first, however, the pump which you get from this means that it can negate from your hamstring workout. For this reason, we're starting with hamstrings first today. How are you finding the increase in cardio this week? Let me know by tagging me on your socials using #HardcoreTrainer2."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-18-hct",
+            "video": "https://www.youtube.com/embed/Ht-465kJBl0",
             "exercises": [
               {
                 "name": "Single-Leg Hamstring Curl",
@@ -9441,6 +9459,7 @@ kagedLean: {
               "Right now, it's time to crush upper back and calves."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-19-hct",
+            "video": "https://www.youtube.com/embed/ms_3z4FjGgA",
             "exercises": [
               {
                 "name": "Dumbbell Seal Row",
@@ -9498,6 +9517,7 @@ kagedLean: {
               "To get more activity into my day, we then hiked up the mountain to Alice Lake where I wore my heart rate monitor to ensure my HR was sitting at 65-70% of my maximal level. While at the top, I enjoyed a ready prepared Ezekiel bread sandwich with steak, peppers and salad. Again, this is here to illustrate to you that this program is all about planning ahead! Whenever you're out and about, don't forget your water and make sure you've added HYDRA-CHARGE."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-20-hct",
+            "video": "https://www.youtube.com/embed/mcWZ5NHGCng",
             "exercises": []
           },
           {
@@ -9510,6 +9530,7 @@ kagedLean: {
               "Be mindful that because it is a rest day your carbohydrates should be down to the prescribed 0.78 g per pound of body weight, rather than the standard 0.85 g you're consuming on training days. All these details that might appear small to you are actually highly significant to the end result. I'll catch you in the gym tomorrow for another killer quad session to kick off week 4!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-21-hct",
+            "video": "https://www.youtube.com/embed/6Xe3QIqXEvU",
             "exercises": []
           }
         ]
@@ -9529,6 +9550,7 @@ kagedLean: {
               "We're putting up cardio to 35 minutes per session now, to increase the energy deficit further and to avoid our metabolism becoming complacent. Also, don't forget you still need to get your 150 twists done every day to keep your waist coming in as you dispose yourself of the fat."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-22-hct",
+            "video": "https://www.youtube.com/embed/r1VvIN3l6P0",
             "exercises": [
               {
                 "name": "Single-Leg Extension",
@@ -9613,6 +9635,7 @@ kagedLean: {
               "As we did yesterday, this workout is exclusively unilateral."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-23-hct",
+            "video": "https://www.youtube.com/embed/A180W6XkNi8",
             "exercises": [
               {
                 "name": "Incline One-Arm Dumbbell Press",
@@ -9699,6 +9722,7 @@ kagedLean: {
               "Snap a gym selfie and tag me on your socials using #HardcoreTrainer2!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-24-hct",
+            "video": "https://www.youtube.com/embed/uMdsN-v-i5Q",
             "exercises": [
               {
                 "name": "Seated Single-Arm Dumbbell Curls",
@@ -9765,6 +9789,7 @@ kagedLean: {
               "Right, time to grind out another workout and keep the results coming one day at a time!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-25-hct",
+            "video": "https://www.youtube.com/embed/pb9T4aodtrs",
             "exercises": [
               {
                 "name": "Single-Arm Dumbbell Deadlift",
@@ -9841,6 +9866,7 @@ kagedLean: {
               "We've reached the end of week 4 now; we're on the home stretch. Allow me to remind you that every detail matters more than ever. We need to set the standard high and maintain it."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-26-hct",
+            "video": "https://www.youtube.com/embed/VJHR7ZX-ggA",
             "exercises": [
               {
                 "name": "Single-Arm Barbell Row",
@@ -9898,6 +9924,7 @@ kagedLean: {
               "Use this weekend to let yourself recover adequately after a very intense training week, in preparation for an even more demanding one ahead. Recovery isn't about not feeling sore; it's about being physically able to outperform your previous best. This only happens when your endocrine system is healthy, your cortisol levels are well balanced and your CNS is fully replenished. This is the true definition of recovery!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-27-hct",
+            "video": "https://www.youtube.com/embed/TVHKeIC_-3M",
             "exercises": []
           },
           {
@@ -9908,6 +9935,7 @@ kagedLean: {
               "To start this Sunday off, I hit the mountain trails on my bike, as a means of getting my cardio done. Today I've got a gentleman from Dubai with me, who's flown all this way to spend 4 hours with me! This really blows my mind. I feel very privileged to be in this position where I can have such a positive influence on so many people. Whatever your current situation in life, endeavor to be the best you can be. Do things others won't, so you can have things others can't. There will always be haters and naysayers there to try and defy your persistence, but you just need to ignore that and focus on you. In 5 or 10 years' time, the words these people spout off at you won't matter, so don't listen to them today! Another daily tip you can take from me is taking a bath. Usually I will either start or end my day with a bath because it gives me time to relax, giving my mind the necessary freedom to de-stress. However, it's also a very functional habit for recovery because it helps increase blood flow through your muscle fibers, reducing inflammation and knotting. I thoroughly recommend you make time for this if you can."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-28-hct",
+            "video": "https://www.youtube.com/embed/v1vPHGEuyj4",
             "exercises": []
           }
         ]
@@ -9926,6 +9954,7 @@ kagedLean: {
               "This week we're using my DTPXtreme principle, which combines high and low reps with short rest periods for maximal penetration within the muscle. This variation of DTP matches the reps and rest periods, so if you get 30 reps, you earn 30 seconds of rest before doing the next set. The goal is to always go as heavy as you can in order to sustain intensity. Remember that each rep range is simply a guide; if you can do more because the weight is too light, DO THEM! If it's too heavy, just rest-pause all the way to the end of the set."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-29-hct",
+            "video": "https://www.youtube.com/embed/dkWMSTJKnoo",
             "exercises": [
               {
                 "name": "Leg Extensions",
@@ -10000,6 +10029,7 @@ kagedLean: {
               "Including today, we only have four chest and shoulder workouts left in order to completely evolve the way these muscle groups appear. When I press you will notice there's no locking out and there's a very good reason for that; it makes your chest work harder. If you lock out, all you do is make the triceps take the weight off your pecs, and we need to avoid this! Don't be fooled into thinking shortening the range of motion when pressing makes it easy, just try it! We're sticking with the DTPXtreme principle today, to crush the slow and fast twitch muscle fibers altogether. You've already seen just how brutal this methodology is after yesterday's leg session. Are your legs sore? Make sure you're getting your KAGED MUSCLE supplements in on time, along with your meals and water to recover. I'm amped to smash this workout, so let's not waste any more time! Tag me and use hashtag #HardcoreTrainer2 on Instagram."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-30-hct",
+            "video": "https://www.youtube.com/embed/GszJfy0MmyU",
             "exercises": [
               {
                 "name": "Incline Dumbbell Chest Press",
@@ -10067,6 +10097,7 @@ kagedLean: {
               "Get your PRE-KAGED down to make sure your arms blow up as big as they can. Let's go!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-31-hct",
+            "video": "https://www.youtube.com/embed/fEN5FCdVcgU",
             "exercises": [
               {
                 "name": "Triceps Extensions",
@@ -10135,6 +10166,7 @@ kagedLean: {
               "Anyway, my PRE-KAGED is kicking in now and we've got hamstrings, lower back and upper abs to crush."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-32-hct",
+            "video": "https://www.youtube.com/embed/9USIrEUB_PQ",
             "exercises": [
               {
                 "name": "Deadlifts",
@@ -10194,6 +10226,7 @@ kagedLean: {
               "Right, time to crush this workout and finish this week off strong."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-33-hct",
+            "video": "https://www.youtube.com/embed/bftWCf64AKY",
             "exercises": [
               {
                 "name": "Pullup",
@@ -10251,6 +10284,7 @@ kagedLean: {
               "I've been listening to audio books, as well as reading a physical book, while doing my cardio on the StairMaster today. Try and use this process to fine-tune your time management so that other areas of your life benefit as well. If you're able to educate yourself while doing cardio, you're actually learning and getting healthier at the same time. Don't just waste these moments each day aimlessly doing nothing!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-34-hct",
+            "video": "https://www.youtube.com/embed/5bhA5P8DsZ4",
             "exercises": []
           },
           {
@@ -10262,6 +10296,7 @@ kagedLean: {
               "Right, we've got some alterations to make to the diet for the coming week to keep this evolution happening. Protein remains at 1.23 g per pound of body weight, but your carbohydrates change to 0.76 g per pound of body weight for training days and 0.68 g per pound of body weight for rest days. This is going to help create more of an energy deficit to strip off the most stubborn fat cells in your body."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-35-hct",
+            "video": "https://www.youtube.com/embed/xTbLxfKhfZ8",
             "exercises": []
           }
         ]
@@ -10281,6 +10316,7 @@ kagedLean: {
               "Tag me on your socials using #HardcoreTrainer2 and let me know. Please don't forget to. Catch you in the gym!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-36-hct",
+            "video": "https://www.youtube.com/embed/6ZlhxlKa6BE",
             "exercises": [
               {
                 "name": "Leg Extensions",
@@ -10339,6 +10375,7 @@ kagedLean: {
               "Right, back to training-let's hit this workout!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-37-hct",
+            "video": "https://www.youtube.com/embed/p05tHzqgxpE",
             "exercises": [
               {
                 "name": "Flat Dumbbell Press",
@@ -10441,6 +10478,7 @@ kagedLean: {
               "We're working in an opposing manner today to crush arms, going between biceps and triceps. Get your PRE-KAGED down as always and follow my lead."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-38-hct",
+            "video": "https://www.youtube.com/embed/NOvuvP7ZoZU",
             "exercises": [
               {
                 "name": "Machine Preacher Curls",
@@ -10526,6 +10564,7 @@ kagedLean: {
               "Time to go and hit up lower back, hamstrings and upper abs again!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-39-hct",
+            "video": "https://www.youtube.com/embed/_-AjnfDmH6c",
             "exercises": [
               {
                 "name": "Glute-Ham Raise",
@@ -10613,6 +10652,7 @@ kagedLean: {
               "It's also my birthday today, which is the perfect example of not allowing occasions like this to derail you. You can always celebrate with temporary measures, but your success will be forever if you remain committed."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-40-hct",
+            "video": "https://www.youtube.com/embed/rTA1L7bleuY",
             "exercises": [
               {
                 "name": "Machine Pullover",
@@ -10691,6 +10731,7 @@ kagedLean: {
               "Give the recipe and try and let me know what you think by tagging me on your socials using #HardcoreTrainer2."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-41-hct",
+            "video": "https://www.youtube.com/embed/0ipboDKtlv4",
             "exercises": []
           },
           {
@@ -10702,6 +10743,7 @@ kagedLean: {
               "Always remember that you need to take your Clean Burn in order to maximize thermogenesis, which brings about quicker fat loss. This highly potent natural fat burner will also stabilize your blood sugar levels, helping you crush cravings. You require 3 servings per day, and I'd recommend you take them at least 30 minutes before a meal if you're having them at the same time of day to let the ingredients become absorbed. I'll catch you in the gym tomorrow for another anguishing leg workout to start week 7!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-42-hct",
+            "video": "https://www.youtube.com/embed/fRK6nc7mwqs",
             "exercises": []
           }
         ]
@@ -10720,6 +10762,7 @@ kagedLean: {
               "Get your PRE-KAGED down to awaken your mind and body, and get ready for the gym."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-43-hct",
+            "video": "https://www.youtube.com/embed/uyOY8lBpPcg",
             "exercises": [
               {
                 "name": "Leg Extensions",
@@ -10787,6 +10830,7 @@ kagedLean: {
               "Right, let's get to it!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-44-hct",
+            "video": "https://www.youtube.com/embed/2mD3_V4bHZ8",
             "exercises": [
               {
                 "name": "Incline Dumbbell Fly",
@@ -10872,6 +10916,7 @@ kagedLean: {
               "I hope you're doing your extra cardio every day now, twice a day along with your 300 twists each morning!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-45-hct",
+            "video": "https://www.youtube.com/embed/5DbhD1vkG80",
             "exercises": [
               {
                 "name": "Cable Triceps Extensions",
@@ -10938,6 +10983,7 @@ kagedLean: {
               "We've got just 2 workouts to crush this week before entering the final stretch of this extreme transformation, so let's make it really count today. Don't take your foot off the gas now!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-46-hct",
+            "video": "https://www.youtube.com/embed/4B5DVaGu9IY",
             "exercises": [
               {
                 "name": "Machine Deadlifts",
@@ -11004,6 +11050,7 @@ kagedLean: {
               "Today's back workout is primarily going to target the lats, so I want you to specifically pay close attention to squeezing your scapula backward together with each rep, to make the muscle fibers bleed. I don't give a s*** if you're feeling tired; now is the time to give yourself a push! Get your PRE-KAGED in to raise your energy levels in anticipation of this session-you'll need it."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-47-hct",
+            "video": "https://www.youtube.com/embed/CdqzY6THYDs",
             "exercises": [
               {
                 "name": "Lat Pulldown",
@@ -11071,6 +11118,7 @@ kagedLean: {
               "Today's cardio for me started off with a 5K Color Run, which is a local charitable event. Doing things like this gives you something new to focus on and gives you a reason to do cardio without thinking about it, while raising money for a good cause. It was great noticing this run felt a lot easier than 6 weeks ago, which tells me this program hasn't just made me look better, it's also improved my performance."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-48-hct",
+            "video": "https://www.youtube.com/embed/a1DbKqq9Yt8",
             "exercises": []
           },
           {
@@ -11082,6 +11130,7 @@ kagedLean: {
               "I'll see you tomorrow for our final week of training, as we close in on the penultimate finish to this 8-week hardcore trainer!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-49-hct",
+            "video": "https://www.youtube.com/embed/wdFN6H40acM",
             "exercises": []
           }
         ]
@@ -11101,6 +11150,7 @@ kagedLean: {
               "Your cardio has now also gone up another 5 minutes per session, which means you're now doing 55 minutes every AM and PM. Tag me on your socials using #HCTReboot to let me know you're getting it done!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-50-hct",
+            "video": "https://www.youtube.com/embed/LOKilx-Hpsw",
             "exercises": [
               {
                 "name": "Hack Squat",
@@ -11168,6 +11218,7 @@ kagedLean: {
               "Right, my PRE-KAGED is kicking in, so it's time to crush chest and shoulders one last time."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-51-hct",
+            "video": "https://www.youtube.com/embed/inEDOt6azNg",
             "exercises": [
               {
                 "name": "Incline Dumbbell Fly",
@@ -11217,6 +11268,7 @@ kagedLean: {
               "After you've done this workout today, take a photo while you've got a sick pump and tag me on socials using #HCTReboot. Seeing your progress really inspires me, and I might just send you a compliment."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-52-hct",
+            "video": "https://www.youtube.com/embed/hNdDBbhEAQA",
             "exercises": [
               {
                 "name": "Cable Incline Triceps Extension",
@@ -11267,6 +11319,7 @@ kagedLean: {
               "Right, let's get this workout finished fast!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-53-hct",
+            "video": "https://www.youtube.com/embed/cEQU6o6dlyA",
             "exercises": [
               {
                 "name": "Rack Deadlifts",
@@ -11334,6 +11387,7 @@ kagedLean: {
               "Same as ever, get that PRE-KAGED in!"
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-54-hct",
+            "video": "https://www.youtube.com/embed/vTbOM-0C0-8",
             "exercises": [
               {
                 "name": "Incline Dumbbell Row",
@@ -11407,6 +11461,7 @@ kagedLean: {
               "As a reward to yourself, go and do something that isn't centered on food. Rather than have a big binge out, I've treated myself to some new triathlon gear and I'm also having some of my tattoos touched up. Rewarding yourself with food usually leads to bad eating patterns, so don't go down that route."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-55-hct",
+            "video": "https://www.youtube.com/embed/cj9FWZQ7JOE",
             "exercises": []
           },
           {
@@ -11425,10 +11480,12 @@ kagedLean: {
               "Until next time,."
             ],
             "url": "https://www.kaged.com/blogs/8-week-hardcore-trainer/day-56-hct",
+            "video": "https://www.youtube.com/embed/8qhc-gzAKTs",
             "exercises": []
           }
         ]
       }
     ]
   }
+
 };
