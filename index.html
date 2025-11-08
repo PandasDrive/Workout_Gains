@@ -158,32 +158,22 @@
         }
         .splash-carousel {
             position: relative;
-            width: min(68vw, 360px);
-            height: min(68vw, 360px);
+            width: min(76vw, 420px);
+            height: min(76vw, 420px);
             display: flex;
             align-items: center;
             justify-content: center;
-            transform-style: preserve-3d;
-            -webkit-transform-style: preserve-3d;
-            transform: rotateX(22deg) rotateY(0deg) scale(0.85);
             opacity: 0;
-            transition: opacity 0.7s ease;
-            will-change: transform, opacity;
+            transition: opacity 0.6s ease;
+            will-change: opacity;
         }
         .splash-carousel.ready {
             opacity: 1;
         }
-        .splash-carousel.spinning {
-            animation: carousel-spin 3.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) forwards;
-        }
-        .splash-carousel.expanding {
-            animation: carousel-expand 0.7s ease-in forwards;
-        }
         #splash-cards {
             position: absolute;
             inset: 0;
-            transform-style: preserve-3d;
-            -webkit-transform-style: preserve-3d;
+            pointer-events: none;
         }
         .splash-card {
             position: absolute;
@@ -197,15 +187,28 @@
             box-shadow: 0 16px 45px rgba(37, 99, 235, 0.28);
             overflow: hidden;
             opacity: 0;
-            transform: translate(-50%, -50%) scale(0.32);
+            transform: translate(-50%, -50%) scale(0.38) rotate(0deg);
             transform-origin: center;
             visibility: hidden;
-            transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.9s ease;
-            backface-visibility: visible;
-            -webkit-backface-visibility: visible;
-            transform-style: preserve-3d;
-            -webkit-transform-style: preserve-3d;
+            transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.65s ease;
             will-change: transform, opacity;
+        }
+        .splash-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .splash-card.burst-enter {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, -50%) scale(0.68) rotate(var(--entry-tilt, 0deg));
+        }
+        .splash-card.burst-enter.burst-fanned {
+            transform: translate(-50%, -50%) translate(var(--fan-x, 0px), var(--fan-y, 0px)) rotate(var(--fan-tilt, 0deg)) scale(1);
+        }
+        .splash-card.fly-out {
+            transform: translate(-50%, -50%) translate(var(--fan-out-x, 0px), var(--fan-out-y, 0px)) rotate(var(--fan-tilt, 0deg)) scale(1.12);
+            opacity: 0;
         }
         .splash-card-bg {
             position: absolute;
@@ -239,23 +242,6 @@
             animation-delay: var(--card-delay, 0s);
         }
 
-        @keyframes carousel-spin {
-            0% {
-                transform: rotateX(22deg) rotateY(0deg) scale(0.85);
-            }
-            100% {
-                transform: rotateX(22deg) rotateY(360deg) scale(1.02);
-            }
-        }
-        @keyframes carousel-expand {
-            0% {
-                transform: rotateX(22deg) rotateY(360deg) scale(1.02);
-            }
-            100% {
-                transform: rotateX(22deg) rotateY(380deg) scale(3.1);
-                opacity: 0;
-            }
-        }
         @keyframes trainer-card-fly-in {
             0% {
                 opacity: 0;
@@ -1560,8 +1546,18 @@
             });
         }
 
-        function setSplashCardTransform(card, angleDeg, radiusPx, scale = 1) {
-            card.style.transform = `translate3d(-50%, -50%, 0) rotateY(${angleDeg}deg) translateZ(${radiusPx}px) rotateY(${-angleDeg}deg) scale(${scale})`;
+        function setSplashCardTransform(card, angleDeg, fanRadius, flyOutRadius) {
+            const radians = (angleDeg - 90) * (Math.PI / 180);
+            const fanX = Math.cos(radians) * fanRadius;
+            const fanY = Math.sin(radians) * fanRadius;
+            const flyX = Math.cos(radians) * flyOutRadius;
+            const flyY = Math.sin(radians) * flyOutRadius;
+            card.style.setProperty('--fan-x', `${fanX.toFixed(2)}px`);
+            card.style.setProperty('--fan-y', `${fanY.toFixed(2)}px`);
+            card.style.setProperty('--fan-out-x', `${flyX.toFixed(2)}px`);
+            card.style.setProperty('--fan-out-y', `${flyY.toFixed(2)}px`);
+            card.style.setProperty('--fan-tilt', `0deg`);
+            card.style.setProperty('--entry-tilt', `0deg`);
         }
 
         function initSplashSequence() {
@@ -1615,14 +1611,14 @@
 
             splashCardsContainer.innerHTML = '';
             const viewportMin = Math.min(window.innerWidth, window.innerHeight);
-            let baseRadius = Math.max(130, Math.min(viewportMin * 0.22, 220));
-            const desiredSize = baseRadius * 2 + 200;
-            const maxSize = viewportMin * 0.92;
+            let baseRadius = Math.max(120, Math.min(viewportMin * 0.23, 210));
+            const desiredSize = baseRadius * 2 + 180;
+            const maxSize = viewportMin * 0.9;
             const finalSize = Math.min(desiredSize, maxSize);
             splashCarousel.style.width = `${finalSize}px`;
             splashCarousel.style.height = `${finalSize}px`;
-            baseRadius = Math.min(baseRadius, finalSize / 2 - 80);
-            baseRadius = Math.max(baseRadius, 110);
+            const fanRadius = Math.max(90, Math.min(baseRadius, finalSize / 2 - 60));
+            const flyOutRadius = Math.max(fanRadius * 1.45, fanRadius + 80);
 
             const splashMeta = [];
             splashItems.forEach((item, index) => {
@@ -1631,86 +1627,76 @@
                 card.className = 'splash-card';
                 const backgroundStyle = item.image ? `style="background-image: url('${item.image}')"` : '';
                 card.innerHTML = `
-                    <div class="splash-card-bg" ${backgroundStyle}></div>
-                    <div class="splash-card-overlay">
-                        <span class="splash-card-name">${item.label || ''}</span>
+                    <div class="splash-card-inner">
+                        <div class="splash-card-bg" ${backgroundStyle}></div>
+                        <div class="splash-card-overlay">
+                            <span class="splash-card-name">${item.label || ''}</span>
+                        </div>
                     </div>
                 `;
-                card.dataset.angle = angle.toString();
-                card.style.transition = 'none';
                 splashCardsContainer.appendChild(card);
-                splashMeta.push({ card, angle });
-                setSplashCardTransform(card, angle, baseRadius, 0.92);
+                setSplashCardTransform(card, angle, fanRadius, flyOutRadius);
                 card.style.opacity = '0';
                 card.style.visibility = 'hidden';
-                card.dataset.transitionFrozen = 'true';
+                splashMeta.push({ card, angle });
             });
 
-            requestAnimationFrame(() => splashCarousel.classList.add('ready'));
+            requestAnimationFrame(() => {
+                splashCarousel.classList.add('ready');
+                splashMeta.forEach(({ card }, idx) => {
+                    const delay = idx * 90;
+                    setTimeout(() => {
+                        card.style.visibility = 'visible';
+                        card.style.opacity = '1';
+                        card.classList.add('burst-enter');
+                        setTimeout(() => {
+                            card.classList.add('burst-fanned');
+                        }, 70);
+                    }, delay);
+                });
+            });
 
             let splashFinished = false;
-            let fallbackTimer = null;
-            const spinDurationMs = 3200;
+            let holdTimer = null;
+            let skipHandler = null;
 
             const finishSplash = () => {
                 if (splashFinished) return;
                 splashFinished = true;
-                if (fallbackTimer) clearTimeout(fallbackTimer);
-                splashCarousel.classList.remove('spinning');
-                splashMeta.forEach(({ card, angle }, idx) => {
+                if (holdTimer) clearTimeout(holdTimer);
+                if (skipHandler) {
+                    splashOverlay.removeEventListener('click', skipHandler);
+                    splashOverlay.removeEventListener('touchstart', skipHandler);
+                }
+
+                splashMeta.forEach(({ card }, idx) => {
                     setTimeout(() => {
-                        setSplashCardTransform(card, angle, baseRadius, 1.08);
-                        card.style.opacity = '0';
-                        setTimeout(() => {
-                            card.style.visibility = 'hidden';
-                        }, 100);
-                    }, idx * 35);
+                        card.classList.add('fly-out');
+                    }, idx * 55);
                 });
-                splashOverlay.classList.add('is-hidden');
+
+                const flyOutDuration = 560;
+                const removalDelay = (splashMeta.length - 1) * 55 + flyOutDuration;
                 setTimeout(() => {
-                    if (splashOverlay.parentElement) {
-                        splashOverlay.remove();
-                    }
-                    splashCarousel.classList.remove('expanding');
-                    splashMeta.forEach(({ card, angle }) => {
-                        setSplashCardTransform(card, angle, baseRadius, 1);
-                    });
-                    startTrainerCardEntrance();
-                }, 350);
+                    splashOverlay.classList.add('is-hidden');
+                    setTimeout(() => {
+                        if (splashOverlay.parentElement) {
+                            splashOverlay.remove();
+                        }
+                        startTrainerCardEntrance();
+                    }, 320);
+                }, removalDelay);
             };
 
-            splashCarousel.addEventListener('animationend', (event) => {
-                if (event.animationName === 'carousel-spin') {
-                    splashMeta.forEach(({ card, angle }) => {
-                        card.style.opacity = '1';
-                        card.style.visibility = 'visible';
-                        setSplashCardTransform(card, angle, baseRadius, 1);
-                    });
-                    finishSplash();
-                }
-            });
-
-            requestAnimationFrame(() => {
-                splashCarousel.classList.add('spinning');
-                splashMeta.forEach(({ card, angle }) => {
-                    card.dataset.angle = angle;
-                    requestAnimationFrame(() => {
-                        requestAnimationFrame(() => {
-                            if (card.dataset.transitionFrozen === 'true') {
-                                card.style.transition = '';
-                                delete card.dataset.transitionFrozen;
-                            }
-                            card.style.visibility = 'visible';
-                            card.style.opacity = '1';
-                            setSplashCardTransform(card, angle, baseRadius, 1);
-                        });
-                    });
-                });
-            });
-
-            fallbackTimer = setTimeout(() => {
+            const totalFanTime = (splashMeta.length - 1) * 90 + 20;
+            const holdDuration = .1;
+            holdTimer = setTimeout(() => {
                 finishSplash();
-            }, spinDurationMs + 600);
+            }, totalFanTime + holdDuration);
+
+            skipHandler = () => finishSplash();
+            splashOverlay.addEventListener('click', skipHandler, { once: true });
+            splashOverlay.addEventListener('touchstart', skipHandler, { once: true });
         }
 
         function showTrainer(trainerId) {
